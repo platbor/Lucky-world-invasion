@@ -1,0 +1,367 @@
+{
+  "shadowlands:first_load": {
+    "criteria": {
+      "first_load": "2025-06-10 17:39:15 +0000"
+    },
+    "done": true
+  },
+  "majruszsdifficulty:game_stage_normal": {
+    "criteria": {
+      "is_triggered": "2025-06-10 17:39:15 +0000"
+    },
+    "done": true
+  },
+  "ratlantis:root": {
+    "criteria": {
+      "tick": "2025-06-10 17:39:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-06-10 17:39:16 +0000"
+    },
+    "done": true
+  },
+  "legendary_monsters:legendary_monsters_root": {
+    "criteria": {
+      "custom_test_name": "2025-06-10 17:39:16 +0000"
+    },
+    "done": true
+  },
+  "born_in_chaos_v1:bornin_chaos": {
+    "criteria": {
+      "bornin_chaos_0": "2025-06-10 17:39:16 +0000"
+    },
+    "done": true
+  },
+  "torchesbecomesunlight:root": {
+    "criteria": {
+      "custom_test_name": "2025-06-10 17:39:16 +0000"
+    },
+    "done": true
+  },
+  "legendary_monsters:end_root": {
+    "criteria": {
+      "custom_test_name": "2025-06-10 17:39:16 +0000"
+    },
+    "done": true
+  },
+  "lootr:root": {
+    "criteria": {
+      "always_true": "2025-06-10 17:39:16 +0000"
+    },
+    "done": true
+  },
+  "rats:root": {
+    "criteria": {
+      "tick": "2025-06-10 17:39:16 +0000"
+    },
+    "done": true
+  },
+  "legendary_monsters:nether_root": {
+    "criteria": {
+      "custom_test_name": "2025-06-10 17:39:16 +0000"
+    },
+    "done": true
+  },
+  "biomesoplenty:biomesoplenty/root": {
+    "criteria": {
+      "auroral_garden": "2025-06-10 17:39:17 +0000"
+    },
+    "done": true
+  },
+  "biomesoplenty:biomesoplenty/all_biomes": {
+    "criteria": {
+      "muskeg": "2025-06-11 04:17:35 +0000",
+      "snowblossom_grove": "2025-06-10 17:43:13 +0000",
+      "field": "2025-06-11 04:08:47 +0000",
+      "coniferous_forest": "2025-06-10 17:46:29 +0000",
+      "wasteland": "2025-06-11 04:39:09 +0000",
+      "auroral_garden": "2025-06-10 17:39:17 +0000",
+      "fir_clearing": "2025-06-11 04:08:35 +0000",
+      "pumpkin_patch": "2025-06-11 04:17:21 +0000",
+      "snowy_fir_clearing": "2025-06-10 17:43:03 +0000",
+      "snowy_maple_woods": "2025-06-11 04:58:55 +0000"
+    },
+    "done": false
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:old_growth_pine_taiga": "2025-06-10 17:44:18 +0000",
+      "minecraft:taiga": "2025-06-10 17:43:21 +0000",
+      "minecraft:jagged_peaks": "2025-06-11 04:56:43 +0000",
+      "minecraft:forest": "2025-06-11 04:16:21 +0000",
+      "minecraft:lush_caves": "2025-06-11 04:51:21 +0000",
+      "minecraft:old_growth_spruce_taiga": "2025-06-11 04:29:49 +0000",
+      "minecraft:plains": "2025-06-11 04:29:00 +0000"
+    },
+    "done": false
+  },
+  "lootr:social": {
+    "criteria": {
+      "opened_chest": "2025-06-11 04:25:23 +0000"
+    },
+    "done": false
+  },
+  "lootr:1chest": {
+    "criteria": {
+      "opened_chest": "2025-06-11 04:25:23 +0000"
+    },
+    "done": true
+  },
+  "solcarrot:recipes/food_book": {
+    "criteria": {
+      "has_book": "2025-06-11 04:25:26 +0000",
+      "has_carrot": "2025-06-11 04:25:26 +0000"
+    },
+    "done": true
+  },
+  "ironfurnaces:coal": {
+    "criteria": {
+      "rainbowcoal": "2025-06-11 04:25:26 +0000"
+    },
+    "done": true
+  },
+  "super_block_world:recipes/food/yoshi_cookie": {
+    "criteria": {
+      "has_yoshi_fruit": "2025-06-11 04:25:32 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/red_dye_from_yoshi_fruit": {
+    "criteria": {
+      "has_yoshi_fruit": "2025-06-11 04:25:32 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_pickaxe": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_hoe": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_shovel": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/tools/diamond_wand": {
+    "criteria": {
+      "has_item": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_helmet": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "rats:recipes/misc/purifying_liquid": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "rats:recipes/misc/upgrades/dj_upgrade": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diamond_block": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "rats:recipes/building_blocks/rat_quarry": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "rats:recipes/misc/upgrades/big_bucket_upgrade": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "rats:recipes/misc/upgrades/ore_doubling_upgrade": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "yakurum:recipes/foods/diamond_apple": {
+    "criteria": {
+      "has_item": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "rats:recipes/misc/upgrades/warrior_upgrade": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "rats:recipes/misc/upgrades/advanced_energy_upgrade": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_axe": {
+    "criteria": {
+      "has_diamond": "2025-06-11 04:25:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_helmet": "2025-06-11 04:25:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_helmet": "2025-06-11 04:25:35 +0000"
+    },
+    "done": true
+  },
+  "apotheosis:affix/root": {
+    "criteria": {
+      "sword": "2025-06-11 04:25:35 +0000"
+    },
+    "done": true
+  },
+  "apotheosis:affix/chests": {
+    "criteria": {
+      "sword": "2025-06-11 04:25:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_helmet": "2025-06-11 04:25:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_toadstone_bricks_from_toadstone_bricks_stonecutting": {
+    "criteria": {
+      "has_toadstone_bricks": "2025-06-11 04:25:36 +0000"
+    },
+    "done": true
+  },
+  "super_block_world:recipes/building_blocks/toadstone_brick_slab": {
+    "criteria": {
+      "has_toadstone_bricks": "2025-06-11 04:25:36 +0000"
+    },
+    "done": true
+  },
+  "super_block_world:recipes/building_blocks/golden_bricks": {
+    "criteria": {
+      "has_material": "2025-06-11 04:25:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/toadstone_brick_stairs_from_toadstone_bricks_stonecutting": {
+    "criteria": {
+      "has_toadstone_bricks": "2025-06-11 04:25:36 +0000"
+    },
+    "done": true
+  },
+  "super_block_world:recipes/decorations/toadstone_brick_wall": {
+    "criteria": {
+      "has_toadstone_bricks": "2025-06-11 04:25:36 +0000"
+    },
+    "done": true
+  },
+  "super_block_world:recipes/building_blocks/crystal_bricks": {
+    "criteria": {
+      "has_material": "2025-06-11 04:25:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/toadstone_brick_slab_from_toadstone_bricks_stonecutting": {
+    "criteria": {
+      "has_toadstone_bricks": "2025-06-11 04:25:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/toadstone_brick_wall_from_toadstone_bricks_stonecutting": {
+    "criteria": {
+      "has_toadstone_bricks": "2025-06-11 04:25:36 +0000"
+    },
+    "done": true
+  },
+  "super_block_world:recipes/building_blocks/toadstone_brick_stairs": {
+    "criteria": {
+      "has_toadstone_bricks": "2025-06-11 04:25:36 +0000"
+    },
+    "done": true
+  },
+  "touhou_little_maid:base/pickup_power_point": {
+    "criteria": {
+      "maid_event": "2025-06-11 04:25:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2025-06-11 04:29:10 +0000"
+    },
+    "done": true
+  },
+  "rats:plague_doctor": {
+    "criteria": {
+      "meet_doctor": "2025-06-11 05:14:13 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

@@ -1,0 +1,9 @@
+
+["flash shield"]
+	#max durability of flash shield
+	#Range: 1 ~ 32767
+	flash_shield_max_durability = 450
+	#cooldown of flash shield in ticks
+	#Range: 20 ~ 32767
+	flash_shield_cooldown = 200
+
