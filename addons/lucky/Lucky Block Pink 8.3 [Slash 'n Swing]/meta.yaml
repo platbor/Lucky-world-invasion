@@ -1,0 +1,9 @@
+metafileVersion: 2
+projectName: "pink-lucky-block-java"
+version: "1.19.3-2.0"
+dependencies:
+  "lucky-block":
+    minInclusive: "13.0"
+  "minecraft":
+    minInclusive: "1.9.3"
+    maxExclusive: "1.9.3"

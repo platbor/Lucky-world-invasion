@@ -1,0 +1,4 @@
+block_id=elefire_lucky_block
+sword_id=elefire_lucky_sword
+bow_id=elefire_lucky_bow
+potion_id=elefire_lucky_potion

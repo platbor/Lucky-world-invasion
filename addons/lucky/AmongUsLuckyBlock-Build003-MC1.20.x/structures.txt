@@ -1,0 +1,18 @@
+/sabotage additions
+ID=amongus_closedoorjail,file=amongus_closedoorjail.nbt,centerY=1
+
+/skeld
+ID=amongus_emergencymeeting,file=amongus_emergencymeeting.nbt,centerY=1
+
+/mirahq
+ID=amongus_mirahqplant,file=amongus_mirahqplant.nbt
+ID=amongus_mirahqstorage,file=amongus_mirahqstorage.nbt,centerY=1
+
+/polus
+ID=amongus_polusartifacts,file=amongus_polusartifacts.nbt
+
+/airship
+
+
+/giant crewmate
+ID=amongus_giantcrewmate,file=amongus_giantcrewmate.nbt

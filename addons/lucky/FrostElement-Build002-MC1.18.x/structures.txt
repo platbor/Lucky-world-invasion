@@ -1,0 +1,52 @@
+/ice element structures
+ID=eleice_amethystgeode,file=eleice_amethystgeode.nbt,centerY=7,blockMode=overlay
+ID=eleice_frostpane,file=eleice_frostpane.nbt,centerY=1
+ID=eleice_icespikecone,file=eleice_icespikecone.nbt,centerY=1
+ID=eleice_icespiketower,file=eleice_icespiketower.nbt,centerY=1
+ID=eleice_icestation,file=eleice_icestation.nbt,centerY=1
+ID=eleice_igloo,file=eleice_igloo.nbt,centerY=1
+ID=eleice_igloohome,file=eleice_igloohome.nbt,centerY=1
+ID=eleice_powdersnowtrap,file=eleice_powdersnowtrap.nbt,centerY=6
+
+/ice dungeon unlucky
+ID=eleice_icedungeon1,file=eleice_icedungeon1.nbt,centerY=1
+ID=eleice_icedungeon2,file=eleice_icedungeon2.nbt,centerY=1
+ID=eleice_icedungeon3,file=eleice_icedungeon3.nbt,centerY=1
+ID=eleice_icedungeon4,file=eleice_icedungeon4.nbt,centerY=1
+ID=eleice_icedungeon5,file=eleice_icedungeon5.nbt,centerY=1
+ID=eleice_icedungeon6,file=eleice_icedungeon6.nbt,centerY=1
+ID=eleice_icedungeon7,file=eleice_icedungeon7.nbt,centerY=1
+ID=eleice_icedungeon8,file=eleice_icedungeon8.nbt,centerY=1
+ID=eleice_icedungeon9,file=eleice_icedungeon9.nbt,centerY=1
+ID=eleice_icedungeon10,file=eleice_icedungeon10.nbt,centerY=1
+ID=eleice_icedungeon11,file=eleice_icedungeon11.nbt,centerY=1
+ID=eleice_icedungeon12,file=eleice_icedungeon12.nbt,centerY=1
+ID=eleice_icedungeon13,file=eleice_icedungeon13.nbt,centerY=1
+ID=eleice_icedungeon14,file=eleice_icedungeon14.nbt,centerY=1
+ID=eleice_icedungeon15,file=eleice_icedungeon15.nbt,centerY=1
+ID=eleice_icedungeon16,file=eleice_icedungeon16.nbt,centerY=1
+
+/ice station lucky
+ID=eleice_icestation1,file=eleice_icestation1.nbt,centerY=1
+ID=eleice_icestation2,file=eleice_icestation2.nbt,centerY=1
+ID=eleice_icestation3,file=eleice_icestation3.nbt,centerY=1
+ID=eleice_icestation4,file=eleice_icestation4.nbt,centerY=1
+ID=eleice_icestation5,file=eleice_icestation5.nbt,centerY=1
+ID=eleice_icestation6,file=eleice_icestation6.nbt,centerY=1
+ID=eleice_icestation7,file=eleice_icestation7.nbt,centerY=1
+ID=eleice_icestation8,file=eleice_icestation8.nbt,centerY=1
+ID=eleice_icestation9,file=eleice_icestation9.nbt,centerY=1
+ID=eleice_icestation10,file=eleice_icestation10.nbt,centerY=1
+ID=eleice_icestation11,file=eleice_icestation11.nbt,centerY=1
+ID=eleice_icestation12,file=eleice_icestation12.nbt,centerY=1
+ID=eleice_icestation13,file=eleice_icestation13.nbt,centerY=1
+ID=eleice_icestation14,file=eleice_icestation14.nbt,centerY=1
+ID=eleice_icestation15,file=eleice_icestation15.nbt,centerY=1
+ID=eleice_icestation16,file=eleice_icestation16.nbt,centerY=1
+ID=eleice_icestation17,file=eleice_icestation17.nbt,centerY=1
+ID=eleice_icestation18,file=eleice_icestation18.nbt,centerY=1
+ID=eleice_icestation19,file=eleice_icestation19.nbt,centerY=1
+ID=eleice_icestation20,file=eleice_icestation20.nbt,centerY=1
+
+/wishing well
+ID=eleice_wellice,file=eleice_wellice.nbt,centerY=2

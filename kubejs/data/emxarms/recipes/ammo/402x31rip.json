@@ -1,0 +1,22 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "minecraft:iron_ingot"
+      },
+      "count": 40
+    },
+    {
+      "item": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "emxarms:402x31rip",
+    "count": 60
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

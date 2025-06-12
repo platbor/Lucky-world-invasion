@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "S": {
+      "item": "minecraft:sunflower"
+    },
+    "L": {
+      "item": "lucky:lucky_block"
+    }
+  },
+  "pattern": ["SSS", "SLS", "SSS"],
+  "result": {
+    "item": "lucky:summer_lucky_block"
+  }
+}

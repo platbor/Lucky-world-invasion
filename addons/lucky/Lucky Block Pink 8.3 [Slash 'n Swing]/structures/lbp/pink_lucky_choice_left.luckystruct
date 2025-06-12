@@ -1,0 +1,9 @@
+>properties
+length=3
+height=1
+width=1
+
+>blocks
+0,0,0,lucky:pink_lucky_block,(),(Luck=100)
+1,0,0,cherry_sign,(),(front_text=(color="pink",has_glowing_text=1b,messages=[#jsonStr(text=""),#jsonStr(text="One is lucky.",color=light_purple),#jsonStr(text="One is not.",color=light_purple),#jsonStr(text="")]))
+2,0,0,lucky:pink_lucky_block,(),(Luck=-100)

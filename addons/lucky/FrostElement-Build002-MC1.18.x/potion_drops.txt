@@ -1,0 +1,3 @@
+/ === SNOW IN A BOTTLE ===
+
+group(type=command,ID=type=command,ID="/fill ~3 ~3 ~3 ~-3 ~-3 ~-3 snow replace air";type=block,ID=powder_snow)

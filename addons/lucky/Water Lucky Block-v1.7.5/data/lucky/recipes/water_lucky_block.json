@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "E": {
+            "item": "yakurum:water_ball"
+        },
+        "D": {
+            "item": "lucky:lucky_block"
+        },
+        "S": {
+            "item": "minecraft:heart_of_the_sea"
+        }
+    },
+    "pattern": [
+        "ESE",
+        "EDE",
+        "EEE"
+    ],
+    "result": {
+		"count": 1,
+        "item": "lucky:water_lucky_block"
+    }
+}

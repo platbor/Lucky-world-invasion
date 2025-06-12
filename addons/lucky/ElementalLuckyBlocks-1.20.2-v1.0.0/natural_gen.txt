@@ -1,0 +1,13 @@
+/ >minecraft:overworld
+
+/ single block
+/ type=block,ID=lucky:elemental_lucky_block@chance=0
+
+/ >minecraft:the_nether
+/ type=block,ID=lucky:elemental_lucky_block@chance=0
+
+/ >minecraft:the_end
+/ type=block,ID=lucky:elemental_lucky_block@chance=0
+
+>twilightforest:twilight_forest
+type=block,ID=lucky:elemental_lucky_block@chance=100

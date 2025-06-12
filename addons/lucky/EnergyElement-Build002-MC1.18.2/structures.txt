@@ -1,0 +1,13 @@
+/energy element structures
+ID=elergy_endcrystower,file=elergy_endcrystower.nbt,centerY=1
+ID=elergy_energycore,file=elergy_energycore.nbt,centerY=1
+ID=elergy_energygenerator,file=elergy_energygenerator.nbt,centerY=1
+ID=elergy_jailtrap,file=elergy_jailtrap.nbt,centerY=1
+
+/beacons
+ID=elergy_beacon2,file=elergy_beacon2.nbt
+ID=elergy_beacon3,file=elergy_beacon3.nbt
+ID=elergy_beacon4,file=elergy_beacon4.nbt
+
+/wishing well
+ID=elergy_wellrgy,file=elergy_wellrgy.nbt,centerY=2

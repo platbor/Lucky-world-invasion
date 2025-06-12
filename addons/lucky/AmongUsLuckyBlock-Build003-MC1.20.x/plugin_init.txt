@@ -1,0 +1,4 @@
+block_id=amongus_lucky_block
+sword_id=amongus_lucky_sword
+bow_id=amongus_lucky_bow
+potion_id=amongus_lucky_potion

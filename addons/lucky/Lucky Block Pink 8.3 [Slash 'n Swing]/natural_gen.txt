@@ -1,0 +1,24 @@
+>minecraft:overworld
+/ single block
+type=block,ID=lucky:pink_lucky_block@chance=200
+
+/ lucky acropolis
+group(type=structure,ID=gen_acropolis;type=block,ID=lucky:pink_lucky_block,posY=#bPosY+1,tileEntity=(Luck=75))@chance=300
+
+/ ==== unlucky ruins ====
+/ bottom layer
+group(type=block,ID=stonebrick,posY=#bPosY-1,posOffset=#circleOffset(#rand(0,3)),amount=#rand(20,30); \
+type=block,ID=netherrack,posY=#bPosY-1,posOffset=#circleOffset(#rand(0,3)),amount=#rand(20,30); \
+type=block,ID=obsidian,posY=#bPosY-1,posOffset=#circleOffset(#rand(0,3)),amount=#rand(10,15); \
+/ top layer
+type=block,ID=#randList(infested,cracked,mossy)_stone_bricks,posOffset=#circleOffset(#rand(0,2)),amount=#rand(2,5); \
+type=block,ID=netherrack,posOffset=#circleOffset(#rand(0,2)),amount=#rand(2,5); \
+type=block,ID=obsidian,posOffset=#circleOffset(#rand(0,2)),amount=#rand(0,2); \
+/ pink lucky block
+type=block,ID=lucky:pink_lucky_block,tileEntity=(Luck=-75))@chance=400
+
+// LBP Temple
+group(type=structure,ID=lbp_temple;type=block,ID=lucky:pink_lucky_block,posY=#bPosY,tileEntity=(Luck=0))@chance=255
+
+>shadowlands:vellium
+type=block,ID=lucky:pink_lucky_block@chance=150

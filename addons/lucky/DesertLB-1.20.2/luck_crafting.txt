@@ -1,0 +1,36 @@
+
+
+/jewels
+diamond=2
+diamond_block=18
+netherite_ingot=5
+netherite_block=40
+netherite_scrap=7
+emerald=1
+emerald_block=9
+gold_ingot=1
+gold_block=9
+iron_block=5
+sunflower=7
+
+
+/lucky items
+golden_carrot=30
+golden_apple:0=40
+lapis_block=30
+lapis_lazuli=3
+golden_apple:1=100
+nether_star=100
+cactus=4
+
+
+/unlucky items
+
+coal=-3
+coal_block=-30
+deadbush=-7
+rotten_flesh=-5
+spider_eye=-10
+fermented_spider_eye=-20
+poisonous_potato=-10
+fish:3=-20

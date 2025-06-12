@@ -1,0 +1,72 @@
+{
+    "Dimensions": [
+        "shadowlands:shadow_forest",
+	    "twilightforest:twilight_forest"
+    ],
+    "InvasionTime": "BOTH",
+    "TimeModifier": "DAY_TO_NIGHT",
+    "Rarity": 1,
+    "SeverityInfo": [
+        {
+            "MobCapPercentage": 0.6,
+            "MobSpawnList": [
+                {
+                    "EntityType": "majruszsdifficulty:tank",
+                    "Weight": 5,
+                    "MinCount": 1,
+                    "MaxCount": 3
+                }
+            ],
+            "TickDelay": 60
+        },
+        {
+            "MobCapPercentage": 0.7,
+            "MobSpawnList": [
+                {
+                    "EntityType": "majruszsdifficulty:tank",
+                    "Weight": 5,
+                    "MinCount": 1,
+                    "MaxCount": 4
+                }
+            ],
+            "TickDelay": 48
+        },
+        {
+            "MobCapPercentage": 0.8,
+            "MobSpawnList": [
+                {
+                    "EntityType": "majruszsdifficulty:tank",
+                    "Weight": 5,
+                    "MinCount": 2,
+                    "MaxCount": 6
+                }
+            ],
+            "TickDelay": 36
+        },
+        {
+            "MobCapPercentage": 0.9,
+            "MobSpawnList": [
+                {
+                    "EntityType": "majruszsdifficulty:tank",
+                    "Weight": 5,
+                    "MinCount": 3,
+                    "MaxCount": 8
+                }
+            ],
+            "TickDelay": 24
+        },
+        {
+            "MobCapPercentage": 1.0,
+            "MobSpawnList": [
+                {
+                    "EntityType": "majruszsdifficulty:tank",
+                    "Weight": 5,
+                    "MinCount": 4,
+                    "MaxCount": 10
+                }
+            ],
+            "TickDelay": 12
+        }
+    ],
+    "Tier": 1
+}

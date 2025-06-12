@@ -1,0 +1,10 @@
+>properties
+length=3
+height=13
+width=3
+
+>blocks
+0,12,0,lucky:elewind_lucky_block,0,(Luck=-50)
+2,12,0,lucky:elewind_lucky_block,0,(Luck=-50)
+0,12,2,lucky:elewind_lucky_block,0,(Luck=-50)
+2,12,2,lucky:elewind_lucky_block,0,(Luck=-50)

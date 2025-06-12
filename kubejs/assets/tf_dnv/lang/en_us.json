@@ -1,0 +1,7 @@
+{
+  "entity.minecraft.villager.alchemy_trader": "Alchemist",
+  "entity.minecraft.villager.mycologist_trader": "Mycologist",
+  "entity.minecraft.villager.lumber_trader": "Lumberjack",
+  "entity.minecraft.villager.farmer_trader": "Farmer",
+  "entity.minecraft.villager.butcher_trader": "Hunter"
+}

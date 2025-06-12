@@ -1,0 +1,33 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/netherite"
+      },
+      "count": 20
+    },
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
+      },
+      "count": 30
+    },
+    {
+      "item": {
+        "item": "minecraft:nether_star"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "item": "quark:dragon_scale"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:moritz_mg_emg_prototype"
+  }
+}

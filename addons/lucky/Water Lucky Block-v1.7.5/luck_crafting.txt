@@ -1,0 +1,26 @@
+/ jewels
+yakurum:water_diamond=100
+yakurum:water_diamond_block=200
+yakurum:aquamarine=8
+yakurum:aquamarine_block=80
+yakurum:pearl=6
+yakurum:pearl_block=60
+yakurum:coral_crystal=3
+yakurum:crystal_gem=2
+yakurum:coral_crystal_gem=6
+yakurum:coral_gem_block=60
+yakurum:prismarine_gem=7
+yakurum:prismarine_gem_block=70
+
+/ lucky items
+golden_carrot=30
+golden_apple=40
+enchanted_golden_apple=100
+nether_star=100
+
+/ unlucky items
+rotten_flesh=-5
+spider_eye=-10
+fermented_spider_eye=-20
+poisonous_potato=-10
+pufferfish=-20

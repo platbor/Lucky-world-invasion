@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:blue_ice"
+    },
+    "L": {
+      "item": "lucky:lucky_block"
+    }
+  },
+  "pattern": ["III", "ILI", "III"],
+  "result": {
+    "item": "lucky:eleice_lucky_block"
+  }
+}

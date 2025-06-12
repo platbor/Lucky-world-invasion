@@ -1,0 +1,500 @@
+/ ========== TOOLS & ARMOR ==========
+
+
+/ all wood, stone and gold tools
+group(ID=wooden_sword;ID=wooden_shovel;ID=wooden_pickaxe;ID=wooden_axe;ID=wooden_hoe)@luck=0
+group(ID=stone_sword;ID=stone_shovel;ID=stone_pickaxe;ID=stone_axe;ID=stone_hoe)@luck=0
+group(ID=golden_sword;ID=golden_shovel;ID=golden_pickaxe;ID=golden_axe;ID=golden_hoe)@luck=1
+
+/ 2-3 iron tools
+group:#rand(2,3):(ID=iron_shovel;ID=iron_pickaxe;ID=iron_axe;ID=iron_sword;ID=iron_hoe)@luck=1
+
+/ 1-2 diamond tools
+group:#rand(1,2):(ID=diamond_sword;ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_hoe)@luck=2@chance=0.92
+
+/ 2-3 chain and iron armor
+group:#rand(2,3):(ID=chainmail_helmet;ID=chainmail_chestplate;ID=chainmail_leggings;ID=chainmail_boots)@luck=2
+group:#rand(2,3):(ID=iron_helmet;ID=iron_chestplate;ID=iron_leggings;ID=iron_boots;ID=iron_horse_armor)@luck=1
+
+/ 1-2 diamond armor
+group:#rand(1,2):(ID=diamond_helmet;ID=diamond_chestplate;ID=diamond_leggings;ID=diamond_boots;ID=diamond_horse_armor)@luck=2
+
+/ all horse armor
+group(ID=iron_horse_armor;ID=golden_horse_armor;ID=diamond_horse_armor)@luck=2
+
+/ all gold armor
+group(ID=golden_helmet;ID=golden_chestplate;ID=golden_leggings;ID=golden_boots;ID=golden_horse_armor)@luck=1
+
+/hammers
+group:#rand(1,2):(ID=golden_axe;ID=iron_axe;ID=netherite_axe)@luck=0
+
+/ice spirit armor
+group(ID=leather_helmet,NBTTag=(display=(color=5165823,Name=#jsonStr(text="$bIce Spirit Cap")),Enchantments=[(id=aqua_affinity,lvl=#randList(5,5,6,6,6,7,5,5,6,6,6,7,8))]);ID=leather_chestplate,NBTTag=(display=(color=5165823,Name=#jsonStr(text="$bIce Spirit Jacket")),Enchantments=[(id=projectile_protection,lvl=#randList(5,5,6,6,6,7,5,5,6,6,6,7,8))]);ID=leather_leggings,NBTTag=(display=(color=5165823,Name=#jsonStr(text="$bIce Spirit Pants")),Enchantments=[(id=projectile_protection,lvl=#randList(5,5,6,6,6,7,5,5,6,6,6,7,8))]);ID=leather_boots,NBTTag=(display=(color=5165823,Name=#jsonStr(text="$bIce Spirit Shoes")),Enchantments=[(id=frost_walker,lvl=#randList(5,5,6,6,6,7,5,5,6,6,6,7,8))]))@luck=1
+
+/ bow and arrows
+group(ID=bow;ID=arrow,amount=#rand(16,32))@luck=1
+
+
+/ ========== BLOCKS ==========
+
+/ice clusters
+type=block,ID=ice,amount=#rand(10,100),posOffset=#circleOffset(#rand(1,15))@luck=-1
+type=block,ID=packed_ice,amount=#rand(8,56),posOffset=#circleOffset(#rand(1,15))@luck=-2
+type=block,ID=blue_ice,amount=#rand(4,24),posOffset=#circleOffset(#rand(1,15))@luck=-2
+type=block,ID=blue_ice,amount=#rand(4,24),posOffset=#circleOffset(3)@luck=-2
+type=entity,ID=falling_block,amount=#rand(6,13),posOffset=#circleOffset(#rand(1,5)),NBTTag=(BlockState=(Name=blue_ice),Fuse=50b,Motion=#randLaunchMotion)@luck=-1
+type=entity,ID=falling_block,amount=#rand(12,25),posOffset=#circleOffset(#rand(1,5)),NBTTag=(BlockState=(Name=packed_ice),Fuse=50b,Motion=#randLaunchMotion)@luck=-2
+type=entity,ID=falling_block,amount=#rand(20,60),posOffset=#circleOffset(#rand(1,5)),NBTTag=(BlockState=(Name=ice),Fuse=50b,Motion=#randLaunchMotion)@luck=-2
+
+/ chests
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/igloo_chest"))@luck=0
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/village/village_snowy_house"))@luck=1
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/simple_dungeon"))@luck=1
+
+
+/ ========= ITEMS ==========
+
+/nuggets
+ID=iron_nugget,amount=#rand(20,64)@luck=-1
+
+/ingots
+ID=iron_ingot,amount=#rand(8,18)@luck=1
+ID=copper_ingot,amount=#rand(16,48)@luck=1
+
+/diamonds
+ID=amethyst_shard,amount=#rand(12,28)@luck=1
+ID=amethyst_shard,amount=#rand(32,96)@luck=2
+ID=diamond,amount=#rand(2,6)@luck=2
+ID=diamond,amount=#rand(6,13)@luck=2@chance=0.7
+ID=emerald,amount=#rand(3,10)@luck=1
+ID=emerald,amount=#rand(7,20)@luck=2
+ID=emerald,amount=#rand(12,50)@luck=2@chance=0.7
+
+/snowballs
+ID=snowball,amount=16@luck=-1
+ID=snowball,amount=64@luck=0
+ID=snowball,amount=#rand(56,140)
+
+/turtle master arrows
+ID=tipped_arrow,amount=#rand(3,10),NBTTag=(Potion="turtle_master")@luck=1@chance=0.9
+ID=tipped_arrow,amount=#rand(1,5),NBTTag=(Potion="strong_turtle_master")@luck=2@chance=0.8
+
+
+/slowness arrows
+ID=tipped_arrow,amount=#rand(6,18),NBTTag=(Potion="slowness")@luck=0
+
+/slowness potions
+ID=splash_potion,amount=#rand(1,2),NBTTag=(Potion="slowness")@luck=1
+ID=splash_potion,amount=#rand(1,2),NBTTag=(Potion="strong_slowness")@luck=2
+
+/slowfalling potions
+ID=potion,amount=#rand(1,2),NBTTag=(Potion="slow_falling")@luck=2
+
+/ ========== GROUPS ==========
+
+/all candle variants
+ID=#randColor_candle,amount=#rand(32,64)@luck=1
+
+/fossils
+group(ID=bone,amount=#rand(6,15);ID=bone_meal,amount=#rand(15,40);ID=bone_block,amount=#rand(1,2);ID=skeleton_skull,amount=#rand(0,1))@luck=0
+
+/redstone
+group(ID=dispenser,amount=2;ID=note_block,amount=1;ID=sticky_piston,amount=4;ID=piston,amount=4;ID=tnt,amount=6;ID=lever,amount=2;ID=stone_pressure_plate,amount=2;ID=oak_pressure_plate,amount=2;ID=redstone_torch,amount=8;ID=stone_button,amount=2;ID=oak_trapdoor,amount=2;ID=iron_trapdoor,amount=2;ID=oak_fence_gate,amount=1;ID=redstone_lamp,amount=4;ID=tripwire_hook,amount=2;ID=oak_button,amount=2;ID=light_weighted_pressure_plate,amount=1;ID=heavy_weighted_pressure_plate,amount=1;ID=daylight_detector,amount=1;ID=hopper,amount=4;ID=dropper,amount=#rand(2,4);ID=oak_door,amount=1;ID=iron_door,amount=1;ID=redstone,amount=#rand(32,64);ID=repeater,amount=8;ID=comparator,amount=2;type=particle,ID=splashpotion,potion="healing")@luck=2
+
+/ices
+group(ID=ice,amount=#rand(32,64);ID=packed_ice,amount=#rand(16,32);ID=blue_ice,amount=#rand(8,16))@luck=0
+
+/bright stones
+group(ID=diorite,amount=#rand(32,64);ID=calcite,amount=#rand(16,45);ID=tuff,amount=#rand(8,20))@luck=0
+
+/amethysts
+group(ID=amethyst,amount=#rand(4,8);ID=budding_amethyst,amount=#rand(1,4);ID=amethyst_shard,amount=#rand(8,24);ID=amethyst_cluster,amount=#rand(3,9))@luck=1
+
+/lrg
+group(ID=lapis_block;ID=redstone_block;ID=gold_block)@luck=1
+
+/bows and slowness arrows
+group(ID=bow;ID=tipped_arrow,amount=#rand(8,24),NBTTag=(Potion="slowness"))@luck=1
+
+
+/ ========== ENTITIES ==========
+
+/polar bears
+type=entity,ID=polar_bear,amount=8,posOffset=#circleOffset(4)@luck=0
+type=entity,ID=polar_bear,amount=25,posOffset=#circleOffset(4)@luck=2@chance=0.5
+
+/llamas
+type=entity,ID=llama,amount=8,posOffset=#circleOffset(4)@luck=0
+type=entity,ID=llama,amount=25,posOffset=#circleOffset(4)@luck=2@chance=0.5
+
+/snow golems
+type=entity,ID=snow_golem,amount=8,posOffset=#circleOffset(4)@luck=0
+type=entity,ID=snow_golem,amount=25,posOffset=#circleOffset(4)@luck=2@chance=0.5
+
+/ravager
+group(type=difficulty,ID=hard;type=entity,ID=ravager,amount=#rand(1,4),NBTTag=(
+    HandItems=[(id=iron_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=iron_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=iron_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=iron_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=iron_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.05f,0f],ArmorDropChances=[0.03f,0.03f,0.03f,0.03f],
+    CustomName=#jsonStr(text="Revengers",color=aqua,bold=true),CustomNameVisible=true)
+)@luck=-1
+
+/ice atronach
+group(type=difficulty,ID=hard;type=entity,ID=skeleton,amount=#rand(2,5),NBTTag=(
+    HandItems=[(id=lucky:eleice_lucky_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=chainmail_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=chainmail_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=chainmail_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=chainmail_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.05f,0f],ArmorDropChances=[0.03f,0.03f,0.03f,0.03f],
+    CustomName=#jsonStr(text="Ice Atronach",color=aqua,bold=true),CustomNameVisible=true)
+)@luck=-1
+
+/ice warriors
+group(type=difficulty,ID=hard;type=entity,ID=wither_skeleton,amount=#rand(1,4),NBTTag=(
+    HandItems=[(id=diamond_axe,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=diamond_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=diamond_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.05f,0f],ArmorDropChances=[0.03f,0.03f,0.03f,0.03f],
+    CustomName=#jsonStr(text="Ice Warrior",color=aqua,bold=true),CustomNameVisible=true)
+)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=wither_skeleton,amount=#rand(3,10),NBTTag=(
+    HandItems=[(id=diamond_axe,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=diamond_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=diamond_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.05f,0f],ArmorDropChances=[0.03f,0.03f,0.03f,0.03f],
+    CustomName=#jsonStr(text="Ice Warrior",color=aqua,bold=true),CustomNameVisible=true)
+)@luck=-2@chance=0.8
+
+/ice commanders
+group(type=difficulty,ID=hard;type=entity,ID=skeleton,amount=#rand(1,6),NBTTag=(
+    HandItems=[(id=shield,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=iron_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=iron_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=iron_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=iron_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.05f,0f],ArmorDropChances=[0.03f,0.03f,0.03f,0.03f],
+    CustomName=#jsonStr(text="Ice Commander",color=aqua,bold=true),CustomNameVisible=true)
+)@luck=-2
+
+/ice soldier
+group(type=difficulty,ID=hard;type=entity,ID=skeleton,amount=#rand(1,4),NBTTag=(
+    HandItems=[(id=iron_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=iron_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=iron_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=iron_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=iron_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.05f,0f],ArmorDropChances=[0.03f,0.03f,0.03f,0.03f],
+    CustomName=#jsonStr(text="Ice Soldier",color=aqua,bold=true),CustomNameVisible=true)
+)@luck=-2
+
+/stray skeletons
+type=entity,ID=stray,amount=8,posOffset=#circleOffset(4)@luck=-1
+type=entity,ID=stray,amount=16,posOffset=#circleOffset(4)@luck=-2
+
+
+/ rayzer the stray
+group(type=difficulty,ID=hard;type=entity,ID=stray,NBTTag=(
+    HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckyBowEnchantments))],
+    ArmorItems=[(id=diamond_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=diamond_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],
+    CustomName=#jsonStr(text="Rayzer",color=blue,bold=true),CustomNameVisible=true)
+)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=stray,amount=#rand(1,8),NBTTag=(
+    HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckyBowEnchantments))],
+    ArmorItems=[(id=diamond_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=diamond_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],
+    CustomName=#jsonStr(text="Rayzer",color=blue,bold=true),CustomNameVisible=true)
+)@luck=-2
+
+/ ghostly horseman stray
+group(type=difficulty,ID=hard;type=entity,ID=bat,NBTTag=(
+    Silent=true,
+    ActiveEffects=[(Id=14,Duration=100000,Amplifier=1,ShowParticles=false)],
+    Passengers=[(id=skeleton_horse,Tame=true,Type=4,
+        Passengers=[(id=stray,
+            HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckyBowEnchantments))],
+            ArmorItems=[(id=chainmail_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=chainmail_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=chainmail_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=chainmail_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+            HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],
+            CustomName=#jsonStr(text="Ghostly Horseman",color=gray,bold=true),CustomNameVisible=true)
+        ])
+    ])
+)@luck=-2
+
+/ frosty villagers
+
+type=entity,ID=villager,NBTTag=(
+    VillagerData=(level=3,profession=weaponsmith,type=snow),
+    Offers=(Recipes=[
+        (buy=(id=diamond,Count=#rand(20,25)),sell=(id=lucky:eleice_lucky_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Ice Coffin",color=cyan,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(20,25)),sell=(id=lucky:eleice_lucky_bow,Count=1,tag=(Enchantments=#luckyBowEnchantments,display=(Name=#jsonStr(text="Frost Blaster",color=cyan,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(10,15)),sell=(id=fishing_rod,Count=1,tag=(Enchantments=#luckyFishingRodEnchantments,display=(Name=#jsonStr(text="Hero's Fishing Rod",color=cyan,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(20,40)),sell=(id=potion,Count=1,tag=(Potion="fire_resistance",CustomPotionEffects=#luckyPotionEffects,display=(Name=#jsonStr(text="NIce Potion",color=cyan,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(20,40)),sell=(id=splash_potion,Count=1,tag=(Potion="harming",CustomPotionEffects=#unluckyPotionEffects,display=(Name=#jsonStr(text="Evil Potion",color=cyan,bold=true)))),maxUses=1)
+    ]),
+    CustomName=#jsonStr(text="Frosty",color=cyan,bold=true),CustomNameVisible=true
+)@luck=1
+
+
+
+type=entity,ID=villager,NBTTag=(
+    VillagerData=(level=3,profession=armorer,type=snow),
+    Offers=(Recipes=[
+        (buy=(id=diamond,Count=#rand(12,17)),sell=(id=diamond_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments,display=(Name=#jsonStr(text="Ice Armor's Helmet",color=cyan,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(20,25)),sell=(id=diamond_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments,display=(Name=#jsonStr(text="Ice Armor's Chestplate",color=cyan,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(15,20)),sell=(id=diamond_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments,display=(Name=#jsonStr(text="Ice Armor's Leggings",color=cyan,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(12,17)),sell=(id=diamond_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments,display=(Name=#jsonStr(text="Ice Armor's Boots",color=cyan,bold=true)))),maxUses=1)
+    ]),
+    CustomName=#jsonStr(text="Frosty",color=cyan,bold=true),CustomNameVisible=true
+)@luck=1
+
+type=entity,ID=villager,NBTTag=(
+    VillagerData=(level=3,profession=toolsmith,type=snow),
+    Offers=(Recipes=[
+        (buy=(id=diamond,Count=#rand(10,15)),sell=(id=diamond_shovel,Count=1,tag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Frosted Shovel",color=cyan,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(15,20)),sell=(id=diamond_pickaxe,Count=1,tag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Frosted Pickaxe",color=cyan,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(15,20)),sell=(id=diamond_axe,Count=1,tag=(Enchantments=#luckyAxeEnchantments,display=(Name=#jsonStr(text="Frosted Axe",color=cyan,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(10,15)),sell=(id=diamond_hoe,Count=1,tag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Frosted Hoe",color=cyan,bold=true)))),maxUses=1)
+    ]),
+    CustomName=#jsonStr(text="Frosty",color=cyan,bold=true),CustomNameVisible=true
+)@luck=1
+
+
+/ ========== STRUCTURES ==========
+
+/snow overlay
+group(type=command,ID="/fill ~15 ~15 ~15 ~-15 ~-15 ~-15 snow replace air";type=message,ID="$f$lReady to snow!")@luck=0
+
+/amethyst geode
+type=structure,ID=eleice_amethystgeode@luck=0
+
+/ice box trap
+type=structure,ID=eleice_icebox@luck=-2
+
+/ice spikes
+type=structure,ID=eleice_icespikecone@luck=0
+type=structure,ID=eleice_icespiketower@luck=0
+
+/powdered snow trap
+type=structure,ID=eleice_powdersnowtrap@luck=-1
+
+/frost glasspane
+type=structure,ID=eleice_frostpane@luck=0
+
+/iceloger rain
+type=entity,ID=falling_block,amount=#rand(15,80),posOffset=#circleOffset(#rand(1,16)),posY=#bPosY+#rand(20,40),NBTTag=(BlockState=(Name=packed_ice),Fuse=50b,Motion=#randLaunchMotion)@luck=-2
+
+/igloo
+type=structure,ID=eleice_igloo@luck=0
+
+/double igloo
+type=structure,ID=eleice_igloohome@luck=1
+
+/ice station
+type=structure,ID=eleice_icestation#rand(1,20)@luck=2
+
+/ice dungeon
+group(type=structure,ID=eleice_icedungeon#rand(1,16),pos=#pPos;type=entity,ID=stray,amount=#rand(3,8),posOffset=#circleOffset(#rand(2,6)))@luck=-1
+
+/freeze
+type=command,ID="/fill ~3 ~3 ~3 ~-3 ~-3 ~-3 ice keep"@luck=-1@chance=0.9
+
+
+/aurora borealis
+group(type=fill,ID=air,size=(1,51,1);
+    group(
+        NBTTag=(BlockState=(Name=dark_prismarine)),posY=#bPosY+5;
+        NBTTag=(BlockState=(Name=oxidized_copper)),posY=#bPosY+10;
+        NBTTag=(BlockState=(Name=raw_gold_block)),posY=#bPosY+15;
+        NBTTag=(BlockState=(Name=redstone_block)),posY=#bPosY+20;
+        NBTTag=(BlockState=(Name=stripped_crimson_hyphae)),posY=#bPosY+25;
+        NBTTag=(BlockState=(Name=purpur_block)),posY=#bPosY+30;
+        NBTTag=(BlockState=(Name=amethyst_block)),posY=#bPosY+35;
+        NBTTag=(BlockState=(Name=lapis_block)),posY=#bPosY+40;
+        NBTTag=(BlockState=(Name=crying_obsidian)),posY=#bPosY+45
+    ),type=entity,ID=falling_block;
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=diamond_block)),posY=#bPosY+50;
+    type=entity,ID=lightning_bolt,posY=#bPosY+10,delay=5.3
+)@luck=2
+
+
+/snowman
+group(type=fill,ID=air,size=(1,51,1);
+    group(
+        NBTTag=(BlockState=(Name=snow_block)),posY=#bPosY+5;
+        NBTTag=(BlockState=(Name=snow_block)),posY=#bPosY+10;
+        NBTTag=(BlockState=(Name=snow_block)),posY=#bPosY+15;
+        NBTTag=(BlockState=(Name=snow_block)),posY=#bPosY+20;
+        NBTTag=(BlockState=(Name=snow_block)),posY=#bPosY+25;
+        NBTTag=(BlockState=(Name=snow_block)),posY=#bPosY+30;
+        NBTTag=(BlockState=(Name=snow_block)),posY=#bPosY+35;
+        NBTTag=(BlockState=(Name=snow_block)),posY=#bPosY+40;
+        NBTTag=(BlockState=(Name=snow_block)),posY=#bPosY+45
+    ),type=entity,ID=falling_block;
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=carved_pumpkin)),posY=#bPosY+50
+)@luck=-1
+
+/falling blocks 
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=redstone_block));type=particle,ID=large_smoke,size=(1,2,1),particleAmount=500;type=sound,ID=block.fire.extinguish)@luck=0
+
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=gold_block));type=particle,ID=flame,size=(1,2,1),particleAmount=500;type=sound,ID=entity.ghast.shoot)@luck=0
+
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=lapis_block));type=particle,ID=splash,size=(1,2,1),particleAmount=1000;type=sound,ID=entity.player.swim)@luck=0
+
+
+/ wishing wells
+group(
+    type=structure,ID=eleice_wellice;type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$bYour ice wish came true!\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=block,ID=beacon,posY='#'bPosY+2;
+        type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag='#'randFireworksRocket)),amount=5,posY='#'bPosY+3,posOffset='#'circleOffset(2);
+        ID=gold_ingot,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=diamond,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=emerald,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=lapis_lazuli,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2)
+    )"])
+)@luck=2@chance=0.8
+
+/ wishing wells
+group(
+    type=structure,ID=eleice_wellice;type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$eYour materials wish came true!\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=block,ID=beacon,posY='#'bPosY+2;
+        type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag='#'randFireworksRocket)),amount=5,posY='#'bPosY+3,posOffset='#'circleOffset(2);
+        ID=diamond,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=prismarine_crystals,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=emerald,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=amethyst_shard,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2)
+    )"])
+)@luck=2
+
+group(
+    type=structure,ID=eleice_wellice;type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$bYour wish came true! (If you like ice)\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=block,ID=beacon,posY='#'bPosY+2;
+        ID=ice,amount=#rand(48,64),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=packed_ice,amount=#rand(24,40),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=blue_ice,amount=#rand(15,25),posY='#'bPosY+10,posOffset='#'circleOffset(2)
+    )"])
+)@luck=1
+
+group(
+    type=structure,ID=eleice_wellice;type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$fYour wish came true! (If you like snow)\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=block,ID=beacon,posY='#'bPosY+2;
+        ID=snow,amount=#rand(18,32),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=lucky:eleice_lucky_potion,amount=#rand(12,24),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=snow_block,amount=#rand(8,15),posY='#'bPosY+10,posOffset='#'circleOffset(2)
+    )"])
+)@luck=1
+
+group(
+    type=structure,ID=eleice_wellice;
+    type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$fYour polar wish came true!\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=block,ID=beacon,posY='#'bPosY+2;
+        type=entity,ID=polar_bear,posOffset='#'circleOffset(#rand(1,5)),amount=#rand(4,8)
+	    type=entity,ID=snow_golem,posOffset='#'circleOffset(#rand(1,5)),amount=#rand(6,14)
+    )"])
+)@luck=0
+
+group(
+    type=structure,ID=eleice_wellice;
+    type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$4Your death wish came true!\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=block,ID=beacon,posY='#'bPosY+2;
+        type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=20
+    )"])
+)@luck=-2
+
+
+/ ========== ENCHANTED + LUCKY ITEMS ==========
+
+
+/ ice atronach's armor
+group:#rand(1,3):(
+    ID=chainmail_helmet,NBTTag=(Enchantments=#luckyHelmetEnchantments,display=(Name=#jsonStr(text="Ice Atronach's Helmet",color=cyan,bold=true)));
+    ID=chainmail_chestplate,NBTTag=(Enchantments=#luckyChestplateEnchantments,display=(Name=#jsonStr(text="Ice Atronach's Chestplate",color=cyan,bold=true)));
+    ID=chainmail_leggings,NBTTag=(Enchantments=#luckyLeggingsEnchantments,display=(Name=#jsonStr(text="Ice Atronach's Leggings",color=cyan,bold=true)));
+    ID=chainmail_boots,NBTTag=(Enchantments=#luckyBootsEnchantments,display=(Name=#jsonStr(text="Ice Atronach's Boots",color=cyan,bold=true)))
+)@luck=0
+
+/ ice armor's armor
+group:#rand(1,2):(
+    ID=diamond_helmet,NBTTag=(Enchantments=#luckyHelmetEnchantments,display=(Name=#jsonStr(text="Ice Armor's Helmet",color=cyan,bold=true)));
+    ID=diamond_chestplate,NBTTag=(Enchantments=#luckyChestplateEnchantments,display=(Name=#jsonStr(text="Ice Armor's Chestplate",color=cyan,bold=true)));
+    ID=diamond_leggings,NBTTag=(Enchantments=#luckyLeggingsEnchantments,display=(Name=#jsonStr(text="Ice Armor's Leggings",color=cyan,bold=true)));
+    ID=diamond_boots,NBTTag=(Enchantments=#luckyBootsEnchantments,display=(Name=#jsonStr(text="Ice Armor's Boots",color=cyan,bold=true)))
+)@luck=2
+
+/ ice warrior's axe
+ID=diamond_axe,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Ice Warrior's Axe",color=cyan,bold=true)))@luck=2
+
+/ ice saber's sword
+ID=diamond_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Ice Saber",color=cyan,bold=true)))@luck=2
+
+/ ice commander's shield
+ID=shield,NBTTag=(Enchantments=#luckyChestplateEnchantments,display=(Name=#jsonStr(text="Ice Commander's Shield",color=cyan,bold=true)))@luck=2
+
+/ ice coffin
+ID=lucky:eleice_lucky_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Ice Coffin",color=cyan,bold=true)))@luck=2
+
+/ ice soldier's armor
+group:#rand(1,2):(
+    ID=iron_helmet,NBTTag=(Enchantments=#luckyHelmetEnchantments,display=(Name=#jsonStr(text="Ice Soldier's Helmet",color=cyan,bold=true)));
+    ID=iron_chestplate,NBTTag=(Enchantments=#luckyChestplateEnchantments,display=(Name=#jsonStr(text="Ice Soldier's Chestplate",color=cyan,bold=true)));
+    ID=iron_leggings,NBTTag=(Enchantments=#luckyLeggingsEnchantments,display=(Name=#jsonStr(text="Ice Soldier's Leggings",color=cyan,bold=true)));
+    ID=iron_boots,NBTTag=(Enchantments=#luckyBootsEnchantments,display=(Name=#jsonStr(text="Ice Soldier's Boots",color=cyan,bold=true)))
+)@luck=1
+
+/ fridge
+ID=light_blue_shulker_box,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="#pName's Portable Freezer",color=cyan,bold=true)))@luck=2
+
+/ leather boots
+ID=leather_boots,NBTTag=(Enchantments=#luckyBootsEnchantments,display=(Name=#jsonStr(text="Leather Boots",color=cyan,bold=true),Lore=[#jsonStr(text="Perfect for snow biomes")] ))@luck=2
+
+/ frost blaster
+group(ID=arrow,amount=#rand(6,15);ID=lucky:eleice_lucky_bow,NBTTag=(Enchantments=#luckyBowEnchantments,display=(Name=#jsonStr(text="Frost Blaster",color=cyan,bold=true))))@luck=2
+
+/ frosted tools
+group:#rand(1,2):(
+    ID=diamond_shovel,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Frosted Shovel",color=cyan,bold=true)));
+    ID=diamond_pickaxe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Frosted Pickaxe",color=cyan,bold=true)));
+    ID=diamond_axe,NBTTag=(Enchantments=#luckyAxeEnchantments,display=(Name=#jsonStr(text="Frosted Axe",color=cyan,bold=true)));
+    ID=diamond_hoe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Frosted Hoe",color=cyan,bold=true)));
+    ID=spyglass,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="New View",color=cyan,bold=true)))
+)@luck=2
+
+
+/ lucky items
+type=item,ID=lucky:eleice_lucky_sword@chance=1.5@luck=2
+type=item,ID=lucky:eleice_lucky_bow@chance=1.5@luck=2
+type=item,ID=lucky:eleice_lucky_potion,NBTTag=(Luck=#randList(100,-100)),amount=#rand(10,15)@chance=1.5@luck=2
+
+group(
+    type=item,ID=lucky:eleice_lucky_sword;
+    type=item,ID=lucky:eleice_lucky_bow;
+    type=item,ID=lucky:eleice_lucky_potion,NBTTag=(Luck=#randList(100,-100)),amount=#rand(10,15);
+    type=entity,ID=firework_rocket,NBTTag=(
+        LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag=#randFireworksRocket)
+    ),amount=5,posOffset=#circleOffset(0,2)
+)@luck=2
+
+
+
+
+
+
+
+
+
+
+
+

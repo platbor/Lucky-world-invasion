@@ -1,0 +1,11 @@
+minecraft:overworld
+minecraft:the_end
+voidscape:void
+shadowlands:shadow_forest
+shadowlands:vellium
+shadowlands:blood_forest
+shadowlands:glowshroom_forest
+super_block_world:mushroom_kingdom
+twilightforest:twilight_forest
+minecraft:the_nether
+rats:ratlantis

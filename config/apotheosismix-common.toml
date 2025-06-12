@@ -1,0 +1,97 @@
+#remove enchanted golden apple recipe. Changes require a restart of Minecraft.
+removeEnchantedGoldenRecipe = false
+#Disable Lucky Foot Drops. Changes require a restart of Minecraft.
+disableLuckyFootDrops = false
+
+[potions]
+
+	[potions.resistance]
+		#an ingredient of the Potion of Resistance. Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:shulker_shell"
+		#a base potion of the Potion of Resistance. Changes require a restart of Minecraft.
+		base = "minecraft:awkward"
+
+	[potions.sundering]
+		#an ingredient of the Potion of Sundering. Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:fermented_spider_eye"
+		#a base potion of the Potion of Sundering. Changes require a restart of Minecraft.
+		base = "apotheosis:resistance"
+
+	[potions.absorption]
+		#an ingredient of the Potion of Absorption. Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:golden_apple"
+		#a base potion of the Potion of Absorption. Changes require a restart of Minecraft.
+		base = "minecraft:awkward"
+
+	[potions.haste]
+		#an ingredient of the Potion of Haste. Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:mushroom_stew"
+		#a base potion of the Potion of Haste. Changes require a restart of Minecraft.
+		base = "minecraft:awkward"
+
+	[potions.fatigue]
+		#an ingredient of the Potion of Mining Fatigue. Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:fermented_spider_eye"
+		#a base potion of the Potion of Mining Fatigue. Changes require a restart of Minecraft.
+		base = "apotheosis:haste"
+
+	[potions.wither]
+		#an ingredient of the Potion of Wither. Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:wither_skeleton_skull"
+		#a base potion of the Potion of Wither. Changes require a restart of Minecraft.
+		base = "minecraft:awkward"
+
+	[potions.knowledge]
+		#an ingredient of the Potion of Ancient Knowledge. Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:experience_bottle"
+		#a base potion of the Potion of Ancient Knowledge. Changes require a restart of Minecraft.
+		base = "minecraft:awkward"
+
+	[potions.knowledgeII]
+		#an ingredient of the Potion of Ancient Knowledge (II). Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:experience_bottle"
+		#a base potion of the Potion of Ancient Knowledge (II). Changes require a restart of Minecraft.
+		base = "apotheosis:knowledge"
+
+	[potions.luck]
+		#an ingredient of the Potion of Luck. Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "apotheosis:lucky_foot"
+		#a base potion of the Potion of Luck. Changes require a restart of Minecraft.
+		base = "minecraft:awkward"
+
+	[potions.vitality]
+		#an ingredient of the Potion of Healing Boost. Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:sweet_berries"
+		#a base potion of the Potion of Healing Boost. Changes require a restart of Minecraft.
+		base = "minecraft:awkward"
+
+	[potions.grievous]
+		#an ingredient of the Potion of Healing Reduction. Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:fermented_spider_eye"
+		#a base potion of the Potion of Healing Reduction. Changes require a restart of Minecraft.
+		base = "apotheosis:vitality"
+
+	[potions.levitation]
+		#an ingredient of the Potion of Levitation. Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:fermented_spider_eye"
+		#a base potion of the Potion of Levitation. Changes require a restart of Minecraft.
+		base = "minecraft:slow_falling"
+
+	[potions.flying]
+		#an ingredient of the Potion of Flying. Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:popped_chorus_fruit"
+		#a base potion of the Potion of Flying. Changes require a restart of Minecraft.
+		base = "apotheosis:levitation"
+
+	[potions.flyingLong]
+		#an ingredient of the Potion of Flying (Long). Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:redstone"
+		#a base potion of the Potion of Flying (Long). Changes require a restart of Minecraft.
+		base = "apotheosis:flying"
+
+	[potions.flyingLongExtra]
+		#an ingredient of the Potion of Flying (Extra Long). Set it to 'null' to remove the recipe. Changes require a restart of Minecraft.
+		ingredient = "minecraft:redstone"
+		#a base potion of the Potion of Flying (Extra Long). Changes require a restart of Minecraft.
+		base = "apotheosis:long_flying"
+

@@ -1,0 +1,10 @@
+#Enables the Lucky Temple structure spawn in the overworld
+luckyTemples = true
+#Whether breaking a Lucky Block in creative mode should activate its effect
+creativeDestroy = false
+#A list of loot tables to add Lucky Blocks to
+loot_tables = ["minecraft:chests/end_city_treasure", "minecraft:chests/ancient_city", "minecraft:chests/desert_pyramid", "minecraft:chests/jungle_temple", "minecraft:chests/bastion_treasure", "minecraft:gameplay/fishing/treasure"]
+#The weight of Lucky Blocks in the loot tables specified above (higher weight = more likely to generate)
+#Range: > 0
+lootTableWeight = 3
+

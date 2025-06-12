@@ -1,0 +1,32 @@
+{
+    {
+      "item": {
+        "item": "minecraft:trident"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "item": "minecraft:activator_rail"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "item": "minecraft:detector_rail"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "item": "minecraft:golden_rail"
+      },
+      "count": 16
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "arip:tacit"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

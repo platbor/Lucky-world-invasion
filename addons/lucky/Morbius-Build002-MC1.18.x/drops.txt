@@ -1,0 +1,658 @@
+/ ========== TOOLS & ARMOR ==========
+
+/ all wood, stone and gold tools
+group(ID=wooden_sword;ID=wooden_shovel;ID=wooden_pickaxe;ID=wooden_axe;ID=wooden_hoe)@luck=0
+group(ID=stone_sword;ID=stone_shovel;ID=stone_pickaxe;ID=stone_axe;ID=stone_hoe)@luck=0
+group(ID=golden_sword;ID=golden_shovel;ID=golden_pickaxe;ID=golden_axe;ID=golden_hoe)@luck=1
+/ 2-3 iron tools
+group:#rand(2,3):(ID=iron_shovel;ID=iron_pickaxe;ID=iron_axe;ID=iron_sword;ID=iron_hoe)@luck=1@chance=0.75
+/ 1-2 diamond tools
+group:#rand(1,2):(ID=diamond_sword;ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_hoe)@luck=2@chance=0.5
+/ all leather and gold armor
+group(ID=leather_helmet;ID=leather_chestplate;ID=leather_leggings;ID=leather_boots)@luck=0
+group(ID=golden_helmet;ID=golden_chestplate;ID=golden_leggings;ID=golden_boots;ID=golden_horse_armor)@luck=1
+/ 2-3 chain and iron armor
+group:#rand(2,3):(ID=chainmail_helmet;ID=chainmail_chestplate;ID=chainmail_leggings;ID=chainmail_boots)@luck=2
+group:#rand(2,3):(ID=iron_helmet;ID=iron_chestplate;ID=iron_leggings;ID=iron_boots;ID=iron_horse_armor)@luck=1@chance=0.75
+/ 1-2 diamond armor
+group:#rand(1,2):(ID=diamond_helmet;ID=diamond_chestplate;ID=diamond_leggings;ID=diamond_boots;ID=diamond_horse_armor)@luck=2@chance=0.5
+/ all horse armor
+group(ID=iron_horse_armor;ID=golden_horse_armor;ID=diamond_horse_armor)@luck=2
+/ bow and arrows
+group(ID=bow;ID=arrow,amount=#rand(16,32))@luck=1
+
+/ ========== BLOCKS ==========
+
+/blackstone
+group(
+    ID=blackstone_slab,amount=#rand(4,8);
+    ID=polished_blackstone_slab,amount=#rand(4,8);
+	ID=polished_blackstone_brick_slab,amount=#rand(4,8);
+	ID=blackstone_slab,amount=#rand(4,8);
+    ID=basalt,amount=#rand(16,32);
+    ID=gilded_blackstone,amount=#rand(4,8);
+	ID=polished_blackstone,amount=#rand(4,8);
+    ID=polished_blackstone_bricks,amount=#rand(4,8);
+    ID=chiseled_polished_blackstone,amount=#rand(4,8);
+	ID=cracked_polished_blackstone_bricks,amount=#rand(4,8);
+    ID=blackstone_stairs,amount=#rand(4,8);
+	ID=polished_blackstone_stairs,amount=#rand(4,8);
+	ID=polished_blackstone_brick_stairs,amount=#rand(4,8);
+	ID=blackstone,amount=#rand(24,32);
+    type=particle,ID=splashpotion,potion="weakness"
+)@luck=1
+
+/morbed stone
+group(
+ID=infested_stone,amount=#rand(6,12),NBTTag=(display=(Name=#jsonStr(text="$7Morbed Stone")));
+ID=infested_cobblestone,amount=#rand(8,16),NBTTag=(display=(Name=#jsonStr(text="$7Morbed Cobblestone")));
+ID=infested_stone_bricks,amount=#rand(5,10),NBTTag=(display=(Name=#jsonStr(text="$7Morbed Stone Bricks")));
+ID=infested_mossy_stone_bricks,amount=#rand(4,8),NBTTag=(display=(Name=#jsonStr(text="$7Morbed Mossy Stone Bricks")));
+ID=infested_cracked_stone_bricks,amount=#rand(4,8),NBTTag=(display=(Name=#jsonStr(text="$7Morbed Cracked Stone Bricks")));
+ID=infested_chiseled_stone_bricks,amount=#rand(3,6),NBTTag=(display=(Name=#jsonStr(text="$7Morbed Chiseled Stone Bricks")))
+)@luck=0
+
+/cat spawner
+type=structure,ID=morbius_catspawner@luck=0
+
+/iron vents
+ID=iron_trapdoor,amount=#randList(2,4),NBTTag=(display=(Name=#jsonStr(text="$fVent")))@luck=-1
+
+/wooden stakes
+group(
+ID=oak_wood,amount=#rand(5,12);
+ID=spruce_wood,amount=#rand(5,12);
+ID=birch_wood,amount=#rand(5,12);
+ID=jungle_wood,amount=#rand(5,12);
+ID=acacia_wood,amount=#rand(5,12);
+ID=dark_oak_wood,amount=#rand(5,12)
+)@luck=0
+
+/duplication
+ID=lucky:morbius_lucky_block,amount=#rand(2,4)@luck=2
+
+/droppers
+group(ID=dispenser,amount=#rand(12,20);ID=dropper,amount=#rand(8,16);ID=observer,amount=#rand(6,12))@luck=0
+
+/default lootchests
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/spawn_bonus_chest"))@luck=0@chance=0.9
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/ruined_portal"))@luck=1@chance=0.9
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/simple_dungeon"))@luck=1@chance=0.9
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/desert_pyramid"))@luck=1@chance=0.9
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/jungle_temple"))@luck=1@chance=0.9
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/stronghold_corridor"))@luck=1@chance=0.9
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/shipwreck_map"))@luck=1@chance=0.9
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/woodland_mansion"))@luck=2@chance=0.9
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/bastion_treasure"))@luck=2@chance=0.69
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/end_city_treasure"))@luck=2@chance=0.56
+
+/morbius lootchests
+type=structure,ID=morbius_chest#rand(1,12)@luck=1@chance=1.5
+
+/rare golden loot chest
+type=structure,ID=morbius_chestgolden@luck=2@chance=0.015
+
+/ ========= ITEMS ==========
+
+/syntetic blood potion
+ID=potion,NBTTag=(Potion="minecraft:water",display=(Name=#jsonStr(text="$cSynthetic Blood Potion")),CustomPotionEffects=[(Id=5,Amplifier=#rand(0,2),Duration=#rand(750,1750)),(Id=1,Amplifier=#rand(0,2),Duration=#rand(750,1750)),(Id=24,Amplifier=#rand(0,2),Duration=#rand(750,1250)),(Id=28,Amplifier=#rand(0,2),Duration=#rand(750,1750)),(Id=16,Amplifier=#rand(0,2),Duration=#rand(1250,1750)),(Id=10,Amplifier=#rand(1,2),Duration=#rand(100,250))])@luck=2@chance=0.8
+
+/spyglass
+ID=spyglass,NBTTag=(Enchantments=[(id=mending,lvl=5)])@luck=1
+
+/milk buckets (cure)
+ID=milk_bucket,amount=#rand(1,2),NBTTag=(display=(Name=#jsonStr(text="$fCure")))@luck=1
+
+/morbin
+group(
+ID=ender_eye,amount=#rand(4,8),NBTTag=(display=(Name=#jsonStr(text="$5Morbin Eye")));
+ID=ender_pearl,amount=#rand(2,4),NBTTag=(display=(Name=#jsonStr(text="$5Morbin Pearl")))
+)@luck=2
+
+/1-2 complete random potions
+ID=splash_potion,amount=#rand(1,2),NBTTag=(Potion="minecraft:water",display=(Name=#jsonStr(text="$5Random Potion")),CustomPotionEffects=[(Id=#rand(1,32),Amplifier=0,Duration=100),(Id=#rand(1,32),Amplifier=0,Duration=100)])@luck=0
+
+/the blender
+ID=splash_potion,amount=#randList(1,1,2),NBTTag=(Potion="minecraft:water",display=(Name=#jsonStr(text="$8The $7Blender")),CustomPotionEffects=[(Id=15,Amplifier=0,Duration=200)])@luck=1@chance=0.9
+
+/antiblood
+ID=splash_potion,amount=#randList(1,1,2),NBTTag=(Potion="minecraft:water",display=(Name=#jsonStr(text="$7Anti-$cBlood")),CustomPotionEffects=[(Id=18,Amplifier=0,Duration=300)])@luck=1@chance=0.9
+
+/lizard poison
+ID=splash_potion,amount=#randList(1,1,2),NBTTag=(Potion="minecraft:water",display=(Name=#jsonStr(text="$2Lizard's Poison")),CustomPotionEffects=[(Id=19,Amplifier=0,Duration=300)])@luck=1@chance=0.9
+
+/mutated lizard poison
+ID=splash_potion,NBTTag=(Potion="minecraft:water",display=(Name=#jsonStr(text="$2$lMutated Lizard's Poison")),CustomPotionEffects=[(Id=19,Amplifier=1,Duration=180)])@luck=2@chance=0.69
+
+/lilin (nausea)
+ID=splash_potion,amount=#randList(1,1,2),NBTTag=(Potion="minecraft:water",display=(Name=#jsonStr(text="$3Lilin")),CustomPotionEffects=[(Id=9,Amplifier=2,Duration=250)])@luck=1@chance=0.9
+
+/water bottles + cauldron
+group(type=block,ID=cauldron;ID=potion,NBTTag=(Potion="minecraft:water"),amount=#rand(3,8))@luck=0
+
+/boat
+ID=boat,amount=4@luck=-2
+
+/redstone torches
+ID=redstone_torch,amount=#randList(16,32,48,56,64)@luck=-1
+
+/vines
+group(ID=twisting_vines,amount=32;ID=weeping_vines,amount=32)@luck=0
+
+/the rose
+ID=poppy,NBTTag=(display=(Name=#jsonStr(text="$cThe Rose")),Enchantments=[(id=fortune,lvl=5)])@luck=-1
+
+/bloodberries
+ID=sweet_berries,amount=#rand(6,15),NBTTag=(display=(Name=#jsonStr(text="$cBloodberries")),Enchantments=[(id=channeling,lvl=5)])@luck=0
+
+/emergency potion
+ID=potion,amount=#randList(1,1,2),NBTTag=(Potion="minecraft:water",display=(Name=#jsonStr(text="$dEmergency Potion")),CustomPotionEffects=[(Id=10,Amplifier=0,Duration=200)])@luck=1@chance=0.95
+
+/defensive trial
+ID=potion,amount=#randList(1,1,2),NBTTag=(Potion="minecraft:water",display=(Name=#jsonStr(text="$7Defensive Trial")),CustomPotionEffects=[(Id=11,Amplifier=0,Duration=200),(Id=12,Amplifier=0,Duration=200)])@luck=2@chance=0.95
+
+/bones, flesh and blood
+group(
+    type=effect,ID=poison,range=4,duration=3;
+    type=effect,ID=weakness,range=4,duration=30;
+    type=effect,ID=nausea,range=4,duration=15;
+    type=particle,ID=splashpotion,potion=weakness;
+    type=item,ID=#randList(rotten_flesh,bone,red_dye),posOffset=#circleOffset(0.0,2.0),amount=30
+)@luck=-2
+
+/arrow munition + lame bow
+group(ID=bow,NBTTag=(Damage=#rand(360,376));ID=arrow,amount=#rand(8,16))@luck=-1
+
+
+/ ========== GROUPS ==========
+
+/bloody redstone
+group(ID=red_dye,amount=32;ID=redstone,amount=16;ID=redstone_torch,amount=8;ID=red_mushroom,amount=#rand(3,6))@luck=-1
+
+/all of redstone
+group(ID=dispenser,amount=2;ID=note_block,amount=1;ID=sticky_piston,amount=4;ID=piston,amount=4;ID=tnt,amount=6;ID=lever,amount=2;ID=stone_pressure_plate,amount=2;ID=oak_pressure_plate,amount=2;ID=redstone_torch,amount=8;ID=stone_button,amount=2;ID=oak_trapdoor,amount=2;ID=iron_trapdoor,amount=2;ID=oak_fence_gate,amount=1;ID=redstone_lamp,amount=4;ID=tripwire_hook,amount=2;ID=oak_button,amount=2;ID=light_weighted_pressure_plate,amount=1;ID=heavy_weighted_pressure_plate,amount=1;ID=daylight_detector,amount=1;ID=hopper,amount=4;ID=dropper,amount=#rand(2,4);ID=oak_door,amount=1;ID=iron_door,amount=1;ID=redstone,amount=#rand(32,64);ID=repeater,amount=8;ID=comparator,amount=2;type=particle,ID=splashpotion,potion="healing")@luck=1
+
+/spider spawn eggs
+group(ID=spider_spawn_egg,amount=#rand(4,8);ID=cave_spider_spawn_egg,amount=#rand(2,4))@luck=1
+
+/rotten foods
+group(ID=rotten_flesh,amount=#rand(12,24);ID=spider_eye,amount=#rand(5,10);ID=pufferfish,amount=#rand(2,4))@luck=-1
+
+/subway railing kit
+group(ID=rail,amount=50;ID=activator_rail,amount=10;ID=powered_rail,amount=10;ID=detector_rail,amount=3;ID=minecart,amount=2;ID=redstone_torch,amount=12)@luck=0
+
+/dusts
+group(ID=glowstone_dust,amount=64;ID=redstone,amount=#rand(32,50);ID=sugar,amount=16;ID=gunpowder,amount=#rand(6,12))@luck=0
+
+/goldrush
+group(
+    ID=gold_nugget,amount=#rand(32,65);
+    ID=raw_gold,amount=#rand(12,24);
+    ID=gold_ingot,amount=#rand(8,16);
+	ID=spectral_arrow,amount=#rand(4,10);
+	ID=golden_carrot,amount=#rand(3,7);
+    ID=golden_apple,amount=#rand(1,3);
+    ID=enchanted_golden_apple,amount=#randList(0,0,0,1);
+    type=entity,ID=firework_rocket,NBTTag=(
+    LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag=#randFireworksRocket)
+    ),amount=5,posOffset=#circleOffset(0,2)
+)@luck=2
+
+/ iron, gold, diamond, emerald, lapis, with fireworks
+group(
+    ID=iron_ingot,amount=#rand(8,16);
+    ID=gold_ingot,amount=#rand(8,16);
+    ID=diamond,amount=#rand(8,16);
+    ID=emerald,amount=#rand(8,16);
+    ID=lapis_lazuli,amount=#rand(8,16);
+    type=entity,ID=firework_rocket,NBTTag=(
+        LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag=#randFireworksRocket)
+    ),amount=5,posOffset=#circleOffset(0,2)
+)@luck=2@chance=0.8
+
+/scientific arrows
+group(ID=tipped_arrow,amount=#rand(4,16),NBTTag=(Potion="minecraft:#randList(slowness,weakness,poison,slowness,weakness,poison,harming)"))@luck=1
+
+
+
+
+/ ========== ENTITIES ==========
+
+/blinding lights
+group(type=effect,ID=slowness,duration=15,amplifier=2;
+    type=effect,ID=blindness,duration=10)@luck=-1
+	
+/bats
+type=entity,ID=bat,amount=#rand(10,20)@luck=-1
+
+/spider jockeys
+type=entity,ID=#randList(spider,spider_cave_spider),amount=#rand(3,6),posOffset=#circleOffset(#rand(1,9)),NBTTag=(Passengers=[(id=skeleton,
+	HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=chainmail_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=chainmail_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=chainmail_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=carved_pumpkin,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f]
+	)])@luck=-2
+
+/flying boats
+group(type=difficulty,ID=hard;type=entity,ID=bat,posY=#bPosY+8,amount=#rand(2,6),posOffset=#circleOffset(#rand(1,9)),NBTTag=(
+    Silent=true,
+    ActiveEffects=[(Id=14,Duration=100000,Amplifier=1,ShowParticles=false)],
+    Passengers=[(id=boat)
+    ])
+)@luck=0
+
+
+/flying animals
+group(type=difficulty,ID=hard;type=entity,ID=bat,posY=#bPosY+8,amount=#rand(5,10),posOffset=#circleOffset(#rand(1,9)),NBTTag=(
+    Silent=true,
+    ActiveEffects=[(Id=14,Duration=100000,Amplifier=1,ShowParticles=false)],
+    Passengers=[(id=#randList(cow,chicken,sheep,rabbit,squid))
+    ])
+)@luck=0
+
+/fusing tnt
+group(type=message,ID="$4Watch out in the sky!";type=difficulty,ID=hard;type=entity,ID=bat,posY=#bPosY+#rand(3,9),amount=#rand(5,10),posOffset=#circleOffset(#rand(1,9)),NBTTag=(
+    Silent=true,
+    ActiveEffects=[(Id=14,Duration=100000,Amplifier=1,ShowParticles=false)],
+    Passengers=[(id=tnt,Fuse=100b)]
+	)
+)@luck=-2
+
+/flying spider jockey
+group(type=difficulty,ID=hard;type=entity,ID=bat,posY=#bPosY+8,amount=#rand(5,10),posOffset=#circleOffset(#rand(1,9)),NBTTag=(
+    Silent=true,
+    ActiveEffects=[(Id=14,Duration=100000,Amplifier=1,ShowParticles=false)],
+    Passengers=[(id=#randList(spider,spider_cave_spider),Passengers=[(id=skeleton,
+	HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckyBowEnchantments))],
+    ArmorItems=[(id=chainmail_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=chainmail_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=chainmail_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=carved_pumpkin,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f]
+	])
+    ])
+))@luck=-2
+
+/flying witch
+group(type=difficulty,ID=hard;type=entity,ID=bat,posY=#bPosY+8,amount=#rand(2,6),NBTTag=(
+    Silent=true,
+    ActiveEffects=[(Id=14,Duration=100000,Amplifier=1,ShowParticles=false)],
+    Passengers=[(id=witch)
+    ])
+)@luck=-2
+
+/flying guardians + elder guardian
+group(type=difficulty,ID=hard;
+type=entity,ID=bat,posY=#bPosY+8,amount=#rand(2,6),NBTTag=(
+    Silent=true,
+    ActiveEffects=[(Id=14,Duration=100000,Amplifier=1,ShowParticles=false)],
+    Passengers=[(id=guardian)
+    ]);
+type=entity,ID=bat,posY=#bPosY+16,NBTTag=(
+    Silent=true,
+    ActiveEffects=[(Id=14,Duration=100000,Amplifier=1,ShowParticles=false)],
+    Passengers=[(id=elder_guardian)
+    ])
+)@luck=-2
+
+/michael morbius
+group(type=difficulty,ID=hard;type=entity,ID=wither_skeleton,posY=#bPosY+#rand(4,7),NBTTag=(
+    HandItems=[(id=netherite_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=netherite_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=netherite_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=netherite_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=netherite_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.5f,0f],ArmorDropChances=[0.03f,0.03f,0.03f,0.03f],
+	ActiveEffects=[(Id=28,Duration=100000,Amplifier=3,ShowParticles=false)],
+	Health=100,Attributes=[(Name="generic.max_health",Base=100f)],
+    CustomName=#jsonStr(text="$5$lMichael Morbius"),CustomNameVisible=true)
+)@luck=-2
+
+
+/flying morbius
+group(type=difficulty,ID=hard;type=entity,ID=bat,posY=#bPosY+#rand(3,9),posOffset=#circleOffset(#rand(1,9)),NBTTag=(
+    Silent=true,
+    ActiveEffects=[(Id=14,Duration=100000,Amplifier=1,ShowParticles=false)],
+    Passengers=[(id=wither_skeleton,
+    HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=netherite_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=netherite_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=netherite_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=netherite_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.5f,0f],ArmorDropChances=[0.03f,0.03f,0.03f,0.03f],
+	ActiveEffects=[(Id=28,Duration=100000,Amplifier=3,ShowParticles=false)],
+	Health=80,Attributes=[(Name="generic.max_health",Base=80f)],
+    CustomName=#jsonStr(text="$d$lFlying Morbius"),CustomNameVisible=true)
+	)]
+)@luck=-2
+
+/all the spiders
+type=entity,ID=spider,amount=#rand(30,56),posOffset=#circleOffset(#rand(4,32))@luck=-1
+
+/all the cave spiders + cobwebs
+group(type=entity,ID=cave_spider,amount=#rand(8,24),posOffset=#circleOffset(#rand(4,32));
+type=entity,ID=falling_block,amount=#rand(16,64),posY=#bPosY+#rand(5,20),posOffset=#circleOffset(#rand(1,24)),NBTTag=(BlockState=(Name=cobweb),Fuse=50b,Motion=#randLaunchMotion)
+)@luck=-2
+
+/spiders
+group(type=structure,ID=morbius_spiderwebs,pos=#pPos;type=entity,ID=#randList(spider,spider,cave_spider),amount=#rand(6,15),posOffset=#circleOffset(#rand(3,8)))@luck=-1@chance=0.9
+
+/spiders dungeon
+group(type=structure,ID=morbius_spiderdungeon,pos=#pPos;type=entity,ID=#randList(spider,cave_spider),amount=#rand(8,20),posOffset=#circleOffset(#rand(3,8)))@luck=-2@chance=0.7
+
+/phantom nightmare
+group(type=entity,ID=phantom,posY=#bPosY+#rand(2,10),posOffset=#circleOffset(0,4),amount=10;type=effect,ID=nausea,duration=15)@luck=-2
+
+/morbin sheep
+type=entity,ID=sheep,NBTTag=(CustomName=#jsonStr(text="$4Morbin' $bSheep"),CustomNameVisible=true,Color=#randList(3,14)),posOffset=#circleOffset(4),amount=16@luck=1
+
+/eggs + redstone
+group(type=entity,ID=egg,NBTTag=(Motion=#randLaunchMotion(0.6,15)),amount=40;type=entity,ID=item,NBTTag=(Item=(id=redstone,Count=#rand(1,6)),Motion=#randLaunchMotion(0.7,18)),amount=20)@luck=1
+
+/thrown exp bottles
+type=entity,ID=experience_bottle,NBTTag=(Motion=#randLaunchMotion),amount=#rand(16,32)@luck=2
+
+/launched tnt
+type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion=#randLaunchMotion),amount=15@luck=-2
+
+/launched tnt extreme
+type=entity,ID=tnt,NBTTag=(Fuse=250b,Motion=#randLaunchMotion),amount=30@luck=-2@chance=0.5
+
+/witch with bats
+group(type=difficulty,ID=hard;type=entity,ID=witch;type=entity,ID=bat,posY=#bPosY+#rand(0,2),posOffset=#circleOffset(0,1),amount=64)@luck=-1
+
+/fbi agents
+group(type=difficulty,ID=hard;
+type=entity,ID=stray,NBTTag=(
+    HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=iron_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=iron_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=iron_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.5f,0f],ArmorDropChances=[0.03f,0.03f,0.03f,0.03f],
+	ActiveEffects=[(Id=1,Duration=100000,Amplifier=5,ShowParticles=false)],
+	Health=50,Attributes=[(Name="generic.max_health",Base=50f)],
+    CustomName=#jsonStr(text="$b$lSimon Stroud"),CustomNameVisible=true);
+type=entity,ID=stray,NBTTag=(
+    HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=iron_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=iron_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=iron_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.5f,0f],ArmorDropChances=[0.03f,0.03f,0.03f,0.03f],
+	ActiveEffects=[(Id=1,Duration=100000,Amplifier=5,ShowParticles=false)],
+	Health=50,Attributes=[(Name="generic.max_health",Base=50f)],
+    CustomName=#jsonStr(text="$b$lAl Rodriguez"),CustomNameVisible=true)
+)@luck=-2
+
+/zombified morbius
+group(type=difficulty,ID=hard;type=entity,ID=zombie_villager,NBTTag=(
+    HandItems=[(id=netherite_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=netherite_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=netherite_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=netherite_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=netherite_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.5f,0f],ArmorDropChances=[0.03f,0.03f,0.03f,0.03f],
+	ActiveEffects=[(Id=28,Duration=100000,Amplifier=3,ShowParticles=false)],
+	Health=75,Attributes=[(Name="generic.max_health",Base=75f)],
+    CustomName=#jsonStr(text="$2$lZombified Morbius"),CustomNameVisible=true)
+)@luck=-2
+
+/ positive potions
+group(
+    type=entity,ID=potion,NBTTag=(
+        Item=(id=splash_potion,tag=(Potion=#randList(
+            speed,glowing,night_vision,slow_falling,strength,absorption,resistance,healing
+        )),Count=1),
+        Motion=#motionFromDirection(#rand(0,360),-70,0.4)
+    ),amount=4
+)@luck=2
+
+/ negative potions
+group(
+    type=entity,ID=potion,NBTTag=(
+        Item=(id=splash_potion,tag=(Potion=#randList(
+            weakness,poison,blindness,nausea,slowness,hunger,harming
+        )),Count=1),
+        Motion=#motionFromDirection(#rand(0,360),-70,0.4)
+    ),amount=4
+)@luck=-2
+
+/ wither
+group(type=difficulty,ID=hard;type=entity,ID=wither)@chance=0.035@luck=-2
+/ ghast
+group(type=difficulty,ID=hard;type=entity,ID=ghast)@chance=0.2@luck=-2
+/ enderdragon
+/ group(type=difficulty,ID=hard;type=entity,ID=wither)@chance=0.05@luck=-2
+
+/ ghostly horseman skeleton
+group(type=difficulty,ID=hard;type=entity,ID=bat,NBTTag=(
+    Silent=true,
+    ActiveEffects=[(Id=14,Duration=100000,Amplifier=1,ShowParticles=false)],
+    Passengers=[(id=skeleton_horse,Tame=true,Type=4,
+        Passengers=[(id=skeleton,
+            HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckyBowEnchantments))],
+            ArmorItems=[(id=chainmail_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=chainmail_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=chainmail_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=chainmail_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+            HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],
+            CustomName=#jsonStr(text="Ghostly Horseman",color=gray,bold=true),CustomNameVisible=true)
+        ])
+    ])
+)@luck=-2
+
+/ stacked spiders with skeleton on top
+type=entity,ID=spider,amount=#rand(3,6),posOffset=#circleOffset(#rand(2,8)),NBTTag=(Passengers=[(id=cave_spider,Passengers=[(id=spider,Passengers=[(id=cave_spider,Passengers=[(id=spider,Passengers=[(id=cave_spider,Passengers=[(id=spider,Passengers=[(id=cave_spider,Passengers=[(id=skeleton,
+	HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckyBowEnchantments))],
+    ArmorItems=[(id=chainmail_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=chainmail_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=chainmail_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=carved_pumpkin,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f]
+)])])])])])])])])@luck=-2
+
+
+/ ========== STRUCTURES ==========
+
+/falling blocks
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=iron_block));type=particle,ID=large_smoke,size=(1,2,1),particleAmount=500;type=sound,ID=block.fire.extinguish)@luck=0
+
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=gold_block));type=particle,ID=flame,size=(1,2,1),particleAmount=500;type=sound,ID=entity.ghast.shoot)@luck=0
+
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=diamond_block));type=entity,ID=lightning_bolt)@luck=1
+
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=emerald_block));type=particle,ID=happy_villager,size=(1,2,1),particleAmount=500;type=sound,ID=block.grass.break)@luck=0
+
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=redstone_block));type=particle,ID=redstone,size=(1,2,1),particleAmount=1000;type=sound,ID=block.lever.click)@luck=0
+
+/tnt pole
+group(type=fill,ID=air,size=(1,51,1);
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=redstone_block)),posY=#bPosY+5;
+    group(posY=#bPosY+10;posY=#bPosY+15;posY=#bPosY+20;posY=#bPosY+25;posY=#bPosY+30;posY=#bPosY+35;posY=#bPosY+40;posY=#bPosY+45;posY=#bPosY+50),type=entity,ID=falling_block,NBTTag=(BlockState=(Name=tnt))
+)@luck=-2
+
+/lucky block chain reaction
+group(type=fill,ID=air,size=(1,51,1);
+    group(
+        NBTTag=(BlockState=(Name=redstone_block)),posY=#bPosY+5;
+        NBTTag=(BlockState=(Name=lucky:morbius_lucky_block)),posY=#bPosY+10;
+        NBTTag=(BlockState=(Name=redstone_block)),posY=#bPosY+15;
+        NBTTag=(BlockState=(Name=lucky:morbius_lucky_block)),posY=#bPosY+20;
+        NBTTag=(BlockState=(Name=redstone_block)),posY=#bPosY+25;
+        NBTTag=(BlockState=(Name=lucky:morbius_lucky_block)),posY=#bPosY+30;
+        NBTTag=(BlockState=(Name=redstone_block)),posY=#bPosY+35;
+        NBTTag=(BlockState=(Name=lucky:morbius_lucky_block)),posY=#bPosY+40;
+        NBTTag=(BlockState=(Name=redstone_block)),posY=#bPosY+45
+    ),type=entity,ID=falling_block;
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=lucky:morbius_lucky_block)),posY=#bPosY+50
+)@luck=1
+
+/morbius tower
+group(type=fill,ID=air,size=(1,51,1);
+    group(
+        NBTTag=(BlockState=(Name=observer)),posY=#bPosY+5;
+        NBTTag=(BlockState=(Name=dropper)),posY=#bPosY+10;
+        NBTTag=(BlockState=(Name=dispenser)),posY=#bPosY+15;
+        NBTTag=(BlockState=(Name=dropper)),posY=#bPosY+20;
+        NBTTag=(BlockState=(Name=observer)),posY=#bPosY+25;
+        NBTTag=(BlockState=(Name=dropper)),posY=#bPosY+30;
+        NBTTag=(BlockState=(Name=dispenser)),posY=#bPosY+35;
+        NBTTag=(BlockState=(Name=dropper)),posY=#bPosY+40;
+        NBTTag=(BlockState=(Name=observer)),posY=#bPosY+45
+    ),type=entity,ID=falling_block;
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=lucky:morbius_lucky_block)),posY=#bPosY+50;
+	type=entity,ID=lightning_bolt,delay=3.00
+)@luck=1
+
+/lightning strike chaos
+type=entity,ID=lightning_bolt,amount=#rand(16,36),posOffset=#circleOffset(#rand(1,15))@luck=-2
+
+/lightning villagers
+group(type=entity,ID=villager,amount=#rand(4,9),posOffset=#circleOffset(#rand(1,6));type=entity,ID=lightning_bolt,amount=#rand(3,5),posOffset=#circleOffset(#rand(1,6)))@luck=-2
+
+/lightning creepers
+group(type=entity,ID=creeper,amount=#rand(3,6),posOffset=#circleOffset(#rand(1,8));type=entity,ID=lightning_bolt,amount=#rand(3,5),posOffset=#circleOffset(#rand(1,8)))@luck=-2
+
+/explosions
+type=explosion,radius=6@luck=-2
+type=explosion,radius=9@luck=-2@chance=0.5
+
+/explosion chain
+group(type=explosion,radius=1;
+type=explosion,radius=2,delay=0.69;
+type=explosion,radius=3,delay=1.36;
+type=explosion,radius=4,delay=2.0;
+type=explosion,radius=5,delay=2.69;
+type=explosion,radius=6,delay=3.36;
+type=explosion,radius=7,delay=4;
+type=explosion,radius=8,delay=5;
+type=explosion,radius=6,delay=8;
+type=explosion,radius=4,delay=12;
+type=explosion,radius=2,delay=20
+)@luck=-2
+
+/jail center
+type=structure,ID=morbius_jailhold@luck=-1
+
+/scientist room
+type=structure,ID=morbius_scientistigloo@luck=2
+
+/cobweb trap
+group(
+    type=fill,ID=cobweb,size=(5,3,5),pos=(#pPosX-1,#pPosY-3,#pPosZ-1)
+)@luck=-2
+
+/ lava pit
+group(
+    type=fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=cobweb,size=(3,1,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
+)@luck=-2
+
+
+/ morbius lucky building
+type=structure,ID=morbius_fort,pos=#pPos@luck=2
+
+
+/ ========== ENCHANTED + LUCKY ITEMS ==========
+
+/blood splash potion
+ID=lucky:morbius_lucky_potion,amount=#rand(3,6)@luck=1
+ID=lucky:morbius_lucky_potion,amount=#rand(5,10)@luck=2
+ID=lucky:morbius_lucky_potion,amount=#rand(12,25)@luck=2@chance=0.5
+
+/vulture armor
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Vulture Exo-Helmet\",\"color\":\"gray\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:netherite_helmet\",Count:1b,tag:{display:{Name:'{\"text\":\"Vulture Exo-Helmet\",\"color\":\"gray\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(blast_protection,fire_protection,projectile_protection)\",lvl:#rand(2,7)},{id:\"minecraft:protection\",lvl:#rand(2,7)},{id:\"minecraft:unbreaking\",lvl:#rand(2,7)},{id:\"minecraft:#randList(thorns,mending)\",lvl:#rand(2,4)},{id:\"minecraft:#randList(respiration,aqua_affinity)\",lvl:#rand(2,5)}],
+AttributeModifiers:[
+{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.05,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"},
+{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3.5,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"},
+{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1.5,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:-0.2,Operation:1,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"}]}}}",commandSender="VIU")@luck=2@chance=0.7
+
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Vulture Exo-Chestplate\",\"color\":\"gray\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:netherite_chestplate\",Count:1b,tag:{display:{Name:'{\"text\":\"Vulture Exo-Chestplate\",\"color\":\"gray\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(blast_protection,fire_protection,projectile_protection)\",lvl:#rand(2,7)},{id:\"minecraft:protection\",lvl:#rand(2,7)},{id:\"minecraft:unbreaking\",lvl:#rand(2,7)},{id:\"minecraft:#randList(thorns,mending)\",lvl:#rand(1,4)}],
+AttributeModifiers:[
+{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.05,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"chest\"},
+{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8.5,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"chest\"},
+{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1.5,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"chest\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:-0.2,Operation:1,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"chest\"}]}}}",commandSender="VIU")@luck=2@chance=0.7
+
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Vulture Exo-Leggings\",\"color\":\"gray\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:netherite_leggings\",Count:1b,tag:{display:{Name:'{\"text\":\"Vulture Exo-Leggings\",\"color\":\"gray\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(blast_protection,fire_protection,projectile_protection)\",lvl:#rand(2,7)},{id:\"minecraft:protection\",lvl:#rand(2,7)},{id:\"minecraft:unbreaking\",lvl:#rand(2,7)},{id:\"minecraft:#randList(thorns,mending)\",lvl:#rand(2,4)}],
+AttributeModifiers:[
+{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.05,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"legs\"},
+{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6.5,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"legs\"},
+{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1.5,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"legs\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:-0.2,Operation:1,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"legs\"}]}}}",commandSender="VIU")@luck=2@chance=0.7
+
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Vulture Exo-Boots\",\"color\":\"gray\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:netherite_boots\",Count:1b,tag:{display:{Name:'{\"text\":\"Vulture Exo-Boots\",\"color\":\"gray\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(blast_protection,fire_protection,projectile_protection)\",lvl:#rand(2,7)},{id:\"minecraft:protection\",lvl:#rand(2,7)},{id:\"minecraft:unbreaking\",lvl:#rand(2,7)},{id:\"minecraft:#randList(thorns,mending)\",lvl:#rand(2,4)},{id:\"minecraft:#randList(depth_strider,feather_falling,soul_speed)\",lvl:#rand(2,5)}],
+AttributeModifiers:[
+{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.05,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"feet\"},
+{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3.5,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"feet\"},
+{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1.5,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"feet\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:-0.2,Operation:1,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"feet\"}]}}}",commandSender="VIU")@luck=2@chance=0.7
+
+/morbius lucky blade
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"$4Morbius $7Lucky $bBlade\",\"color\":\"light_blue\",\"bold\":true,\"italic\":false}',Item:{id:\"lucky:morbius_lucky_sword\",Count:1b,tag:{display:{Name:'{\"text\":\"$4Morbius $7Lucky $bBlade\",\"color\":\"light_blue\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(smite,bane_of_arthropods)\",lvl:#rand(2,7)},{id:\"minecraft:#randList(sweeping_edge,looting)\",lvl:#rand(2,6)},{id:\"minecraft:unbreaking\",lvl:#rand(4,7)},{id:\"minecraft:sharpness\",lvl:#rand(5,13)},{id:\"minecraft:#randList(mending,knockback,fire_aspect)\",lvl:#rand(2,5)}],AttributeModifiers:[{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.05,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:#rand(14,17),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"mainhand\"}]}}}",commandSender="VIU")@luck=2@chance=0.7
+
+/spears
+group(ID=arrow,amount=#rand(6,15);ID=lucky:morbius_lucky_bow,NBTTag=(Enchantments=#luckyBowEnchantments,display=(Name=#jsonStr(text="$4Morbius $7Lucky $bSpear"))))@luck=2@chance=0.9
+
+/michael morbius head
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"$5$lMichael Morbius's Head\",\"color\":\"purple\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:dragon_head\",Count:1b,tag:{display:{Name:'{\"text\":\"$5$lMichael Morbius's Head\",\"color\":\"purple\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(blast_protection,fire_protection,projectile_protection)\",lvl:#rand(0,10)},{id:\"minecraft:protection\",lvl:#rand(0,4)},{id:\"minecraft:unbreaking\",lvl:#rand(0,56)},{id:\"minecraft:#randList(thorns,mending)\",lvl:#rand(0,5)},{id:\"minecraft:#randList(respiration,aqua_affinity)\",lvl:#rand(0,10)}],
+AttributeModifiers:[
+{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:2,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"},
+{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:5.6,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"},
+{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.1,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:-0.4,Operation:1,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"}]}}}",commandSender="VIU")@luck=2@chance=0.4
+
+/scientist armor
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Scientist Helmet\",\"color\":\"light_blue\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:diamond_helmet\",Count:1b,tag:{display:{Name:'{\"text\":\"Scientist Helmet\",\"color\":\"light_blue\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(blast_protection,fire_protection,projectile_protection)\",lvl:#rand(0,5)},{id:\"minecraft:protection\",lvl:#rand(0,4)},{id:\"minecraft:unbreaking\",lvl:#rand(0,5)},{id:\"minecraft:#randList(thorns,mending)\",lvl:#rand(0,3)},{id:\"minecraft:#randList(respiration,aqua_affinity)\",lvl:#rand(0,3)}],
+AttributeModifiers:[
+{AttributeName:\"generic.luck\",Name:\"generic.luck\",Amount:0.0#rand(2,8),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"},
+{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3.25,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.1,Operation:1,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"}]}}}",commandSender="VIU")@luck=2@chance=0.9
+
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Scientist Chestplate\",\"color\":\"light_blue\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:diamond_chestplate\",Count:1b,tag:{display:{Name:'{\"text\":\"Scientist Chestplate\",\"color\":\"light_blue\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(blast_protection,fire_protection,projectile_protection)\",lvl:#rand(0,5)},{id:\"minecraft:protection\",lvl:#rand(0,4)},{id:\"minecraft:unbreaking\",lvl:#rand(0,5)},{id:\"minecraft:#randList(thorns,mending)\",lvl:#rand(0,3)}],
+AttributeModifiers:[
+{AttributeName:\"generic.luck\",Name:\"generic.luck\",Amount:0.0#rand(2,8),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"chest\"},
+{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8.25,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"chest\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.1,Operation:1,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"chest\"}]}}}",commandSender="VIU")@luck=2@chance=0.9
+
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Scientist Leggings\",\"color\":\"light_blue\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:diamond_leggings\",Count:1b,tag:{display:{Name:'{\"text\":\"Scientist Leggings\",\"color\":\"light_blue\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(blast_protection,fire_protection,projectile_protection)\",lvl:#rand(0,5)},{id:\"minecraft:protection\",lvl:#rand(0,4)},{id:\"minecraft:unbreaking\",lvl:#rand(0,5)},{id:\"minecraft:#randList(thorns,mending)\",lvl:#rand(0,3)}],
+AttributeModifiers:[
+{AttributeName:\"generic.luck\",Name:\"generic.luck\",Amount:0.0#rand(2,8),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"legs\"},
+{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6.25,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"legs\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.1,Operation:1,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"legs\"}]}}}",commandSender="VIU")@luck=2@chance=0.9
+
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Scientist Boots\",\"color\":\"light_blue\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:diamond_boots\",Count:1b,tag:{display:{Name:'{\"text\":\"Scientist Boots\",\"color\":\"light_blue\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(blast_protection,fire_protection,projectile_protection)\",lvl:#rand(0,5)},{id:\"minecraft:protection\",lvl:#rand(0,4)},{id:\"minecraft:unbreaking\",lvl:#rand(0,5)},{id:\"minecraft:#randList(thorns,mending)\",lvl:#rand(0,3)},{id:\"minecraft:#randList(depth_strider,feather_falling,soul_speed)\",lvl:#rand(0,3)}],
+AttributeModifiers:[
+{AttributeName:\"generic.luck\",Name:\"generic.luck\",Amount:0.0#rand(2,8),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"feet\"},
+{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3.25,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"feet\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.1,Operation:1,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"feet\"}]}}}",commandSender="VIU")@luck=2@chance=0.9
+
+/scneintist weapon
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Scientist Weapon\",\"color\":\"light_blue\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:diamond_sword\",Count:1b,tag:{display:{Name:'{\"text\":\"Scientist Weapon\",\"color\":\"light_blue\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(smite,bane_of_arthropods)\",lvl:#rand(0,5)},{id:\"minecraft:#randList(sweeping_edge,looting)\",lvl:#rand(0,4)},{id:\"minecraft:unbreaking\",lvl:#rand(0,5)},{id:\"minecraft:sharpness\",lvl:#rand(5,13)},{id:\"minecraft:#randList(mending,knockback,fire_aspect)\",lvl:#rand(0,3)}],
+AttributeModifiers:[
+{AttributeName:\"generic.luck\",Name:\"generic.luck\",Amount:0.0#rand(2,8),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"mainhand\"},
+{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:#rand(11,13),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"mainhand\"}]}}}",commandSender="VIU")@luck=2@chance=0.9
+
+/federal armor
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Federal Helmet\",\"color\":\"blue\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:iron_helmet\",Count:1b,tag:{display:{Name:'{\"text\":\"Federal Helmet\",\"color\":\"blue\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(blast_protection,fire_protection,projectile_protection)\",lvl:#rand(0,3)},{id:\"minecraft:protection\",lvl:#rand(0,2)},{id:\"minecraft:unbreaking\",lvl:#rand(0,3)},{id:\"minecraft:#randList(thorns,mending)\",lvl:#rand(0,3)},{id:\"minecraft:#randList(respiration,aqua_affinity)\",lvl:#rand(0,3)}],
+AttributeModifiers:[
+{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:0.0#rand(2,8),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"},
+{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:1.5,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"},
+{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:0.75,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.25,Operation:1,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"head\"}]}}}",commandSender="VIU")@luck=1@chance=0.9
+
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Federal Chestplate\",\"color\":\"blue\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:iron_chestplate\",Count:1b,tag:{display:{Name:'{\"text\":\"Federal Chestplate\",\"color\":\"blue\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(blast_protection,fire_protection,projectile_protection)\",lvl:#rand(0,3)},{id:\"minecraft:protection\",lvl:#rand(0,2)},{id:\"minecraft:unbreaking\",lvl:#rand(0,3)},{id:\"minecraft:#randList(thorns,mending)\",lvl:#rand(0,3)}],
+AttributeModifiers:[
+{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:0.0#rand(2,8),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"chest\"},
+{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:5.5,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"chest\"},
+{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:0.75,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"chest\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.25,Operation:1,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"chest\"}]}}}",commandSender="VIU")@luck=1@chance=0.9
+
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Federal Leggings\",\"color\":\"blue\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:iron_leggings\",Count:1b,tag:{display:{Name:'{\"text\":\"Federal Leggings\",\"color\":\"blue\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(blast_protection,fire_protection,projectile_protection)\",lvl:#rand(0,3)},{id:\"minecraft:protection\",lvl:#rand(0,2)},{id:\"minecraft:unbreaking\",lvl:#rand(0,3)},{id:\"minecraft:#randList(thorns,mending)\",lvl:#rand(0,3)}],
+AttributeModifiers:[
+{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:0.0#rand(2,8),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"legs\"},
+{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4.5,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"legs\"},
+{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:0.75,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"legs\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.25,Operation:1,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"legs\"}]}}}",commandSender="VIU")@luck=1@chance=0.9
+
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Federal Boots\",\"color\":\"blue\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:iron_boots\",Count:1b,tag:{display:{Name:'{\"text\":\"Federal Boots\",\"color\":\"blue\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(blast_protection,fire_protection,projectile_protection)\",lvl:#rand(0,3)},{id:\"minecraft:protection\",lvl:#rand(0,2)},{id:\"minecraft:unbreaking\",lvl:#rand(0,3)},{id:\"minecraft:#randList(thorns,mending)\",lvl:#rand(0,3)},{id:\"minecraft:#randList(depth_strider,feather_falling,soul_speed)\",lvl:#rand(0,3)}],
+AttributeModifiers:[
+{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:0.0#rand(2,8),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"feet\"},
+{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:1.5,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"feet\"},
+{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:0.75,Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"feet\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.25,Operation:1,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"feet\"}]}}}",commandSender="VIU")@luck=1@chance=0.9
+
+/federal weapons
+group(ID=arrow,amount=#rand(10,25);type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Federal Weapon\",\"color\":\"blue\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:crossbow\",Count:1b,tag:{display:{Name:'{\"text\":\"Federal Weapon\",\"color\":\"blue\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(quick_charge,multishot,quick_charge,multishot,infinity)\",lvl:#rand(0,3)},{id:\"minecraft:#randList(piercing,looting)\",lvl:#rand(0,2)},{id:\"minecraft:unbreaking\",lvl:#rand(0,3)},{id:\"minecraft:power\",lvl:#rand(2,7)},{id:\"minecraft:#randList(mending,punch,flame)\",lvl:#rand(0,3)}],
+AttributeModifiers:[
+{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:0.0#rand(2,8),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"mainhand\"},
+{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:0.0#rand(2,8),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"offhand\"}]}}}",commandSender="VIU")@luck=1@chance=0.9
+
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Federal Blade\",\"color\":\"blue\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:iron_sword\",Count:1b,tag:{display:{Name:'{\"text\":\"Federal Weapon\",\"color\":\"blue\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(smite,bane_of_arthropods)\",lvl:#rand(0,3)},{id:\"minecraft:#randList(sweeping_edge,looting)\",lvl:#rand(0,2)},{id:\"minecraft:unbreaking\",lvl:#rand(0,3)},{id:\"minecraft:power\",lvl:#rand(5,13)},{id:\"minecraft:#randList(mending,knockback,fire_aspect)\",lvl:#rand(0,3)}],
+AttributeModifiers:[
+{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:0.0#rand(2,8),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"mainhand\"},
+{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:#rand(8,10),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"mainhand\"}]}}}",commandSender="VIU")@luck=1@chance=0.9
+
+/morbin' stick
+group(type=command,ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"Morbin Stick\",\"color\":\"dark_green\",\"bold\":true,\"italic\":false}',Item:{id:\"minecraft:stick\",Count:1b,tag:{display:{Name:'{\"text\":\"Morbin Stick\",\"color\":\"dark_green\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:#randList(smite,bane_of_arthropods)\",lvl:#rand(0,3)},{id:\"minecraft:#randList(sweeping_edge,looting)\",lvl:#rand(0,2)},{id:\"minecraft:unbreaking\",lvl:#rand(0,3)},{id:\"minecraft:power\",lvl:#rand(5,13)},{id:\"minecraft:#randList(mending,knockback,knockback)\",lvl:#rand(1,5)}],
+AttributeModifiers:[
+{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:0.0#rand(1,4),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"mainhand\"},
+{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.#rand(2,4),Operation:0,UUID:[I;#rand(20,999999999),#rand(20,999999999),#rand(20,999999999),#rand(20,999999999)],Slot:\"mainhand\"}]}}}",commandSender="VIU")@luck=1@chance=0.9

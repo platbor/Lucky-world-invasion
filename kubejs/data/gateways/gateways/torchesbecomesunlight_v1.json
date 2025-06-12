@@ -1,0 +1,78 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "torchesbecomesunlight"
+		}
+	],
+	"size": "large",
+	"color": "#023B14",
+	"waves": [
+		{
+			"entities": [
+				{
+					"entity": "torchesbecomesunlight:frost_nova",
+					"count": 1
+				}
+			],
+			"modifiers": [],
+			"rewards": [],
+			"max_wave_time": 4000,
+			"setup_time": 400
+		},
+		{
+			"entities": [
+				{
+					"entity": "torchesbecomesunlight:patriot",
+					"count": 1
+				}
+			],
+			"modifiers": [],
+			"rewards": [],
+			"max_wave_time": 4000,
+			"setup_time": 400
+		},
+		{
+			"entities": [
+				{
+					"entity": "torchesbecomesunlight:gun_knight_patriot",
+					"count": 1
+				}
+			],
+			"modifiers": [],
+			"rewards": [],
+			"max_wave_time": 4000,
+			"setup_time": 400
+		},
+		{
+			"entities": [
+				{
+					"entity": "torchesbecomesunlight:pursuer",
+					"count": 1
+				}
+			],
+			"modifiers": [],
+			"rewards": [],
+			"max_wave_time": 4000,
+			"setup_time": 400
+		}
+	],
+	"rewards": [
+		{
+			"type": "gateways:loot_table",
+			"loot_table": "minecraft:chests/end_city_treasure",
+			"rolls": 8,
+			"desc": "End City Treasure Loot"
+		},
+		{
+            "type": "gateways:loot_table",
+            "loot_table": "apotheotic_additions:chests/aa_spawner",
+            "rolls": 2,
+            "desc": "rewards.apotheotic_additions.loot_table.aa_spawner"
+        }
+	],
+	"failures": [],
+	"player_damage_only": true,
+	"leash_range": 999,
+	"spawn_range": 3
+}

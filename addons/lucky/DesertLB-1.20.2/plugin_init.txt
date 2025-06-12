@@ -1,0 +1,4 @@
+block_id=desert_lucky_block
+sword_id=desert_lucky_sword
+bow_id=desert_lucky_bow
+potion_id=desert_lucky_potion

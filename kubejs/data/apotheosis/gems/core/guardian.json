@@ -1,0 +1,98 @@
+{
+	"variant": "guardian",
+	"weight": 10,
+	"quality": 0,
+	"dimensions": [
+	],
+	"bonuses": [{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "core_armor",
+				"types": [
+					"chestplate",
+					"leggings"
+				]
+			},
+			"attribute": "minecraft:generic.armor",
+			"operation": "ADDITION",
+			"values": {
+				"common": 0.5,
+				"uncommon": 1,
+				"rare": 2.5,
+				"epic": 4,
+				"mythic": 6,
+				"ancient": 8,
+                "apotheotic_additions:artifact": 10,
+                "apotheotic_additions:heirloom": 12,
+                "apotheotic_additions:esoteric": 15
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "light_weapon",
+				"types": [
+					"sword",
+					"trident"
+				]
+			},
+			"attribute": "attributeslib:life_steal",
+			"operation": "ADDITION",
+			"values": {
+				"common": 0.01,
+				"uncommon": 0.02,
+				"rare": 0.03,
+				"epic": 0.04,
+				"mythic": 0.05,
+				"ancient": 0.06,
+                "apotheotic_additions:artifact": 0.07,
+                "apotheotic_additions:heirloom": 0.08,
+                "apotheotic_additions:esoteric": 0.1
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "heavy_weapon",
+				"types": [
+					"heavy_weapon"
+				]
+			},
+			"attribute": "attributeslib:overheal",
+			"operation": "ADDITION",
+			"values": {
+				"common": 0.01,
+				"uncommon": 0.02,
+				"rare": 0.03,
+				"epic": 0.04,
+				"mythic": 0.05,
+				"ancient": 0.06,
+                "apotheotic_additions:artifact": 0.07,
+                "apotheotic_additions:heirloom": 0.08,
+                "apotheotic_additions:esoteric": 0.1
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "shield",
+				"types": [
+					"shield"
+				]
+			},
+			"attribute": "minecraft:generic.armor",
+			"operation": "MULTIPLY_TOTAL",
+			"values": {
+				"common": 0.01,
+				"uncommon": 0.02,
+				"rare": 0.04,
+				"epic": 0.05,
+				"mythic": 0.06,
+				"ancient": 0.09,
+                "apotheotic_additions:artifact": 0.1,
+                "apotheotic_additions:heirloom": 0.12,
+                "apotheotic_additions:esoteric": 0.15
+			}
+		}
+	]
+}

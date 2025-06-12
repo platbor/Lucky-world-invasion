@@ -1,0 +1,33 @@
+// Jewels
+copper_ingot=2
+iron_ingot=3
+amethyst_shard=6
+gold_ingot=6
+emerald=8
+diamond=12
+netherite_ingot=35
+iron_block=30
+gold_block=60
+emerald_block=80
+diamond_block=100
+netherite_block=100
+
+
+// Lucky Items
+pink_dye=1
+golden_carrot=5
+golden_apple=40
+nether_star=100
+enchanted_golden_apple=100
+
+// Unlucky Items
+cobblestone=-1
+netherrack=-2
+cobbled_deepslate=-3
+end_stone=-4
+rotten_flesh=-5
+spider_eye=-10
+poisonous_potato=-10
+pufferfish=-20
+fermented_spider_eye=-20
+end_crystal=-100

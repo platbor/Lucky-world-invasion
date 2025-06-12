@@ -1,0 +1,39 @@
+/ desert well
+ID=desertluckywell,file=desertluckywell.nbt,centerY=3
+
+/ desert acropolis
+ID=desertacropolis,file=desertacropolis.nbt
+
+/ desert pyramid
+ID=desertpyramidupper,file=desertpyramidupper.nbt,centerY=5
+ID=desertpyramidlower,file=desertpyramidlower.nbt,centerY=15
+
+/ desert villages
+ID=desertvillage1,file=desertvillage1.nbt,centerY=1
+ID=desertvillage2,file=desertvillage2.nbt,centerY=1
+ID=desertvillage3,file=desertvillage3.nbt,centerY=1
+ID=desertvillage4,file=desertvillage4.nbt,centerY=1
+ID=desertvillage5,file=desertvillage5.nbt,centerY=1
+ID=desertvillage6,file=desertvillage6.nbt
+ID=desertvillage7,file=desertvillage7.nbt,centerY=1
+ID=desertvillage8,file=desertvillage8.nbt,centerY=1
+ID=desertvillage9,file=desertvillage9.nbt,centerY=1
+ID=desertvillagetower,file=desertvillagetower.nbt,centerY=1
+ID=desertblacksmith,file=desertblacksmith.nbt,centerY=1
+
+/ desert lucky buildings
+ID=desert_lucky_fort_inner,file=desert_lucky_fort_inner.luckystruct,blockMode=overlay
+ID=desert_lucky_fort,file=desert_lucky_fort.nbt,overlayStruct=desert_lucky_fort_inner,centerY=1
+ID=desert_lucky_temple_inner,file=desert_lucky_temple_inner.luckystruct,blockMode=overlay
+ID=desert_lucky_temple,file=desert_lucky_temple.nbt,overlayStruct=desert_lucky_temple_inner,centerY=1
+
+/ desert tnt trap
+ID=desertntrap,file=desertntrap.nbt,centerY=2
+
+/ mesa bryce spike
+ID=brycespike,file=brycespike.nbt
+
+/ chests custom
+ID=chestdesertedjunk,file=chestdesertedjunk.nbt
+ID=chestgoldentreasure,file=chestgoldentreasure.nbt
+ID=chesthorsearmor,file=chesthorsearmor.nbt

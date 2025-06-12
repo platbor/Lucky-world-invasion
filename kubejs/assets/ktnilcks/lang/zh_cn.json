@@ -1,0 +1,37 @@
+{
+  "_comment": "基础数据",
+  "config.ktnilcks.base.modname": "物品锁定",
+  "config.ktnilcks.base.config_title": "物品锁定配置",
+
+  "_comment": "配置部分",
+  "config.ktnilcks.section.versions": "版本通知",
+  "config.ktnilcks.section.actions": "操作设置",
+  "config.ktnilcks.section.hotbar": "快捷栏设置",
+
+  "_comment": "配置选项",
+  "config.ktnilcks.notify.global.long": "启用时，模组会根据版本变更提供反馈信息。",
+  "config.ktnilcks.notify.global.short": "启用通知",
+  "config.ktnilcks.notify.chat.long": "启用时，在加入世界或服务器时会在聊天栏显示版本反馈。",
+  "config.ktnilcks.notify.chat.short": "启用聊天通知",
+  "config.ktnilcks.notify.hud.long": "启用时，会在游戏界面中显示版本反馈。",
+  "config.ktnilcks.notify.hud.short": "启用HUD指示器",
+  "config.ktnilcks.action.bypassheld.long": "启用时，手持物品在物品栏中将始终绕过锁定。",
+  "config.ktnilcks.action.bypassheld.short": "自动绕过手持物品",
+  "config.ktnilcks.action.bypassaoffhand.long": "启用时，与副手交换物品将始终绕过锁定。",
+  "config.ktnilcks.action.bypassoffhand.short": "自动绕过副手交换",
+  "config.ktnilcks.action.bypassall.long": "启用时，除使用丢弃键丢弃物品外，所有操作都将绕过锁定。",
+  "config.ktnilcks.action.bypassall.short": "自动绕过所有物品",
+  "config.ktnilcks.hotbar.visible.long": "禁用时，快捷栏上的锁定标记将不会显示。",
+  "config.ktnilcks.hotbar.visible.short": "显示快捷栏锁定",
+
+  "_comment": "按键绑定",
+  "key.categories.ktnilcks": "物品锁定",
+  "key.ktnilcks.lock.toggle.hold": "切换锁定（按住）",
+  "key.ktnilcks.lock.bypass.hold": "绕过锁定（按住）",
+  "key.ktnilcks.options.show": "显示选项",
+
+  "_comment": "按键绑定错误信息",
+  "error.key.ktnilcks.lock.toggle": "\u00A76物品锁定\u00A78: \u00A77锁定切换键已重置为默认值以防止崩溃！",
+  "error.key.ktnilcks.lock.bypass": "\u00A76物品锁定\u00A78: \u00A77锁定绕过键已重置为默认值以防止崩溃！",
+  "error.key.ktnilcks.options.show": "\u00A76物品锁定\u00A78: \u00A77显示选项键已重置为默认值以防止崩溃！"
+}

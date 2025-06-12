@@ -1,0 +1,387 @@
+{
+	autofocus_id: "3658702B073DF047"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4986922C36E26385"
+	group: "7E80DA01FF9543AE"
+	hide_quest_until_deps_complete: true
+	icon: "voidscape:voidic_crystal"
+	id: "4986922C36E26385"
+	images: [
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/bedrock"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "voidscape:block/voidic_crystal_ore"
+			rotation: 0.0d
+			width: 0.6d
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "ftblibrary:icons/back"
+			rotation: 90.0d
+			width: 0.6d
+			x: -2.5d
+			y: 0.0d
+		}
+	]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["553560AFA6A3C8B9"]
+			description: ["{ftbquests.chapter.4986922C36E26385.quest1.description1}"]
+			id: "3658702B073DF047"
+			rewards: [{
+				id: "358C4C0C66589A64"
+				item: "kubejs:bad_apple"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				dimension: "voidscape:void"
+				id: "292D9AF036155819"
+				title: "{ftbquests.chapter.4986922C36E26385.quest1.task_2967198085997221913.title}"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3658702B073DF047"]
+			id: "36D03C1D00868BEC"
+			tasks: [
+				{
+					id: "5EE671D8FA74C388"
+					item: "voidscape:voidic_crystal"
+					type: "item"
+				}
+				{
+					id: "7197F0D2838CA779"
+					item: "voidscape:voidic_template"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			id: "553560AFA6A3C8B9"
+			invisible: true
+			shape: "square"
+			tasks: [{
+				id: "7FD1AF1ACEF803AC"
+				item: "voidscape:charred_bone"
+				type: "item"
+			}]
+			x: 1.75d
+			y: -0.5d
+		}
+		{
+			dependencies: ["36D03C1D00868BEC"]
+			id: "752A3B1CE7F06E2B"
+			tasks: [{
+				id: "2A482D2178DEE6CE"
+				item: "voidscape:tendril"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["752A3B1CE7F06E2B"]
+			description: ["{ftbquests.chapter.4986922C36E26385.quest5.description1}"]
+			id: "4B0C5C3EAB7B9290"
+			tasks: [{
+				id: "1D4F7CE60229EAAC"
+				item: "voidscape:titanite_chunk"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4B0C5C3EAB7B9290"]
+			description: ["{ftbquests.chapter.4986922C36E26385.quest6.description1}"]
+			id: "0988F49E708A9D8B"
+			tasks: [{
+				id: "73200DE65B92639A"
+				item: "voidscape:ichor"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0988F49E708A9D8B"]
+			description: ["{ftbquests.chapter.4986922C36E26385.quest7.description1}"]
+			id: "6C55C8000ABE286A"
+			tasks: [{
+				id: "74D33F0D51E544D2"
+				item: "voidscape:astral_essence"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6C55C8000ABE286A"]
+			id: "27D38F044483DF5B"
+			tasks: [{
+				id: "30C48A31E367766E"
+				item: "voidscape:astral_crystal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0988F49E708A9D8B"]
+			id: "2B7C25985932E61A"
+			tasks: [{
+				id: "3B490DB7EC69B647"
+				item: "voidscape:ichor_crystal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4B0C5C3EAB7B9290"]
+			id: "13DA536893452829"
+			tasks: [{
+				id: "05ACEB5B99F4AC79"
+				item: "voidscape:titanite_shard"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+	]
+	title: "{ftbquests.chapter.4986922C36E26385.title}"
+}

@@ -1,0 +1,136 @@
+/ pistol - 5
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:cz75",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:9mm"))@luck=0
+/ pistol - 6
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:glock_17",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:9mm"))@luck=1
+/ pistol - 7
+/ pistol - 7.5
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:b93r",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:9mm"))@chance=0.9@luck=1
+/ pistol - 8
+/ pistol - 9
+/ pistol - 10
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:p320",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:45acp"))@luck=0
+/ pistol - 11
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:m1911",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:45acp"))@luck=0
+/ pistol - 12
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:deagle_golden",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=48,NBTTag=(AmmoId="tacz:357mag"))@chance=0.9@luck=1
+/ pistol - 12.8
+/ pistol - 14
+/ pistol - 16
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:deagle",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=48,NBTTag=(AmmoId="tacz:50ae"))@chance=0.9@luck=1
+/ pistol - 18
+/ pistol - 21.4
+/ pistol - 24.7
+
+/ rifle - 6.5
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:m4a1",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:556x45"))@luck=1
+/ rifle - 7
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:m16a1",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:556x45"))@luck=1
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:aug",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:556x45"))@luck=2
+/ rifle - 7.5
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:hk416d",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:556x45"))@luck=2
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:scar_l",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:556x45"))@luck=2
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:qbz_95",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:58x42"))@luck=2
+/ rifle - 8
+/ rifle - 8.2
+/ rifle - 8.5
+/ rifle - 8.6
+/ rifle - 9
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:ak47",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:762x39"))@luck=2
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:type_81",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:762x39"))@luck=2
+/ rifle - 9.5
+/ rifle - 10
+/ rifle - 11
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:sks_tactical",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:762x39"))@chance=0.9@luck=1
+/ rifle - 12
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:hk_g3",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=48,NBTTag=(AmmoId="tacz:308"))@chance=0.9@luck=1
+/ rifle - 12.5
+/ rifle - 14
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:scar_h",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=48,NBTTag=(AmmoId="tacz:308"))@chance=0.9@luck=2
+/ rifle - 15
+/ rifle - 16
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:mk14",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=48,NBTTag=(AmmoId="tacz:308"))@chance=0.9@luck=1
+/ rifle - 24
+
+/ shotgun - 24
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="BURST",GunId="tacz:db_short",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=36,NBTTag=(AmmoId="tacz:12g"))@luck=-1
+/ shotgun - 25
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:db_long",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=36,NBTTag=(AmmoId="tacz:12g"))@luck=-1
+/ shotgun - 28
+/ shotgun - 30
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:aa12",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=36,NBTTag=(AmmoId="tacz:12g"))@chance=0.9@luck=2
+/ shotgun - 32
+/ shotgun - 36
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:m870",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=36,NBTTag=(AmmoId="tacz:12g"))@chance=0.9@luck=2
+/ shotgun - 40
+/ shotgun - 41
+
+/ submachine gun - 5.5
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:p90",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:57x28"))@luck=1
+/ submachine gun - 6
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:hk_mp5a5",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:9mm"))@luck=1
+/ submachine gun - 6.5
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:uzi",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:9mm"))@luck=1
+/ submachine gun - 7
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:vector45",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:45acp"))@luck=1
+/ submachine gun - 7.5
+/ submachine gun - 7.9
+/ submachine gun - 8.4
+/ submachine gun - 9
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:ump45",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:45acp"))@luck=2
+/ submachine gun - 9.5
+/ submachine gun - 11.8
+
+/ - 7
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:m249",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:556x45"))@chance=0.4@luck=2
+/ - 10
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="AUTO",GunId="tacz:rpk",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=60,NBTTag=(AmmoId="tacz:762x39"))@chance=0.6@luck=2
+
+/ - 42
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:ai_awp",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=30,NBTTag=(AmmoId="tacz:338"))@chance=0.7@luck=2
+/ - 75
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:m95",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=30,NBTTag=(AmmoId="tacz:50bmg"))@chance=0.4@luck=2
+
+/ 10 + 50
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:m320",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=6,NBTTag=(AmmoId="tacz:40mm"))@luck=2
+/ 20 + 120
+group(ID=tacz:modern_kinetic_gun,amount=1,NBTTag=(GunCurrentAmmoCount=0,GunFireMode="SEMI",GunId="tacz:rpg7",HasBulletInBarrel=0b);
+ID=tacz:ammo,amount=6,NBTTag=(AmmoId="tacz:rpg_rocket"))@luck=2
+
+/ lucky block
+ID=lucky:tacz_lucky_block,amount=#rand(1,3)@chance=0.7@luck=2
+
+/ item
+ID=tacz:workbench_c,NBTTag=(BlockId="zugzwang:vendor_sculpture_cimasilchin"),amount=1@chance=0.01@luck=2

@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "particle": "lucky:block/tacz_lucky_block",
+		"north": "lucky:block/tacz_lucky_block",
+		"south": "lucky:block/tacz_lucky_block",
+		"east": "lucky:block/tacz_lucky_block",
+		"west": "lucky:block/tacz_lucky_block",
+		"up": "lucky:block/tacz_lucky_block_top",
+		"down": "lucky:block/tacz_lucky_block_bottom"
+    }
+}

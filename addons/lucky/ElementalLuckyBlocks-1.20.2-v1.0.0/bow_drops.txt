@@ -1,0 +1,16 @@
+/Earth 1
+type=entity,ID=lucky:lucky_projectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=arrow),trail=(frequency=0.5,drops=["type=particle,ID=block.dirt"]),impact=["group(type=command,ID=/fill ~ ~ ~ ~ ~1 ~ air destroy;type=particle,ID=block.dirt,posY=#bExactPosY-7,size=(2.0,3.0,2.0),particleAmount=2000;type=sound,ID=block.gravel.break,volume=2.0)"])
+/Earth 2
+type=entity,ID=lucky:lucky_projectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=stone_pickaxe),trail=(frequency=0.5,drops=["type=particle,ID=block.dirt"]),impact=["group(type=command,ID="/fill ~ ~1 ~ ~ ~-1 ~ air destroy";type=command,ID="/setblock ~1 ~ ~ air destroy";type=command,ID="/setblock ~-1 ~ ~ air destroy";type=command,ID="/setblock ~ ~ ~1 air destroy";type=command,ID="/setblock ~ ~ ~-1 air destroy";type=particle,ID=block.dirt,posY=#bExactPosY-7,size=(2.0,3.0,2.0),particleAmount=2000;type=sound,ID=block.gravel.break,volume=2.0;type=entity,ID=falling_block,amount=#rand(1,3),posOffset='#'circleOffset(#rand(1,3)),NBTTag=(BlockState=(Name=dirt),Fuse=50b,Motion='#'randLaunchMotion))"])
+/Fire 1
+group(type=entity,ID=lucky:lucky_projectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=minecraft:blaze_powder),trail=(frequency=0.5,drops=["type=particle,ID=smoke,posY=#bExactPosY+0.4"]),impact=["type=block,ID=fire"]))
+/Fire 2
+group(type=entity,ID=lucky:lucky_projectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=minecraft:blaze_powder),trail=(frequency=0.5,drops=["type=particle,ID=smoke,posY=#bExactPosY+0.4"]),impact=["group(type=block,ID=fire;type=particle,ID=enchanted_hit,posY=#bExactPosY+0.4;type=explosion,radius=0,fire=true;type=entity,ID=falling_block,amount=#randList(0,0,0,0,1,1,1,2,2,2,3),posOffset='#'circleOffset(#rand(1,3)),NBTTag=(BlockState=(Name=fire),Fuse=50b,Motion='#'randLaunchMotion))"]))
+/Water 1
+group(type=entity,ID=lucky:lucky_projectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=minecraft:water_bucket),trail=(frequency=0.5,drops=["type=particle,ID=water,posY=#bExactPosY+0.4"]),impact=["type=block,ID=water"]))@luck=2
+/Water 2
+group(type=entity,ID=lucky:lucky_projectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=minecraft:packed_ice),trail=(frequency=0.5,drops=["type=particle,ID=water,posY=#bExactPosY+0.4"]),impact=["group(type=command,ID=/fill ~1 ~ ~1 ~-1 ~ ~-1 snow replace air;type=particle,ID=enchanted_hit,posY=#bExactPosY+0.4;type=entity,ID=falling_block,amount=#randList(1,1,1,2,2,3),posOffset='#'circleOffset(#rand(1,3)),NBTTag=(BlockState=(Name=#randList(ice,ice,ice,packed_ice)),Fuse=50b,Motion='#'randLaunchMotion))"]))@luck=2
+/Wind 1
+group(type=entity,ID=lucky:lucky_projectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=minecraft:feather),trail=(frequency=0.5,drops=["type=particle,ID=water,posY=#bExactPosY+0.4"]),impact=["group(type=effect,ID=special_knockback,power=#rand(1,2),range=2,delay=0.1;type=particle,ID=poof,size=(1.5,1.0,1.5),particleAmount=180)"]))@luck=2
+/Wind 2
+group(type=entity,ID=lucky:lucky_projectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=minecraft:feather),trail=(frequency=0.5,drops=["type=particle,ID=water,posY=#bExactPosY+0.4"]),impact=["group(type=effect,ID=special_knockback,power=#rand(2,4),range=4,delay=0.1;type=particle,ID=poof,size=(1.5,1.0,1.5),particleAmount=360)"]))

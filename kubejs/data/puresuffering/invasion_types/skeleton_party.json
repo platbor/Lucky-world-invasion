@@ -1,0 +1,104 @@
+{
+  "Dimensions": [
+    "shadowlands:shadow_forest",
+    "shadowlands:vellium",
+    "shadowlands:glowshroom_forest",
+    "shadowlands:blood_forest",
+	"twilightforest:twilight_forest"
+  ],
+  "InvasionTime": "NIGHT",
+  "Rarity": 3,
+  "SeverityInfo": [
+    {
+      "MobCapPercentage": 0.6,
+      "MobSpawnList": [
+        {
+          "EntityType": "mutantmonsters:mutant_skeleton",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 1
+        },
+        {
+          "EntityType": "minecraft:skeleton",
+          "Weight": 5,
+          "MinCount": 1,
+          "MaxCount": 3
+        }
+      ],
+      "TickDelay": 60
+    },
+    {
+      "MobCapPercentage": 0.7,
+      "MobSpawnList": [
+        {
+          "EntityType": "mutantmonsters:mutant_skeleton",
+          "MaxCount": 4,
+          "MinCount": 1,
+          "Weight": 1
+        },
+        {
+          "EntityType": "minecraft:skeleton",
+          "Weight": 5,
+          "MinCount": 1,
+          "MaxCount": 4
+        }
+      ],
+      "TickDelay": 48
+    },
+    {
+      "MobCapPercentage": 0.8,
+      "MobSpawnList": [
+        {
+          "EntityType": "mutantmonsters:mutant_skeleton",
+          "MaxCount": 6,
+          "MinCount": 2,
+          "Weight": 1
+        },
+        {
+          "EntityType": "minecraft:skeleton",
+          "Weight": 5,
+          "MinCount": 2,
+          "MaxCount": 6
+        }
+      ],
+      "TickDelay": 36
+    },
+    {
+      "MobCapPercentage": 0.9,
+      "MobSpawnList": [
+        {
+          "EntityType": "mutantmonsters:mutant_skeleton",
+          "MaxCount": 8,
+          "MinCount": 3,
+          "Weight": 1
+        },
+        {
+          "EntityType": "minecraft:skeleton",
+          "Weight": 5,
+          "MinCount": 3,
+          "MaxCount": 8
+        }
+      ],
+      "TickDelay": 24
+    },
+    {
+      "MobCapPercentage": 1.0,
+      "MobSpawnList": [
+        {
+          "EntityType": "mutantmonsters:mutant_skeleton",
+          "MaxCount": 10,
+          "MinCount": 4,
+          "Weight": 1
+        },
+        {
+          "EntityType": "minecraft:skeleton",
+          "Weight": 5,
+          "MinCount": 4,
+          "MaxCount": 10
+        }
+      ],
+      "TickDelay": 12
+    }
+  ],
+  "Tier": 4
+}

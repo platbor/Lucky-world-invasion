@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "L": {
+      "item": "lucky:lucky_block"
+    }
+  },
+  "pattern": ["DDD", "OLO", "RRR"],
+  "result": {
+    "item": "lucky:morbius_lucky_block"
+  }
+}

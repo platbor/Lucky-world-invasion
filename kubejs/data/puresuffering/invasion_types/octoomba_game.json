@@ -1,0 +1,98 @@
+{
+  "Dimensions": ["super_block_world:mushroom_kingdom"],
+  "InvasionTime": "NIGHT",
+  "Rarity": 1,
+  "SeverityInfo": [
+    {
+      "MobCapPercentage": 0.6,
+      "MobSpawnList": [
+        {
+          "EntityType": "super_block_world:shy_guy",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 1
+        },
+        {
+          "EntityType": "super_block_world:octoomba",
+          "Weight": 5,
+          "MinCount": 1,
+          "MaxCount": 3
+        }
+      ],
+      "TickDelay": 60
+    },
+    {
+      "MobCapPercentage": 0.7,
+      "MobSpawnList": [
+        {
+          "EntityType": "super_block_world:shy_guy",
+          "MaxCount": 4,
+          "MinCount": 1,
+          "Weight": 1
+        },
+        {
+          "EntityType": "super_block_world:octoomba",
+          "Weight": 5,
+          "MinCount": 1,
+          "MaxCount": 4
+        }
+      ],
+      "TickDelay": 48
+    },
+    {
+      "MobCapPercentage": 0.8,
+      "MobSpawnList": [
+        {
+          "EntityType": "super_block_world:shy_guy",
+          "MaxCount": 6,
+          "MinCount": 2,
+          "Weight": 1
+        },
+        {
+          "EntityType": "super_block_world:octoomba",
+          "Weight": 5,
+          "MinCount": 2,
+          "MaxCount": 6
+        }
+      ],
+      "TickDelay": 36
+    },
+    {
+      "MobCapPercentage": 0.9,
+      "MobSpawnList": [
+        {
+          "EntityType": "super_block_world:shy_guy",
+          "MaxCount": 8,
+          "MinCount": 3,
+          "Weight": 1
+        },
+        {
+          "EntityType": "super_block_world:octoomba",
+          "Weight": 5,
+          "MinCount": 3,
+          "MaxCount": 8
+        }
+      ],
+      "TickDelay": 24
+    },
+    {
+      "MobCapPercentage": 1.0,
+      "MobSpawnList": [
+        {
+          "EntityType": "super_block_world:shy_guy",
+          "MaxCount": 10,
+          "MinCount": 4,
+          "Weight": 1
+        },
+        {
+          "EntityType": "super_block_world:octoomba",
+          "Weight": 5,
+          "MinCount": 4,
+          "MaxCount": 10
+        }
+      ],
+      "TickDelay": 12
+    }
+  ],
+  "Tier": 1
+}

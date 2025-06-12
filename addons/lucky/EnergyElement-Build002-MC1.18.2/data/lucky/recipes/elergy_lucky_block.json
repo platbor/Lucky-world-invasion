@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "R": {
+      "item": "minecraft:lightning_rod"
+    },
+    "L": {
+      "item": "lucky:lucky_block"
+    }
+  },
+  "pattern": ["RRR", "RLR", "RRR"],
+  "result": {
+    "item": "lucky:elergy_lucky_block"
+  }
+}

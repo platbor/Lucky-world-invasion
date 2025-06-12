@@ -1,0 +1,10 @@
+/ === SPECIAL EFFECTS ===
+
+/ arrow cluster
+type=entity,ID=arrow,pos=#bowPos,NBTTag=(Motion=#bowMotion(1.0,5.0),Color=-1),amount=20@luck=2
+
+/ arrow stream
+type=entity,ID=arrow,pos=#bowPos,NBTTag=(Motion=#bowMotion,Color=-1),amount=30,delay=#rand(0.0,3.0)@luck=2
+
+
+type=entity,ID=arrow,pos=#bowPos,NBTTag=(Motion=#bowMotion,Color=-1)@chance=50

@@ -1,0 +1,25 @@
+>super_block_world:mushroom_kingdom
+
+/ single block
+type=block,ID=lucky:lucky_block@chance=50
+
+/ lucky acropolis
+group(type=structure,ID=gen_acropolis;type=block,ID=lucky:lucky_block,posY=#bPosY+1,tileEntity=(Luck=75))@chance=200
+
+/ ==== unlucky ruins ====
+/ bottom layer
+group(type=block,ID=super_block_world:vanillate,posY=#bPosY-1,posOffset=#circleOffset(#rand(0,3)),damage=#rand(0,2),amount=#rand(20,30); \
+type=block,ID=super_block_world:gritzy_sand,posY=#bPosY-1,posOffset=#circleOffset(#rand(0,3)),amount=#rand(20,30); \
+type=block,ID=super_block_world:hardstone,posY=#bPosY-1,posOffset=#circleOffset(#rand(0,3)),amount=#rand(10,15); \
+/ top layer
+type=block,ID=super_block_world:#randList(vanillate,topped_vanillate,vanillate_crumble),posOffset=#circleOffset(#rand(0,2)),amount=#rand(2,5); \
+type=block,ID=super_block_world:gritzy_sand,posOffset=#circleOffset(#rand(0,2)),amount=#rand(2,5); \
+type=block,ID=super_block_world:hardstone,posOffset=#circleOffset(#rand(0,2)),amount=#rand(0,2); \
+/ lucky block
+type=block,ID=lucky:lucky_block,tileEntity=(Luck=-75))@chance=200
+
+/ >minecraft:the_nether
+/ type=block,ID=lucky:lucky_block@chance=0
+
+/ >minecraft:the_end
+/ type=block,ID=lucky:lucky_block@chance=0

@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "lucky:block/water_lucky_block" }
+    }
+}

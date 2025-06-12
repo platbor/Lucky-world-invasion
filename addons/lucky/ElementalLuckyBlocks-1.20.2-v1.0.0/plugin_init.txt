@@ -1,0 +1,4 @@
+block_id=elemental_lucky_block
+sword_id=elemental_lucky_sword
+bow_id=elemental_lucky_bow
+potion_id=elemental_lucky_potion

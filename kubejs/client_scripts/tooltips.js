@@ -1,0 +1,467 @@
+/**
+ * Modify item tooltips
+ */
+ItemEvents.tooltip((event) => {
+  event.addAdvanced(
+    [
+      'shadowlands:upgrade_station'
+    ],
+    (item, advanced, text) => {
+      // if (event.shift) {
+      text.add(Text.translate(`tooltip.${item.id.replace(':', '.')}`).gray())
+      // }
+    }
+  )
+
+  // ban item
+  event.addAdvanced(
+    [
+      'confluence:brain_of_confusion',
+      'artifacts:helium_flamingo',
+      'fuze_relics:axolo_soap',
+      'fuze_relics:axolo_soap_2',
+      'fuze_relics:axolo_soap_3',
+      'fuze_relics:nether_portal_gun'
+    ],
+    (item, advanced, text) => {
+      text.add(Text.translate('message.kubejs.item.ban').red())
+    }
+  )
+})
+
+/**
+ * lucky value
+ */
+JEIEvents.information(event => {
+  event.addItem([
+    'lucky:lucky_block',
+    'lucky:lucky_potion',
+    'lucky:lucky_bow',
+    'lucky:lucky_sword'
+  ], [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('diamond').getDisplayName().getString()}+12`),
+    Text.darkGreen(`${Item.of('diamond_block').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('emerald').getDisplayName().getString()}+8`),
+    Text.darkGreen(`${Item.of('emerald_block').getDisplayName().getString()}+80`),
+    Text.darkGreen(`${Item.of('gold_ingot').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('gold_block').getDisplayName().getString()}+60`),
+    Text.darkGreen(`${Item.of('iron_ingot').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('iron_block').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_carrot').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_apple').getDisplayName().getString()}+40`),
+    Text.darkGreen(`${Item.of('enchanted_golden_apple').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+100`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('pufferfish').getDisplayName().getString()}-20`)
+  ])
+
+  event.addItem([
+    'lucky:amongus_lucky_block',
+    'lucky:amongus_lucky_potion',
+    'lucky:amongus_lucky_bow',
+    'lucky:amongus_lucky_sword'
+  ], [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('diamond').getDisplayName().getString()}+12`),
+    Text.darkGreen(`${Item.of('diamond_block').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('emerald').getDisplayName().getString()}+8`),
+    Text.darkGreen(`${Item.of('emerald_block').getDisplayName().getString()}+80`),
+    Text.darkGreen(`${Item.of('gold_ingot').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('gold_block').getDisplayName().getString()}+60`),
+    Text.darkGreen(`${Item.of('iron_ingot').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('iron_block').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_carrot').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_apple').getDisplayName().getString()}+40`),
+    Text.darkGreen(`${Item.of('enchanted_golden_apple').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('blaze_powder').getDisplayName().getString()}+10`),
+    Text.darkGreen(`${Item.of('fire_charge').getDisplayName().getString()}+15`),
+    Text.darkGreen(`${Item.of('blaze_rod').getDisplayName().getString()}+25`),
+    Text.darkGreen(`${Item.of('ghast_tear').getDisplayName().getString()}+50`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('pufferfish').getDisplayName().getString()}-20`)
+  ])
+
+  event.addItem(
+    [
+      'lucky:desert_lucky_block',
+      'lucky:desert_lucky_potion',
+      'lucky:desert_lucky_bow',
+      'lucky:desert_lucky_sword'
+    ], [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('diamond').getDisplayName().getString()}+2`),
+    Text.darkGreen(`${Item.of('diamond_block').getDisplayName().getString()}+18`),
+    Text.darkGreen(`${Item.of('netherite_ingot').getDisplayName().getString()}+5`),
+    Text.darkGreen(`${Item.of('netherite_block').getDisplayName().getString()}+40`),
+    Text.darkGreen(`${Item.of('netherite_scrap').getDisplayName().getString()}+7`),
+    Text.darkGreen(`${Item.of('emerald').getDisplayName().getString()}+1`),
+    Text.darkGreen(`${Item.of('emerald_block').getDisplayName().getString()}+9`),
+    Text.darkGreen(`${Item.of('gold_ingot').getDisplayName().getString()}+1`),
+    Text.darkGreen(`${Item.of('gold_block').getDisplayName().getString()}+9`),
+    Text.darkGreen(`${Item.of('iron_block').getDisplayName().getString()}+5`),
+    Text.darkGreen(`${Item.of('sunflower').getDisplayName().getString()}+7`),
+    Text.darkGreen(`${Item.of('golden_carrot').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('lapis_block').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('lapis_lazuli').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('cactus').getDisplayName().getString()}+4`),
+    Text.darkRed(`${Item.of('coal').getDisplayName().getString()}-3`),
+    Text.darkRed(`${Item.of('coal_block').getDisplayName().getString()}-30`),
+    Text.darkRed(`${Item.of('deadbush').getDisplayName().getString()}-7`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`),
+  ])
+
+  event.addItem([
+    'lucky:elemental_lucky_block',
+    'lucky:elemental_lucky_potion',
+    'lucky:elemental_lucky_bow',
+    'lucky:elemental_lucky_sword'
+  ], [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('diamond').getDisplayName().getString()}+12`),
+    Text.darkGreen(`${Item.of('diamond_block').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('emerald').getDisplayName().getString()}+8`),
+    Text.darkGreen(`${Item.of('emerald_block').getDisplayName().getString()}+80`),
+    Text.darkGreen(`${Item.of('gold_ingot').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('gold_block').getDisplayName().getString()}+60`),
+    Text.darkGreen(`${Item.of('iron_ingot').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('iron_block').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_carrot').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+100`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`),
+    Text.darkGreen(`${Item.of('clay_ball').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('flint').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('wheat_seeds').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('feather').getDisplayName().getString()}+7`)
+  ])
+
+  event.addItem([
+    'lucky:elergy_lucky_block',
+    'lucky:elergy_lucky_potion',
+    'lucky:elergy_lucky_bow',
+    'lucky:elergy_lucky_sword'
+  ], [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('diamond').getDisplayName().getString()}+12`),
+    Text.darkGreen(`${Item.of('diamond_block').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('emerald').getDisplayName().getString()}+8`),
+    Text.darkGreen(`${Item.of('emerald_block').getDisplayName().getString()}+80`),
+    Text.darkGreen(`${Item.of('gold_ingot').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('gold_block').getDisplayName().getString()}+60`),
+    Text.darkGreen(`${Item.of('iron_ingot').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('iron_block').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_carrot').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_apple').getDisplayName().getString()}+40`),
+    Text.darkGreen(`${Item.of('enchanted_golden_apple').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('blaze_powder').getDisplayName().getString()}+10`),
+    Text.darkGreen(`${Item.of('fire_charge').getDisplayName().getString()}+15`),
+    Text.darkGreen(`${Item.of('blaze_rod').getDisplayName().getString()}+25`),
+    Text.darkGreen(`${Item.of('ghast_tear').getDisplayName().getString()}+50`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('pufferfish').getDisplayName().getString()}-20`)
+  ])
+
+  event.addItem([
+    'lucky:fire_lucky_block',
+    'lucky:fire_lucky_potion',
+    'lucky:fire_lucky_bow',
+    'lucky:fire_lucky_sword'
+  ], [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('diamond').getDisplayName().getString()}+8`),
+    Text.darkGreen(`${Item.of('diamond_block').getDisplayName().getString()}+80`),
+    Text.darkGreen(`${Item.of('netherite_ingot').getDisplayName().getString()}+25`),
+    Text.darkGreen(`${Item.of('netherite_block').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('netherite_scrap').getDisplayName().getString()}+7`),
+    Text.darkGreen(`${Item.of('emerald').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('emerald_block').getDisplayName().getString()}+60`),
+    Text.darkGreen(`${Item.of('gold_nugget').getDisplayName().getString()}+1`),
+    Text.darkGreen(`${Item.of('gold_ingot').getDisplayName().getString()}+12`),
+    Text.darkGreen(`${Item.of('gold_block').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('iron_ingot').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('iron_block').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('blaze_powder').getDisplayName().getString()}+16`),
+    Text.darkGreen(`${Item.of('golden_carrot').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('blaze_rod').getDisplayName().getString()}+25`),
+    Text.darkGreen(`${Item.of('nether_wart').getDisplayName().getString()}+5`),
+    Text.darkGreen(`${Item.of('flint_and_steel').getDisplayName().getString()}+40`),
+    Text.darkGreen(`${Item.of('fire_charge').getDisplayName().getString()}+10`),
+    Text.darkGreen(`${Item.of('lava_bucket').getDisplayName().getString()}+50`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('ghast_tear').getDisplayName().getString()}+80`),
+    Text.darkRed(`${Item.of('coal').getDisplayName().getString()}-3`),
+    Text.darkRed(`${Item.of('coal_block').getDisplayName().getString()}-30`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fish:3').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('skull').getDisplayName().getString()}-50`)
+  ])
+
+  event.addItem([
+    'lucky:eleice_lucky_block',
+    'lucky:eleice_lucky_potion',
+    'lucky:eleice_lucky_bow',
+    'lucky:eleice_lucky_sword'
+  ], [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('diamond').getDisplayName().getString()}+12`),
+    Text.darkGreen(`${Item.of('diamond_block').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('emerald').getDisplayName().getString()}+8`),
+    Text.darkGreen(`${Item.of('emerald_block').getDisplayName().getString()}+80`),
+    Text.darkGreen(`${Item.of('gold_ingot').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('gold_block').getDisplayName().getString()}+60`),
+    Text.darkGreen(`${Item.of('iron_ingot').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('iron_block').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_carrot').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_apple').getDisplayName().getString()}+40`),
+    Text.darkGreen(`${Item.of('enchanted_golden_apple').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('blaze_powder').getDisplayName().getString()}+10`),
+    Text.darkGreen(`${Item.of('fire_charge').getDisplayName().getString()}+15`),
+    Text.darkGreen(`${Item.of('blaze_rod').getDisplayName().getString()}+25`),
+    Text.darkGreen(`${Item.of('ghast_tear').getDisplayName().getString()}+50`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('pufferfish').getDisplayName().getString()}-20`)
+  ])
+
+  event.addItem([
+    'lucky:elefire_lucky_block',
+    'lucky:elefire_lucky_potion',
+    'lucky:elefire_lucky_bow',
+    'lucky:elefire_lucky_sword'
+  ], [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('diamond').getDisplayName().getString()}+12`),
+    Text.darkGreen(`${Item.of('diamond_block').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('emerald').getDisplayName().getString()}+8`),
+    Text.darkGreen(`${Item.of('emerald_block').getDisplayName().getString()}+80`),
+    Text.darkGreen(`${Item.of('gold_ingot').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('gold_block').getDisplayName().getString()}+60`),
+    Text.darkGreen(`${Item.of('iron_ingot').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('iron_block').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_carrot').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_apple').getDisplayName().getString()}+40`),
+    Text.darkGreen(`${Item.of('enchanted_golden_apple').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('blaze_powder').getDisplayName().getString()}+10`),
+    Text.darkGreen(`${Item.of('fire_charge').getDisplayName().getString()}+15`),
+    Text.darkGreen(`${Item.of('blaze_rod').getDisplayName().getString()}+25`),
+    Text.darkGreen(`${Item.of('ghast_tear').getDisplayName().getString()}+50`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('pufferfish').getDisplayName().getString()}-20`)
+  ])
+
+  event.addItem([
+    'lucky:morbius_lucky_block',
+    'lucky:morbius_lucky_potion',
+    'lucky:morbius_lucky_bow',
+    'lucky:morbius_lucky_sword'
+  ], [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('diamond').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('diamond_block').getDisplayName().getString()}+50`),
+    Text.darkGreen(`${Item.of('emerald').getDisplayName().getString()}+4`),
+    Text.darkGreen(`${Item.of('emerald_block').getDisplayName().getString()}+40`),
+    Text.darkGreen(`${Item.of('gold_ingot').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('gold_block').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('iron_ingot').getDisplayName().getString()}+1`),
+    Text.darkGreen(`${Item.of('iron_block').getDisplayName().getString()}+15`),
+    Text.darkGreen(`${Item.of('golden_carrot').getDisplayName().getString()}+15`),
+    Text.darkGreen(`${Item.of('golden_apple').getDisplayName().getString()}+20`),
+    Text.darkGreen(`${Item.of('enchanted_golden_apple').getDisplayName().getString()}+50`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+50`),
+    Text.darkGreen(`${Item.of('blaze_powder').getDisplayName().getString()}+5`),
+    Text.darkGreen(`${Item.of('fire_charge').getDisplayName().getString()}+7`),
+    Text.darkGreen(`${Item.of('blaze_rod').getDisplayName().getString()}+12`),
+    Text.darkGreen(`${Item.of('ghast_tear').getDisplayName().getString()}+25`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-2`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('pufferfish').getDisplayName().getString()}-5`)
+  ])
+
+  event.addItem([
+    'lucky:summer_lucky_block',
+    'lucky:summer_lucky_potion',
+    'lucky:summer_lucky_bow',
+    'lucky:summer_lucky_sword'
+  ], [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('diamond').getDisplayName().getString()}+8`),
+    Text.darkGreen(`${Item.of('diamond_block').getDisplayName().getString()}+80`),
+    Text.darkGreen(`${Item.of('netherite_ingot').getDisplayName().getString()}+25`),
+    Text.darkGreen(`${Item.of('netherite_block').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('netherite_scrap').getDisplayName().getString()}+7`),
+    Text.darkGreen(`${Item.of('emerald').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('emerald_block').getDisplayName().getString()}+60`),
+    Text.darkGreen(`${Item.of('gold_ingot').getDisplayName().getString()}+12`),
+    Text.darkGreen(`${Item.of('gold_block').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('iron_ingot').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('iron_block').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('sunflower').getDisplayName().getString()}+7`),
+    Text.darkGreen(`${Item.of('blaze_powder').getDisplayName().getString()}+16`),
+    Text.darkGreen(`${Item.of('golden_carrot').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('lava_bucket').getDisplayName().getString()}+50`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+100`),
+    Text.darkRed(`${Item.of('coal').getDisplayName().getString()}-3`),
+    Text.darkRed(`${Item.of('coal_block').getDisplayName().getString()}-30`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`)
+  ])
+
+  event.addItem([
+    'lucky:elewind_lucky_block',
+    'lucky:elewind_lucky_potion',
+    'lucky:elewind_lucky_bow',
+    'lucky:elewind_lucky_sword'
+  ], [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('diamond').getDisplayName().getString()}+12`),
+    Text.darkGreen(`${Item.of('diamond_block').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('emerald').getDisplayName().getString()}+8`),
+    Text.darkGreen(`${Item.of('emerald_block').getDisplayName().getString()}+80`),
+    Text.darkGreen(`${Item.of('gold_ingot').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('gold_block').getDisplayName().getString()}+60`),
+    Text.darkGreen(`${Item.of('iron_ingot').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('iron_block').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_carrot').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_apple').getDisplayName().getString()}+40`),
+    Text.darkGreen(`${Item.of('enchanted_golden_apple').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('blaze_powder').getDisplayName().getString()}+10`),
+    Text.darkGreen(`${Item.of('fire_charge').getDisplayName().getString()}+15`),
+    Text.darkGreen(`${Item.of('blaze_rod').getDisplayName().getString()}+25`),
+    Text.darkGreen(`${Item.of('ghast_tear').getDisplayName().getString()}+50`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('pufferfish').getDisplayName().getString()}-20`)
+  ])
+
+  event.addItem([
+    'lucky:pink_lucky_block',
+    'lucky:pink_lucky_potion',
+    'lucky:pink_lucky_bow',
+    'lucky:pink_lucky_sword'
+  ], [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('copper_ingot').getDisplayName().getString()}+2`),
+    Text.darkGreen(`${Item.of('iron_ingot').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('gold_ingot').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('amethyst_shard').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('emerald').getDisplayName().getString()}+8`),
+    Text.darkGreen(`${Item.of('diamond').getDisplayName().getString()}+12`),
+    Text.darkGreen(`${Item.of('iron_block').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('netherite_ingot').getDisplayName().getString()}+35`),
+    Text.darkGreen(`${Item.of('gold_block').getDisplayName().getString()}+60`),
+    Text.darkGreen(`${Item.of('emerald_block').getDisplayName().getString()}+80`),
+    Text.darkGreen(`${Item.of('diamond_block').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('netherite_block').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('pink_dye').getDisplayName().getString()}+1`),
+    Text.darkGreen(`${Item.of('golden_carrot').getDisplayName().getString()}+5`),
+    Text.darkGreen(`${Item.of('sponge').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_apple').getDisplayName().getString()}+40`),
+    Text.darkGreen(`${Item.of('beacon').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('dragon_egg').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('enchanted_golden_apple').getDisplayName().getString()}+100`),
+    Text.darkRed(`${Item.of('cobblestone').getDisplayName().getString()}-1`),
+    Text.darkRed(`${Item.of('netherrack').getDisplayName().getString()}-2`),
+    Text.darkRed(`${Item.of('cobbled_deepslate').getDisplayName().getString()}-3`),
+    Text.darkRed(`${Item.of('end_stone').getDisplayName().getString()}-4`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('pufferfish').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('end_crystal').getDisplayName().getString()}-100`)
+  ])
+
+  event.addItem('lucky:water_lucky_block', [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('yakurum:water_diamond').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('yakurum:water_diamond_block').getDisplayName().getString()}+200`),
+    Text.darkGreen(`${Item.of('yakurum:aquamarine').getDisplayName().getString()}+8`),
+    Text.darkGreen(`${Item.of('yakurum:aquamarine_block').getDisplayName().getString()}+80`),
+    Text.darkGreen(`${Item.of('yakurum:pearl').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('yakurum:pearl_block').getDisplayName().getString()}+60`),
+    Text.darkGreen(`${Item.of('yakurum:coral_crystal').getDisplayName().getString()}+3`),
+    Text.darkGreen(`${Item.of('yakurum:crystal_gem').getDisplayName().getString()}+2`),
+    Text.darkGreen(`${Item.of('yakurum:coral_crystal_gem').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('yakurum:prismarine_gem').getDisplayName().getString()}+7`),
+    Text.darkGreen(`${Item.of('yakurum:prismarine_gem_block').getDisplayName().getString()}+70`),
+    Text.darkGreen(`${Item.of('golden_carrot').getDisplayName().getString()}+30`),
+    Text.darkGreen(`${Item.of('golden_apple').getDisplayName().getString()}+40`),
+    Text.darkGreen(`${Item.of('enchanted_golden_apple').getDisplayName().getString()}+100`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+100`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('pufferfish').getDisplayName().getString()}-20`)
+  ])
+
+  event.addItem('lucky:tacz_lucky_block', [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('iron_block').getDisplayName().getString()}+10`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('pufferfish').getDisplayName().getString()}-20`)
+  ])
+
+  event.addItem(['lucky:lucky_world_invasion_lucky_block', 'lucky:lucky_world_invasion_lucky_sword'], [
+    Text.translate('jei.lucky.lucky_block.value'),
+    Text.darkGreen(`${Item.of('yakurum:water_diamond').getDisplayName().getString()}+10`),
+    Text.darkGreen(`${Item.of('yakurum:water_diamond_block').getDisplayName().getString()}+20`),
+    Text.darkGreen(`${Item.of('yakurum:aquamarine_block').getDisplayName().getString()}+8`),
+    Text.darkGreen(`${Item.of('yakurum:pearl_block').getDisplayName().getString()}+6`),
+    Text.darkGreen(`${Item.of('yakurum:prismarine_gem_block').getDisplayName().getString()}+7`),
+    Text.darkGreen(`${Item.of('enchanted_golden_apple').getDisplayName().getString()}+1`),
+    Text.darkGreen(`${Item.of('nether_star').getDisplayName().getString()}+1`),
+    Text.darkGreen(`${Item.of('skeleton_skull').getDisplayName().getString()}+1`),
+    Text.darkGreen(`${Item.of('wither_skeleton_skull').getDisplayName().getString()}+2`),
+    Text.darkGreen(`${Item.of('player_head').getDisplayName().getString()}+4`),
+    Text.darkGreen(`${Item.of('zombie_head').getDisplayName().getString()}+1`),
+    Text.darkGreen(`${Item.of('creeper_head').getDisplayName().getString()}+1`),
+    Text.darkGreen(`${Item.of('piglin_head').getDisplayName().getString()}+4`),
+    Text.darkGreen(`${Item.of('dragon_head').getDisplayName().getString()}+10`),
+    Text.darkRed(`${Item.of('rotten_flesh').getDisplayName().getString()}-5`),
+    Text.darkRed(`${Item.of('spider_eye').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('fermented_spider_eye').getDisplayName().getString()}-20`),
+    Text.darkRed(`${Item.of('poisonous_potato').getDisplayName().getString()}-10`),
+    Text.darkRed(`${Item.of('pufferfish').getDisplayName().getString()}-20`)
+  ])
+
+})

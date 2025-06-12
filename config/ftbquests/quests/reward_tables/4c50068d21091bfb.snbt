@@ -1,0 +1,27 @@
+{
+	id: "4C50068D21091BFB"
+	loot_size: 1
+	order_index: 9
+	rewards: [{
+		command: "/curios add belt @p 1"
+		elevate_perms: true
+		icon: {
+			Count: 1
+			id: "relics:leather_belt"
+			tag: {
+				abilities: {
+					slots: {
+						points: 0
+						stats: {
+							charm: 1.78258d
+						}
+					}
+				}
+			}
+		}
+		silent: true
+		title: "腰带+1"
+		type: "command"
+	}]
+	title: "{ftbquests.loot_table_5498902348233776123.title}"
+}

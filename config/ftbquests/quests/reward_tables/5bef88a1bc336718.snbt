@@ -1,0 +1,32 @@
+{
+	id: "5BEF88A1BC336718"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			command: "/gamerule keepInventory false"
+			icon: {
+				Count: 1
+				id: "minecraft:leather_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			title: "掉落"
+			type: "command"
+		}
+		{
+			command: "/gamerule keepInventory true"
+			icon: {
+				Count: 1
+				id: "minecraft:iron_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			title: "不掉落"
+			type: "command"
+		}
+	]
+	title: "{ftbquests.loot_table_6624663805113886488.title}"
+}

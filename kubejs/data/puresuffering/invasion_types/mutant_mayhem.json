@@ -1,0 +1,161 @@
+{
+  "Rarity": 12,
+  "Tier": 6,
+  "InvasionTime": "BOTH",
+  "TimeModifier": "DAY_TO_NIGHT",
+  "SeverityInfo": [
+    {
+      "MobSpawnList": [
+        {
+          "EntityType": "mutantmonsters:mutant_creeper",
+          "Weight": 5,
+          "MinCount": 1,
+          "MaxCount": 3
+        },
+        {
+          "EntityType": "mutantmonsters:mutant_enderman",
+          "Weight": 4,
+          "MinCount": 1,
+          "MaxCount": 3
+        },
+        {
+          "EntityType": "mutantmonsters:mutant_skeleton",
+          "Weight": 5,
+          "MinCount": 1,
+          "MaxCount": 3
+        },
+        {
+          "EntityType": "mutantmonsters:mutant_zombie",
+          "Weight": 5,
+          "MinCount": 1,
+          "MaxCount": 3
+        }
+      ],
+      "MobCapPercentage": 0.3,
+      "SkyRenderInfo": {
+        "Brightness": 0.15,
+        "FogRenderInfo": {
+          "RGBOffset": [
+            0,
+            0.15,
+            0.15
+          ]
+        },
+        "LightLevel": 0,
+        "RGBOffset": [
+          0,
+          -0.85,
+          -0.85
+        ]
+      },
+      "TickDelay": 60
+    },
+    {
+      "MobSpawnList": [
+        {
+          "EntityType": "mutantmonsters:mutant_creeper",
+          "Weight": 5,
+          "MinCount": 1,
+          "MaxCount": 10
+        },
+        {
+          "EntityType": "mutantmonsters:mutant_enderman",
+          "Weight": 4,
+          "MinCount": 1,
+          "MaxCount": 10
+        },
+        {
+          "EntityType": "mutantmonsters:mutant_skeleton",
+          "Weight": 5,
+          "MinCount": 1,
+          "MaxCount": 10
+        },
+        {
+          "EntityType": "mutantmonsters:mutant_zombie",
+          "Weight": 5,
+          "MinCount": 1,
+          "MaxCount": 10
+        }
+      ],
+      "MobCapPercentage": 0.4,
+      "SkyRenderInfo": {
+        "Brightness": 0.1,
+        "FogRenderInfo": {
+          "RGBOffset": [
+            0,
+            0.1,
+            0.1
+          ]
+        },
+        "LightLevel": 0,
+        "RGBOffset": [
+          0,
+          -0.9,
+          -0.9
+        ]
+      },
+      "TickDelay": 45
+    },
+    {
+      "MobSpawnList": [
+        {
+          "EntityType": "mutantmonsters:mutant_creeper",
+          "Weight": 5,
+          "MinCount": 1,
+          "MaxCount": 20
+        },
+        {
+          "EntityType": "mutantmonsters:mutant_enderman",
+          "Weight": 4,
+          "MinCount": 1,
+          "MaxCount": 20
+        },
+        {
+          "EntityType": "mutantmonsters:mutant_skeleton",
+          "Weight": 5,
+          "MinCount": 1,
+          "MaxCount": 20
+        },
+        {
+          "EntityType": "mutantmonsters:mutant_zombie",
+          "Weight": 5,
+          "MinCount": 1,
+          "MaxCount": 20
+        },
+        {
+          "EntityType": "mutantmonsters:mutant_charged_creeper",
+          "Weight": 1,
+          "MinCount": 1,
+          "MaxCount": 20
+        }
+      ],
+      "MobCapPercentage": 0.5,
+      "SkyRenderInfo": {
+        "Brightness": 0.05,
+        "FogRenderInfo": {
+          "RGBOffset": [
+            0,
+            0.05,
+            0.05
+          ]
+        },
+        "LightLevel": 0,
+        "RGBOffset": [
+          0,
+          -0.95,
+          -0.95
+        ]
+      },
+      "TickDelay": 30
+    }
+  ],
+  "Dimensions": [
+    "minecraft:the_end",
+    "minecraft:overworld",
+    "shadowlands:shadow_forest",
+    "shadowlands:vellium",
+    "shadowlands:glowshroom_forest",
+    "shadowlands:blood_forest",
+	"twilightforest:twilight_forest"
+  ]
+}

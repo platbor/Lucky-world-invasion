@@ -1,0 +1,29 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "G": {
+            "item": "minecraft:gold_ingot"
+        },
+        "L": {
+            "item": "minecraft:glass"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "C": {
+            "item": "minecraft:coal_block"
+        },
+        "D": {
+            "item": "minecraft:dropper"
+        }
+    },
+    "pattern": [
+        "GLG",
+        "RDR",
+        "RCR"
+    ],
+    "result": {
+		"count": 1,
+        "item": "lucky:amongus_lucky_block"
+    }
+}

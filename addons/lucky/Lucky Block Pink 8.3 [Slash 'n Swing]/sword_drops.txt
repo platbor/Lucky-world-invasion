@@ -1,0 +1,17 @@
+// Projectiles
+group:1:(type=entity,ID=tnt,pos=#pExactPos,posOffsetY=1.5,NBTTag=(Fuse=50b,Motion=#motionFromDirection(#pYaw,#pPitch,0.8));type=entity,ID=egg,pos=#pExactPos,posOffsetY=1.5,NBTTag=(Motion=#motionFromDirection(#pYaw+#rand(-10,10),#pPitch+#rand(-10,10), 1.0)),amount=25,delay=#rand(0.0,2.0);type=entity,ID=trident,pos=#pExactPos,posOffsetY=1.5,NBTTag=(Motion=#motionFromDirection(#pYaw+#rand(-10,10),#pPitch+#rand(-10,10),1.0),Color=-1),amount=50,delay=#rand(0.0,4.0);type=entity,ID=spectral_arrow,pos=#pExactPos,posOffsetY=1.5,NBTTag=(Motion=#motionFromDirection(#pYaw+#rand(-10,10),#pPitch+#rand(-10,10),1.0),Color=-1),amount=50,delay=#rand(0.0,4.0))@luck=2
+
+// Effects
+// Potion Effects
+group:1:(group(type=effect,ID=poison,target=hitEntity,amplifier=2,duration=5;type=particle,ID=splashpotion,potion=poison);group(type=effect,ID=instant_health,amplifier=#rand(2,6),duration=0;type=effect,ID=regeneration,amplifier=#rand(1,2),duration=#rand(5,10);type=particle,ID=heart,size=(0.5,0.5,0.5),particleAmount=50,pos=#pExactPos);group(type=effect,ID=blindness,target=hitEntity,duration=3;type=effect,ID=slowness,target=hitEntity,duration=3;type=particle,ID=large_smoke,size=(0.5,0.8,0.5),particleAmount=100,pos=#eExactPos,amount=20,delay=#rand(0.0,3.0)))@chance=0.75@luck=2
+
+// Special Effects
+group:1:(group(type=effect,ID=special_knockback,target=hitEntity,directionPitch=-90,power=5,delay=0.1;type=particle,ID=poof,size=(0.5,0.5,0.5),particleAmount=500);group(type=effect,ID=special_knockback,target=hitEntity,directionPitch=-90,power=1.3,delay=0.1;type=particle,ID=poof,size=(0.5,0.5,0.5),particleAmount=500);group(type=effect,ID=special_fire,range=4,excludePlayer=true,duration=#rand(5,10);type=particle,ID=flame,pos=#pExactPos,size=(1.0,0.3,1.0),particleAmount=2000);group(type=effect,ID=special_knockback,range=6,excludePlayer=true,power=1.8,pos=#pPos,delay=0.1;type=particle,ID=poof,size=(1.0,0.3,1.0),particleAmount=500,pos=#pExactPos))@luck=2
+
+group:1:(type=entity,ID=lucky:lucky_projectile,pos=#pExactPos,posOffsetY=1.5,NBTTag=(Motion=#motionFromDirection(#pYaw,#pPitch,1.5),item=(id=cobweb,Count=1),impact=["type=fill,ID=cobweb,size=(2,2,2)"]);type=entity,ID=lucky:lucky_projectile,pos=#pExactPos,posOffsetY=1.5,NBTTag=(Motion=#motionFromDirection(#pYaw,#pPitch,1.5),item=(id=powder_snow_bucket,Count=1),impact=["type=fill,ID=powder_snow,size=(2,-2,2)"]);type=entity,ID=lucky:lucky_projectile,pos=#pExactPos,posOffsetY=1.5,NBTTag=(Motion=#motionFromDirection(#pYaw,#pPitch,1.5),item=(id=feather,Count=1),impact=["type=command,ID=\"/tp @e[limit=1,distance=..1,sort=random] ~ ~ ~ ~180 ~\",commandSender=\"KristenStuffs"]);type=entity,ID=lucky:lucky_projectile,pos=#pExactPos,posOffsetY=1.5,NBTTag=(Motion=#motionFromDirection(#pYaw+#rand(-10,10),#pPitch+#rand(-10,10),1.0),item=(id=blaze_powder,Count=1),impact=["type=effect,ID=special_fire,target=hitEntity,duration=5"],damage=0.0),amount=50,delay=#rand(0.0,2.0))@luck=2@chance=0.5
+
+// Entities
+type=entity,id=#randList(iron_golem,snow_golem,zombified_piglin,lightning_bolt)@luck=2
+
+// Nothing
+type=nothing@luck=0@chance=7

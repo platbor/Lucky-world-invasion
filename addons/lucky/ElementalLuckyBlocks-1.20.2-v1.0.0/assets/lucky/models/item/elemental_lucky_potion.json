@@ -1,0 +1,110 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "lucky:item/elemental_lucky_potion"
+	},
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1002014
+      },
+      "model": "lbelemental:item/lbele_earth_potion"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002015
+      },
+      "model": "lbelemental:item/lbele_earth_bomb"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002016
+      },
+      "model": "lbelemental:item/lbele_earth_lootbag"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002017
+      },
+      "model": "lbelemental:item/lbele_earth_disc"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002024
+      },
+      "model": "lbelemental:item/lbele_fire_potion"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002025
+      },
+      "model": "lbelemental:item/lbele_fire_bomb"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002026
+      },
+      "model": "lbelemental:item/lbele_fire_lootbag"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002027
+      },
+      "model": "lbelemental:item/lbele_fire_disc"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002034
+      },
+      "model": "lbelemental:item/lbele_water_potion"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002035
+      },
+      "model": "lbelemental:item/lbele_water_bomb"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002036
+      },
+      "model": "lbelemental:item/lbele_water_lootbag"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002037
+      },
+      "model": "lbelemental:item/lbele_water_disc"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002044
+      },
+      "model": "lbelemental:item/lbele_wind_potion"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002045
+      },
+      "model": "lbelemental:item/lbele_wind_bomb"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002046
+      },
+      "model": "lbelemental:item/lbele_wind_lootbag"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002047
+      },
+      "model": "lbelemental:item/lbele_wind_disc"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002057
+      },
+      "model": "lbelemental:item/lbele_elemental_disc"
+    }
+  ]
+}

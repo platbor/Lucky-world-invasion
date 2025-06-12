@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "C": {
+      "item": "minecraft:chiseled_sandstone"
+    },
+    "P": {
+      "item": "minecraft:lapis_block"
+    },
+    "L": {
+      "item": "lucky:lucky_block"
+    }
+  },
+  "pattern": ["CPC", "PLP", "CPC"],
+  "result": {
+    "item": "lucky:desert_lucky_block"
+  }
+}

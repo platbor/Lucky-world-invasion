@@ -1,0 +1,46 @@
+{
+  "pools": [
+    {
+      "name": "lbelemental:lbele_disc_earth",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "lucky:elemental_lucky_potion",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+			},
+			{
+              "function": "minecraft:set_name",
+              "name": "Music Disc"
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			  {
+				  "text": "Mavi D. - Fields of Earth",
+				  "color": "gray",
+				  "italic": false
+			  }
+			  ]
+			},
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{CustomModelData:1002017,Drops:[\"group(type=command,ID=/stopsound @a record lbelemental:music_disc.lbele_disc_earth;type=command,ID=/playsound lbelemental:music_disc.lbele_disc_earth record @a ~ ~ ~ 16 1 0.4;type=command,ID=/loot spawn ~ ~ ~ loot lucky:chests/lbele_disc_earth)\"]}"
+			}
+			],
+          "weight": 1
+        }
+          ],
+          "weight": 1
+        }
+      ]
+    }

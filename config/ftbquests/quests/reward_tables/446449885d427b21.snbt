@@ -1,0 +1,120 @@
+{
+	id: "446449885D427B21"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					BlockEntityTag: {
+						Base: 14
+						Patterns: [{
+							Color: 15
+							Pattern: "sku"
+						}]
+					}
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					BlockEntityTag: {
+						Base: 4
+						Patterns: [{
+							Color: 1
+							Pattern: "bri"
+						}]
+					}
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					BlockEntityTag: {
+						Base: 5
+						Patterns: [{
+							Color: 4
+							Pattern: "flo"
+						}]
+					}
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					BlockEntityTag: {
+						Base: 10
+						Patterns: [{
+							Color: 6
+							Pattern: "glb"
+						}]
+					}
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					BlockEntityTag: {
+						Base: 3
+						Patterns: [{
+							Color: 5
+							Pattern: "cre"
+						}]
+					}
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					BlockEntityTag: {
+						Base: 0
+						Patterns: [{
+							Color: 14
+							Pattern: "sc"
+						}]
+					}
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					BlockEntityTag: {
+						Base: 15
+						Patterns: [{
+							Color: 12
+							Pattern: "mr"
+						}]
+					}
+					Damage: 0
+				}
+			}
+		}
+	]
+	title: "{ftbquests.loot_table_4928144742279183137.title}"
+}

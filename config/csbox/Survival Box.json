@@ -1,0 +1,50 @@
+{
+    "name": "Survival Box",
+    "key": "csgobox:csgo_key0",
+    "drop": 0,
+    "random": [
+        2,
+        25,
+        30,
+        100,
+        3125
+    ],
+    "entity": [
+        "minecraft:zombie"
+    ],
+    "grade1": [
+        "{\"id\":\"quark:gunpowder_sack\",\"Count\":1}",
+        "{\"id\":\"quark:gunpowder_sack\",\"Count\":1}",
+        "{\"id\":\"quark:gunpowder_sack\",\"Count\":2}",
+        "{\"id\":\"quark:gunpowder_sack\",\"Count\":2}",
+        "{\"id\":\"quark:gunpowder_sack\",\"Count\":3}",
+        "{\"id\":\"quark:gunpowder_sack\",\"Count\":3}",
+        "{\"id\":\"quark:gunpowder_sack\",\"Count\":4}"
+    ],
+    "grade2": [
+        "{\"id\":\"shadowlands:copper_coin\",\"Count\":1}",
+        "{\"id\":\"shadowlands:copper_coin\",\"Count\":5}",
+        "{\"id\":\"waystones:waystone\",\"Count\":1}",
+        "{\"id\":\"shadowlands:silver_coin\",\"Count\":1}",
+        "{\"id\":\"ironfurnaces:silver_furnace\",\"Count\":1}"
+    ],
+    "grade3": [
+        "{\"id\":\"refinedstorage:1k_storage_part\",\"Count\":1}",
+        "{\"id\":\"refinedstorage:64k_fluid_storage_part\",\"Count\":1}",
+        "{\"id\":\"super_block_world:hungry_luma_spawn_egg\",\"Count\":1}"
+    ],
+    "grade4": [
+        "{\"id\":\"refinedstorage:4k_storage_part\",\"Count\":1}",
+        "{\"id\":\"refinedstorage:256k_fluid_storage_part\",\"Count\":1}"
+    ],
+    "grade5": [
+        "{\"id\":\"twilightforest:charm_of_keeping_1\",\"Count\":1}",
+        "{\"id\":\"twilightforest:charm_of_keeping_1\",\"Count\":1}",
+        "{\"id\":\"twilightforest:charm_of_keeping_1\",\"Count\":1}",
+        "{\"id\":\"minecraft:totem_of_undying\",\"Count\":1}",
+        "{\"id\":\"minecraft:totem_of_undying\",\"Count\":1}",
+        "{\"id\":\"twilightforest:charm_of_life_1\",\"Count\":1}",
+        "{\"id\":\"twilightforest:charm_of_life_1\",\"Count\":1}",
+        "{\"id\":\"shadowlands:gold_coin\",\"Count\":1}"
+    ]
+}

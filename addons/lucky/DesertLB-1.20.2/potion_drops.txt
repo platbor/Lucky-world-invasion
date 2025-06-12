@@ -1,0 +1,36 @@
+/sand impact default
+type=entity,ID=falling_block,amount=#rand(10,50),posOffset=#circleOffset(#rand(1,5)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion)@luck=-2@chance=56
+type=entity,ID=falling_block,amount=#rand(15,70),posOffset=#circleOffset(#rand(1,7)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion)@luck=-1@chance=45
+type=entity,ID=falling_block,amount=#rand(20,100),posOffset=#circleOffset(#rand(1,10)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion)@luck=0@chance=40
+type=entity,ID=falling_block,amount=#rand(25,125),posOffset=#circleOffset(#rand(1,12)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion)@luck=1@chance=35
+type=entity,ID=falling_block,amount=#rand(30,150),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion)@luck=2@chance=30
+
+/sand impact multi
+group(
+type=entity,ID=falling_block,amount=#rand(15,80),posOffset=#circleOffset(#rand(1,10)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion);
+type=entity,ID=falling_block,amount=#rand(15,80),posOffset=#circleOffset(#rand(1,10)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=1; 
+type=entity,ID=falling_block,amount=#rand(15,80),posOffset=#circleOffset(#rand(1,10)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=2; 
+type=entity,ID=falling_block,amount=#rand(15,80),posOffset=#circleOffset(#rand(1,10)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=3; 
+type=entity,ID=falling_block,amount=#rand(15,80),posOffset=#circleOffset(#rand(1,12)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=4
+)@luck=1@chance=5
+group(
+type=entity,ID=falling_block,amount=#rand(15,100),posOffset=#circleOffset(#rand(1,12)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion);
+type=entity,ID=falling_block,amount=#rand(15,120),posOffset=#circleOffset(#rand(1,14)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=1; 
+type=entity,ID=falling_block,amount=#rand(15,140),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=2; 
+type=entity,ID=falling_block,amount=#rand(15,120),posOffset=#circleOffset(#rand(1,16)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=3; 
+type=entity,ID=falling_block,amount=#rand(15,100),posOffset=#circleOffset(#rand(1,18)),NBTTag=(BlockState=(Name=cactus),Fuse=50b,Motion=#randLaunchMotion),delay=4
+)@luck=2@chance=4
+group(
+type=entity,ID=falling_block,amount=#rand(10,75),posOffset=#circleOffset(#rand(1,10)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion);
+type=entity,ID=falling_block,amount=#rand(10,75),posOffset=#circleOffset(#rand(1,10)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=0.4; 
+type=entity,ID=falling_block,amount=#rand(10,75),posOffset=#circleOffset(#rand(1,10)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=0.8; 
+type=entity,ID=falling_block,amount=#rand(10,75),posOffset=#circleOffset(#rand(1,10)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=1.2; 
+type=entity,ID=falling_block,amount=#rand(10,75),posOffset=#circleOffset(#rand(1,10)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=1.6
+)@luck=2@chance=2
+
+/sand impact explosive
+group(type=explosion,radius=3,fire=false;type=entity,ID=falling_block,amount=#rand(30,120),posOffset=#circleOffset(#rand(1,12)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion))@luck=2@chance=1
+group(type=explosion,radius=6,fire=false;type=entity,ID=falling_block,amount=#rand(50,300),posOffset=#circleOffset(#rand(1,24)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion))@luck=2@chance=0.2
+group(type=explosion,radius=8,fire=true;type=entity,ID=falling_block,amount=#rand(100,500),posOffset=#circleOffset(#rand(1,27)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion))@luck=2@chance=0.015
+
+

@@ -1,0 +1,126 @@
+/fire element structures
+ID=elefire_bbq,file=elefire_bbq.nbt,centerY=1
+ID=elefire_firehut,file=elefire_firehut.nbt,centerY=1
+ID=elefire_firering,file=elefire_firering.nbt,centerY=1
+ID=elefire_firetemple,file=elefire_firetemple.nbt,centerY=1
+ID=elefire_firetemple1,file=elefire_firetemple1.nbt,centerY=1
+ID=elefire_firetemple2,file=elefire_firetemple2.nbt,centerY=1
+ID=elefire_firetemple3,file=elefire_firetemple3.nbt,centerY=1
+ID=elefire_firetemple4,file=elefire_firetemple4.nbt,centerY=1
+ID=elefire_firetemple5,file=elefire_firetemple5.nbt,centerY=1
+ID=elefire_firetemple6,file=elefire_firetemple6.nbt,centerY=1
+ID=elefire_firetemple7,file=elefire_firetemple7.nbt,centerY=1
+ID=elefire_firetemple8,file=elefire_firetemple8.nbt,centerY=1
+ID=elefire_firetemple9,file=elefire_firetemple9.nbt,centerY=1
+ID=elefire_firetemple10,file=elefire_firetemple10.nbt,centerY=1
+ID=elefire_firetemple11,file=elefire_firetemple11.nbt,centerY=1
+ID=elefire_firetemple12,file=elefire_firetemple12.nbt,centerY=1
+ID=elefire_firetemple13,file=elefire_firetemple13.nbt,centerY=1
+ID=elefire_firetemple14,file=elefire_firetemple14.nbt,centerY=1
+ID=elefire_firetemple15,file=elefire_firetemple15.nbt,centerY=1
+ID=elefire_firetemple16,file=elefire_firetemple16.nbt,centerY=1
+ID=elefire_firetemple17,file=elefire_firetemple17.nbt,centerY=1
+ID=elefire_firetemple18,file=elefire_firetemple18.nbt,centerY=1
+ID=elefire_firetemple19,file=elefire_firetemple19.nbt,centerY=1
+ID=elefire_firetemple20,file=elefire_firetemple20.nbt,centerY=1
+
+/wishing well
+ID=elefire_wellfire,file=elefire_wellfire.nbt,centerY=2
+
+
+/ice element structures
+ID=eleice_amethystgeode,file=eleice_amethystgeode.nbt,centerY=7,blockMode=overlay
+ID=eleice_frostpane,file=eleice_frostpane.nbt,centerY=1
+ID=eleice_icespikecone,file=eleice_icespikecone.nbt,centerY=1
+ID=eleice_icespiketower,file=eleice_icespiketower.nbt,centerY=1
+ID=eleice_icestation,file=eleice_icestation.nbt,centerY=1
+ID=eleice_igloo,file=eleice_igloo.nbt,centerY=1
+ID=eleice_igloohome,file=eleice_igloohome.nbt,centerY=1
+ID=eleice_powdersnowtrap,file=eleice_powdersnowtrap.nbt,centerY=6
+
+/ice dungeon unlucky
+ID=eleice_icedungeon1,file=eleice_icedungeon1.nbt,centerY=1
+ID=eleice_icedungeon2,file=eleice_icedungeon2.nbt,centerY=1
+ID=eleice_icedungeon3,file=eleice_icedungeon3.nbt,centerY=1
+ID=eleice_icedungeon4,file=eleice_icedungeon4.nbt,centerY=1
+ID=eleice_icedungeon5,file=eleice_icedungeon5.nbt,centerY=1
+ID=eleice_icedungeon6,file=eleice_icedungeon6.nbt,centerY=1
+ID=eleice_icedungeon7,file=eleice_icedungeon7.nbt,centerY=1
+ID=eleice_icedungeon8,file=eleice_icedungeon8.nbt,centerY=1
+ID=eleice_icedungeon9,file=eleice_icedungeon9.nbt,centerY=1
+ID=eleice_icedungeon10,file=eleice_icedungeon10.nbt,centerY=1
+ID=eleice_icedungeon11,file=eleice_icedungeon11.nbt,centerY=1
+ID=eleice_icedungeon12,file=eleice_icedungeon12.nbt,centerY=1
+ID=eleice_icedungeon13,file=eleice_icedungeon13.nbt,centerY=1
+ID=eleice_icedungeon14,file=eleice_icedungeon14.nbt,centerY=1
+ID=eleice_icedungeon15,file=eleice_icedungeon15.nbt,centerY=1
+ID=eleice_icedungeon16,file=eleice_icedungeon16.nbt,centerY=1
+
+/ice station lucky
+ID=eleice_icestation1,file=eleice_icestation1.nbt,centerY=1
+ID=eleice_icestation2,file=eleice_icestation2.nbt,centerY=1
+ID=eleice_icestation3,file=eleice_icestation3.nbt,centerY=1
+ID=eleice_icestation4,file=eleice_icestation4.nbt,centerY=1
+ID=eleice_icestation5,file=eleice_icestation5.nbt,centerY=1
+ID=eleice_icestation6,file=eleice_icestation6.nbt,centerY=1
+ID=eleice_icestation7,file=eleice_icestation7.nbt,centerY=1
+ID=eleice_icestation8,file=eleice_icestation8.nbt,centerY=1
+ID=eleice_icestation9,file=eleice_icestation9.nbt,centerY=1
+ID=eleice_icestation10,file=eleice_icestation10.nbt,centerY=1
+ID=eleice_icestation11,file=eleice_icestation11.nbt,centerY=1
+ID=eleice_icestation12,file=eleice_icestation12.nbt,centerY=1
+ID=eleice_icestation13,file=eleice_icestation13.nbt,centerY=1
+ID=eleice_icestation14,file=eleice_icestation14.nbt,centerY=1
+ID=eleice_icestation15,file=eleice_icestation15.nbt,centerY=1
+ID=eleice_icestation16,file=eleice_icestation16.nbt,centerY=1
+ID=eleice_icestation17,file=eleice_icestation17.nbt,centerY=1
+ID=eleice_icestation18,file=eleice_icestation18.nbt,centerY=1
+ID=eleice_icestation19,file=eleice_icestation19.nbt,centerY=1
+ID=eleice_icestation20,file=eleice_icestation20.nbt,centerY=1
+
+/wishing well
+ID=eleice_wellice,file=eleice_wellice.nbt,centerY=2
+
+
+/wind lucky structures
+ID=elewind_windstruct_lucky_inner,file=elewind_windstruct_lucky_inner.luckystruct,blockMode=overlay
+ID=elewind_windstruct_lucky,file=elewind_windstruct_lucky.nbt,overlayStruct=elewind_windstruct_lucky_inner,centerY=1
+ID=elewind_windstruct_unlucky,file=elewind_windstruct_unlucky.nbt
+
+/wind tribe tower
+ID=elewind_windtribetower,file=elewind_windtribetower.nbt,centerY=1
+
+/wind shrine
+ID=elewind_windshrine0,file=elewind_windshrine0.nbt,centerY=2
+ID=elewind_windshrine1,file=elewind_windshrine1.nbt,centerY=2
+ID=elewind_windshrine2,file=elewind_windshrine2.nbt,centerY=2
+ID=elewind_windshrine3,file=elewind_windshrine3.nbt,centerY=2
+ID=elewind_windshrine4,file=elewind_windshrine4.nbt,centerY=2
+ID=elewind_windshrine5,file=elewind_windshrine5.nbt,centerY=2
+ID=elewind_windshrine6,file=elewind_windshrine6.nbt,centerY=2
+ID=elewind_windshrine7,file=elewind_windshrine7.nbt,centerY=2
+ID=elewind_windshrine8,file=elewind_windshrine8.nbt,centerY=2
+ID=elewind_windshrine9,file=elewind_windshrine9.nbt,centerY=2
+ID=elewind_windshrine10,file=elewind_windshrine10.nbt,centerY=2
+ID=elewind_windshrine11,file=elewind_windshrine11.nbt,centerY=2
+
+/others
+ID=elewind_skyblock1152,file=elewind_skyblock1152.nbt
+
+/wishing well
+ID=elewind_wellwind,file=elewind_wellwind.nbt,centerY=2
+
+
+/energy element structures
+ID=elergy_endcrystower,file=elergy_endcrystower.nbt,centerY=1
+ID=elergy_energycore,file=elergy_energycore.nbt,centerY=1
+ID=elergy_energygenerator,file=elergy_energygenerator.nbt,centerY=1
+ID=elergy_jailtrap,file=elergy_jailtrap.nbt,centerY=1
+
+/beacons
+ID=elergy_beacon2,file=elergy_beacon2.nbt
+ID=elergy_beacon3,file=elergy_beacon3.nbt
+ID=elergy_beacon4,file=elergy_beacon4.nbt
+
+/wishing well
+ID=elergy_wellrgy,file=elergy_wellrgy.nbt,centerY=2

@@ -1,0 +1,26 @@
+/ structures v2
+ID=firelbv2_lookup,file=firelbv2_lookup.nbt,centerY=1
+ID=firelbv2_well,file=firelbv2_well.nbt,centerY=2
+ID=firelbv2_netherblaze,file=firelbv2_netherblaze.nbt,centerY=1
+ID=firelbv2_netherlava,file=firelbv2_netherlava.nbt,centerY=1
+ID=firelbv2_nethertower,file=firelbv2_nethertower.nbt,centerY=1
+ID=firelbv2_netherwart,file=firelbv2_netherwart.nbt,centerY=1
+ID=firelbv2_obsidiantrap,file=firelbv2_obsidiantrap.nbt,centerY=1
+ID=firelbv2_lavareactor,file=firelbv2_lavareactor.nbt,centerY=1
+ID=firelbv2_lavasoup,file=firelbv2_lavasoup.nbt,centerY=1
+ID=firelbv2_ruinedportal,file=firelbv2_ruinedportal.nbt,centerY=1
+ID=firelbv2_luckytemple_inner,file=firelbv2_luckytemple_inner.luckystruct,blockMode=overlay
+ID=firelbv2_luckytemple,file=firelbv2_luckytemple.nbt,overlayStruct=firelbv2_luckytemple_inner,centerY=1
+ID=firelbv2_netherores,file=firelbv2_netherores.nbt,centerY=1
+ID=firelbv2_magmabounce,file=firelbv2_magmabounce.nbt,centerY=1
+ID=firelbv2_bastiongold,file=firelbv2_bastiongold.nbt
+ID=firelbv2_chestgold,file=firelbv2_chestgold.nbt
+ID=firelbv2_chestlucky,file=firelbv2_chestlucky.nbt
+ID=firelbv2_chestnether,file=firelbv2_chestnether.nbt
+ID=firelbv2_spawnerenderman,file=firelbv2_spawnerenderman.nbt,centerY=1
+ID=firelbv2_spawnerghast,file=firelbv2_spawnerghast.nbt,centerY=1
+ID=firelbv2_spawnerhoglin,file=firelbv2_spawnerhoglin.nbt,centerY=1
+ID=firelbv2_spawnermagma,file=firelbv2_spawnermagma.nbt,centerY=1
+ID=firelbv2_spawnerpiglin,file=firelbv2_spawnerpiglin.nbt,centerY=1
+ID=firelbv2_netherreactor,file=firelbv2_netherreactor.nbt
+

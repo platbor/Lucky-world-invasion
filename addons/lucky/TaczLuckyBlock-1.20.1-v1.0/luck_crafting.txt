@@ -1,0 +1,9 @@
+/ gray dye
+iron_block=10
+
+/ bad items
+rotten_flesh=-5
+spider_eye=-10
+fermented_spider_eye=-20
+poisonous_potato=-10
+pufferfish=-20

@@ -1,0 +1,10 @@
+>minecraft:overworld
+
+/ single block
+type=block,ID=lucky:amongus_lucky_block@chance=75
+
+>shadowlands:shadow_forest
+type=block,ID=lucky:amongus_lucky_block@chance=75
+
+>minecraft:the_end
+type=block,ID=lucky:amongus_lucky_block@chance=25

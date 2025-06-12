@@ -1,0 +1,4 @@
+block_id=morbius_lucky_block
+sword_id=morbius_lucky_sword
+bow_id=morbius_lucky_bow
+potion_id=morbius_lucky_potion

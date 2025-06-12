@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "tacz:workbench_a",
+    "nbt": {
+      "BlockId": "emxarms:sky_workbench"
+    }
+  },
+  "pattern": [
+    "CLC",
+    "BIR",
+    "BBB"
+  ],
+  "key": {
+    "L": {
+      "tag": "forge:glass"
+    },
+    "I": {
+      "item": "shadowlands:shadowmetal_block"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "B": {
+      "item": "minecraft:polished_andesite"
+    },
+    "C": {
+      "item": "born_in_chaos_v1:dark_metal_block"
+    }
+  }
+}

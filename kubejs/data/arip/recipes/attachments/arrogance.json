@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/netherite"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/redstone"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "arip:arrogance"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

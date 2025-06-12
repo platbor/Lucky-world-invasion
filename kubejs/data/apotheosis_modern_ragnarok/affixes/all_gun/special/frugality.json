@@ -1,0 +1,31 @@
+{
+  "type": "apotheosis_modern_ragnarok:bullet_saver",
+  "values": {
+    "rare": {
+      "min": 0.1,
+      "steps": 5,
+      "step": 0.02
+    },
+    "epic": {
+      "min": 0.1,
+      "steps": 20,
+      "step": 0.01
+    },
+    "mythic": {
+      "min": 0.2,
+      "steps": 30,
+      "step": 0.01
+    },
+    "ancient": {
+      "min": 0.3,
+      "steps": 35,
+      "step": 0.01
+    }
+  },
+  "types": [
+    "apotheosis_modern_ragnarok:shotgun",
+    "apotheosis_modern_ragnarok:full_auto",
+    "apotheosis_modern_ragnarok:semi_auto",
+    "apotheosis_modern_ragnarok:bolt_action"
+  ]
+}

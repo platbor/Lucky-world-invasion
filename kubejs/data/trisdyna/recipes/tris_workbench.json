@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "tacz:workbench_b",
+    "nbt": {
+      "BlockId": "trisdyna:tris_workbench"
+    }
+  },
+  "pattern": [
+    "RLL",
+    "BBL",
+    "I I"
+  ],
+  "key": {
+    "L": {
+      "tag": "forge:glass"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "I": {
+      "item": "yakurum:water_diamond_block"
+    },
+    "B": {
+      "item": "super_block_world:light_gray_bronze"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "I": {
+            "item": "minecraft:iron_block"
+        },
+		"G": {
+            "item": "minecraft:gold_ingot"
+        },
+		"Q": {
+            "item": "minecraft:quartz_block"
+        },
+        "L": {
+            "item": "lucky:lucky_block"
+        }
+    },
+    "pattern": [
+        "IGI",
+        "QLQ",
+        "IGI"
+    ],
+    "result": {
+        "item": "lucky:tacz_lucky_block"
+    }
+}

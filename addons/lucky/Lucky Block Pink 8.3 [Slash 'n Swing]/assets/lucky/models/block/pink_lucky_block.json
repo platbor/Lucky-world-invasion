@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "lucky:block/pink_lucky_block",
+		"particle": "lucky:block/pink_lucky_block"
+
+		}
+	}

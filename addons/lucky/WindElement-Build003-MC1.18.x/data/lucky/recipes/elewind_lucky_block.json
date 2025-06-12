@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "L": {
+      "item": "lucky:lucky_block"
+    }
+  },
+  "pattern": ["FFF", "FLF", "FFF"],
+  "result": {
+    "item": "lucky:elewind_lucky_block"
+  }
+}

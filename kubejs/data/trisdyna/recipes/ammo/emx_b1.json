@@ -1,0 +1,28 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "minecraft:iron_ingot"
+      },
+      "count": 10
+    },
+    {
+      "item": {
+        "item": "minecraft:coal"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "item": "yakurum:tropical_slime_ball"
+      },
+      "count": 16
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "trisdyna:emx_b1",
+    "count": 16
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

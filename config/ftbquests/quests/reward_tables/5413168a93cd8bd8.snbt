@@ -1,0 +1,32 @@
+{
+	id: "5413168A93CD8BD8"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{
+			command: "/gamerule mobGriefing true"
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			title: "开启"
+			type: "command"
+		}
+		{
+			command: "/gamerule mobGriefing false"
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			title: "关闭"
+			type: "command"
+		}
+	]
+	title: "{ftbquests.loot_table_6058210708184468440.title}"
+}

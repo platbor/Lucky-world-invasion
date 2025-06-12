@@ -1,0 +1,13 @@
+{
+	id: "03F6B8A4D2B415C2"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ count: 5, item: "apotheosis:common_material", weight: 100.0f }
+		{ count: 4, item: "apotheosis:uncommon_material", weight: 40.0f }
+		{ count: 3, item: "apotheosis:rare_material", weight: 20.0f }
+		{ count: 2, item: "apotheosis:epic_material", weight: 10.0f }
+		{ item: "apotheosis:mythic_material" }
+	]
+	title: "{ftbquests.loot_table_285618644433769922.title}"
+}

@@ -1,0 +1,7 @@
+>minecraft:overworld
+
+/ single block
+type=block,ID=lucky:water_lucky_block@chance=2400
+
+>shadowlands:glowshroom_forest
+type=block,ID=lucky:water_lucky_block@chance=500

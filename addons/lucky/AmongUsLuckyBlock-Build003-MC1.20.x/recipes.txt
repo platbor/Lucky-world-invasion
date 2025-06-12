@@ -1,0 +1,2 @@
+/ among us lucky block recipe
+glg,rdr,rcr,g,minecraft:gold_ingot,l,minecraft:glass,r,minecraft:redstone,d,minecraft:dropper,c,minecraft:coal_block

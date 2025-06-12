@@ -1,0 +1,33 @@
+/ jewels
+yakurum:water_diamond=10
+yakurum:water_diamond_block=20
+yakurum:aquamarine_block=8
+yakurum:pearl_block=6
+yakurum:coral_gem_block=6
+yakurum:prismarine_gem_block=7
+
+/ lucky items
+enchanted_golden_apple=1
+nether_star=1
+lucky:amongus_lucky_block=2
+lucky:desert_lucky_block=1
+lucky:fire_lucky_block=2
+lucky:elemental_lucky_block=2
+lucky:water_lucky_block=5
+lucky:pink_lucky_block=1
+lucky:morbius_lucky_block=1
+lucky:summer_lucky_block=1
+skeleton_skull=1
+wither_skeleton_skull=2
+player_head=4
+zombie_head=1
+creeper_head=1
+piglin_head=4
+dragon_head=10
+
+/ unlucky items
+rotten_flesh=-5
+spider_eye=-10
+fermented_spider_eye=-20
+poisonous_potato=-10
+pufferfish=-20

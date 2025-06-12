@@ -1,0 +1,2 @@
+block_id=lucky_world_invasion_lucky_block
+sword_id=lucky_world_invasion_lucky_sword

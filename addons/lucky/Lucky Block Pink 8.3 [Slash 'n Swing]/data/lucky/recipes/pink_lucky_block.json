@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "#": {
+            "item": "minecraft:pink_dye"
+        },
+        "L": {
+            "item": "lucky:lucky_block"
+        }
+    },
+    "pattern": [
+        "###",
+        "#L#",
+        "###"
+    ],
+    "result": {
+        "item": "lucky:pink_lucky_block"
+    }
+}

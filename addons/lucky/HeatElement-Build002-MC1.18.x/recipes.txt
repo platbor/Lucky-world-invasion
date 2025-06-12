@@ -1,0 +1,2 @@
+/ craft by placing a lucky block in the center and fire chargers around
+sss,sls,sss,s,minecraft:fire_charge,l,lucky:lucky_block

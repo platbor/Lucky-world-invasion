@@ -1,0 +1,9 @@
+{
+  "majruszsaccessories.bonuses.extra_fishing_treasure": "钓鱼时有%1$s概率获得额外宝藏",
+  "item.majruszsaccessories.removal_card": "移除卡",
+  "item.majruszsaccessories.reverse_card": "反向卡",
+  "item.majruszsaccessories.gambling_card": "随机卡",
+  "majruszsaccessories.cards.redraw": "重置效果加成",
+  "majruszsaccessories.cards.remove": "退回应用的饰品配件",
+  "majruszsaccessories.cards.negate": "反向效果加成"
+}

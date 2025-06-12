@@ -1,0 +1,4 @@
+block_id=elergy_lucky_block
+sword_id=elergy_lucky_sword
+bow_id=elergy_lucky_bow
+potion_id=elergy_lucky_potion

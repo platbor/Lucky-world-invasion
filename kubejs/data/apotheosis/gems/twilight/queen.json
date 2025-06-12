@@ -1,0 +1,133 @@
+{
+	"conditions": [{
+		"type": "forge:mod_loaded",
+		"modid": "twilightforest"
+	}],
+	"weight": 5,
+	"quality": 1.5,
+	"dimensions": [
+		"twilightforest:twilight_forest"
+	],
+	"unique": true,
+	"min_rarity": "rare",
+	"bonuses": [{
+			"type": "apotheosis:twilight_fortification",
+			"gem_class": {
+				"key": "chestplate",
+				"types": [
+					"chestplate"
+				]
+			},
+			"values": {
+				"rare": {
+					"chance": 0.05,
+					"cooldown": 6000
+				},
+				"epic": {
+					"chance": 0.10,
+					"cooldown": 5400
+				},
+				"mythic": {
+					"chance": 0.125,
+					"cooldown": 5100
+				},
+				"ancient": {
+					"chance": 0.15,
+					"cooldown": 4800
+				},
+                "apotheotic_additions:artifact": {
+					"chance": 0.17,
+					"cooldown": 4500
+				},
+                "apotheotic_additions:heirloom": {
+					"chance": 0.2,
+					"cooldown": 4200
+				},
+                "apotheotic_additions:esoteric": {
+					"chance": 0.25,
+					"cooldown": 3900
+				}
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "helmet",
+				"types": [
+					"helmet"
+				]
+			},
+			"attribute": "attributeslib:cold_damage",
+			"operation": "MULTIPLY_TOTAL",
+			"values": {
+				"rare": 0.02,
+				"epic": 0.125,
+				"mythic": 0.15,
+				"ancient": 0.18,
+                "apotheotic_additions:artifact": 0.2,
+                "apotheotic_additions:heirloom": 0.25,
+                "apotheotic_additions:esoteric": 0.3
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "heavy_weapon",
+				"types": [
+					"heavy_weapon"
+				]
+			},
+			"attribute": "attributeslib:cold_damage",
+			"operation": "ADDITION",
+			"values": {
+				"rare": 6,
+				"epic": 8,
+				"mythic": 10,
+				"ancient": 12.5,
+                "apotheotic_additions:artifact": 14,
+                "apotheotic_additions:heirloom": 16,
+                "apotheotic_additions:esoteric": 20
+			}
+		},
+		{
+			"type": "apotheosis:mob_effect",
+			"gem_class": {
+				"key": "ranged_weapon",
+				"types": [
+					"bow",
+					"crossbow",
+					"trident"
+				]
+			},
+			"mob_effect": "twilightforest:frosted",
+			"target": "arrow_target",
+			"values": {
+				"mythic": {
+					"duration": 180,
+					"amplifier": 1,
+					"cooldown": 500
+				},
+				"ancient": {
+					"duration": 240,
+					"amplifier": 2,
+					"cooldown": 500
+				},
+                "apotheotic_additions:artifact": {
+					"duration": 300,
+					"amplifier": 3,
+					"cooldown": 500
+				},
+                "apotheotic_additions:heirloom": {
+					"duration": 350,
+					"amplifier": 3,
+					"cooldown": 500
+				},
+                "apotheotic_additions:esoteric": {
+					"duration": 400,
+					"amplifier": 4,
+					"cooldown": 500
+				}
+			}
+		}
+	]
+}

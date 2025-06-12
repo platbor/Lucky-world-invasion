@@ -1,0 +1,132 @@
+{
+    "Dimensions": [
+        "minecraft:overworld",
+        "twilightforest:twilight_forest"
+    ],
+    "InvasionTime": "BOTH",
+    "TimeModifier": "DAY_TO_NIGHT",
+    "Rarity": 3,
+    "SeverityInfo": [
+        {
+            "MobCapPercentage": 0.6,
+            "MobSpawnList": [
+                {
+                    "EntityType": "twilightforest:mist_wolf",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "born_in_chaos_v1:dread_hound",
+                    "Weight": 20,
+                    "MinCount": 1,
+                    "MaxCount": 3
+                },
+                {
+                    "EntityType": "twilightforest:hostile_wolf",
+                    "Weight": 50,
+                    "MinCount": 1,
+                    "MaxCount": 3
+                }
+            ],
+            "TickDelay": 60
+        },
+        {
+            "MobCapPercentage": 0.7,
+            "MobSpawnList": [
+                {
+                    "EntityType": "twilightforest:mist_wolf",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "born_in_chaos_v1:dread_hound",
+                    "Weight": 20,
+                    "MinCount": 1,
+                    "MaxCount": 4
+                },
+                {
+                    "EntityType": "twilightforest:hostile_wolf",
+                    "Weight": 50,
+                    "MinCount": 1,
+                    "MaxCount": 4
+                }
+            ],
+            "TickDelay": 48
+        },
+        {
+            "MobCapPercentage": 0.8,
+            "MobSpawnList": [
+                {
+                    "EntityType": "twilightforest:mist_wolf",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "born_in_chaos_v1:dread_hound",
+                    "Weight": 20,
+                    "MinCount": 2,
+                    "MaxCount": 6
+                },
+                {
+                    "EntityType": "twilightforest:hostile_wolf",
+                    "Weight": 50,
+                    "MinCount": 2,
+                    "MaxCount": 6
+                }
+            ],
+            "TickDelay": 36
+        },
+        {
+            "MobCapPercentage": 0.9,
+            "MobSpawnList": [
+                {
+                    "EntityType": "twilightforest:mist_wolf",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 2
+                },
+                {
+                    "EntityType": "born_in_chaos_v1:dread_hound",
+                    "Weight": 20,
+                    "MinCount": 3,
+                    "MaxCount": 8
+                },
+                {
+                    "EntityType": "twilightforest:hostile_wolf",
+                    "Weight": 50,
+                    "MinCount": 3,
+                    "MaxCount": 8
+                }
+            ],
+            "TickDelay": 24
+        },
+        {
+            "MobCapPercentage": 1.0,
+            "MobSpawnList": [
+                {
+                    "EntityType": "twilightforest:mist_wolf",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 3
+                },
+                {
+                    "EntityType": "born_in_chaos_v1:dread_hound",
+                    "Weight": 20,
+                    "MinCount": 4,
+                    "MaxCount": 10
+                },
+                {
+                    "EntityType": "twilightforest:hostile_wolf",
+                    "Weight": 50,
+                    "MinCount": 4,
+                    "MaxCount": 10
+                }
+            ],
+            "TickDelay": 12
+        }
+    ],
+    "Tier": 1
+}

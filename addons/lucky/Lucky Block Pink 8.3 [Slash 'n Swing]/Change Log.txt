@@ -1,0 +1,113 @@
+WARNING: Uses Lucky Block for Minecraft 1.20.2
+WARNING: Translations may not be 100% accurate, please let me know in the comments if a translation is wrong!
+
+Dictionary:
+Drop Type = Counts for final drop total, is randomly selected when a lucky block is broken.
+Possibility = Possible outcome(s) for a drop type.
+Variant = Randomly selected outcome for a possibility which usually all are similarish to each other. (Possibility for a Possibility.)
+
+Additions:
++4 Drop Types
++27 Possibilities
++>96 Variants
++17 Structures
++BOSS ARENA!!!
++Updated Pink Love Potion Drops!
+
+File Additions:
++New Textures for Pink Lucky Sword, Pink Lucky Bow, and Pink Love Potion.
+
+File Changes:
+*Updated README.TXT.
+*Reorganized the drops file.
+*Reorganized the bow_drops file.
+*Reorganized the structures file.
+*Reorganized the sword_drops file.
+*Reorganized the potion_drops file.
+*Updated lbp_haunted_house to remove some air.
+*Updated the name of slime_land to lbp_slime_land.
+*Updated the name of mini_jungle to lbp_mini_jungle.
+*Updated lbp_ruins to have air instead of structure void.
+*Updated lbp_the_hive to have air instead of structure void.
+*Updated the name of lucky_block_pink to lbp_old_texture_2016.
+*Updated lbp_mini_jungle to have air instead of structure void.
+*Updated lbp_slime_ruins to have air instead of structure void.
+*Updated the name of mini_cherry_grove to lbp_mini_cherry_grove.
+*Updated lbp_mini_cherry_grove to have air instead of structure void.
+*Updated lbp_old_texture_2016 structure to be completely 2D rather than 16x16x16.
+
+File Removals:
+N/A
+
+Drop Changes:
+*Brick now drops 32-128 bricks instead of 16-64 bricks.
+*Lapis Ore now drops 12 Lapis Ores instead of 8 Lapis Ores.
+*lbp_arena structures now includes a full set of chainmail armour.
+*Ultimate Wish now drops 8-12 Gold Blocks instead of 2-8 Gold Blocks.
+*Nether Wart now drops 8-32 Nether Warts instead of 4-16 Nether Warts.
+*Ultimate Wish now drops 6-12 Lapis Blocks instead of 4-8 Lapis Blocks.
+*Melon Slices now drops 16-64 Melon Slices instead of 4-16 Melon Slices.
+*Ultimate Wish now drops 2-4 Diamond Blocks instead of 0-1 Diamond Blocks.
+*Ultimate Wish now drops 4-8 Emerald Blocks instead of 2-4 Emerald Blocks.
+*Updated Gold Ingot to drop 12-16 Gold Ingots instead of 4-16 Gold Ingots.
+*Anvil + Iron Ingot now gives 8-16 Iron Ingots instead of 4-16 Iron Ingots.
+*Don't Like Your Ears Wishing Well now spawns 12 Ghasts instead of 10 Ghasts.
+*Enchanting Wish now drops 32-96 Expierence Bottles instead of 16-64 Expierence Bottles.
+*Experience Bottle now drops 16-64 Experience Bottles instead of 4-16 Experience Bottles.
+*Ores Shopkeeper Buyer now only requires 12-24 Amethyst Shards instead of 16-32 Amethyst Shards.
+*EXP Bottle no longer drops just 1-128 EXP Bottles, but rather set amounts (1, 10, 33, 50, 75, 100, and 128.)
+
+Luck Value Changes:
+*Changed luck value of Metallic Wish (1 -> 2).
+
+Misc Updates:
+*lbp_well now has 2 variants.
+*Date Wish now has a possibility.
+*Updated Moblin's name to Damian.
+*LBP Old Texture now has variants.
+*lbp_mini_jungle now has a variant.
+*LBP Mineshaft now has a new variant.
+*EXP Bottles now has a new possibility.
+*Fish Shop Keeper Buyer now has a variant.
+*Villager Prisons now has another variant.
+*Ores Shop Keeper Buyer has a new possibility.
+*-2 Super Geared Mobs now has a new possibility.
+*Uncommon 1 luck items now has a new possibility.
+*0 Luck Food now has a new possibility and variants.
+*-1 Luck Wishing Well Mobs new has a new possibility.
+*Enchanting and Carrot Wishes now has new possibilities.
+*Named 2 Luck Non-Lucky Drops now has a new possibility.
+*Named 1 luck named Fish items now has a new possibility.
+*Cake/Pumpkin Pie possibility are now variants of each other.
+*-1 Luck Sheep, Llama, and Stick Wishes now has a new possibility.
+*-2 Luck Mobs Wishing Well now has new possibilities and variants.
+*0 Luck Neutral Misc Wishing Wells now has new possibilities and variants.
+*Updated lbp_old_texture_2016 to be a variant of lbp_old_texture structure.
+*Zombified Date and Flying Zombified Date's names are now Red instead of Blue.
+*Epic Lucky Weapons/Armours now have an enchantment level of 100 instead of 10.
+*All Mobs and Items in the lbp_arena structures now are spawned 2 blocks higher.
+*You are the GOAT message's goats no longer spawn a goat with a random position offset.
+*lbp_arena structures now has a new variant and a new possibilities (which also has variants).
+*Diamond, Emerald, and Iron Golem wishes now has new possibilities as well as metallic wish now being apart of this group.
+*Combined Eggs + Lucky Block, Eggs + Pink Lucky Block, Eggs + Lucky Potion, and Eggs + Pink Love Potion as possibilities as one another instead of the Lucky Blocks and Lucky Potions being their own drops. 
+
+Bug Fixes:
+*FIXED Metallic Wish not working as intended.
+*FIXED Some 2 luck items + eggs missing eggs.
+*FIXED Some 1 luck items + eggs not working as intended.
+*FIXED the "Came" in Baaaaaad Wish not being capitalized.
+*FIXED Splash Potion of Made in Heaven not working as intended.
+*FIXED Flying Bob being a Zombie Villager instead of a regular Zombie.
+*FIXED Herobrine's Sword being called Herobrine's Pickaxe when on the ground.
+*FIXED Falling Reinforced Deepslate being glitched with Falling Coloured Pole with Bedrock.
+
+Removed:
+N/A
+
+Notes:
+First time Pink Love Potion has been updated since Luck Block Pink 7.0 [Did Somebody Say Update] which released Feb 12th, 2022.
+First update since Lucky Block Pink 3.0 which released November 22nd, 2015 to release in November, this is also the second ever update to release in November.
+As of this update every single wishing well from the 4.0 Series, 5.0, and 6.0 Series is back meaning every single Wishing Well ever from Lucky Block Pink History is back!
+The next update, Lucky Block Pink 8.4 will be focusing on natural structures and new drop types as well as including content I didn't add in this update to prevent burn out!
+As of this update Lucky Block Pink's drops.txt is longer than Lucky Block Pink 6.9.2 [Traders and Traitors] in terms of characters which previously held the record of longest drops.txt in Lucky Block Pink history.
+The Main Goal of this update was to finally update the Pink Lucky Sword, Pink Lucky Bow, and Pink Love Potion as those haven't been updated to current standard yet as well as adding new structure variants. Also continuing the trend of the last update by reintroducing some older drops, this time focusing more from 3.0 onwards albiet in lesser amounts.

@@ -1,0 +1,12 @@
+{
+  "config.client.xOffset": "水平调整警报图标的位置",
+  "config.server.clientMobBlacklist": "服务器不检查这些小怪的目标获取情况",
+  "config.client.renderAlertIcon": "如果设置为 false，则不会显示警报图标",
+  "config.client.alertIconSize": "调整警报图标的大小",
+  "config.client.scaleWithMobSize": "根据生物的大小缩放警报图标",
+  "config.client.clientMobBlacklist": "客户端不会在这些小怪上方呈现警报图标",
+  "config.client.treatBlacklistAsWhitelist": "客户端只会在这些小怪上方呈现警报图标",
+  "config.client.renderRange": "只有范围内的小怪才会显示警报图标",
+  "config.client.yOffset": "垂直调整警报图标的位置",
+  "config.client.clientAggroIconStyle": "控制用于绘制警报图标的纹理"
+}

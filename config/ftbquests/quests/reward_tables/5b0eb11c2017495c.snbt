@@ -1,0 +1,11 @@
+{
+	id: "5B0EB11C2017495C"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{ item: "majruszsaccessories:reverse_card" }
+		{ item: "majruszsaccessories:removal_card", weight: 5.0f }
+		{ item: "majruszsaccessories:gambling_card", weight: 5.0f }
+	]
+	title: "{ftbquests.loot_table_6561376441480989020.title}"
+}

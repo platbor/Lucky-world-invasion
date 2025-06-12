@@ -1,0 +1,29 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "A": {
+            "item": "lucky:elewind_lucky_block"
+        },
+        "B": {
+            "item": "lucky:elergy_lucky_block"
+        },
+        "C": {
+            "item": "lucky:eleice_lucky_block"
+        },
+        "D": {
+            "item": "lucky:elefire_lucky_block"
+        },
+        "L": {
+            "item": "lucky:lucky_block"
+        }
+    },
+    "pattern": [
+        "AAB",
+        "DLB",
+        "DCC"
+    ],
+    "result": {
+		"count": 8,
+        "item": "lucky:elemental_lucky_block"
+    }
+}

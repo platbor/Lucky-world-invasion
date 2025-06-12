@@ -1,0 +1,32 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "lucky:item/elemental_lucky_sword"
+   },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1002011
+      },
+      "model": "lbelemental:item/lbele_earth_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002021
+      },
+      "model": "lbelemental:item/lbele_fire_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002031
+      },
+      "model": "lbelemental:item/lbele_water_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1002041
+      },
+      "model": "lbelemental:item/lbele_wind_sword"
+    }
+  ]
+}

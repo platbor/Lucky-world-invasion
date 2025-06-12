@@ -1,0 +1,4 @@
+block_id=eleice_lucky_block
+sword_id=eleice_lucky_sword
+bow_id=eleice_lucky_bow
+potion_id=eleice_lucky_potion

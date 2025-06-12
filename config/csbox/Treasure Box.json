@@ -1,0 +1,52 @@
+{
+    "name": "Treasure Box",
+    "key": "csgobox:csgo_key3",
+    "drop": 0,
+    "random": [
+        2,
+        25,
+        30,
+        100,
+        3125
+    ],
+    "entity": [
+    ],
+    "grade1": [
+        "{\"id\":\"quark:monster_box\",\"Count\":1}",
+        "{\"id\":\"minecraft:heart_of_the_sea\",\"Count\":1}",
+        "{\"id\":\"minecraft:heart_of_the_sea\",\"Count\":2}",
+        "{\"id\":\"minecraft:heart_of_the_sea\",\"Count\":3}",
+        "{\"id\":\"shadowlands:gold_coin\",\"Count\":1}",
+        "{\"id\":\"shadowlands:gold_coin\",\"Count\":1}",
+        "{\"id\":\"shadowlands:gold_coin\",\"Count\":1}"
+    ],
+    "grade2": [
+        "{\"id\":\"apotheosis:beeshelf\",\"Count\":1}",
+        "{\"id\":\"apotheosis:melonshelf\",\"Count\":1}",
+        "{\"id\":\"super_block_world:launch_star\",\"Count\":1}",
+        "{\"id\":\"apotheosis:gem\",\"Count\":1,\"tag\":{\"gem\":\"apotheotic_additions:crafted/monstrosity\",\"affix_data\":{\"rarity\":\"apotheotic_additions:artifact\"}}}",
+        "{\"id\":\"apotheosis:gem\",\"Count\":1,\"tag\":{\"gem\":\"apotheotic_additions:crafted/cornelia\",\"affix_data\":{\"rarity\":\"apotheotic_additions:artifact\"}}}"
+    ],
+    "grade3": [
+        "{\"id\":\"apotheosis:scrap_tome\",\"Count\":1}",
+        "{\"id\":\"apotheosis:scrap_tome\",\"Count\":2}",
+        "{\"id\":\"apotheosis:scrap_tome\",\"Count\":3}"
+    ],
+    "grade4": [
+        "{\"id\":\"apotheosis:hellshelf\",\"Count\":1}",
+        "{\"id\":\"apotheosis:seashelf\",\"Count\":1}"
+    ],
+    "grade5": [
+        "{\"id\":\"kubejs:challenge_badge\",\"Count\":1}",
+        "{\"id\":\"apotheosis:glowing_hellshelf\",\"Count\":1}",
+        "{\"id\":\"apotheosis:crystal_seashelf\",\"Count\":1}",
+        "{\"id\":\"apotheosis:blazing_hellshelf\",\"Count\":1}",
+        "{\"id\":\"apotheosis:heart_seashelf\",\"Count\":1}",
+        "{\"id\":\"minecraft:totem_of_undying\",\"Count\":1}",
+        "{\"id\":\"minecraft:totem_of_undying\",\"Count\":1}",
+        "{\"id\":\"kubejs:lucky_gem_pickaxe_imitation\",\"Count\":1,\"tag\":{\"Damage\":0}}",
+        "{\"id\":\"kubejs:lucky_gem_pickaxe_imitation\",\"Count\":1,\"tag\":{\"Damage\":0}}",
+        "{\"id\":\"apotheosis:prismatic_web\",\"Count\":1}",
+        "{\"id\":\"shadowlands:gold_coin\",\"Count\":3}"
+    ]
+}

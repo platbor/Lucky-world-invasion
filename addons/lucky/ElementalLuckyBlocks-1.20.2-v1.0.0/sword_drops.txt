@@ -1,0 +1,8 @@
+/Earth
+type=entity,ID=falling_block,amount=#rand(1,3),posOffset='#'circleOffset(#rand(1,3)),NBTTag=(BlockState=(Name=#randList(short_grass,dead_bush,fern)),Fuse=50b,Motion='#'randLaunchMotion)
+/Fire
+type=entity,ID=lucky:lucky_projectile,pos=#pExactPos,posOffsetY=1.5,NBTTag=(Motion=#motionFromDirection(#pYaw+#rand(-10,10),#pPitch+#rand(-10,10),1.0),item=(id=blaze_powder,Count=1),impact=["group(type=block,ID=fire;type=effect,ID=special_fire,target=hitEntity,duration=5)"],damage=0.0),amount=#rand(1,6),delay=#rand(0.0,2.0)
+/Water
+type=entity,ID=lucky:lucky_projectile,pos=#pExactPos,posOffsetY=1.5,NBTTag=(Motion=#motionFromDirection(#pYaw+#rand(-10,10),#pPitch+#rand(-10,10),1.0),item=(id=water_bucket,Count=1),impact=["group(type=block,ID=water;type=effect,ID="slowness",target=hitEntity,duration=5,amplifier=1)"],damage=0.0),amount=#rand(1,6),delay=#rand(0.0,2.0)
+/Wind
+group(type=effect,ID=special_knockback,range=6,excludePlayer=true,power=1.8,pos=#pPos,delay=0.1;type=particle,ID=poof,size=(1.0,0.3,1.0),particleAmount=500,pos=#pExactPos)

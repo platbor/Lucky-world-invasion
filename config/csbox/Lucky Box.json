@@ -1,0 +1,54 @@
+{
+    "name": "Lucky Box",
+    "key": "csgobox:csgo_key1",
+    "drop": 0,
+    "random": [
+        2,
+        5,
+        6,
+        20,
+        625
+    ],
+    "entity": [
+        "minecraft:zombie"
+    ],
+    "grade1": [
+        "{\"id\":\"lucky:lucky_block\",\"Count\":1}",
+        "{\"id\":\"lucky:amongus_lucky_block\",\"Count\":1}",
+        "{\"id\":\"lucky:summer_lucky_block\",\"Count\":1}",
+        "{\"id\":\"lucky:elergy_lucky_block\",\"Count\":2}",
+        "{\"id\":\"lucky:desert_lucky_block\",\"Count\":1}",
+        "{\"id\":\"lucky:lucky_block\",\"Count\":1}",
+        "{\"id\":\"lucky:pink_lucky_block\",\"Count\":2}"
+    ],
+    "grade2": [
+        "{\"id\":\"lucky:lucky_block\",\"Count\":2}",
+        "{\"id\":\"lucky:amongus_lucky_block\",\"Count\":2}",
+        "{\"id\":\"lucky:summer_lucky_block\",\"Count\":2}",
+        "{\"id\":\"lucky:elewind_lucky_block\",\"Count\":2}",
+        "{\"id\":\"lucky:desert_lucky_block\",\"Count\":2}"
+    ],
+    "grade3": [
+        "{\"id\":\"lucky:fire_lucky_block\",\"Count\":2}",
+        "{\"id\":\"lucky:elefire_lucky_block\",\"Count\":2}",
+        "{\"id\":\"lucky:eleice_lucky_block\",\"Count\":2}"
+    ],
+    "grade4": [
+        "{\"id\":\"lucky:water_lucky_block\",\"Count\":1}",
+        "{\"id\":\"lucky:morbius_lucky_block\",\"Count\":2}"
+    ],
+    "grade5": [
+        "{\"id\":\"lucky:lucky_world_invasion_lucky_block\",\"Count\":1}",
+        "{\"id\":\"lucky:tacz_lucky_block\",\"Count\":1}",
+        "{\"id\":\"lucky:tacz_lucky_block\",\"Count\":2}",
+        "{\"id\":\"lucky:tacz_lucky_block\",\"Count\":3}",
+        "{\"id\":\"lucky:water_lucky_block\",\"Count\":2}",
+        "{\"id\":\"lucky:water_lucky_block\",\"Count\":3}",
+        "{\"id\":\"lucky:water_lucky_block\",\"Count\":4}",
+        "{\"id\":\"lucky:fire_lucky_block\",\"Count\":5}",
+        "{\"id\":\"lucky:morbius_lucky_block\",\"Count\":5}",
+        "{\"id\":\"lucky:elemental_lucky_block\",\"Count\":5}",
+        "{\"id\":\"lucky:elefire_lucky_block\",\"Count\":5}",
+        "{\"id\":\"lucky:eleice_lucky_block\",\"Count\":5}"
+    ]
+}

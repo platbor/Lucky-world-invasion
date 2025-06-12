@@ -1,0 +1,9 @@
+>minecraft:overworld
+/ single block
+type=block,ID=lucky:desert_lucky_block@chance=220
+
+/ lucky acropolis
+group(type=structure,ID=desertacropolis;type=block,ID=lucky:desert_lucky_block,posY=#bPosY+1,tileEntity=(Luck=75))@chance=250
+
+>shadowlands:blood_forest
+type=block,ID=lucky:desert_lucky_block@chance=220

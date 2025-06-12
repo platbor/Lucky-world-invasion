@@ -1,0 +1,63 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:nether_stars"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "item": "minecraft:end_crystal"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/netherite"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "item": "minecraft:crying_obsidian"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "item": "minecraft:dragon_breath"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "tag": "forge:rods/blaze"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "tag": "forge:gems/lapis"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "tag": "forge:gems/quartz"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "item": "shadowlands:ultraflame_ingot"
+      },
+      "count": 100
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "arip:coercion"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

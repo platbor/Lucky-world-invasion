@@ -1,0 +1,13 @@
+>super_block_world:mushroom_kingdom
+
+/ single block
+type=block,ID=lucky:elewind_lucky_block@chance=200
+
+/ >minecraft:the_end
+/ type=block,ID=lucky:elewind_lucky_block@chance=0
+
+>shadowlands:glowshroom_forest
+type=block,ID=lucky:elewind_lucky_block@chance=150
+
+>shadowlands:vellium
+type=block,ID=lucky:elewind_lucky_block@chance=150

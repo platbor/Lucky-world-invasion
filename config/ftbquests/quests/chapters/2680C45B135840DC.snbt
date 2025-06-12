@@ -1,0 +1,136 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2680C45B135840DC"
+	group: "03F9F6A12999A795"
+	hide_quest_until_deps_complete: true
+	icon: "kubejs:challenge_badge"
+	id: "2680C45B135840DC"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3D8C6545C5E20DBE"]
+			description: ["{ftbquests.chapter.2680C45B135840DC.quest1.description1}"]
+			id: "7094507C60DCFC37"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "758ADEFBFAC2FE3F"
+				item: "kubejs:challenge_badge"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7094507C60DCFC37"]
+			description: [
+				"{ftbquests.chapter.2680C45B135840DC.quest2.description1}"
+				"{ftbquests.chapter.2680C45B135840DC.quest2.description2}"
+			]
+			id: "58ADBFB6B7EE229B"
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: "twilightforest:auroralized_glass"
+					id: "0BD667848DC3D236"
+					observe_type: 0
+					timer: 20L
+					title: "{ftbquests.chapter.2680C45B135840DC.quest2.task_852982998445052470.title}"
+					to_observe: "twilightforest:auroralized_glass"
+					type: "observation"
+				}
+				{
+					entity: "torchesbecomesunlight:frost_nova"
+					id: "4D423BF6C842639F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7094507C60DCFC37"]
+			description: [
+				"{ftbquests.chapter.2680C45B135840DC.quest3.description1}"
+				"{ftbquests.chapter.2680C45B135840DC.quest3.description2}"
+			]
+			id: "00AFAB10CD993939"
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: "twilightforest:violet_castle_rune_brick"
+					id: "48FE7F0D69AA5628"
+					observe_type: 0
+					timer: 20L
+					title: "{ftbquests.chapter.2680C45B135840DC.quest3.task_5259781110399391272.title}"
+					to_observe: "twilightforest:violet_castle_rune_brick"
+					type: "observation"
+				}
+				{
+					entity: "torchesbecomesunlight:gun_knight_patriot"
+					id: "26A04321EC64D486"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7094507C60DCFC37"]
+			description: [
+				"{ftbquests.chapter.2680C45B135840DC.quest4.description1}"
+				"{ftbquests.chapter.2680C45B135840DC.quest4.description2}"
+			]
+			id: "0A88C41EF7518197"
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: "twilightforest:deadrock"
+					id: "22E51CC96CBD67AE"
+					observe_type: 0
+					timer: 20L
+					title: "{ftbquests.chapter.2680C45B135840DC.quest4.task_2514447618394646446.title}"
+					to_observe: "twilightforest:deadrock"
+					type: "observation"
+				}
+				{
+					entity: "torchesbecomesunlight:patriot"
+					id: "2CFF2261D948B593"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7094507C60DCFC37"]
+			description: [
+				"{ftbquests.chapter.2680C45B135840DC.quest5.description1}"
+				"{ftbquests.chapter.2680C45B135840DC.quest5.description2}"
+			]
+			id: "5F0CD9C2F84609DA"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6E4EC98AB6081E9B"
+					item: "rats:brain_block"
+					type: "item"
+				}
+				{
+					entity: "torchesbecomesunlight:pursuer"
+					id: "1B23454A27ABB49A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	title: "{ftbquests.chapter.2680C45B135840DC.title}"
+}

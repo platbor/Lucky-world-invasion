@@ -1,0 +1,747 @@
+{
+	autofocus_id: "4B70EF50EAA80E21"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "053F419E3E08847C"
+	group: "7E80DA01FF9543AE"
+	hide_quest_until_deps_complete: true
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "053F419E3E08847C"
+	images: [
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			color: 5635925
+			height: 0.6d
+			image: "minecraft:block/grass"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:item/diamond"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "lucky:block/elemental_lucky_block"
+			rotation: 0.0d
+			width: 0.6d
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "twilightforest:block/twilight_oak_log"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "twilightforest:block/twilight_oak_log"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			height: 0.6d
+			image: "twilightforest:block/twilight_oak_log"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			height: 0.6d
+			image: "twilightforest:block/twilight_oak_log"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			height: 0.6d
+			image: "twilightforest:block/twilight_oak_log"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			height: 0.6d
+			image: "twilightforest:block/twilight_oak_log"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			height: 0.6d
+			image: "twilightforest:block/twilight_oak_log"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			height: 0.6d
+			image: "twilightforest:block/twilight_oak_log"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			height: 0.6d
+			image: "twilightforest:block/twilight_oak_log"
+			rotation: 0.0d
+			width: 0.6d
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			color: 43520
+			height: 0.6d
+			image: "minecraft:block/oak_leaves"
+			rotation: 0.0d
+			width: 0.6d
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			color: 43520
+			height: 0.6d
+			image: "minecraft:block/oak_leaves"
+			rotation: 0.0d
+			width: 0.6d
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			color: 43520
+			height: 0.6d
+			image: "minecraft:block/oak_leaves"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			color: 43520
+			height: 0.6d
+			image: "minecraft:block/oak_leaves"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			color: 43520
+			height: 0.6d
+			image: "minecraft:block/oak_leaves"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			color: 43520
+			height: 0.6d
+			image: "minecraft:block/oak_leaves"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			color: 43520
+			height: 0.6d
+			image: "minecraft:block/oak_leaves"
+			rotation: 0.0d
+			width: 0.6d
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			color: 43520
+			height: 0.6d
+			image: "minecraft:block/oak_leaves"
+			rotation: 0.0d
+			width: 0.6d
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			color: 43520
+			height: 0.6d
+			image: "minecraft:block/oak_leaves"
+			rotation: 0.0d
+			width: 0.6d
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			height: 0.6d
+			image: "biomesoplenty:block/origin_grass_block_top"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			height: 0.6d
+			image: "biomesoplenty:block/origin_grass_block_top"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			height: 0.6d
+			image: "biomesoplenty:block/origin_grass_block_top"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			height: 0.6d
+			image: "biomesoplenty:block/origin_grass_block_top"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			height: 0.6d
+			image: "biomesoplenty:block/origin_grass_block_top"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			height: 0.6d
+			image: "biomesoplenty:block/origin_grass_block_top"
+			rotation: 0.0d
+			width: 0.6d
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			height: 0.6d
+			image: "biomesoplenty:block/origin_grass_block_top"
+			rotation: 0.0d
+			width: 0.6d
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			height: 0.6d
+			image: "biomesoplenty:block/origin_grass_block_top"
+			rotation: 0.0d
+			width: 0.6d
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.6d
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.6d
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.6d
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			color: 5592575
+			height: 0.6d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			color: 5592575
+			height: 0.6d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			color: 5592575
+			height: 0.6d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			color: 5592575
+			height: 0.6d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			height: 0.6d
+			image: "biomesoplenty:block/origin_grass_block_top"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "biomesoplenty:block/origin_grass_block_top"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "biomesoplenty:block/origin_grass_block_top"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "biomesoplenty:block/origin_grass_block_top"
+			rotation: 0.0d
+			width: 0.6d
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.6d
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.6d
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			height: 0.6d
+			image: "ftblibrary:icons/back"
+			rotation: -90.0d
+			width: 0.6d
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 0.6d
+			x: 3.0d
+			y: 1.0d
+		}
+	]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7E75C87F0205AABC"]
+			description: [
+				"{ftbquests.chapter.053F419E3E08847C.quest1.description1}"
+				""
+				"{ftbquests.chapter.053F419E3E08847C.quest1.description2}"
+			]
+			id: "4B70EF50EAA80E21"
+			rewards: [{
+				id: "6B8BEE77D1119174"
+				item: "kubejs:bad_apple"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "{ftbquests.chapter.053F419E3E08847C.quest1.subtitle}"
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "7B51C8C680BD84B7"
+				title: "{ftbquests.chapter.053F419E3E08847C.quest1.task_8886104294667682999.title}"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B70EF50EAA80E21"]
+			id: "0651B9400DA8DD09"
+			shape: "hexagon"
+			tasks: [{
+				entity: "twilightforest:naga"
+				id: "5B286CE6074B0EAD"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0651B9400DA8DD09"]
+			id: "06C7C58BFD846E94"
+			shape: "hexagon"
+			tasks: [{
+				entity: "twilightforest:lich"
+				id: "51090DACF8B8D50F"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["06C7C58BFD846E94"]
+			id: "5162C796DED08876"
+			shape: "hexagon"
+			tasks: [{
+				entity: "twilightforest:minoshroom"
+				id: "6E5B58ADF0351052"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["06C7C58BFD846E94"]
+			id: "0F5E86BB574AD536"
+			shape: "hexagon"
+			tasks: [{
+				entity: "twilightforest:hydra"
+				id: "45D87CC3CBDFF66A"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["06C7C58BFD846E94"]
+			id: "2E3290CE2E8E53A9"
+			shape: "hexagon"
+			tasks: [{
+				entity: "twilightforest:knight_phantom"
+				id: "3F1C9FD1B626B996"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0F5E86BB574AD536"]
+			id: "0A7D17DA8EAF1EC9"
+			shape: "hexagon"
+			tasks: [{
+				entity: "twilightforest:ur_ghast"
+				id: "17FDDA7D981AE53E"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0A7D17DA8EAF1EC9"]
+			id: "05891FC21A3C295F"
+			shape: "hexagon"
+			tasks: [{
+				entity: "twilightforest:alpha_yeti"
+				id: "7371FDA42CE6D48D"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["05891FC21A3C295F"]
+			id: "1886C05302B9B15E"
+			shape: "hexagon"
+			tasks: [{
+				entity: "twilightforest:snow_queen"
+				id: "16E5857EC3F4EF48"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5162C796DED08876"]
+			id: "24C2BE991E6C7BD1"
+			shape: "hexagon"
+			tasks: [{
+				entity: "better_minoshroomtaur:better_minoshroomtaur"
+				id: "670088BBB395D057"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"1376BFE88F5D965C"
+				"0A7D17DA8EAF1EC9"
+			]
+			id: "2938E1B20F1103B6"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "755E9BF9E2F400A7"
+					item: "legendary_monsters:eye_of_frost"
+					type: "item"
+				}
+				{
+					entity: "legendary_monsters:frostbitten_golem"
+					id: "0B51C0522516F5DA"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 1.5d
+			y: -7.5d
+		}
+	]
+	title: "{ftbquests.chapter.053F419E3E08847C.title}"
+}

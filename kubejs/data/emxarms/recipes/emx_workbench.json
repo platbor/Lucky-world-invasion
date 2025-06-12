@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "tacz:workbench_b",
+    "nbt": {
+      "BlockId": "emxarms:emx_workbench"
+    }
+  },
+  "pattern": [
+    "ILI",
+    "RBB",
+    "B B"
+  ],
+  "key": {
+    "L": {
+      "tag": "forge:glass"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "I": {
+      "item": "shadowlands:ghostmetal_block"
+    },
+    "B": {
+      "item": "super_block_world:light_gray_bronze"
+    }
+  }
+}

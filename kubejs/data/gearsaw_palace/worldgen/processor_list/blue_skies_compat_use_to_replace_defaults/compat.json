@@ -1,0 +1,153 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:pearlescent_froglight"
+          },
+          "output_state": {
+            "Name": "blue_skies:moonstone_lantern"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:sea_lantern"
+          },
+          "output_state": {
+            "Name": "blue_skies:moonstone_block"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "twilightforest:moonworm",
+              "Properties": {
+                "facing": "down"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "blue_skies:moonstone",
+            "Properties": {
+              "face": "ceiling"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "twilightforest:moonworm",
+              "Properties": {
+                "facing": "up"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "blue_skies:moonstone",
+            "Properties": {
+              "face": "floor"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "twilightforest:moonworm",
+              "Properties": {
+                "facing": "north"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "blue_skies:moonstone",
+            "Properties": {
+              "facing": "north"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "twilightforest:moonworm",
+              "Properties": {
+                "facing": "south"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "blue_skies:moonstone",
+            "Properties": {
+              "facing": "south"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "twilightforest:moonworm",
+              "Properties": {
+                "facing": "east"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "blue_skies:moonstone",
+            "Properties": {
+              "facing": "east"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "twilightforest:moonworm",
+              "Properties": {
+                "facing": "west"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "blue_skies:moonstone",
+            "Properties": {
+              "facing": "west"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

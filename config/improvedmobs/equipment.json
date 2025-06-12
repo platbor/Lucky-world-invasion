@@ -1,0 +1,1884 @@
+{
+  "__comment": [
+    "Mobs will be able to equip items declared here",
+    "The first number is the weight while the second number is the quality",
+    "Weight is the weight of an item. Higher weight means that the item is more likely to get choosen",
+    "Quality is a modifier applied to the weight. The final weight used is weight + quality * current difficulty"
+  ],
+  "MAINHAND": {
+    "better_minoshroomtaur:better_minotaur_axe": [
+      24930,
+      0.023599999
+    ],
+    "born_in_chaos_v1:birch_branches": [
+      24642,
+      0.40784094
+    ],
+    "born_in_chaos_v1:carrot_sword": [
+      24069,
+      1.2063804
+    ],
+    "born_in_chaos_v1:dark_ritual_dagger": [
+      23911,
+      1.4096019
+    ],
+    "born_in_chaos_v1:darkwarblade": [
+      17970,
+      14.226674
+    ],
+    "born_in_chaos_v1:frostbitten_blade": [
+      23231,
+      2.2976365
+    ],
+    "born_in_chaos_v1:great_reaper_axe": [
+      23107,
+      3.1486528
+    ],
+    "born_in_chaos_v1:icy_sweetness": [
+      21701,
+      6.411711
+    ],
+    "born_in_chaos_v1:intoxicating_dagger": [
+      23231,
+      2.2976365
+    ],
+    "born_in_chaos_v1:nightmare_scythe": [
+      23824,
+      1.5219555
+    ],
+    "born_in_chaos_v1:nut_hammer": [
+      24697,
+      0.0469
+    ],
+    "born_in_chaos_v1:sharpened_dark_metal_sword": [
+      23206,
+      2.330707
+    ],
+    "born_in_chaos_v1:shell_mace": [
+      24367,
+      0.8234185
+    ],
+    "born_in_chaos_v1:skullbreaker_hammer": [
+      22046,
+      5.689535
+    ],
+    "born_in_chaos_v1:soul_cutlass": [
+      23911,
+      1.4096019
+    ],
+    "born_in_chaos_v1:soulbane": [
+      19830,
+      10.312961
+    ],
+    "born_in_chaos_v1:spider_bite_sword": [
+      23231,
+      2.2976365
+    ],
+    "born_in_chaos_v1:spiritual_sword": [
+      24272,
+      0.94598794
+    ],
+    "born_in_chaos_v1:supreme_measure": [
+      20,
+      53.470917
+    ],
+    "born_in_chaos_v1:sweet_axe": [
+      23994,
+      1.3027282
+    ],
+    "born_in_chaos_v1:sweet_sword": [
+      24069,
+      1.2063804
+    ],
+    "born_in_chaos_v1:trident_hayfork": [
+      24555,
+      0.56912816
+    ],
+    "born_in_chaos_v1:wood_splitter_axe": [
+      24518,
+      0.6222344
+    ],
+    "fuze_relics:nether_portal_gun": [
+      24993,
+      0.0173
+    ],
+    "legendary_monsters:anchor_handle": [
+      24676,
+      0.049
+    ],
+    "legendary_monsters:axe_of_lightning": [
+      19820,
+      10.333886
+    ],
+    "legendary_monsters:chorus_blade": [
+      23801,
+      1.5517184
+    ],
+    "legendary_monsters:chorus_cannon": [
+      22766,
+      4.129458
+    ],
+    "legendary_monsters:dinosaur_bone_club": [
+      22209,
+      5.345786
+    ],
+    "legendary_monsters:fiery_jaw": [
+      23826,
+      1.5193686
+    ],
+    "legendary_monsters:golden_halbert": [
+      24664,
+      0.26597553
+    ],
+    "legendary_monsters:heart_of_tornado": [
+      23368,
+      2.1169202
+    ],
+    "legendary_monsters:knights_sword": [
+      24676,
+      0.049
+    ],
+    "legendary_monsters:monstrous_anchor": [
+      23038,
+      3.4189806
+    ],
+    "legendary_monsters:sand_cannon": [
+      22766,
+      4.129458
+    ],
+    "legendary_monsters:sharp_battle_axe": [
+      23801,
+      1.5517184
+    ],
+    "legendary_monsters:sharp_sai": [
+      24676,
+      0.049
+    ],
+    "legendary_monsters:soul_great_sword": [
+      20982,
+      7.9092336
+    ],
+    "legendary_monsters:the_great_frost": [
+      23801,
+      1.5517184
+    ],
+    "legendary_monsters:void_sword": [
+      24676,
+      0.049
+    ],
+    "lucky:amongus_lucky_bow": [
+      21366,
+      7.109857
+    ],
+    "lucky:amongus_lucky_sword": [
+      19791,
+      10.394583
+    ],
+    "lucky:desert_lucky_bow": [
+      21366,
+      7.109857
+    ],
+    "lucky:desert_lucky_sword": [
+      19791,
+      10.394583
+    ],
+    "lucky:elefire_lucky_bow": [
+      21366,
+      7.109857
+    ],
+    "lucky:elefire_lucky_sword": [
+      19791,
+      10.394583
+    ],
+    "lucky:eleice_lucky_bow": [
+      21366,
+      7.109857
+    ],
+    "lucky:eleice_lucky_sword": [
+      19791,
+      10.394583
+    ],
+    "lucky:elemental_lucky_bow": [
+      21366,
+      7.109857
+    ],
+    "lucky:elemental_lucky_sword": [
+      19791,
+      10.394583
+    ],
+    "lucky:elergy_lucky_bow": [
+      21366,
+      7.109857
+    ],
+    "lucky:elergy_lucky_sword": [
+      19791,
+      10.394583
+    ],
+    "lucky:elewind_lucky_bow": [
+      21366,
+      7.109857
+    ],
+    "lucky:elewind_lucky_sword": [
+      19791,
+      10.394583
+    ],
+    "lucky:fire_lucky_bow": [
+      21366,
+      7.109857
+    ],
+    "lucky:fire_lucky_sword": [
+      19791,
+      10.394583
+    ],
+    "lucky:lucky_bow": [
+      21366,
+      7.109857
+    ],
+    "lucky:lucky_sword": [
+      19791,
+      10.394583
+    ],
+    "lucky:lucky_world_invasion_lucky_sword": [
+      19791,
+      10.394583
+    ],
+    "lucky:morbius_lucky_bow": [
+      21366,
+      7.109857
+    ],
+    "lucky:morbius_lucky_sword": [
+      19791,
+      10.394583
+    ],
+    "lucky:pink_lucky_bow": [
+      21366,
+      7.109857
+    ],
+    "lucky:pink_lucky_sword": [
+      19791,
+      10.394583
+    ],
+    "lucky:summer_lucky_bow": [
+      21366,
+      7.109857
+    ],
+    "lucky:summer_lucky_sword": [
+      19791,
+      10.394583
+    ],
+    "majruszsdifficulty:enderium_axe": [
+      21298,
+      7.2514286
+    ],
+    "majruszsdifficulty:enderium_sword": [
+      21345,
+      7.15358
+    ],
+    "majruszsdifficulty:wither_sword": [
+      24464,
+      0.6959233
+    ],
+    "minecraft:bow": [
+      22598,
+      4.508568
+    ],
+    "minecraft:crossbow": [
+      22892,
+      3.826627
+    ],
+    "minecraft:diamond_axe": [
+      22361,
+      5.022479
+    ],
+    "minecraft:diamond_sword": [
+      22423,
+      4.889481
+    ],
+    "minecraft:enchanted_book": [
+      23566,
+      1.8573177
+    ],
+    "minecraft:golden_axe": [
+      25022,
+      0.014399999
+    ],
+    "minecraft:golden_sword": [
+      25085,
+      0.0081
+    ],
+    "minecraft:iron_axe": [
+      24589,
+      0.51635593
+    ],
+    "minecraft:iron_sword": [
+      24676,
+      0.049
+    ],
+    "minecraft:lingering_potion{Potion:\"minecraft:harming\"}": [
+      23666,
+      1.7269388
+    ],
+    "minecraft:netherite_axe": [
+      21525,
+      6.778693
+    ],
+    "minecraft:netherite_sword": [
+      21595,
+      6.632802
+    ],
+    "minecraft:snowball": [
+      24616,
+      0.46844563
+    ],
+    "minecraft:splash_potion{Potion:\"minecraft:harming\"}": [
+      23666,
+      1.7269388
+    ],
+    "minecraft:stone_axe": [
+      24792,
+      0.0374
+    ],
+    "minecraft:stone_sword": [
+      24900,
+      0.026599998
+    ],
+    "minecraft:tnt": [
+      23466,
+      1.9881918
+    ],
+    "minecraft:trident": [
+      22666,
+      4.357304
+    ],
+    "minecraft:wooden_axe": [
+      24976,
+      0.019
+    ],
+    "minecraft:wooden_sword": [
+      25039,
+      0.0127
+    ],
+    "phantasm:crystalline_axe": [
+      24484,
+      0.66898584
+    ],
+    "phantasm:crystalline_sword": [
+      24571,
+      0.5449633
+    ],
+    "rats:feral_bagh_nakhs": [
+      24226,
+      1.0050428
+    ],
+    "rats:ghost_pirat_cutlass": [
+      24504,
+      0.6416611
+    ],
+    "rats:pirat_cutlass": [
+      24552,
+      0.57356006
+    ],
+    "rats:plague_scythe": [
+      22427,
+      4.8808722
+    ],
+    "rats:ratlantis_axe": [
+      18970,
+      12.117205
+    ],
+    "rats:ratlantis_bow": [
+      20366,
+      9.192951
+    ],
+    "rats:ratlantis_sword": [
+      18986,
+      12.083552
+    ],
+    "shadowlands:belronite_megasword": [
+      23390,
+      2.087982
+    ],
+    "shadowlands:bow_of_greed": [
+      22854,
+      3.9205995
+    ],
+    "shadowlands:cactus_on_a_stick": [
+      25020,
+      0.0145999985
+    ],
+    "shadowlands:creep_sword": [
+      24250,
+      0.97424436
+    ],
+    "shadowlands:demon_axe": [
+      23528,
+      1.9069918
+    ],
+    "shadowlands:emeraldium_axe": [
+      21715,
+      6.3824925
+    ],
+    "shadowlands:emeraldium_sword": [
+      21800,
+      6.2049685
+    ],
+    "shadowlands:enhanced_ruby_sword": [
+      23548,
+      1.8808388
+    ],
+    "shadowlands:enhanced_shadowgem_sword": [
+      22386,
+      4.9689445
+    ],
+    "shadowlands:enhanced_shadowmetal_axe": [
+      24509,
+      0.634755
+    ],
+    "shadowlands:enhanced_shadowmetal_sword": [
+      24552,
+      0.57356006
+    ],
+    "shadowlands:enhanced_void_sword": [
+      23220,
+      2.3121839
+    ],
+    "shadowlands:fiery_sword": [
+      23004,
+      3.5245364
+    ],
+    "shadowlands:ghostmetal_axe": [
+      24403,
+      0.7765298
+    ],
+    "shadowlands:ghostmetal_sword": [
+      24427,
+      0.7450327
+    ],
+    "shadowlands:goo_blade": [
+      23438,
+      2.024924
+    ],
+    "shadowlands:guardian_bane_sword": [
+      24070,
+      1.2050971
+    ],
+    "shadowlands:jellyfish_sword": [
+      23888,
+      1.4392704
+    ],
+    "shadowlands:nightmare_tooth_sword": [
+      22696,
+      4.289733
+    ],
+    "shadowlands:pastel_carver": [
+      23599,
+      1.8142376
+    ],
+    "shadowlands:plague_sword": [
+      24070,
+      1.2050971
+    ],
+    "shadowlands:shadowgemsword": [
+      22837,
+      3.9617841
+    ],
+    "shadowlands:star_crystal_maul": [
+      22238,
+      5.2843485
+    ],
+    "shadowlands:supreme_blaze_sword": [
+      23128,
+      3.0268772
+    ],
+    "shadowlands:supreme_void_sword": [
+      23174,
+      2.373078
+    ],
+    "shadowlands:thorny_bow": [
+      22854,
+      3.9205995
+    ],
+    "shadowlands:ultra_void_sword": [
+      23208,
+      2.3280602
+    ],
+    "shadowlands:void_sword": [
+      23400,
+      2.074836
+    ],
+    "torchesbecomesunlight:ursus_machete": [
+      21318,
+      7.209792
+    ],
+    "twilightforest:diamond_minotaur_axe": [
+      22324,
+      5.1015
+    ],
+    "twilightforest:ender_bow": [
+      22598,
+      4.508568
+    ],
+    "twilightforest:fiery_sword": [
+      23307,
+      2.1972775
+    ],
+    "twilightforest:giant_sword": [
+      23190,
+      2.3518867
+    ],
+    "twilightforest:glass_sword": [
+      24127,
+      1.1319785
+    ],
+    "twilightforest:gold_minotaur_axe": [
+      25022,
+      0.014399999
+    ],
+    "twilightforest:ice_bow": [
+      22598,
+      4.508568
+    ],
+    "twilightforest:ice_sword": [
+      25008,
+      0.0158
+    ],
+    "twilightforest:ironwood_axe": [
+      24144,
+      1.1101819
+    ],
+    "twilightforest:ironwood_sword": [
+      24231,
+      0.9986282
+    ],
+    "twilightforest:knightmetal_axe": [
+      24107,
+      1.1576267
+    ],
+    "twilightforest:knightmetal_sword": [
+      24206,
+      1.030694
+    ],
+    "twilightforest:seeker_bow": [
+      22598,
+      4.508568
+    ],
+    "twilightforest:steeleaf_axe": [
+      24755,
+      0.0411
+    ],
+    "twilightforest:steeleaf_sword": [
+      24854,
+      0.031199997
+    ],
+    "twilightforest:triple_bow": [
+      22598,
+      4.508568
+    ],
+    "voidscape:astral_axe": [
+      17157,
+      15.950421
+    ],
+    "voidscape:astral_bow": [
+      14266,
+      22.136171
+    ],
+    "voidscape:astral_sword": [
+      17185,
+      15.890929
+    ],
+    "voidscape:astral_xbow": [
+      14722,
+      21.155176
+    ],
+    "voidscape:corrupt_axe": [
+      19761,
+      10.457382
+    ],
+    "voidscape:corrupt_bow": [
+      17284,
+      15.6806555
+    ],
+    "voidscape:corrupt_sword": [
+      19808,
+      10.359001
+    ],
+    "voidscape:corrupt_xbow": [
+      17740,
+      14.713553
+    ],
+    "voidscape:ichor_axe": [
+      18029,
+      14.101878
+    ],
+    "voidscape:ichor_bow": [
+      15272,
+      19.974466
+    ],
+    "voidscape:ichor_sword": [
+      18051,
+      14.055355
+    ],
+    "voidscape:ichor_xbow": [
+      15728,
+      18.997717
+    ],
+    "voidscape:titanite_axe": [
+      18896,
+      12.272884
+    ],
+    "voidscape:titanite_bow": [
+      16278,
+      17.822344
+    ],
+    "voidscape:titanite_sword": [
+      18912,
+      12.239217
+    ],
+    "voidscape:titanite_xbow": [
+      16734,
+      16.850214
+    ],
+    "voidscape:voidic_crystal_axe": [
+      20622,
+      8.659092
+    ],
+    "voidscape:voidic_crystal_bow": [
+      18290,
+      13.550319
+    ],
+    "voidscape:voidic_crystal_sword": [
+      20700,
+      8.496547
+    ],
+    "voidscape:voidic_crystal_xbow": [
+      18746,
+      12.588658
+    ],
+    "yakurum:anchor": [
+      24250,
+      0.97424436
+    ],
+    "yakurum:aquamarine_axe": [
+      23191,
+      2.3505628
+    ],
+    "yakurum:aquamarine_sword": [
+      23323,
+      2.1761835
+    ],
+    "yakurum:aquatic_bow": [
+      22314,
+      5.1228175
+    ],
+    "yakurum:big_water_blade": [
+      20190,
+      9.56036
+    ],
+    "yakurum:bubble_bow": [
+      22198,
+      5.3690643
+    ],
+    "yakurum:cobweb_wand": [
+      20366,
+      9.192951
+    ],
+    "yakurum:coral_axe": [
+      24080,
+      1.192264
+    ],
+    "yakurum:coral_sword": [
+      24176,
+      1.069158
+    ],
+    "yakurum:crystal_axe": [
+      24296,
+      0.91512454
+    ],
+    "yakurum:crystal_sword": [
+      24342,
+      0.8557993
+    ],
+    "yakurum:curse_sword": [
+      24342,
+      0.8557993
+    ],
+    "yakurum:fading_dagger": [
+      24342,
+      0.8557993
+    ],
+    "yakurum:fantasia_wand": [
+      20450,
+      9.017711
+    ],
+    "yakurum:fire_coral_blade": [
+      24220,
+      1.0127393
+    ],
+    "yakurum:frostarce_axe": [
+      24552,
+      0.57356006
+    ],
+    "yakurum:frostarce_sword": [
+      24680,
+      0.048599996
+    ],
+    "yakurum:guardian_axe": [
+      23364,
+      2.1221843
+    ],
+    "yakurum:guardian_sword": [
+      23504,
+      1.9384018
+    ],
+    "yakurum:harpoon_crossbow": [
+      21232,
+      7.3888206
+    ],
+    "yakurum:hockey_stick": [
+      24806,
+      0.036
+    ],
+    "yakurum:kraken_blade": [
+      18854,
+      12.361272
+    ],
+    "yakurum:launcher_sword": [
+      24342,
+      0.8557993
+    ],
+    "yakurum:night_sword": [
+      23014,
+      3.4945223
+    ],
+    "yakurum:pearl_axe": [
+      24661,
+      0.3138377
+    ],
+    "yakurum:pearl_sword": [
+      24785,
+      0.038099997
+    ],
+    "yakurum:poseidon_trident": [
+      11850,
+      27.362492
+    ],
+    "yakurum:prismarine_axe": [
+      22752,
+      4.1618505
+    ],
+    "yakurum:prismarine_sword": [
+      22892,
+      3.826627
+    ],
+    "yakurum:sea_shell_sword": [
+      24988,
+      0.0178
+    ],
+    "yakurum:silver_claw": [
+      24654,
+      0.36301193
+    ],
+    "yakurum:snow_thrower": [
+      18406,
+      13.305445
+    ],
+    "yakurum:thunder_sword": [
+      23189,
+      2.3532112
+    ],
+    "yakurum:tnt_wand": [
+      21682,
+      6.4513593
+    ],
+    "yakurum:triton_trident": [
+      22210,
+      5.3436694
+    ],
+    "yakurum:water_axe": [
+      20418,
+      9.08446
+    ],
+    "yakurum:water_battleaxe": [
+      20354,
+      9.217992
+    ],
+    "yakurum:water_bow": [
+      16314,
+      17.745518
+    ],
+    "yakurum:water_crossbow": [
+      16032,
+      18.34768
+    ],
+    "yakurum:water_dagger": [
+      20665,
+      8.569478
+    ],
+    "yakurum:water_gun": [
+      17366,
+      15.506573
+    ],
+    "yakurum:water_katana": [
+      20492,
+      8.930115
+    ],
+    "yakurum:water_needle": [
+      20526,
+      8.859219
+    ],
+    "yakurum:water_shuriken": [
+      16966,
+      16.356468
+    ],
+    "yakurum:water_sword": [
+      20492,
+      8.930115
+    ],
+    "yakurum:water_triple_longbow": [
+      10314,
+      30.707792
+    ]
+  },
+  "OFFHAND": {
+    "legendary_monsters:dinosaur_bone_shield": [
+      1087,
+      12.230802
+    ],
+    "legendary_monsters:frostbitten_shield": [
+      5887,
+      1.6619366
+    ],
+    "legendary_monsters:shulker_shield": [
+      5687,
+      1.9226934
+    ],
+    "legendary_monsters:spiky_shield": [
+      5887,
+      1.6619366
+    ],
+    "minecraft:ender_pearl": [
+      6237,
+      1.2102311
+    ],
+    "minecraft:flint_and_steel": [
+      6209,
+      1.2461817
+    ],
+    "minecraft:lava_bucket": [
+      5837,
+      1.7269388
+    ],
+    "minecraft:shield": [
+      5915,
+      1.6255897
+    ],
+    "torchesbecomesunlight:shield": [
+      6587,
+      0.75949734
+    ],
+    "twilightforest:knightmetal_shield": [
+      4539,
+      5.0075016
+    ],
+    "voidscape:voidic_crystal_shield": [
+      1511,
+      11.339833
+    ],
+    "yakurum:water_shield": [
+      187,
+      14.129373
+    ]
+  },
+  "FEET": {
+    "better_minoshroomtaur:maze_diamond_armor_boots": [
+      4592,
+      3.7578816
+    ],
+    "born_in_chaos_v1:dark_metal_armor_boots": [
+      3883,
+      5.3436694
+    ],
+    "born_in_chaos_v1:nightmare_mantleofthe_night_boots": [
+      5085,
+      2.0590668
+    ],
+    "fuze_relics:slide_boots": [
+      5719,
+      1.2359076
+    ],
+    "legendary_monsters:atmospheric_boots": [
+      4732,
+      3.3474827
+    ],
+    "legendary_monsters:fiery_boots": [
+      4764,
+      3.22291
+    ],
+    "majruszsdifficulty:enderium_boots": [
+      4408,
+      4.200942
+    ],
+    "majruszsdifficulty:tattered_boots": [
+      6533,
+      0.030599998
+    ],
+    "minecraft:chainmail_boots": [
+      6247,
+      0.540316
+    ],
+    "minecraft:diamond_boots": [
+      5331,
+      1.7373508
+    ],
+    "minecraft:golden_boots": [
+      6313,
+      0.4136078
+    ],
+    "minecraft:iron_boots": [
+      5999,
+      0.8764657
+    ],
+    "minecraft:leather_boots": [
+      6595,
+      0.0244
+    ],
+    "minecraft:netherite_boots": [
+      5204,
+      1.9030677
+    ],
+    "mutantmonsters:mutant_skeleton_boots": [
+      5894,
+      1.0114565
+    ],
+    "rats:ratlantis_boots": [
+      3130,
+      6.920353
+    ],
+    "shadowlands:belronite_boots": [
+      5307,
+      1.7686057
+    ],
+    "shadowlands:cloud_boots": [
+      5754,
+      1.1909808
+    ],
+    "shadowlands:creeper_alloy_boots": [
+      4947,
+      2.2408218
+    ],
+    "shadowlands:emeraldium_boots": [
+      4473,
+      4.049939
+    ],
+    "shadowlands:enhanced_shadowmetal_boots": [
+      4897,
+      2.3068933
+    ],
+    "shadowlands:fiery_boots": [
+      4774,
+      3.1778276
+    ],
+    "shadowlands:ghostly_boots": [
+      4785,
+      3.1228178
+    ],
+    "shadowlands:ghostmetal_boots": [
+      4899,
+      2.304248
+    ],
+    "shadowlands:glowshroom_master_boots": [
+      4766,
+      3.2142005
+    ],
+    "shadowlands:purity_boots": [
+      5127,
+      2.0039296
+    ],
+    "shadowlands:shadowgem_boots": [
+      4537,
+      3.896143
+    ],
+    "shadowlands:star_crystal_boots": [
+      4413,
+      4.189471
+    ],
+    "shadowlands:void_traveler_boots": [
+      4820,
+      2.8587115
+    ],
+    "twilightforest:arctic_boots": [
+      5701,
+      1.2590272
+    ],
+    "twilightforest:fiery_boots": [
+      4309,
+      4.4243336
+    ],
+    "twilightforest:ironwood_boots": [
+      5600,
+      1.3889769
+    ],
+    "twilightforest:knightmetal_boots": [
+      5059,
+      2.0932417
+    ],
+    "twilightforest:steeleaf_boots": [
+      5124,
+      2.0078652
+    ],
+    "twilightforest:yeti_boots": [
+      5011,
+      2.1564183
+    ],
+    "voidscape:astral_boots": [
+      61,
+      13.343432
+    ],
+    "voidscape:corrupt_boots": [
+      3885,
+      5.3394346
+    ],
+    "voidscape:ichor_boots": [
+      1555,
+      10.204156
+    ],
+    "voidscape:titanite_boots": [
+      2824,
+      7.5574274
+    ],
+    "voidscape:voidic_crystal_boots": [
+      4750,
+      3.2804077
+    ],
+    "yakurum:aquamarine_boots": [
+      5594,
+      1.39671
+    ],
+    "yakurum:coral_boots": [
+      6187,
+      0.62781405
+    ],
+    "yakurum:crystal_boots": [
+      6457,
+      0.0382
+    ],
+    "yakurum:frostarce_boots": [
+      5608,
+      1.3786687
+    ],
+    "yakurum:guardian_boots": [
+      5594,
+      1.39671
+    ],
+    "yakurum:hockey_boots": [
+      6313,
+      0.4136078
+    ],
+    "yakurum:omega_boots": [
+      5331,
+      1.7373508
+    ],
+    "yakurum:pearl_boots": [
+      6196,
+      0.61522335
+    ],
+    "yakurum:poseidon_boots": [
+      1082,
+      11.195053
+    ],
+    "yakurum:prismarine_boots": [
+      5674,
+      1.2937275
+    ],
+    "yakurum:rainbow_boots": [
+      6313,
+      0.4136078
+    ],
+    "yakurum:sea_shell_boots": [
+      6479,
+      0.036
+    ],
+    "yakurum:spider_boots": [
+      6479,
+      0.036
+    ],
+    "yakurum:triton_boots": [
+      5539,
+      1.4676716
+    ],
+    "yakurum:water_boots": [
+      3291,
+      6.584849
+    ]
+  },
+  "LEGS": {
+    "born_in_chaos_v1:dark_metal_armor_leggings": [
+      3883,
+      5.3436694
+    ],
+    "born_in_chaos_v1:nightmare_mantleofthe_night_leggings": [
+      5085,
+      2.0590668
+    ],
+    "majruszsdifficulty:enderium_leggings": [
+      4408,
+      4.200942
+    ],
+    "majruszsdifficulty:tattered_leggings": [
+      6533,
+      0.030599998
+    ],
+    "minecraft:chainmail_leggings": [
+      6247,
+      0.540316
+    ],
+    "minecraft:diamond_leggings": [
+      5331,
+      1.7373508
+    ],
+    "minecraft:golden_leggings": [
+      6313,
+      0.4136078
+    ],
+    "minecraft:iron_leggings": [
+      5999,
+      0.8764657
+    ],
+    "minecraft:leather_leggings": [
+      6595,
+      0.0244
+    ],
+    "minecraft:netherite_leggings": [
+      5204,
+      1.9030677
+    ],
+    "mutantmonsters:mutant_skeleton_leggings": [
+      5894,
+      1.0114565
+    ],
+    "rats:ratlantis_leggings": [
+      3130,
+      6.920353
+    ],
+    "shadowlands:belronite_leggings": [
+      5307,
+      1.7686057
+    ],
+    "shadowlands:cloud_leggings": [
+      5754,
+      1.1909808
+    ],
+    "shadowlands:creeper_alloy_leggings": [
+      4947,
+      2.2408218
+    ],
+    "shadowlands:emeraldium_leggings": [
+      4473,
+      4.049939
+    ],
+    "shadowlands:enhanced_shadowmetal_leggings": [
+      4897,
+      2.3068933
+    ],
+    "shadowlands:fiery_leggings": [
+      4774,
+      3.1778276
+    ],
+    "shadowlands:ghostly_leggings": [
+      4785,
+      3.1228178
+    ],
+    "shadowlands:ghostmetal_leggings": [
+      4899,
+      2.304248
+    ],
+    "shadowlands:glowshroom_master_leggings": [
+      4766,
+      3.2142005
+    ],
+    "shadowlands:purity_leggings": [
+      5127,
+      2.0039296
+    ],
+    "shadowlands:shadowgem_leggings": [
+      4537,
+      3.896143
+    ],
+    "shadowlands:star_crystal_leggings": [
+      4413,
+      4.189471
+    ],
+    "shadowlands:void_traveler_leggings": [
+      4820,
+      2.8587115
+    ],
+    "twilightforest:arctic_leggings": [
+      5701,
+      1.2590272
+    ],
+    "twilightforest:fiery_leggings": [
+      4309,
+      4.4243336
+    ],
+    "twilightforest:ironwood_leggings": [
+      5600,
+      1.3889769
+    ],
+    "twilightforest:knightmetal_leggings": [
+      5059,
+      2.0932417
+    ],
+    "twilightforest:naga_leggings": [
+      5321,
+      1.7503701
+    ],
+    "twilightforest:steeleaf_leggings": [
+      5124,
+      2.0078652
+    ],
+    "twilightforest:yeti_leggings": [
+      5011,
+      2.1564183
+    ],
+    "voidscape:astral_legs": [
+      61,
+      13.343432
+    ],
+    "voidscape:corrupt_legs": [
+      3885,
+      5.3394346
+    ],
+    "voidscape:ichor_legs": [
+      1555,
+      10.204156
+    ],
+    "voidscape:titanite_legs": [
+      2824,
+      7.5574274
+    ],
+    "voidscape:voidic_crystal_legs": [
+      4750,
+      3.2804077
+    ],
+    "yakurum:aquamarine_leggings": [
+      5575,
+      1.4212085
+    ],
+    "yakurum:coral_leggings": [
+      6175,
+      0.64441437
+    ],
+    "yakurum:crystal_leggings": [
+      6446,
+      0.0393
+    ],
+    "yakurum:frostarce_leggings": [
+      5599,
+      1.3902657
+    ],
+    "yakurum:guardian_leggings": [
+      5580,
+      1.41476
+    ],
+    "yakurum:hockey_leggings": [
+      6313,
+      0.4136078
+    ],
+    "yakurum:pearl_leggings": [
+      6190,
+      0.62363166
+    ],
+    "yakurum:poseidon_peplo": [
+      835,
+      11.713597
+    ],
+    "yakurum:prismarine_leggings": [
+      5653,
+      1.3207352
+    ],
+    "yakurum:sea_shell_leggings": [
+      6477,
+      0.036199998
+    ],
+    "yakurum:spider_leggings": [
+      6477,
+      0.036199998
+    ],
+    "yakurum:triton_leggings": [
+      5512,
+      1.5025587
+    ],
+    "yakurum:water_leggings": [
+      3138,
+      6.9036894
+    ]
+  },
+  "CHEST": {
+    "born_in_chaos_v1:dark_metal_armor_chestplate": [
+      3868,
+      5.3436694
+    ],
+    "born_in_chaos_v1:nightmare_mantleofthe_night_chestplate": [
+      5070,
+      2.0590668
+    ],
+    "born_in_chaos_v1:spiny_shell_armor_chestplate": [
+      6234,
+      0.53719383
+    ],
+    "fuze_relics:jetpack_playbutton_chestplate": [
+      5704,
+      1.2359076
+    ],
+    "fuze_relics:pulsion_chestplate": [
+      5234,
+      1.8442572
+    ],
+    "legendary_monsters:mossy_chestplate": [
+      4016,
+      5.028895
+    ],
+    "legendary_monsters:withered_ribcage": [
+      4646,
+      3.571134
+    ],
+    "majruszsdifficulty:enderium_chestplate": [
+      4393,
+      4.200942
+    ],
+    "majruszsdifficulty:tattered_chestplate": [
+      6518,
+      0.030599998
+    ],
+    "minecraft:chainmail_chestplate": [
+      6232,
+      0.540316
+    ],
+    "minecraft:diamond_chestplate": [
+      5316,
+      1.7373508
+    ],
+    "minecraft:golden_chestplate": [
+      6298,
+      0.4136078
+    ],
+    "minecraft:iron_chestplate": [
+      5984,
+      0.8764657
+    ],
+    "minecraft:leather_chestplate": [
+      6580,
+      0.0244
+    ],
+    "minecraft:netherite_chestplate": [
+      5189,
+      1.9030677
+    ],
+    "mutantmonsters:mutant_skeleton_chestplate": [
+      5879,
+      1.0114565
+    ],
+    "quark:backpack": [
+      6580,
+      0.0244
+    ],
+    "rats:ratlantis_chestplate": [
+      3115,
+      6.920353
+    ],
+    "shadowlands:belronite_chestplate": [
+      5292,
+      1.7686057
+    ],
+    "shadowlands:cloud_chestplate": [
+      5739,
+      1.1909808
+    ],
+    "shadowlands:creeper_alloy_chestplate": [
+      4932,
+      2.2408218
+    ],
+    "shadowlands:emeraldium_chestplate": [
+      4458,
+      4.049939
+    ],
+    "shadowlands:enhanced_shadowmetal_chestplate": [
+      4882,
+      2.3068933
+    ],
+    "shadowlands:fiery_chestplate": [
+      4759,
+      3.1778276
+    ],
+    "shadowlands:ghostly_chestplate": [
+      4770,
+      3.1228178
+    ],
+    "shadowlands:ghostmetal_chestplate": [
+      4884,
+      2.304248
+    ],
+    "shadowlands:glowshroom_master_chestplate": [
+      4751,
+      3.2142005
+    ],
+    "shadowlands:purity_chestplate": [
+      5112,
+      2.0039296
+    ],
+    "shadowlands:shadowgem_chestplate": [
+      4522,
+      3.896143
+    ],
+    "shadowlands:star_crystal_chestplate": [
+      4398,
+      4.189471
+    ],
+    "shadowlands:void_traveler_chestplate": [
+      4805,
+      2.8587115
+    ],
+    "twilightforest:arctic_chestplate": [
+      5686,
+      1.2590272
+    ],
+    "twilightforest:fiery_chestplate": [
+      4294,
+      4.4243336
+    ],
+    "twilightforest:ironwood_chestplate": [
+      5585,
+      1.3889769
+    ],
+    "twilightforest:knightmetal_chestplate": [
+      5044,
+      2.0932417
+    ],
+    "twilightforest:naga_chestplate": [
+      5306,
+      1.7503701
+    ],
+    "twilightforest:phantom_chestplate": [
+      4967,
+      2.1946402
+    ],
+    "twilightforest:steeleaf_chestplate": [
+      5109,
+      2.0078652
+    ],
+    "twilightforest:yeti_chestplate": [
+      4996,
+      2.1564183
+    ],
+    "voidscape:astral_chest": [
+      46,
+      13.343432
+    ],
+    "voidscape:corrupt_chest": [
+      3870,
+      5.3394346
+    ],
+    "voidscape:ichor_chest": [
+      1540,
+      10.204156
+    ],
+    "voidscape:titanite_chest": [
+      2809,
+      7.5574274
+    ],
+    "voidscape:voidic_crystal_chest": [
+      4735,
+      3.2804077
+    ],
+    "yakurum:anticreeper_chestplate": [
+      6298,
+      0.4136078
+    ],
+    "yakurum:aquamarine_chestplate": [
+      5546,
+      1.4392704
+    ],
+    "yakurum:coral_chestplate": [
+      6150,
+      0.6581088
+    ],
+    "yakurum:crystal_chestplate": [
+      6422,
+      0.0402
+    ],
+    "yakurum:frostarce_chestplate": [
+      5577,
+      1.3992879
+    ],
+    "yakurum:guardian_chestplate": [
+      5553,
+      1.4302384
+    ],
+    "yakurum:hockey_chestplate": [
+      6298,
+      0.4136078
+    ],
+    "yakurum:pearl_chestplate": [
+      6170,
+      0.63059485
+    ],
+    "yakurum:pearl_necklace": [
+      6638,
+      0.0186
+    ],
+    "yakurum:poseidon_himation": [
+      631,
+      12.110894
+    ],
+    "yakurum:prismarine_chestplate": [
+      5622,
+      1.3413242
+    ],
+    "yakurum:sea_shell_chestplate": [
+      6459,
+      0.0365
+    ],
+    "yakurum:spider_chestplate": [
+      6459,
+      0.0365
+    ],
+    "yakurum:triton_chestplate": [
+      5475,
+      1.531011
+    ],
+    "yakurum:water_chestplate": [
+      3006,
+      7.1473346
+    ]
+  },
+  "HEAD": {
+    "better_minoshroomtaur:maze_diamond_armor_helmet": [
+      4581,
+      3.7578816
+    ],
+    "born_in_chaos_v1:damned_demomans_hat_helmet": [
+      6527,
+      0.0301
+    ],
+    "born_in_chaos_v1:dark_metal_armor_helmet": [
+      3872,
+      5.3436694
+    ],
+    "born_in_chaos_v1:killer_rabbit_ears_helmet": [
+      6626,
+      0.0202
+    ],
+    "born_in_chaos_v1:lord_pumpkinheads_hat_helmet": [
+      4566,
+      3.7963035
+    ],
+    "born_in_chaos_v1:missionary_hat_helmet": [
+      6427,
+      0.040099997
+    ],
+    "born_in_chaos_v1:nightmare_mantleofthe_night_helmet": [
+      5074,
+      2.0590668
+    ],
+    "born_in_chaos_v1:spiny_shell_armor_helmet": [
+      6238,
+      0.53719383
+    ],
+    "born_in_chaos_v1:spiritual_guide_sombrero_helmet": [
+      6447,
+      0.038099997
+    ],
+    "fuze_relics:crown_helmet": [
+      5708,
+      1.2359076
+    ],
+    "legendary_monsters:blastproof_helmet": [
+      4986,
+      2.1748655
+    ],
+    "legendary_monsters:chorus_mask": [
+      5105,
+      2.0183623
+    ],
+    "legendary_monsters:dinosaur_bone_helmet": [
+      4898,
+      2.2910256
+    ],
+    "legendary_monsters:shulker_helmet": [
+      5073,
+      2.0603807
+    ],
+    "majruszsdifficulty:enderium_helmet": [
+      4397,
+      4.200942
+    ],
+    "majruszsdifficulty:tattered_helmet": [
+      6522,
+      0.030599998
+    ],
+    "minecraft:chainmail_helmet": [
+      6236,
+      0.540316
+    ],
+    "minecraft:diamond_helmet": [
+      5320,
+      1.7373508
+    ],
+    "minecraft:golden_helmet": [
+      6302,
+      0.4136078
+    ],
+    "minecraft:iron_helmet": [
+      5988,
+      0.8764657
+    ],
+    "minecraft:leather_helmet": [
+      6584,
+      0.0244
+    ],
+    "minecraft:netherite_helmet": [
+      5193,
+      1.9030677
+    ],
+    "minecraft:turtle_helmet": [
+      5932,
+      0.948558
+    ],
+    "quark:forgotten_hat": [
+      6584,
+      0.0244
+    ],
+    "rats:archeologist_hat": [
+      5564,
+      1.4212085
+    ],
+    "rats:aviator_hat": [
+      5564,
+      1.4212085
+    ],
+    "rats:black_death_mask": [
+      6434,
+      0.039399996
+    ],
+    "rats:chef_toque": [
+      5989,
+      0.8751751
+    ],
+    "rats:exterminator_hat": [
+      5564,
+      1.4212085
+    ],
+    "rats:farmer_hat": [
+      5989,
+      0.8751751
+    ],
+    "rats:fisherman_hat": [
+      5564,
+      1.4212085
+    ],
+    "rats:ghost_pirat_hat": [
+      5989,
+      0.8751751
+    ],
+    "rats:halo_hat": [
+      5989,
+      0.8751751
+    ],
+    "rats:military_hat": [
+      5564,
+      1.4212085
+    ],
+    "rats:piper_hat": [
+      6478,
+      0.035
+    ],
+    "rats:pirat_hat": [
+      5564,
+      1.4212085
+    ],
+    "rats:plague_doctor_mask": [
+      6434,
+      0.039399996
+    ],
+    "rats:rat_fez": [
+      5564,
+      1.4212085
+    ],
+    "rats:rat_king_crown": [
+      5989,
+      0.8751751
+    ],
+    "rats:ratlantis_helmet": [
+      3119,
+      6.920353
+    ],
+    "rats:santa_hat": [
+      5989,
+      0.8751751
+    ],
+    "rats:top_hat": [
+      5989,
+      0.8751751
+    ],
+    "shadowlands:belronite_helmet": [
+      5296,
+      1.7686057
+    ],
+    "shadowlands:cloud_helmet": [
+      5743,
+      1.1909808
+    ],
+    "shadowlands:creeper_alloy_helmet": [
+      4936,
+      2.2408218
+    ],
+    "shadowlands:emeraldium_helmet": [
+      4462,
+      4.049939
+    ],
+    "shadowlands:enhanced_shadowmetal_helmet": [
+      4886,
+      2.3068933
+    ],
+    "shadowlands:fiery_helmet": [
+      4763,
+      3.1778276
+    ],
+    "shadowlands:ghostly_helmet": [
+      4774,
+      3.1228178
+    ],
+    "shadowlands:ghostmetal_helmet": [
+      4888,
+      2.304248
+    ],
+    "shadowlands:glowshroom_master_helmet": [
+      4755,
+      3.2142005
+    ],
+    "shadowlands:purity_helmet": [
+      5116,
+      2.0039296
+    ],
+    "shadowlands:shadowgem_helmet": [
+      4526,
+      3.896143
+    ],
+    "shadowlands:star_crystal_helmet": [
+      4402,
+      4.189471
+    ],
+    "shadowlands:void_traveler_helmet": [
+      4809,
+      2.8587115
+    ],
+    "tf_dnv:miner_helmet": [
+      6328,
+      0.049999997
+    ],
+    "twilightforest:arctic_helmet": [
+      5690,
+      1.2590272
+    ],
+    "twilightforest:fiery_helmet": [
+      4298,
+      4.4243336
+    ],
+    "twilightforest:ironwood_helmet": [
+      5589,
+      1.3889769
+    ],
+    "twilightforest:knightmetal_helmet": [
+      5048,
+      2.0932417
+    ],
+    "twilightforest:phantom_helmet": [
+      4971,
+      2.1946402
+    ],
+    "twilightforest:steeleaf_helmet": [
+      5113,
+      2.0078652
+    ],
+    "twilightforest:yeti_helmet": [
+      5000,
+      2.1564183
+    ],
+    "voidscape:astral_helmet": [
+      50,
+      13.343432
+    ],
+    "voidscape:corrupt_helmet": [
+      3874,
+      5.3394346
+    ],
+    "voidscape:ichor_helmet": [
+      1544,
+      10.204156
+    ],
+    "voidscape:titanite_helmet": [
+      2813,
+      7.5574274
+    ],
+    "voidscape:voidic_crystal_helmet": [
+      4739,
+      3.2804077
+    ],
+    "yakurum:aquamarine_helmet": [
+      5531,
+      1.4637973
+    ],
+    "yakurum:coral_helmet": [
+      6142,
+      0.67440087
+    ],
+    "yakurum:crystal_helmet": [
+      6415,
+      0.0413
+    ],
+    "yakurum:damp_helmet": [
+      5531,
+      1.4637973
+    ],
+    "yakurum:frostarce_helmet": [
+      5573,
+      1.4096019
+    ],
+    "yakurum:guardian_helmet": [
+      5542,
+      1.4495956
+    ],
+    "yakurum:hockey_helmet": [
+      6302,
+      0.4136078
+    ],
+    "yakurum:pearl_helmet": [
+      6168,
+      0.63890266
+    ],
+    "yakurum:poseidon_crown": [
+      377,
+      12.6539545
+    ],
+    "yakurum:prismarine_helmet": [
+      5605,
+      1.3683633
+    ],
+    "yakurum:sea_shell_helmet": [
+      6460,
+      0.036799997
+    ],
+    "yakurum:spider_helmet": [
+      6460,
+      0.036799997
+    ],
+    "yakurum:triton_helmet": [
+      5451,
+      1.5672569
+    ],
+    "yakurum:water_helmet": [
+      2851,
+      7.4783287
+    ]
+  }
+}

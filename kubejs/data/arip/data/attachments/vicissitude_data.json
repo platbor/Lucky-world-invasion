@@ -1,0 +1,41 @@
+{
+	"weight": 2,
+	"ads": {
+		"addend": 0.1
+	},
+	"aim_inaccuracy": {
+			"percent": -1
+	},
+	"silence": {
+		"distance_addend": -128,
+		"use_silence_sound": true
+	},
+	"recoil": {
+		"pitch": {
+			"percent": -1
+		},
+		"yaw": {
+			"percent": -1
+		}
+	},
+	"damage": {
+		"addend": 2,
+		"percent": 1,
+		"multiplier": 2
+	},
+	"effective_range": {
+		"addend": 10,
+		"multiplier": 2
+	},
+	"ammo_speed": {
+		"addend": 100,
+		"multiplier": 2
+	},
+	"armor_ignore":{
+		"addend": 0.25,
+		"multiplier": 2
+	},
+	"pierce": {
+		"multiplier": 2
+	}
+}

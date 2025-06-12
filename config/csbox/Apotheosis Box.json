@@ -1,0 +1,59 @@
+{
+    "name": "Apotheosis Box",
+    "key": "csgobox:csgo_key2",
+    "drop": 0,
+    "random": [
+        2,
+        25,
+        30,
+        100,
+        5125
+    ],
+    "entity": [
+        "minecraft:zombie"
+    ],
+    "grade1": [
+        "{\"id\":\"apotheotic_additions:apotheotic_coin\",\"Count\":1}",
+        "{\"id\":\"apotheosis:gem_dust\",\"Count\":1}",
+        "{\"id\":\"apotheosis:gem_dust\",\"Count\":2}",
+        "{\"id\":\"apotheosis:gem_dust\",\"Count\":3}",
+        "{\"id\":\"apotheosis:gem_dust\",\"Count\":4}",
+        "{\"id\":\"apotheosis:gem_dust\",\"Count\":5}",
+        "{\"id\":\"apotheosis:common_material\",\"Count\":3}"
+    ],
+    "grade2": [
+        "{\"id\":\"apotheosis:boss_summoner\",\"Count\":1}",
+        "{\"id\":\"apotheosis:boss_summoner\",\"Count\":1}",
+        "{\"id\":\"apotheosis:boss_summoner\",\"Count\":1}",
+        "{\"id\":\"apotheosis:uncommon_material\",\"Count\":2}",
+        "{\"id\":\"apotheosis:uncommon_material\",\"Count\":3}"
+    ],
+    "grade3": [
+        "{\"id\":\"apotheosis:rare_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:rare_material\",\"Count\":2}"
+    ],
+    "grade4": [
+        "{\"id\":\"apotheosis:epic_material\",\"Count\":2}",
+        "{\"id\":\"apotheosis:epic_material\",\"Count\":1}"
+    ],
+    "grade5": [
+        "{\"id\":\"apotheotic_additions:artifact_material\",\"Count\":1}",
+        "{\"id\":\"apotheotic_additions:heirloom_material\",\"Count\":1}",
+        "{\"id\":\"apotheotic_additions:esoteric_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}",
+        "{\"id\":\"apotheosis:mythic_material\",\"Count\":1}"
+    ]
+}

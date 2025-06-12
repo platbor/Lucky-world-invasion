@@ -1,0 +1,101 @@
+{
+    "Dimensions": [
+        "rats:ratlantis",
+        "twilightforest:twilight_forest"
+    ],
+    "InvasionTime": "NIGHT",
+    "Rarity": 15,
+    "SeverityInfo": [
+        {
+            "MobCapPercentage": 0.6,
+            "MobSpawnList": [
+                {
+                    "EntityType": "rats:plague_cloud",
+                    "MaxCount": 3,
+                    "MinCount": 1,
+                    "Weight": 1
+                },
+                {
+                    "EntityType": "rats:plague_beast",
+                    "Weight": 5,
+                    "MinCount": 1,
+                    "MaxCount": 3
+                }
+            ],
+            "TickDelay": 60
+        },
+        {
+            "MobCapPercentage": 0.7,
+            "MobSpawnList": [
+                {
+                    "EntityType": "rats:plague_cloud",
+                    "MaxCount": 4,
+                    "MinCount": 1,
+                    "Weight": 1
+                },
+                {
+                    "EntityType": "rats:plague_beast",
+                    "Weight": 5,
+                    "MinCount": 1,
+                    "MaxCount": 4
+                }
+            ],
+            "TickDelay": 48
+        },
+        {
+            "MobCapPercentage": 0.8,
+            "MobSpawnList": [
+                {
+                    "EntityType": "rats:plague_cloud",
+                    "MaxCount": 6,
+                    "MinCount": 2,
+                    "Weight": 1
+                },
+                {
+                    "EntityType": "rats:plague_beast",
+                    "Weight": 5,
+                    "MinCount": 2,
+                    "MaxCount": 6
+                }
+            ],
+            "TickDelay": 36
+        },
+        {
+            "MobCapPercentage": 0.9,
+            "MobSpawnList": [
+                {
+                    "EntityType": "rats:plague_cloud",
+                    "MaxCount": 8,
+                    "MinCount": 3,
+                    "Weight": 1
+                },
+                {
+                    "EntityType": "rats:plague_beast",
+                    "Weight": 5,
+                    "MinCount": 3,
+                    "MaxCount": 8
+                }
+            ],
+            "TickDelay": 24
+        },
+        {
+            "MobCapPercentage": 1.0,
+            "MobSpawnList": [
+                {
+                    "EntityType": "rats:plague_cloud",
+                    "MaxCount": 10,
+                    "MinCount": 4,
+                    "Weight": 1
+                },
+                {
+                    "EntityType": "rats:plague_beast",
+                    "Weight": 5,
+                    "MinCount": 4,
+                    "MaxCount": 10
+                }
+            ],
+            "TickDelay": 12
+        }
+    ],
+    "Tier": 3
+}

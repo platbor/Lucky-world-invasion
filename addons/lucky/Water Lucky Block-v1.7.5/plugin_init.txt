@@ -1,0 +1,2 @@
+block_id=water_lucky_block
+potion_id=water_lucky_potion

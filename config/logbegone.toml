@@ -1,0 +1,5 @@
+
+[logbegone]
+	phrases = ["Disconnecting VANILLA connection attempt", "Channels ", "Redirecting ", "Registering ", "Constructing ", "Cannot invoke ", "Incorrect key ", "Non-existent flag "]
+	regex = ["Disconnecting VANILLA connection attempt", "Channels ", "Redirecting ", "Registering ", "Constructing ", "Cannot invoke ", "Incorrect key ", "Non-existent flag "]
+

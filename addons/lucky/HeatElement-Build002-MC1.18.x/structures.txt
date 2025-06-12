@@ -1,0 +1,29 @@
+/fire element structures
+ID=elefire_bbq,file=elefire_bbq.nbt,centerY=1
+ID=elefire_firehut,file=elefire_firehut.nbt,centerY=1
+ID=elefire_firering,file=elefire_firering.nbt,centerY=1
+ID=elefire_firetemple,file=elefire_firetemple.nbt,centerY=1
+ID=elefire_firetemple1,file=elefire_firetemple1.nbt,centerY=1
+ID=elefire_firetemple2,file=elefire_firetemple2.nbt,centerY=1
+ID=elefire_firetemple3,file=elefire_firetemple3.nbt,centerY=1
+ID=elefire_firetemple4,file=elefire_firetemple4.nbt,centerY=1
+ID=elefire_firetemple5,file=elefire_firetemple5.nbt,centerY=1
+ID=elefire_firetemple6,file=elefire_firetemple6.nbt,centerY=1
+ID=elefire_firetemple7,file=elefire_firetemple7.nbt,centerY=1
+ID=elefire_firetemple8,file=elefire_firetemple8.nbt,centerY=1
+ID=elefire_firetemple9,file=elefire_firetemple9.nbt,centerY=1
+ID=elefire_firetemple10,file=elefire_firetemple10.nbt,centerY=1
+ID=elefire_firetemple11,file=elefire_firetemple11.nbt,centerY=1
+ID=elefire_firetemple12,file=elefire_firetemple12.nbt,centerY=1
+ID=elefire_firetemple13,file=elefire_firetemple13.nbt,centerY=1
+ID=elefire_firetemple14,file=elefire_firetemple14.nbt,centerY=1
+ID=elefire_firetemple15,file=elefire_firetemple15.nbt,centerY=1
+ID=elefire_firetemple16,file=elefire_firetemple16.nbt,centerY=1
+ID=elefire_firetemple17,file=elefire_firetemple17.nbt,centerY=1
+ID=elefire_firetemple18,file=elefire_firetemple18.nbt,centerY=1
+ID=elefire_firetemple19,file=elefire_firetemple19.nbt,centerY=1
+ID=elefire_firetemple20,file=elefire_firetemple20.nbt,centerY=1
+
+/wishing well
+ID=elefire_wellfire,file=elefire_wellfire.nbt,centerY=2
+

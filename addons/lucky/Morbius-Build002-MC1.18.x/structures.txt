@@ -1,0 +1,25 @@
+/morbius structures
+ID=morbius_catspawner,file=morbius_catspawner.nbt
+ID=morbius_jailhold,file=morbius_jailhold.nbt,centerY=1
+ID=morbius_scientistigloo,file=morbius_scientistigloo.nbt,centerY=1
+ID=morbius_spiderdungeon,file=morbius_spiderdungeon.nbt,centerY=1
+ID=morbius_spiderwebs,file=morbius_spiderwebs.nbt
+
+/morbius lootchests
+ID=morbius_chest1,file=morbius_chest1.nbt
+ID=morbius_chest2,file=morbius_chest2.nbt
+ID=morbius_chest3,file=morbius_chest3.nbt
+ID=morbius_chest4,file=morbius_chest4.nbt
+ID=morbius_chest5,file=morbius_chest5.nbt
+ID=morbius_chest6,file=morbius_chest6.nbt
+ID=morbius_chest7,file=morbius_chest7.nbt
+ID=morbius_chest8,file=morbius_chest8.nbt
+ID=morbius_chest9,file=morbius_chest9.nbt
+ID=morbius_chest10,file=morbius_chest10.nbt
+ID=morbius_chest11,file=morbius_chest11.nbt
+ID=morbius_chest12,file=morbius_chest12.nbt
+ID=morbius_chestgolden,file=morbius_chestgolden.nbt
+
+/morbius lucky fort
+ID=morbius_fort_inner,file=morbius_fort_inner.luckystruct,blockMode=overlay
+ID=morbius_fort,file=morbius_fort.nbt,overlayStruct=morbius_fort_inner,centerY=1

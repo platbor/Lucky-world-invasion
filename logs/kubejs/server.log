@@ -1,0 +1,32 @@
+[15:33:28] [INIT] KubeJS 2001.6.5-build.16; MC 2001 forge
+[15:33:28] [INIT] Loaded plugins:
+[15:33:28] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[15:33:28] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbquests.kubejs.KubeJSIntegration
+[15:33:28] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbteams.kubejs.FTBTeamsKubeJSPlugin
+[15:33:28] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbfiltersystem.kubejs.FFSKubeJSPlugin
+[15:33:28] [INIT] - dev.aika.taczjs.forge.TaCZJSPlugin
+[15:33:28] [INIT] - com.tacz.guns.compat.kubejs.TimelessKubeJSPlugin
+[15:33:28] [INFO] Loaded script server_scripts:difficulty_control.js in 0.001 s
+[15:33:28] [INFO] loots.js#1: Loaded Java class 'dev.theagameplayer.puresuffering.world.entity.PSInvasionMob'
+[15:33:28] [INFO] Loaded script server_scripts:loots.js in 0.004 s
+[15:33:28] [INFO] Loaded script server_scripts:item_events.js in 0.008 s
+[15:33:28] [INFO] entity_events.js#1: Loaded Java class 'net.minecraft.world.effect.MobEffectInstance'
+[15:33:28] [INFO] Loaded script server_scripts:entity_events.js in 0.032 s
+[15:33:28] [INFO] Loaded script server_scripts:lucky_block_event.js in 0.028 s
+[15:33:28] [INFO] Loaded script server_scripts:ban_entity.js in 0.001 s
+[15:33:28] [INFO] Loaded script server_scripts:ban_item.js in 0.0 s
+[15:33:28] [INFO] Loaded script server_scripts:block_events.js in 0.001 s
+[15:33:28] [INFO] Loaded script server_scripts:tacz.js in 0.0 s
+[15:33:28] [INFO] Loaded script server_scripts:identity_limit.js in 0.0 s
+[15:33:28] [INFO] Loaded script server_scripts:player_login.js in 0.0 s
+[15:33:28] [INFO] Loaded script server_scripts:recipes.js in 0.001 s
+[15:33:28] [INFO] Loaded 12/12 KubeJS server scripts in 0.095 s with 0 errors and 0 warnings
+[15:33:28] [INFO] Scripts loaded
+[15:33:28] [INFO] Initializing recipe event...
+[15:33:31] [INFO] Processing recipes...
+[15:33:31] [WARN] Failed to parse recipe 'legendary_monsters:dinosaur_bone_meal[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[15:33:32] [INFO] Found 7349 recipes in 231.6 ms
+[15:33:32] [INFO] Posted recipe events in 159.0 ms
+[15:33:32] [WARN] Error parsing recipe legendary_monsters:ancient_dripstone_brick_stairs_left[minecraft:crafting_shaped]: {"type":"minecraft:crafting_shaped","pattern":["   ","   ","   "],"key":{},"result":{"item":"legendary_monsters:ancient_dripstone_brick_stairs","count":4}}: Index 0 out of bounds for length 0
+[15:33:32] [INFO] Added 11 recipes, removed 16 recipes, modified 1 recipes, with 1 failed recipes in 128.6 ms
+[15:33:35] [INFO] Server resource reload complete!

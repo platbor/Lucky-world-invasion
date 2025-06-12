@@ -1,0 +1,47 @@
+{
+  "music_disc.lbele_disc_earth": {
+    "sounds": [
+      {
+        "name": "lbelemental:lbele_disc_earth",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.lbele_disc_fire": {
+    "sounds": [
+      {
+        "name": "lbelemental:lbele_disc_fire",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.lbele_disc_water": {
+    "sounds": [
+      {
+        "name": "lbelemental:lbele_disc_water",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.lbele_disc_wind": {
+    "sounds": [
+      {
+        "name": "lbelemental:lbele_disc_wind",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.lbele_disc_elemental": {
+    "sounds": [
+      {
+        "name": "lbelemental:lbele_disc_elemental",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  }
+}

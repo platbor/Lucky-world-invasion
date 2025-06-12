@@ -1,0 +1,284 @@
+{
+	autofocus_id: "232C611FF9DB02EA"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "440598218D3432C3"
+	group: "092B0FDFBC420A44"
+	hide_quest_until_deps_complete: true
+	icon: "minecraft:enchanting_table"
+	id: "440598218D3432C3"
+	images: [{
+		height: 5.0d
+		image: "minecraft:block/enchanting_table_top"
+		rotation: 0.0d
+		width: 5.0d
+		x: 0.0d
+		y: 0.0d
+	}]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5F524D5BE44E1486"]
+			description: [""]
+			disable_toast: true
+			id: "232C611FF9DB02EA"
+			rewards: [{
+				id: "1FE36B6C619CEFEE"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "apotheosis:apoth_chronicle"
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "5BAF42FCDE3D9D47"
+				stat: "minecraft:total_world_time"
+				title: "{ftbquests.chapter.440598218D3432C3.quest1.task_6606572832203578695.title}"
+				type: "stat"
+				value: 1
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["232C611FF9DB02EA"]
+			description: ["{ftbquests.chapter.440598218D3432C3.quest2.description1}"]
+			id: "1E443C52B9F6441E"
+			tasks: [{
+				id: "3935E61EEC9C0E7F"
+				item: "apotheosis:salvaging_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["232C611FF9DB02EA"]
+			id: "36F858F6AD572AE1"
+			tasks: [{
+				id: "7DB06B281B1CC338"
+				item: "apotheosis:gem_cutting_table"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["232C611FF9DB02EA"]
+			id: "4FC9B0415C7D1A38"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "354022750CB95FEE"
+				table_id: 285618644433769922L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "6D7F06F177E2CC31"
+					item: "apotheosis:sigil_of_socketing"
+					type: "item"
+				}
+				{
+					id: "50C5EC7DA2F47FF2"
+					item: "apotheosis:sigil_of_withdrawal"
+					type: "item"
+				}
+				{
+					id: "290E1270C9849EC6"
+					item: "apotheosis:sigil_of_rebirth"
+					type: "item"
+				}
+				{
+					id: "637DFB90908B5975"
+					item: "apotheosis:sigil_of_enhancement"
+					type: "item"
+				}
+				{
+					id: "58E242FCDAB5B1C4"
+					item: "apotheosis:sigil_of_unnaming"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["348CEF93CC2B0180"]
+			id: "24484BDD74449F4A"
+			rewards: [
+				{
+					count: 2
+					id: "619B1B3C95A2C5FE"
+					item: "apotheosis:rare_material"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "37717F232DBC75AA"
+					item: "apotheosis:sigil_of_rebirth"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "212B7411BF66B30B"
+				item: "apotheosis:simple_reforging_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["24484BDD74449F4A"]
+			id: "3D04690101BB070C"
+			tasks: [{
+				id: "42945D6FB187EAEA"
+				item: "apotheosis:reforging_table"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3D04690101BB070C"]
+			id: "171B568051B1DFB8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2C1ACAF885C4F7AE"
+				table_id: 285618644433769922L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7B4ACFC8D604CCC4"
+				item: "ancientreforging:ancient_reforging_table"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["171B568051B1DFB8"]
+			id: "57F1E8BAC300718E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F13B536EC764785"
+				table_id: 285618644433769922L
+				type: "random"
+			}]
+			tasks: [{
+				id: "220288B4C4556DEF"
+				item: "esotericreforging:esoteric_reforging_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["348CEF93CC2B0180"]
+			id: "031308A0866A6A57"
+			rewards: [{
+				id: "434725CAB736EBD6"
+				item: "apotheosis:sigil_of_enhancement"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CF1A05AC68D1D7D"
+				item: "apotheosis:augmenting_table"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"0F1DA9C07C9AA92E"
+				"232C611FF9DB02EA"
+			]
+			description: ["{ftbquests.chapter.440598218D3432C3.quest10.description1}"]
+			id: "4E8A6D5095ED166A"
+			rewards: [{
+				id: "7C849FC769BEEA3E"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/breach"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "23BBBC9045005BB7"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0F1DA9C07C9AA92E"
+				"232C611FF9DB02EA"
+			]
+			id: "348CEF93CC2B0180"
+			rewards: [{
+				count: 3
+				id: "372B89C94A6E3E39"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			tasks: [{
+				id: "57BCD1E7ED7606DF"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0F1DA9C07C9AA92E"
+				"232C611FF9DB02EA"
+			]
+			description: ["{ftbquests.chapter.440598218D3432C3.quest12.description1}"]
+			id: "38BF0CE0A36035C0"
+			rewards: [
+				{
+					id: "479762B47D59F2E1"
+					item: {
+						Count: 1
+						id: "apotheosis:gem"
+						tag: {
+							affix_data: {
+								rarity: "apotheosis:common"
+							}
+							gem: "apotheosis:core/brawlers"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1B1DE990326C74DC"
+					item: "apotheosis:sigil_of_socketing"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3AD1F7EABCF42D10"
+				item: "minecraft:smithing_table"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+	]
+	title: "{ftbquests.chapter.440598218D3432C3.title}"
+}

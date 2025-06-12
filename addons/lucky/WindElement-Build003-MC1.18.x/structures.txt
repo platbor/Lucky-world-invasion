@@ -1,0 +1,27 @@
+/wind lucky structures
+ID=elewind_windstruct_lucky_inner,file=elewind_windstruct_lucky_inner.luckystruct,blockMode=overlay
+ID=elewind_windstruct_lucky,file=elewind_windstruct_lucky.nbt,overlayStruct=elewind_windstruct_lucky_inner,centerY=1
+ID=elewind_windstruct_unlucky,file=elewind_windstruct_unlucky.nbt
+
+/wind tribe tower
+ID=elewind_windtribetower,file=elewind_windtribetower.nbt,centerY=1
+
+/wind shrine
+ID=elewind_windshrine0,file=elewind_windshrine0.nbt,centerY=2
+ID=elewind_windshrine1,file=elewind_windshrine1.nbt,centerY=2
+ID=elewind_windshrine2,file=elewind_windshrine2.nbt,centerY=2
+ID=elewind_windshrine3,file=elewind_windshrine3.nbt,centerY=2
+ID=elewind_windshrine4,file=elewind_windshrine4.nbt,centerY=2
+ID=elewind_windshrine5,file=elewind_windshrine5.nbt,centerY=2
+ID=elewind_windshrine6,file=elewind_windshrine6.nbt,centerY=2
+ID=elewind_windshrine7,file=elewind_windshrine7.nbt,centerY=2
+ID=elewind_windshrine8,file=elewind_windshrine8.nbt,centerY=2
+ID=elewind_windshrine9,file=elewind_windshrine9.nbt,centerY=2
+ID=elewind_windshrine10,file=elewind_windshrine10.nbt,centerY=2
+ID=elewind_windshrine11,file=elewind_windshrine11.nbt,centerY=2
+
+/others
+ID=elewind_skyblock1152,file=elewind_skyblock1152.nbt
+
+/wishing well
+ID=elewind_wellwind,file=elewind_wellwind.nbt,centerY=2

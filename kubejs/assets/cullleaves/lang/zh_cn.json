@@ -1,0 +1,5 @@
+﻿{
+  "cullleaves.midnightconfig.cullRoots.tooltip": "启用对红树林根部的剔除。\n§c更改此设置后，您必须重新加载所有区块（F3 + A）",
+  "cullleaves.midnightconfig.cullRoots": "启用红树林根部剔除",
+  "cullleaves.midnightconfig.cullRoots.tooltip.sodium": "能够剔除红树林根部。"
+}

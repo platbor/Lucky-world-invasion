@@ -1,0 +1,38 @@
+{
+	id: "08194103F9FBB76D"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			command: "/improvedmobs difficulty player @p set 0"
+			icon: "minecraft:apple"
+			title: "难度清空"
+			type: "command"
+		}
+		{
+			command: "/kill @e[type=!minecraft:player]"
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			title: "杀死所有实体"
+			type: "command"
+		}
+		{
+			command: "/kill @e[type=minecraft:item]"
+			icon: {
+				Count: 1
+				id: "minecraft:chest"
+				tag: {
+					Damage: 0
+				}
+			}
+			title: "清空掉落物"
+			type: "command"
+		}
+	]
+	title: "{ftbquests.loot_table_583569112055920493.title}"
+}

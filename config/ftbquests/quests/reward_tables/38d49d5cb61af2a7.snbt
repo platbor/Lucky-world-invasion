@@ -1,0 +1,26 @@
+{
+	id: "38D49D5CB61AF2A7"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{
+			command: "/gamerule puresuffering:enableInvasions true"
+			icon: "minecraft:zombie_head"
+			title: "开启"
+			type: "command"
+		}
+		{
+			command: "/gamerule puresuffering:enableInvasions false"
+			icon: "minecraft:player_head"
+			title: "关闭"
+			type: "command"
+		}
+		{
+			command: "/puresuffering clear current"
+			icon: "minecraft:skeleton_skull"
+			title: "停止当前入侵"
+			type: "command"
+		}
+	]
+	title: "{ftbquests.loot_table_4095070982704394919.title}"
+}

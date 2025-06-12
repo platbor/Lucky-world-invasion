@@ -1,0 +1,36 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "A": {
+      "item": "lucky:desert_lucky_block"
+    },
+    "B": {
+      "item": "lucky:amongus_lucky_block"
+    },
+    "C": {
+      "item": "lucky:summer_lucky_block"
+    },
+    "D": {
+      "item": "lucky:fire_lucky_block"
+    },
+    "E": {
+      "item": "lucky:water_lucky_block"
+    },
+    "F": {
+      "item": "lucky:morbius_lucky_block"
+    },
+    "G": {
+      "item": "lucky:elemental_lucky_block"
+    },
+    "H": {
+      "item": "lucky:pink_lucky_block"
+    },
+    "L": {
+      "item": "lucky:lucky_block"
+    }
+  },
+  "pattern": ["ABC", "DLE", "FGH"],
+  "result": {
+    "item": "lucky:lucky_world_invasion_lucky_block"
+  }
+}

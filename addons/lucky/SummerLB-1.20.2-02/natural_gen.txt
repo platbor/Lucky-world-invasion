@@ -1,0 +1,5 @@
+>minecraft:overworld
+type=block,ID=lucky:summer_lucky_block@chance=90
+
+>shadowlands:glowshroom_forest
+type=block,ID=lucky:summer_lucky_block@chance=100

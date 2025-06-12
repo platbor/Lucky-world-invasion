@@ -1,0 +1,7 @@
+﻿{
+  "playerrevive.gui.hold": "等待救援或按住“%s”%s秒放弃挣扎",
+  "death.attack.bledToDeath.player": "%s流血致死",
+  "playerrevive.gui.label.time_left": "剩余时间：%s",
+  "playerrevive.revive.item": "你需要%s",
+  "playerrevive.chat.bleeding": "%s伤重垂危⋯⋯"
+}

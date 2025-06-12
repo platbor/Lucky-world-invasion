@@ -1,0 +1,27 @@
+/ lucky buildings
+ID=lucky_prismarine_fort_inner,file=lucky_buildings/prismarine_fort_inner.luckystruct,blockMode=overlay
+ID=lucky_prismarine_fort,file=lucky_buildings/prismarine_fort.nbt,overlayStruct=lucky_prismarine_fort_inner,centerY=1
+ID=lucky_prismarine_temple_inner,file=lucky_buildings/prismarine_temple_inner.luckystruct,blockMode=overlay
+ID=lucky_prismarine_temple,file=lucky_buildings/prismarine_temple.nbt,overlayStruct=lucky_prismarine_temple_inner,centerY=1
+
+/ other
+ID=yakurum_wishing_well,file=yakurum_wishing_well.nbt,centerY=2
+ID=sticky_castle,file=sticky_castle.nbt,centerY=1
+ID=damp_temple,file=yakurum/damp_temple.nbt,centerY=1,centerZ=15
+ID=pirate_shipwreck,file=yakurum/pirate_shipwreck.nbt,centerY=1,centerZ=15
+
+/ giant blocks
+ID=giant_block_break_stage_1,file=giant_blocks/break_stage_1.nbt,blockMode=overlay,centerZ=7
+ID=giant_block_break_stage_2,file=giant_blocks/break_stage_2.nbt,blockMode=overlay,centerZ=7
+ID=giant_block_break_stage_3,file=giant_blocks/break_stage_3.nbt,blockMode=overlay,centerZ=7
+ID=giant_block_break_stage_4,file=giant_blocks/break_stage_4.nbt,blockMode=overlay,centerZ=7
+ID=giant_block_break_stage_5,file=giant_blocks/break_stage_5.nbt,blockMode=overlay,centerZ=7
+
+ID=giant_water_lucky_block_inner_good,file=giant_blocks/water_lucky_block_inner_good.luckystruct,blockMode=overlay,centerZ=7
+ID=giant_water_lucky_block_good,file=giant_blocks/water_lucky_block.nbt,centerZ=7,overlayStruct=giant_water_lucky_block_inner_good
+
+ID=giant_water_lucky_block_inner_bad,file=giant_blocks/water_lucky_block_inner_bad.luckystruct,blockMode=overlay,centerZ=7
+ID=giant_water_lucky_block_bad,file=giant_blocks/water_lucky_block.nbt,centerZ=7,overlayStruct=giant_water_lucky_block_inner_bad
+
+/ natural gen
+ID=gen_prismarine_acropolis,file=prismarine_acropolis.nbt

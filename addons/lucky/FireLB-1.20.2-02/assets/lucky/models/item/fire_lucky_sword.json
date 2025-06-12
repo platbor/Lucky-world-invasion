@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "lucky:item/fire_lucky_sword"
+    }
+}

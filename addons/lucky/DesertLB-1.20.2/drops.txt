@@ -1,0 +1,470 @@
+///Desert Lucky Blocks Drop File
+
+///Drops: Blocks
+/loot chests default
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/simple_dungeon"))@luck=1
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/village/village_desert_house"))@luck=0@chance=0.95
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/desert_pyramid"))@luck=1@chance=0.95
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/shipwreck_treasure"))@luck=2@chance=0.95
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/village/village_weaponsmith"))@luck=2@chance=0.90
+/loot chests custom
+type=structure,ID=chestdesertedjunk@luck=-2
+type=structure,ID=chesthorsearmor@luck=0
+type=structure,ID=chestgoldentreasure@luck=2@chance=0.05
+/blocks
+group(type=command,ID="gamerule commandBlockOutput false";type=command,ID="setblock ~ ~ ~ dead_bush keep",posOffset=#circleOffset(0,5),amount=25,reinitialize=true)@chance=2@luck=-1
+ID=cactus,amount=32@luck=-1
+/sandstone mix
+group(
+    ID=sandstone_slab,amount=#rand(4,8);
+    ID=sand,amount=#rand(16,32);
+    ID=sandstone,amount=#rand(4,8);
+    ID=cut_sandstone,damage=1,amount=#rand(4,8);
+    ID=smooth_sandstone,damage=2,amount=#rand(4,8);
+	ID=chiseled_sandstone,damage=2,amount=#rand(1,4);
+    ID=sandstone_stairs,amount=#rand(4,8);ID=sand,amount=#rand(24,32)
+)@luck=1
+group(
+    ID=red_sandstone_slab,amount=#rand(4,8);
+    ID=red_sand,amount=#rand(16,32);
+    ID=red_sandstone,amount=#rand(4,8);
+    ID=cut_red_sandstone,damage=1,amount=#rand(4,8);
+    ID=smooth_red_sandstone,damage=2,amount=#rand(4,8);
+	ID=chiseled_red_sandstone,damage=2,amount=#rand(1,4);
+    ID=red_sandstone_stairs,amount=#rand(4,8);ID=red_sand,amount=#rand(24,32)
+)@luck=1
+/colorful selection
+group(ID=#randColor_stained_glass,amount=#rand(16,32);ID=#randColor_stained_glass_pane,amount=#rand(32,64);type=particle,ID=splashpotion,potion=#randPotion,amount=10)@luck=1
+group(ID=terracotta,amount=#rand(8,32);ID=yellow_terracotta,amount=#rand(4,12);ID=red_terracotta,amount=#rand(4,12);ID=orange_terracotta,amount=#rand(4,12);ID=white_terracotta,amount=#rand(4,12);ID=light_gray_terracotta,amount=#rand(4,12))@luck=0
+/singular blocks
+ID=sand,amount=64@luck=-1
+ID=glass,amount=32@luck=0
+ID=red_sand@luck=-1
+
+///Drops: Items
+/tools and armor
+group(ID=stone_sword;ID=stone_shovel;ID=stone_pickaxe;ID=stone_axe;ID=stone_hoe)@luck=0
+group(ID=golden_sword;ID=golden_shovel;ID=golden_pickaxe;ID=golden_axe;ID=golden_hoe)@luck=0
+group:#rand(2,3):(ID=iron_shovel;ID=iron_pickaxe;ID=iron_axe;ID=iron_sword;ID=iron_hoe)@luck=1
+group(ID=leather_helmet;ID=leather_chestplate;ID=leather_leggings;ID=leather_boots)@luck=0
+group(ID=golden_helmet;ID=golden_chestplate;ID=golden_leggings;ID=golden_boots;ID=golden_horse_armor)@luck=1
+group:#rand(2,3):(ID=chainmail_helmet;ID=chainmail_chestplate;ID=chainmail_leggings;ID=chainmail_boots)@luck=2
+group:#rand(2,3):(ID=iron_helmet;ID=iron_chestplate;ID=iron_leggings;ID=iron_boots;ID=iron_horse_armor)@luck=1
+/bows and arrows
+group(ID=bow;ID=arrow,amount=#rand(16,32))@luck=1
+/tnt and flint and steel
+group(ID=flint_and_steel;ID=tnt,amount=16)@luck=0
+/all horse armors
+group(ID=iron_horse_armor;ID=golden_horse_armor;ID=leather_horse_armor)@luck=1
+/enchantment books common
+ID=enchanted_book,NBTTag=(StoredEnchantments=#randEnchantment),amount=#rand(2,5)@luck=1
+/enchantment books lucky
+group:1:(
+ID=enchanted_book,NBTTag=(StoredEnchantments=#luckySwordEnchantments);
+ID=enchanted_book,NBTTag=(StoredEnchantments=#luckyBowEnchantments);
+ID=enchanted_book,NBTTag=(StoredEnchantments=#luckyFishingRodEnchantments);
+ID=enchanted_book,NBTTag=(StoredEnchantments=#luckyToolEnchantments);
+ID=enchanted_book,NBTTag=(StoredEnchantments=#luckyToolEnchantments);
+ID=enchanted_book,NBTTag=(StoredEnchantments=#luckySwordEnchantments);
+ID=enchanted_book,NBTTag=(StoredEnchantments=#luckyCrossbowEnchantments);
+ID=enchanted_book,NBTTag=(StoredEnchantments=#luckyTridentEnchantments);
+ID=enchanted_book,NBTTag=(StoredEnchantments=#luckyAxeEnchantments);
+ID=enchanted_book,NBTTag=(StoredEnchantments=#luckyHelmetEnchantments);
+ID=enchanted_book,NBTTag=(StoredEnchantments=#luckyChestplateEnchantments);
+ID=enchanted_book,NBTTag=(StoredEnchantments=#luckyLeggingsEnchantments);
+ID=enchanted_book,NBTTag=(StoredEnchantments=#luckyBootsEnchantments)
+)@luck=2
+/singular items
+ID=dragon_egg@luck=1
+ID=ender_chest,amount=2@luck=0
+ID=beacon@luck=2
+ID=nether_star@luck=2
+ID=golden_apple,amount=2@luck=2
+ID=enchanted_golden_apple@luck=2@chance=0.5
+/poison food
+group(ID=rotten_flesh,amount=12;ID=spider_eye,amount=4;ID=fermented_spider_eye)@luck=-1
+/carrots
+group(ID=carrot,amount=#rand(4,10);ID=golden_carrot,amount=#rand(1,3))@luck=1
+/materials
+ID=lapis_lazuli,amount=#rand(16,64)@luck=1
+ID=lapis_lazuli,amount=#rand(32,128)@luck=2@chance=0.9
+ID=iron_ingot,amount=#rand(4,10)@luck=0
+ID=iron_ingot,amount=#rand(12,20)@luck=1
+ID=gold_ingot,amount=#rand(8,16)@luck=1
+ID=gold_ingot,amount=#rand(15,36)@luck=2@chance=0.9
+ID=gold_ingot,amount=#rand(32,64)@luck=2@chance=0.6
+ID=gold_ingot,amount=#rand(69,128)@luck=2@chance=0.15
+ID=diamond,amount=#rand(2,7)@luck=2
+ID=diamond,amount=#rand(4,14)@luck=2@chance=0.8
+ID=emerald,amount=#rand(4,8)@luck=2
+ID=emerald,amount=#rand(7,13)@luck=2@chance=0.8
+ID=emerald,amount=#rand(10,30)@luck=2@chance=0.2
+ID=name_tag,amount=#rand(3,5)@luck=1
+ID=saddle@luck=0
+
+///Drops: Weapons & Armors
+group(ID=leather_helmet,NBTTag=(display=(color=5345351,Name=#jsonStr(text="$2Cactus Helmet")),Enchantments=[(id=thorns,lvl=4)]);ID=leather_chestplate,NBTTag=(display=(color=5345351,Name=#jsonStr(text="$2Cactus Jacket")),Enchantments=[(id=thorns,lvl=4)]);ID=leather_leggings,NBTTag=(display=(color=5345351,Name=#jsonStr(text="$2Cactus Pants")),Enchantments=[(id=thorns,lvl=4)]);ID=leather_boots,NBTTag=(display=(color=5345351,Name=#jsonStr(text="$2Cactus Shoes")),Enchantments=[(id=thorns,lvl=4)]))@luck=1
+group:#rand(1,2):(
+    ID=leather_helmet,NBTTag=(Enchantments=#luckyHelmetEnchantments,display=(Name=#jsonStr(text="Ancient Helmet",color=gold,bold=true)));
+    ID=leather_chestplate,NBTTag=(Enchantments=#luckyChestplateEnchantments,display=(Name=#jsonStr(text="Ancient Chestplate",color=gold,bold=true)));
+    ID=leather_leggings,NBTTag=(Enchantments=#luckyLeggingsEnchantments,display=(Name=#jsonStr(text="Ancient Leggings",color=gold,bold=true)));
+    ID=leather_boots,NBTTag=(Enchantments=#luckyBootsEnchantments,display=(Name=#jsonStr(text="Ancient Boots",color=gold,bold=true)))
+)@luck=1
+group:#rand(1,2):(
+    ID=golden_helmet,NBTTag=(Enchantments=#luckyHelmetEnchantments,display=(Name=#jsonStr(text="Luxury Helmet",color=gold,bold=true)));
+    ID=golden_chestplate,NBTTag=(Enchantments=#luckyChestplateEnchantments,display=(Name=#jsonStr(text="Luxury Chestplate",color=gold,bold=true)));
+    ID=golden_leggings,NBTTag=(Enchantments=#luckyLeggingsEnchantments,display=(Name=#jsonStr(text="Luxury Leggings",color=gold,bold=true)));
+    ID=golden_boots,NBTTag=(Enchantments=#luckyBootsEnchantments,display=(Name=#jsonStr(text="Luxury Boots",color=gold,bold=true)))
+)@luck=2
+group:#rand(1,2):(
+    ID=wooden_shovel,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Ancient Shovel",color=gold,bold=true)));
+    ID=wooden_pickaxe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Ancient Pickaxe",color=gold,bold=true)));
+    ID=wooden_axe,NBTTag=(Enchantments=#luckyAxeEnchantments,display=(Name=#jsonStr(text="Ancient Axe",color=gold,bold=true)));
+	ID=wooden_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Ancient Sword",color=gold,bold=true)));
+    ID=wooden_hoe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Ancient Hoe",color=gold,bold=true)))
+)@luck=1
+group:#rand(1,2):(
+    ID=golden_shovel,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Luxury Shovel",color=gold,bold=true)));
+    ID=golden_pickaxe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Luxury Pickaxe",color=gold,bold=true)));
+    ID=golden_axe,NBTTag=(Enchantments=#luckyAxeEnchantments,display=(Name=#jsonStr(text="Luxury Axe",color=gold,bold=true)));
+	ID=golden_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Luxury Sword",color=gold,bold=true)));
+    ID=golden_hoe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Luxury Hoe",color=gold,bold=true)))
+)@luck=2
+ID=wooden_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Ancient Sword",color=gold,bold=true)))@luck=-1
+ID=iron_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Silver Sword",color=light_gray,bold=true)))@luck=0
+ID=golden_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Luxury Sword",color=gold,bold=true)))@luck=1
+ID=lucky:desert_lucky_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Sandstorm Blade",color=yellow,bold=true)))@luck=2
+group(ID=arrow,amount=#rand(8,20);ID=lucky:desert_lucky_bow,NBTTag=(Enchantments=#luckyBowEnchantments,display=(Name=#jsonStr(text="Desert Eagle",color=white,bold=true))))@luck=2
+ID=bone,NBTTag=(display=(color=5345351,Name=#jsonStr(text="$eBone Breaker")),Enchantments=[(id=knockback,lvl=3)])@luck=0
+ID=cactus,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="$2Spicy Cactus")))@luck=-1
+/potions
+ID=potion,NBTTag=(
+    Potion="fire_resistance",
+    CustomPotionEffects=#luckyPotionEffects,
+    display=(Name=#jsonStr(text="Lucky Potion",color=gold,bold=true))
+)@luck=2
+ID=splash_potion,NBTTag=(
+    Potion="harming",
+    CustomPotionEffects=#unluckyPotionEffects,
+    display=(Name=#jsonStr(text="Unlucky Potion",color=dark_red,bold=true))
+)@luck=1
+ID=splash_potion,amount=#rand(1,3),NBTTag=(Potion="weakness")@luck=1
+ID=splash_potion,amount=#rand(1,3),NBTTag=(Potion="strong_poison")@luck=1
+ID=splash_potion,amount=#rand(1,3),NBTTag=(Potion="strong_slowness")@luck=1
+ID=lucky:desert_lucky_potion,amount=#rand(3,7)@luck=1
+ID=lucky:desert_lucky_potion,amount=#rand(5,10)@luck=2
+ID=lucky:desert_lucky_potion,amount=#rand(10,20)@luck=2@chance=0.6
+
+///Drops: Structures 
+/ wishing wells
+group(
+    type=structure,ID=desertluckywell;type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:desert_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$bYour wish came true!\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag='#'randFireworksRocket)),amount=5,posY='#'bPosY+3,posOffset='#'circleOffset(2);
+        ID=gold_ingot,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=diamond,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=emerald,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=lapis_lazuli,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2)
+    )"])
+)@luck=2
+group(
+    type=structure,ID=desertluckywell;type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:desert_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$6Your golden wish came true!\";
+        type=block,ID=air,posY='#'bPosY+3;
+        ID=gold_nugget,amount=#rand(40,100),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=gold_ingot,amount=#rand(14,36),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+		ID=golden_carrot,amount=#rand(2,5),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=gold_block,amount=#rand(1,3),posY='#'bPosY+10,posOffset='#'circleOffset(2)
+    )"])
+)@luck=2
+group(
+    type=structure,ID=desertluckywell;type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:desert_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$aYour wish came true! (If you like vegetables)\";
+        type=block,ID=air,posY='#'bPosY+3;
+        ID=beetroot,amount=32,posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=carrot,amount=20,posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=potato,amount=12,posY='#'bPosY+10,posOffset='#'circleOffset(2)
+    )"])
+)@luck=1
+group(
+    type=structure,ID=desertluckywell;
+    type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:desert_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$8Your dead wish came true!\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=entity,ID=#randList(skeleton,husk),NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=20
+    )"])
+)@luck=-1
+group(
+    type=structure,ID=desertluckywell;
+    type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:desert_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$4Your death wish came true!\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=20
+    )"])
+)@luck=-2
+group(
+    type=structure,ID=desertluckywell;
+    type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:desert_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$6Your sandstorm wish came true!\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=entity,ID=falling_block,NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=30;
+		type=entity,ID=falling_block,NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=25,delay=0.8;
+		type=entity,ID=falling_block,NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=20,delay=1.6;
+		type=entity,ID=falling_block,NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=15,delay=2.4;
+		type=entity,ID=falling_block,NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=10,delay=3.2;
+		type=entity,ID=falling_block,NBTTag=(BlockState=(Name=deadbush),Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=5,delay=4
+    )"])
+)@luck=-1
+/ mesa falling pole with gold block
+group(type=fill,ID=air,size=(1,51,1);
+    group(
+        NBTTag=(BlockState=(Name=red_terracotta)),posY=#bPosY+5;
+        NBTTag=(BlockState=(Name=orange_terracotta)),posY=#bPosY+10;
+        NBTTag=(BlockState=(Name=terracotta)),posY=#bPosY+15;
+        NBTTag=(BlockState=(Name=brown_terracotta)),posY=#bPosY+20;
+        NBTTag=(BlockState=(Name=light_gray_terracotta)),posY=#bPosY+25;
+        NBTTag=(BlockState=(Name=white_terracotta)),posY=#bPosY+30;
+        NBTTag=(BlockState=(Name=light_gray_terracotta)),posY=#bPosY+35;
+        NBTTag=(BlockState=(Name=brown_terracotta)),posY=#bPosY+40;
+        NBTTag=(BlockState=(Name=yellow_terracotta)),posY=#bPosY+45
+    ),type=entity,ID=falling_block;
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=gold_block)),posY=#bPosY+50;
+    type=entity,ID=lightning_bolt,posY=#bPosY+10,delay=3
+)@luck=2
+/ sandstone pole with desert treasure
+group(type=fill,ID=air,size=(1,51,1);
+    group(
+        NBTTag=(BlockState=(Name=sandstone)),posY=#bPosY+5;
+        NBTTag=(BlockState=(Name=sandstone)),posY=#bPosY+10;
+        NBTTag=(BlockState=(Name=sandstone)),posY=#bPosY+15;
+        NBTTag=(BlockState=(Name=sandstone)),posY=#bPosY+20;
+        NBTTag=(BlockState=(Name=sandstone)),posY=#bPosY+25;
+        NBTTag=(BlockState=(Name=sandstone)),posY=#bPosY+30;
+        NBTTag=(BlockState=(Name=sandstone)),posY=#bPosY+35;
+        NBTTag=(BlockState=(Name=sandstone)),posY=#bPosY+40;
+        NBTTag=(BlockState=(Name=sandstone)),posY=#bPosY+45
+    ),type=entity,ID=falling_block;
+    type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/desert_pyramid")),posY=#bPosY+9,delay=3;
+    type=entity,ID=lightning_bolt,posY=#bPosY+10,delay=3
+)@luck=1
+/ sand pole with desert lucky block
+group(type=fill,ID=air,size=(1,51,1);
+    group(
+        NBTTag=(BlockState=(Name=sand)),posY=#bPosY+5;
+        NBTTag=(BlockState=(Name=sand)),posY=#bPosY+10;
+        NBTTag=(BlockState=(Name=sand)),posY=#bPosY+15;
+        NBTTag=(BlockState=(Name=sand)),posY=#bPosY+20;
+        NBTTag=(BlockState=(Name=sand)),posY=#bPosY+25;
+        NBTTag=(BlockState=(Name=sand)),posY=#bPosY+30;
+        NBTTag=(BlockState=(Name=sand)),posY=#bPosY+35;
+        NBTTag=(BlockState=(Name=sand)),posY=#bPosY+40;
+        NBTTag=(BlockState=(Name=sand)),posY=#bPosY+45
+    ),type=entity,ID=falling_block;
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=lucky:desert_lucky_block)),posY=#bPosY+50;
+    type=entity,ID=lightning_bolt,posY=#bPosY+10,delay=3
+)@luck=0
+/ colorful stained glass pole
+group(type=fill,ID=air,size=(1,51,1);
+    group(
+        NBTTag=(BlockState=(Name=red_stained_glass)),posY=#bPosY+5;
+        NBTTag=(BlockState=(Name=orange_stained_glass)),posY=#bPosY+10;
+        NBTTag=(BlockState=(Name=yellow_stained_glass)),posY=#bPosY+15;
+        NBTTag=(BlockState=(Name=lime_stained_glass)),posY=#bPosY+20;
+        NBTTag=(BlockState=(Name=light_blue_stained_glass)),posY=#bPosY+25;
+        NBTTag=(BlockState=(Name=blue_stained_glass)),posY=#bPosY+30;
+        NBTTag=(BlockState=(Name=purple_stained_glass)),posY=#bPosY+35;
+        NBTTag=(BlockState=(Name=magenta_stained_glass)),posY=#bPosY+40;
+        NBTTag=(BlockState=(Name=pink_stained_glass)),posY=#bPosY+45
+    ),type=entity,ID=falling_block;
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=diamond_block)),posY=#bPosY+50;
+    type=entity,ID=lightning_bolt,posY=#bPosY+10,delay=3
+)@luck=2@chance=0.95
+/ lapis enchanting pole
+group(type=fill,ID=air,size=(1,51,1);
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=enchanting_table)),posY=#bPosY+5;
+	type=entity,ID=experience_bottle,NBTTag=(Motion=#randLaunchMotion),amount=#rand(16,40);
+    group(posY=#bPosY+10;posY=#bPosY+15;posY=#bPosY+20;posY=#bPosY+25;posY=#bPosY+30;posY=#bPosY+35;posY=#bPosY+40;posY=#bPosY+45;posY=#bPosY+50),type=entity,ID=falling_block,NBTTag=(BlockState=(Name=lapis_block))
+)@luck=2
+/ tnt pole
+group(type=fill,ID=air,size=(1,51,1);
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=redstone_block)),posY=#bPosY+5;
+    group(posY=#bPosY+10;posY=#bPosY+15;posY=#bPosY+20;posY=#bPosY+25;posY=#bPosY+30;posY=#bPosY+35;posY=#bPosY+40;posY=#bPosY+45;posY=#bPosY+50),type=entity,ID=falling_block,NBTTag=(BlockState=(Name=tnt))
+)@luck=-2
+/ hi cactus
+group(type=fill,ID=air,size=(1,51,1);
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=sand)),posY=#bPosY+5;
+    group(posY=#bPosY+6;posY=#bPosY+9;posY=#bPosY+12;posY=#bPosY+15;posY=#bPosY+18;posY=#bPosY+21;posY=#bPosY+24;posY=#bPosY+27;posY=#bPosY+30;posY=#bPosY+33;posY=#bPosY+36;posY=#bPosY+39;posY=#bPosY+42;posY=#bPosY+45;posY=#bPosY+48;posY=#bPosY+51;posY=#bPosY+54;posY=#bPosY+57;posY=#bPosY+60;posY=#bPosY+63;posY=#bPosY+66;posY=#bPosY+69),type=entity,ID=falling_block,NBTTag=(BlockState=(Name=cactus))
+)@luck=0
+/ sand from the top
+type=command,ID="/fill ~3 ~11 ~3 ~-3 ~9 ~-3 sand keep"@luck=-1@chance=0.9
+type=command,ID="/fill ~5 ~20 ~5 ~-5 ~15 ~-5 sand keep"@luck=-2@chance=0.19
+group(
+    type=structure,ID=cage,pos=#pPos,rotation=#pDirect;
+    type=fill,ID=air,size=(1,70,1),pos=#pPos;type=fill,ID=sand,size=(1,10,1),pos=(#pPosX,#pPosY+70,#pPosZ)
+)@luck=-2
+/quick sand
+group(type=command,ID="/fill ~2 ~ ~2 ~-2 ~-9 ~-2 air";type=command,ID="/fill ~2 ~-1 ~2 ~-2 ~-1 ~-2 sand";type=command,ID="/fill ~2 ~-3 ~2 ~-2 ~-3 ~-2 cobweb";type=command,ID="/fill ~2 ~-10 ~2 ~-2 ~-10 ~-2 lava")@luck=-2
+/ desert pyramid
+group(
+type=structure,ID=desertpyramidupper;
+type=structure,ID=desertpyramidlower;
+type=block,ID=chest,posY=#bPosY-12,posX=#bPosX-2,rotation=#pDirect,tileEntity=(Items=#chestLootTable("chests/desert_pyramid"));
+type=block,ID=chest,posY=#bPosY-12,posX=#bPosX+2,rotation=#pDirect,tileEntity=(Items=#chestLootTable("chests/desert_pyramid"));
+type=block,ID=chest,posY=#bPosY-12,posZ=#bPosZ-2,rotation=#pDirect,tileEntity=(Items=#chestLootTable("chests/desert_pyramid"));
+type=block,ID=chest,posY=#bPosY-12,posZ=#bPosZ+2,rotation=#pDirect,tileEntity=(Items=#chestLootTable("chests/desert_pyramid")))@luck=2@chance=0.8
+/ desert villager houses
+group(type=structure,ID=desertvillage#rand(1,9);type=entity,ID=villager,amount=#rand(1,5),posOffset=#circleOffset(#rand(1,7)),NBTTag=(VillagerData=(type=desert)))@luck=1@chance=2
+/ desert villager tower
+group(type=structure,ID=desertvillagetower;type=entity,ID=villager,amount=2,posOffset=#circleOffset(#rand(1,7)),NBTTag=(VillagerData=(type=desert)))@luck=1
+/ desert villager blacksmith
+group(type=structure,ID=desertblacksmith;type=entity,ID=villager,amount=#rand(3,6),posOffset=#circleOffset(#rand(1,7)),NBTTag=(VillagerData=(type=desert)))@luck=1
+/ desert lucky buildings
+type=structure,ID=desert_lucky_fort,pos=#pPos@luck=2
+type=structure,ID=desert_lucky_temple,pos=#pPos@chance=0.4@luck=2
+/ mesa bryce spike
+type=structure,ID=brycespike@luck=0@chance=0.75
+/ biome painter desert
+group(
+type=entity,ID=falling_block,amount=#rand(20,80),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion);
+type=entity,ID=falling_block,amount=#rand(20,80),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=1; 
+type=entity,ID=falling_block,amount=#rand(20,80),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=2; 
+type=entity,ID=falling_block,amount=#rand(20,80),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=3; 
+type=entity,ID=falling_block,amount=#rand(20,80),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=4; 
+type=entity,ID=falling_block,amount=#rand(15,60),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion),delay=5; 
+type=entity,ID=falling_block,amount=#rand(5,20),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=cactus),Fuse=50b,Motion=#randLaunchMotion),delay=6
+)@luck=0@chance=0.9
+/biome painter badlands
+group(
+type=entity,ID=falling_block,amount=#rand(50,200),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=terracotta),Fuse=50b,Motion=#randLaunchMotion);
+type=entity,ID=falling_block,amount=#rand(20,150),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=red_terracotta),Fuse=50b,Motion=#randLaunchMotion),delay=0.5;
+type=entity,ID=falling_block,amount=#rand(40,140),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=orange_terracotta),Fuse=50b,Motion=#randLaunchMotion),delay=1; 
+type=entity,ID=falling_block,amount=#rand(35,130),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=terracotta),Fuse=50b,Motion=#randLaunchMotion),delay=1.5; 
+type=entity,ID=falling_block,amount=#rand(30,120),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=brown_terracotta),Fuse=50b,Motion=#randLaunchMotion),delay=2; 
+type=entity,ID=falling_block,amount=#rand(20,110),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=light_gray_terracotta),Fuse=50b,Motion=#randLaunchMotion),delay=2.5; 
+type=entity,ID=falling_block,amount=#rand(20,100),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=white_terracotta),Fuse=50b,Motion=#randLaunchMotion),delay=3; 
+type=entity,ID=falling_block,amount=#rand(20,90),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=light_gray_terracotta),Fuse=50b,Motion=#randLaunchMotion),delay=3.5; 
+type=entity,ID=falling_block,amount=#rand(20,80),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=brown_terracotta),Fuse=50b,Motion=#randLaunchMotion),delay=4; 
+type=entity,ID=falling_block,amount=#rand(20,70),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=yellow_terracotta),Fuse=50b,Motion=#randLaunchMotion),delay=4.5; 
+type=entity,ID=falling_block,amount=#rand(20,60),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=brown_terracotta),Fuse=50b,Motion=#randLaunchMotion),delay=5; 
+type=entity,ID=falling_block,amount=#rand(20,56),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=terracotta),Fuse=50b,Motion=#randLaunchMotion),delay=5.5; 
+type=entity,ID=falling_block,amount=#rand(20,69),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=orange_terracotta),Fuse=50b,Motion=#randLaunchMotion),delay=6; 
+type=entity,ID=falling_block,amount=#rand(20,80),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=red_sandstone),Fuse=50b,Motion=#randLaunchMotion),delay=6.5; 
+type=entity,ID=falling_block,amount=#rand(20,200),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=red_sand),Fuse=50b,Motion=#randLaunchMotion),delay=7;
+type=entity,ID=falling_block,amount=#rand(5,25),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=cactus),Fuse=50b,Motion=#randLaunchMotion),delay=7.5;
+type=entity,ID=falling_block,amount=#rand(5,45),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=dead_bush),Fuse=50b,Motion=#randLaunchMotion),delay=8
+)@luck=1@chance=0.6
+/ biome painter unlucky
+type=entity,ID=falling_block,amount=#rand(30,150),posOffset=#circleOffset(#rand(1,15)),NBTTag=(BlockState=(Name=sand),Fuse=50b,Motion=#randLaunchMotion)@luck=-1
+/ gold ore clustering
+type=entity,ID=falling_block,amount=#rand(14,40),posOffset=#circleOffset(#rand(1,20)),NBTTag=(BlockState=(Name=gold_ore),Fuse=50b,Motion=#randLaunchMotion)@luck=2
+/ falling blocks (iron, gold, diamond, emerald, lapis)
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=iron_block));type=particle,ID=large_smoke,size=(1,2,1),particleAmount=500;type=sound,ID=block.fire.extinguish)@luck=0
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=gold_block));type=particle,ID=flame,size=(1,2,1),particleAmount=500;type=sound,ID=entity.ghast.shoot)@luck=0
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=diamond_block));type=entity,ID=lightning_bolt)@luck=1
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=emerald_block));type=particle,ID=happy_villager,size=(1,2,1),particleAmount=500;type=sound,ID=block.grass.break)@luck=0
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=lapis_block));type=particle,ID=splash,size=(1,2,1),particleAmount=1000;type=sound,ID=entity.player.swim)@luck=0
+/ explosions
+type=explosion,radius=3,fire=false@luck=-1
+type=explosion,radius=4,fire=false@luck=-2
+type=explosion,radius=6,fire=false@luck=-2@chance=0.35
+type=explosion,radius=9,fire=true@luck=-2@chance=0.1
+
+///Drops: Entities
+/hostile entites
+group(type=command,ID="/effect give #pName minecraft:hunger 20 1";type=fill,ID=sand,size=(3,1,3),posY=#bPosY-1;type=entity,ID=husk,amount=#rand(8,16),posOffset=#circleOffset(1,6))@luck=-1
+type=entity,ID=husk,amount=#rand(3,8),posOffset=#circleOffset(3)@luck=-1
+type=entity,ID=skeleton,amount=#rand(4,12),posOffset=#circleOffset(3)@luck=-1
+type=entity,ID=#randList(husk,skeleton),amount=#rand(9,18),posOffset=#circleOffset(4)@luck=-2
+type=entity,ID=wither@luck=-2@chance=0.09
+/hostile weaponized entities
+group(type=difficulty,ID=hard;type=entity,ID=bat,amount=#rand(4,9),NBTTag=(
+    Silent=true,
+    ActiveEffects=[(Id=7,Duration=100000,Amplifier=51,ShowParticles=false)],
+    Passengers=[(id=skeleton_horse,Tame=true,Type=4,
+        Passengers=[(id=skeleton,
+            HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckyBowEnchantments))],
+            ArmorItems=[(id=chainmail_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=chainmail_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=chainmail_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=chainmail_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+            HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],
+            CustomName=#jsonStr(text="Skeleton Rider",color=gray,bold=true),CustomNameVisible=true)
+        ])
+    ])
+)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=husk,amount=#rand(1,4),NBTTag=(
+    HandItems=[(id=golden_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=golden_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=golden_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=golden_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=golden_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],
+    CustomName=#jsonStr(text="Deserted Bob",color=gold,bold=true),CustomNameVisible=true)
+)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=wither_skeleton,amount=#rand(1,4),NBTTag=(
+    HandItems=[(id=iron_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=iron_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=iron_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=iron_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=iron_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],
+    CustomName=#jsonStr(text="Boss",color=blue,bold=true),CustomNameVisible=true)
+)@luck=-2@chance=0.9
+group(type=entity,ID=rabbit,amount=#rand(5,10),posOffset=#circleOffset(3),NBTTag=(RabbitType=4);type=particle,ID="heart",size=(2,0,2),particleAmount=20)@luck=1
+group(type=entity,ID=witch,amount=#rand(1,4);type=command,ID="/effect give #pName minecraft:poison 24 1";type=command,ID="/effect give #pName minecraft:nausea 29 0";type=command,ID="/effect give #pName minecraft:slowness 12 1";type=command,ID="/effect give #pName minecraft:blindness 3 1")@luck=-2@chance=0.8
+type=entity,ID=skeleton_horse,amount=#rand(4,8),posOffset=#circleOffset(4),NBTTag=(Tame=true,Owner=#pUUIDArray)@luck=1
+/trading villagers
+type=entity,ID=villager,NBTTag=(
+    VillagerData=(level=3,profession=weaponsmith,type=desert),
+    Offers=(Recipes=[
+        (buy=(id=diamond,Count=#rand(20,25)),sell=(id=lucky:desert_lucky_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Sandstorm Blade",color=yellow,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(20,25)),sell=(id=lucky:desert_lucky_bow,Count=1,tag=(Enchantments=#luckyBowEnchantments,display=(Name=#jsonStr(text="Desert Eagle",color=light_gray,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(10,15)),sell=(id=fishing_rod,Count=1,tag=(Enchantments=#luckyFishingRodEnchantments,display=(Name=#jsonStr(text="Lucky Fishing Rod",color=blue,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(10,15)),sell=(id=potion,Count=1,tag=(Potion="fire_resistance",CustomPotionEffects=#luckyPotionEffects,display=(Name=#jsonStr(text="Lucky Potion",color=gold,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(7,12)),sell=(id=splash_potion,Count=1,tag=(Potion="harming",CustomPotionEffects=#unluckyPotionEffects,display=(Name=#jsonStr(text="Unlucky Potion",color=red,bold=true)))),maxUses=1)
+    ]),
+    CustomName=#jsonStr(text="Deserted Villager",color=yellow,bold=true),CustomNameVisible=true
+)@luck=1
+type=entity,ID=villager,NBTTag=(
+    VillagerData=(level=3,profession=armorer,type=desert),
+    Offers=(Recipes=[
+        (buy=(id=diamond,Count=#rand(12,17)),sell=(id=golden_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments,display=(Name=#jsonStr(text="Luxury Helmet",color=gold,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(20,25)),sell=(id=golden_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments,display=(Name=#jsonStr(text="Luxury Chestplate",color=gold,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(15,20)),sell=(id=golden_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments,display=(Name=#jsonStr(text="Luxury Leggings",color=gold,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(12,17)),sell=(id=golden_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments,display=(Name=#jsonStr(text="Luxury Boots",color=gold,bold=true)))),maxUses=1)
+    ]),
+    CustomName=#jsonStr(text="Deserted Villager",color=yellow,bold=true),CustomNameVisible=true
+)@luck=1
+type=entity,ID=villager,NBTTag=(
+    VillagerData=(level=3,profession=toolsmith,type=desert),
+    Offers=(Recipes=[
+        (buy=(id=diamond,Count=#rand(10,15)),sell=(id=golden_shovel,Count=1,tag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Luxury Shovel",color=gold,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(15,20)),sell=(id=golden_pickaxe,Count=1,tag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Luxury Pickaxe",color=gold,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(15,20)),sell=(id=golden_axe,Count=1,tag=(Enchantments=#luckyAxeEnchantments,display=(Name=#jsonStr(text="Luxury Axe",color=gold,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(10,15)),sell=(id=golden_hoe,Count=1,tag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Luxury Hoe",color=gold,bold=true)))),maxUses=1)
+    ]),
+    CustomName=#jsonStr(text="Deserted Villager",color=yellow,bold=true),CustomNameVisible=true
+)@luck=1
+/ silver gear
+ID=iron_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Silver Sword",color=white,bold=true)))@luck=2@chance=0.87
+ID=bow,NBTTag=(Enchantments=#luckyBowEnchantments,display=(Name=#jsonStr(text="Silver Bow",color=white,bold=true)))@luck=2@chance=0.87
+group:#rand(1,2):(
+    ID=iron_shovel,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Silver Shovel",color=white,bold=true)));
+    ID=iron_pickaxe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Silver Pickaxe",color=white,bold=true)));
+    ID=iron_axe,NBTTag=(Enchantments=#luckyAxeEnchantments,display=(Name=#jsonStr(text="Silver Axe",color=white,bold=true)));
+    ID=iron_hoe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Silver Hoe",color=white,bold=true)));
+	ID=iron_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Silver Sword",color=white,bold=true)));
+    ID=spyglass,NBTTag=(Enchantments=#luckyFishingRodEnchantments,display=(Name=#jsonStr(text="Silver Rod",color=white,bold=true)))
+)@luck=2@chance=0.87
+group:#rand(1,2):(
+    ID=iron_helmet,NBTTag=(Enchantments=#luckyHelmetEnchantments,display=(Name=#jsonStr(text="Silver Helmet",color=white,bold=true)));
+    ID=iron_chestplate,NBTTag=(Enchantments=#luckyChestplateEnchantments,display=(Name=#jsonStr(text="Silver Chestplate",color=white,bold=true)));
+    ID=iron_leggings,NBTTag=(Enchantments=#luckyLeggingsEnchantments,display=(Name=#jsonStr(text="Silver Leggings",color=white,bold=true)));
+    ID=iron_boots,NBTTag=(Enchantments=#luckyBootsEnchantments,display=(Name=#jsonStr(text="Silver Boots",color=white,bold=true)))
+)@luck=2@chance=0.87
+/ spicy cactus
+ID=cactus,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="$2Spicy Cactus")))@luck=1

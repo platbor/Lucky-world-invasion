@@ -1,0 +1,4 @@
+block_id=fire_lucky_block
+sword_id=fire_lucky_sword
+bow_id=fire_lucky_bow
+potion_id=fire_lucky_potion

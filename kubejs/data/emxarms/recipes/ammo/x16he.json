@@ -1,0 +1,22 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "minecraft:charcoal"
+      },
+      "count": 15
+    },
+    {
+      "item": {
+        "item": "minecraft:iron_ingot"
+      },
+      "count": 15
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "emxarms:x16he",
+    "count": 40
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

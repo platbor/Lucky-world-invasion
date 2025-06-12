@@ -1,0 +1,7 @@
+
+["Configs for Shadowlands"]
+	#Show warning about getting the mod from unsafe sites on first world load
+	"Do first load message" = false
+	#Give guide book on first world load
+	"Do first load guide" = false
+

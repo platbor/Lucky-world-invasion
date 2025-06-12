@@ -1,0 +1,51 @@
+{
+  "gem": "apotheosis:core/samurai",
+  "bonuses": [
+    {
+      "type": "apotheosis:attribute",
+      "gem_class": {
+        "key": "apotheosis_modern_ragnarok.all_auto_including_shotgun",
+        "types": [
+          "apotheosis_modern_ragnarok:full_auto",
+          "apotheosis_modern_ragnarok:semi_auto",
+          "apotheosis_modern_ragnarok:shotgun"
+        ]
+      },
+      "attribute": "attributeslib:crit_chance",
+      "operation": "ADDITION",
+      "values": {
+        "common": 0.01,
+        "uncommon": 0.03,
+        "rare": 0.05,
+        "epic": 0.07,
+        "mythic": 0.08,
+        "ancient": 0.09,
+        "apotheotic_additions:artifact": 0.10,
+        "apotheotic_additions:heirloom": 0.11,
+        "apotheotic_additions:esoteric": 0.12
+      }
+    },
+    {
+      "type": "apotheosis:attribute",
+      "gem_class": {
+        "key": "apotheosis_modern_ragnarok.bolt_action",
+        "types": [
+          "apotheosis_modern_ragnarok:bolt_action"
+        ]
+      },
+      "attribute": "attributeslib:crit_chance",
+      "operation": "ADDITION",
+      "values": {
+        "common": 0.02,
+        "uncommon": 0.05,
+        "rare": 0.07,
+        "epic": 0.08,
+        "mythic": 0.085,
+        "ancient": 0.13,
+        "apotheotic_additions:artifact": 0.14,
+        "apotheotic_additions:heirloom": 0.16,
+        "apotheotic_additions:esoteric": 0.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+block_id=pink_lucky_block
+sword_id=pink_lucky_sword
+bow_id=pink_lucky_bow
+potion_id=pink_lucky_potion

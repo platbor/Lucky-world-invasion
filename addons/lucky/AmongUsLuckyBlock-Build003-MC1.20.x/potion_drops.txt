@@ -1,0 +1,20 @@
+/comms sabotaged
+type=message,ID="$eComms Sabotaged",amount=2022,delay=#rand(0,15)
+
+/fix lights
+group(type=message,ID="$eFix Lights!";type=command,ID="/effect give @e[distance=..225] blindness #rand(10,15) 1";type=command,ID="/effect clear #pName blindness")
+
+/reactor meltdown
+group(type=message,ID="$4#randList(Reactor Meltdown,Reset Seismic Stabilizers,Avert Crash Course) in 10s!";
+type=explosion,radius=6,delay=9;
+type=command,ID="/effect give @e[distance=..5] poison 12 1",delay=9;
+type=explosion,radius=7,delay=9.25;
+type=explosion,radius=8,delay=9.5;
+type=command,ID="/effect give @e[distance=..7] poison 10 1",delay=9.5;
+type=explosion,radius=9,delay=9.75;
+type=command,ID="/effect give @e[distance=..9] poison 5 1",delay=10;
+type=explosion,radius=10,delay=10)
+
+/close door
+group(type=message,ID="$eDoors closed";type=structure,ID=amongus_closedoorjail)
+

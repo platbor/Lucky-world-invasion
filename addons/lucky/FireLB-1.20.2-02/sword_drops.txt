@@ -1,0 +1,53 @@
+/ knockback
+group(type=effect,ID=special_knockback,range=6,excludePlayer=true,power=1.8,pos=#pPos,delay=0.1;type=particle,ID=explode,size=(1.0,0.3,1.0),particleAmount=500,pos=#pExactPos)@luck=2
+
+/ nothing
+type=nothing@luck=0@chance=2
+
+/ lifesteal
+group(type=effect,ID="minecraft:instant_health",target=player,amplifier=5,duration=1;type=particle,ID=heart,size=(1.0,0.3,1.0),particleAmount=50,pos=#pExactPos)@luck=2
+
+/ arrows
+type=entity,ID=Arrow,pos=#pExactPos,posOffsetY=1.5,NBTTag=(Motion=#motionFromDirection(#pYaw+#rand(-10,10),#pPitch+#rand(-10,10),1.0)),amount=50,delay=#rand(0.0,4.0)@luck=2
+
+/ lightning
+group(type=effect,ID=potioncore:lightning,target=hitEntity,amplifier=2,duration=5)@luck=2
+
+/ web
+type=entity,ID=LuckyProjectile,pos=#pExactPos,posOffsetY=1.5,NBTTag=(Motion=#motionFromDirection(#pYaw,#pPitch,1.5),item=(id=web,Count=1),impact=["type=fill,ID=web,size=(2,2,2)"])@luck=2@chance=0.5
+
+/ web filler
+type=entity,ID=LuckyProjectile,pos=#pExactPos,posOffsetY=1.5,NBTTag=(Motion=#motionFromDirection(#pYaw,#pPitch,1.5),item=(id=web,Count=1),impact=["type=command,ID=\"fill ~ ~ ~ ~ ~1 ~ web 0 keep\""])@luck=2@chance=0.5
+
+/ flames
+type=entity,ID=lucky:lucky_projectile,pos=#pExactPos,posOffsetY=1.5,NBTTag=(
+    Motion=#motionFromDirection(#pYaw+#rand(-10,10),#pPitch+#rand(-10,10),1.0),
+    item=(id=blaze_powder,Count=1),
+    impact=["type=effect,ID=special_fire,target=hitEntity,duration=5"],
+    damage=0.0
+),amount=50,delay=#rand(0.0,2.0)@luck=2
+
+/ fire
+group(
+    type=effect,ID=special_fire,range=4,excludePlayer=true,duration=#rand(5,10);
+    type=particle,ID=flame,pos=#pExactPos,size=(1.0,0.3,1.0),particleAmount=2000
+)@luck=2
+
+/ knockback
+group(type=effect,ID=special_knockback,range=6,excludePlayer=true,power=1.8,pos=#pPos,delay=0.1;type=particle,ID=explode,size=(1.0,0.3,1.0),particleAmount=500,pos=#pExactPos)@luck=2
+
+/ ghast fireballs
+type=entity,ID=fireball,pos=#pExactPos,posOffsetY=1.5,NBTTag=(
+    Motion=#motionFromDirection(#pYaw+#rand(-10,10),#pPitch+#rand(-10,10), 1.0)
+),amount=25,delay=#rand(0.0,2.0)@luck=2@chance=0.66
+
+/ fire trail
+type=entity,ID=falling_block,pos=#pExactPos,posOffsetY=1.5,NBTTag=(
+    BlockState=(Name="fire"),Motion=#motionFromDirection(#pYaw+#rand(-10,10),#pPitch+#rand(-10,10), 1.0)
+),amount=25,delay=#rand(0.0,2.0)@luck=2@chance=0.66
+
+type=nothing@luck=-2@chance=333
+type=nothing@luck=-1@chance=120
+type=nothing@luck=0@chance=66
+type=nothing@luck=1@chance=36
+type=nothing@luck=2@chance=12

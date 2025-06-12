@@ -1,0 +1,14 @@
+{
+	"despawn_tweaker": {
+		"should_crash_on_startup": true,
+		"msg": "If you are seeing this, you have manually added the <strong>Despawn Tweaker</strong> mod to the modpack. The <strong>Despawn Tweaker</strong> mod is not needed, as a better mod with similar functionality (<strong>Despawn Tweaks</strong>) is already present in the modpack."
+	},
+	"dynamiclights": {
+		"should_crash_on_startup": true,
+		"msg": "If you are seeing this, you have manually added the <strong>Dynamic Lights mod</strong> to the modpack. The <strong>Dynamic Lights</strong> mod is not needed, as a better mod with similar functionality (<strong>Sodium/Embeddium Dynamic Lights</strong>) is already present in the modpack."
+	},
+	"optifine": {
+		"should_crash_on_startup": true,
+		"msg": "If you are seeing this, you have manually added the <strong>Optifine mod</strong> to the modpack. The <strong>Optifine</strong> mod is completely unnecessary, and has been for almost ten years now. Alternatives such as Sodium/Xenon and Iris/Oculus are already present in all modern modpacks."
+	}
+}

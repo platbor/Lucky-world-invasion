@@ -1,0 +1,556 @@
+/ ========== TOOLS & ARMOR ==========
+
+/ all wood, stone and gold tools
+group(ID=wooden_sword;ID=wooden_shovel;ID=wooden_pickaxe;ID=wooden_axe;ID=wooden_hoe)@luck=0
+group(ID=stone_sword;ID=stone_shovel;ID=stone_pickaxe;ID=stone_axe;ID=stone_hoe)@luck=0
+group(ID=golden_sword;ID=golden_shovel;ID=golden_pickaxe;ID=golden_axe;ID=golden_hoe)@luck=1
+
+/ 2-3 iron tools
+group:#rand(2,3):(ID=iron_shovel;ID=iron_pickaxe;ID=iron_axe;ID=iron_sword;ID=iron_hoe)@luck=1
+
+/ 1-2 diamond tools
+group:#rand(1,2):(ID=diamond_sword;ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_hoe)@luck=2
+
+/ 1-2 netherite tools
+group:#rand(1,2):(ID=netherite_sword;ID=netherite_shovel;ID=netherite_pickaxe;ID=netherite_axe;ID=netherite_hoe)@luck=2@chance=0.75
+
+/ all leather and gold armor
+group(ID=leather_helmet;ID=leather_chestplate;ID=leather_leggings;ID=leather_boots)@luck=0
+group(ID=golden_helmet;ID=golden_chestplate;ID=golden_leggings;ID=golden_boots;ID=golden_horse_armor)@luck=1
+
+/ 2-3 chain and iron armor
+group:#rand(2,3):(ID=chainmail_helmet;ID=chainmail_chestplate;ID=chainmail_leggings;ID=chainmail_boots)@luck=2
+group:#rand(2,3):(ID=iron_helmet;ID=iron_chestplate;ID=iron_leggings;ID=iron_boots;ID=iron_horse_armor)@luck=1
+
+/ 1-2 diamond armor
+group:#rand(1,2):(ID=diamond_helmet;ID=diamond_chestplate;ID=diamond_leggings;ID=diamond_boots;ID=diamond_horse_armor)@luck=2
+
+/ 1-2 netherite armor
+group:#rand(1,2):(ID=netherite_helmet;ID=netherite_chestplate;ID=netherite_leggings;ID=netherite_boots)@luck=2@chance=0.75
+
+/ all horse armor
+group(ID=iron_horse_armor;ID=golden_horse_armor;ID=diamond_horse_armor)@luck=2
+
+/ bow and arrows
+group(ID=bow;ID=arrow,amount=#rand(16,32))@luck=1
+
+/ ========== BLOCKS ==========
+
+/ fungis
+group(type=command,ID="/gamerule commandBlockOutput false";type=command,ID="/setblock ~ ~ ~ #randList(brown_mushroom,red_mushroom,crimson_fungus,warped_fungus) keep",posOffset=#circleOffset(0,5),amount=20,reinitialize=true)@chance=1@luck=1
+
+/ wither rose
+group(type=command,ID="/gamerule commandBlockOutput false";type=command,ID="/setblock ~ ~ ~ wither_rose keep",posOffset=#circleOffset(0,5),amount=20,reinitialize=true)@chance=1@luck=-1
+
+/ blocks
+ID=sponge@luck=0
+ID=tnt,amount=8@luck=1
+ID=fire_charge,amount=8@luck=1
+ID=magma_block,amount=8@luck=1
+group(ID=soulsand,amount=#rand(8,32);ID=soul_soil,amount=#rand(4,12))@luck=0
+ID=basalt,amount=#rand(8,64)@luck=0
+ID=enchanting_table@luck=2
+ID=end_portal_frame,amount=#rand(2,6)@luck=2
+ID=shroomlight,amount=#rand(2,6)@luck=0
+ID=lucky:fire_lucky_potion,amount=#rand(2,6)@luck=2
+ID=dragon_egg@luck=1
+ID=ender_chest,amount=2@luck=0
+ID=beacon@luck=2
+ID=nether_star@luck=2
+ID=dropper,amount=8@luck=0
+ID=dispenser,amount=8@luck=0
+group(ID=glowstone,amount=10;ID=shroomlight,amount=5)@luck=1
+ID=coal,amount=8@luck=-1
+
+/ loot chests
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/spawn_bonus_chest"))@luck=0
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/simple_dungeon"))@luck=1
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/stronghold_corridor"))@luck=1
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/shipwreck_map"))@luck=1
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/nether_bridge"))@luck=1
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/bastion_bridge"))@luck=1
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/bastion_other"))@luck=1
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/bastion_treasure"))@luck=2
+type=structure,ID=firelbv2_chestnether@luck=1@chance=0.9
+type=structure,ID=firelbv2_chestlucky@luck=2@chance=0.8
+type=structure,ID=firelbv2_chestgold@luck=2@chance=0.9
+
+/ fiery explosions
+type=explosion,radius=2,fire=true@luck=0
+type=explosion,radius=4,fire=true@luck=-1
+type=explosion,radius=6,fire=true@luck=-2
+type=explosion,radius=9,fire=true@luck=-2@chance=0.9
+type=explosion,radius=15,fire=true@luck=-2@chance=0.5
+type=explosion,radius=31,fire=true@luck=-2@chance=0.031
+
+/ nether spawners
+type=structure,ID=firelbv2_spawnerenderman@luck=-1
+type=structure,ID=firelbv2_spawnerhoglin@luck=-2@chance=0.7
+type=structure,ID=firelbv2_spawnermagma@luck=-1
+type=structure,ID=firelbv2_spawnerpiglin@luck=-1
+type=structure,ID=firelbv2_spawnerghast@luck=-2@chance=0.8
+group(type=fill,ID=lava,size=(5,3,5),pos=(#bPosX-2,#bPosY-3,#bPosZ-2);type=entity,ID=strider,amount=#rand(2,4))@luck=-1
+group(type=entity,ID=strider;type=item,ID=warped_fungus_on_a_stick)@luck=1
+group(type=entity,ID=pig;type=item,ID=carrot_on_a_stick)@luck=-1
+
+/ ========= ITEMS ==========
+
+/ golds galore
+ID=gold_ingot,amount=#rand(8,16)@luck=1
+ID=gold_nugget,amount=#rand(8,16)@luck=0
+ID=gold_nugget,amount=#rand(32,64)@luck=1
+ID=gold_nugget,amount=#rand(66,666)@luck=2@chance=0.6
+type=block,ID=gold_block@luck=1
+type=block,ID=nether_gold_ore@luck=-2
+
+/ fire items
+ID=fire_charge,amount=#rand(8,16)@luck=1
+ID=gunpowder,amount=#rand(32,64)@luck=1
+ID=blaze_powder,amount=#rand(8,16)@luck=1
+ID=coal,amount=#rand(8,16)@luck=1
+ID=charcoal,amount=#rand(8,16)@luck=0
+ID=coal,amount=#rand(16,32)@luck=2
+ID=dried_kelp_block,amount=#rand(8,20)@luck=2@chance=0.5
+ID=blaze_rod@luck=-1
+ID=painting,amount=4@luck=0
+ID=crying_obsidian,amount=4@luck=0
+ID=netherite_scrap,amount=#rand(8,16)@luck=2@chance=0.9
+ID=netherite_ingot@luck=2
+ID=respawn_anchor@luck=2@chance=0.9
+ID=scaffolding,amount=#rand(32,64)@luck=1
+ID=scaffolding,amount=#rand(32,164)@luck=2
+ID=painting,amount=4@luck=0
+ID=saddle,amount=2@luck=0
+ID=cake@luck=0
+ID=spyglass@luck=0
+ID=rotten_flesh@luck=-1
+ID=gold_nugget@luck=-2
+ID=nether_star@luck=2
+ID=ghast_tear@luck=1
+type=block,ID=barrier@luck=-2@chance=0.25
+ID=crimson_fungus,NBTTag=(display=(Name=#jsonStr(text="$cRomantic Fungi"))@luck=-1
+ID=wither_rose,NBTTag=(display=(Name=#jsonStr(text="$cBurned Romantic Rose"))@luck=-2
+ID=mangrove_boat,amount=#rand(9,36),NBTTag=(display=(Name=#jsonStr(text="$4Melt away!"))@luck=-2
+ID=mushroom_stew,amount=#rand(5,7)@luck=1
+ID=rabbit_stew,amount=#rand(5,7)@luck=2
+ID=suspicious_stew,amount=#rand(5,7)@luck=2@chance=0.9
+ID=lucky:fire_lucky_sword@luck=2@chance=0.9
+ID=netherite_upgrade_smithing_template@luck=2
+group(ID=arrow,amount=#rand(10,25);ID=lucky:fire_lucky_bow)@luck=2@chance=0.9
+
+/ ========== GROUPS ==========
+
+/ bookshelves and books
+group(ID=bookshelf,amount=#rand(6,12);ID=book,amount=#rand(8,16))@luck=0
+
+/ chain and lanterns
+group(ID=chain,amount=#rand(9,36);ID=lantern,amount=#rand(3,6))@luck=0
+
+/ golden apples
+group(ID=golden_apple,amount=#rand(2,4);ID=golden_apple,amount=#rand(1,2),damage=1)@luck=2
+
+/ fire lucky crafting
+group(ID=gold_ingot,amount=#rand(4,24);ID=blaze_rod,amount=#rand(2,6);ID=redstone,amount=#rand(4,16);ID=cobblestone,amount=#rand(16,32))@luck=2
+
+/ torches
+group(ID=torch,amount=#rand(16,32);ID=soul_torch,amount=#rand(8,16))@luck=1
+
+/ buckets
+group(ID=bucket,amount=#rand(1,2);ID=bucket,amount=#rand(1,2);ID=lava_bucket,amount=#rand(1,2);ID=milk_bucket,amount=#rand(1,2))@luck=0
+
+/ meat cooked
+group(type=block,ID=campfire;ID=cooked_beef,amount=#rand(3,6);ID=cooked_chicken,amount=#rand(2,5);ID=cooked_mutton,amount=#rand(1,4);ID=cooked_rabbit,amount=#rand(0,3))@luck=1
+
+/ vegetable food (carrots, potatoes, pumpkin pie)
+group:1:(group(ID=carrot,amount=#rand(8,16);ID=golden_carrot,amount=#rand(4,8));group(ID=potato,amount=#rand(8,16);ID=baked_potato,amount=#rand(4,8);ID=poisonous_potato,amount=#rand(2,4));group(ID=pumpkin_pie,amount=#rand(6,12)))@luck=1
+
+/ ender pearls and eyes 
+group(ID=ender_pearl,amount=10;ID=ender_eye,amount=5)@luck=2
+
+/ lavas
+group(ID=lava_bucket,amount=10;ID=lucky:fire_lucky_potion,amount=5)@luck=2
+
+/ basalt
+group(ID=basalt,amount=#rand(20,40);ID=polished_basalt,amount=#rand(8,20))@luck=2
+
+/ obsidian and crying obsidians
+group(ID=obsidian,amount=#rand(5,10);ID=crying_obsidian,amount=#rand(2,5))@luck=2
+
+/ potions
+ID=#randList(potion,splash_potion),NBTTag=(Potion=#randPotion),amount=#rand(4,8)@luck=1
+
+/ lingering potions
+ID=lingering_potion,NBTTag=(Potion=#randPotion),amount=#rand(4,8)@luck=2
+
+/ "lucky" lingering potions
+ID=lingering_potion,NBTTag=(Potion="luck"),amount=#rand(1,3)@luck=2@chance=0.9
+
+/ nether spawn eggs
+ID=#randList(strider_spawn_egg,magma_cube_spawn_egg,hoglin_spawn_egg,ghast_spawn_egg,blaze_spawn_egg,zombie_pigman_spawn_egg,piglin_spawn_egg,enderman_spawn_egg,wither_skeleton_spawn_egg),amount=#rand(4,8)@luck=0
+
+/ wither spawnkit
+group(ID=soul_sand,amount=4;ID=wither_skeleton_skull,amount=3)@luck=2@chance=0.5
+
+/ heads
+ID=#randList(creeper_head,skeleton_skull,player_head,zombie_head),amount=#rand(1,3)@luck=0
+
+/ wither skull
+ID=wither_skeleton_skull,amount=#rand(1,3)@luck=2
+
+/ pigstep music disc
+group(ID=jukebox;ID=music_disc_pigstep)@luck=2
+
+/ netherite and/or scraps
+group(ID=netherite_scrap,amount=#rand(2,8);ID=netherite_ingot,amount=#rand(0,4))@luck=2
+
+/ brewing
+group(ID=ender_pearl,amount=#rand(1,3);ID=blaze_rod,amount=#rand(1,3);ID=ghast_tear,amount=#rand(1,3);ID=gold_nugget,amount=#rand(1,3);ID=nether_wart,amount=#rand(1,3);ID=spider_eye,amount=#rand(1,3);ID=fermented_spider_eye,amount=#rand(1,3);ID=blaze_powder,amount=#rand(1,3);ID=magma_cream,amount=#rand(1,3);ID=ender_eye,amount=#rand(1,3);ID=glistering_melon_slice,amount=#rand(1,3);ID=rabbit_foot,amount=#rand(1,3);type=particle,ID=2002,damage=3)@luck=2
+
+/ redstone
+group(ID=dispenser,amount=2;ID=noteblock,amount=1;ID=sticky_piston,amount=4;ID=piston,amount=4;ID=tnt,amount=6;ID=lever,amount=2;ID=stone_pressure_plate,amount=2;ID=wooden_pressure_plate,amount=2;ID=redstone_torch,amount=8;ID=stone_button,amount=2;ID=trapdoor,amount=2;ID=iron_trapdoor,amount=2;ID=fence_gate,amount=1;ID=redstone_lamp,amount=4;ID=tripwire_hook,amount=2;ID=wooden_button,amount=2;ID=light_weighted_pressure_plate,amount=1;ID=heavy_weighted_pressure_plate,amount=1;ID=daylight_detector,amount=1;ID=hopper,amount=4;ID=dropper,amount=#rand(2,4);ID=wooden_door,amount=1;ID=iron_door,amount=1;ID=redstone,amount=#rand(32,64);ID=repeater,amount=8;ID=comparator,amount=2;type=particle,ID=2002,damage=9)@luck=2
+
+/ fire colorful
+group:1:(ID=#randList(black,brown,yellow,black,white,orange)_wool,amount=#rand(32,64);ID=#randList(black,brown,yellow,black,white,orange)_terracotta,amount=#rand(32,64);ID=#randList(black,brown,yellow,black,white,orange)_glazed_terracotta,amount=#rand(32,64);ID=#randList(black,brown,yellow,black,white,orange)_carped,amount=#rand(32,64);ID=#randList(black,brown,yellow,black,white,orange)_stained_glass,amount=#rand(32,64);ID=#randList(black,brown,yellow,black,white,orange)_stained_glass_pane,amount=#rand(32,64);ID=#randList(black,brown,yellow,black,white,orange)_concrete,amount=#rand(32,64) ;ID=#randList(black,brown,yellow,black,white,orange)_bed,amount=#rand(4,8);ID=#randList(black,brown,yellow,black,white,orange)_banner,amount=#rand(32,64)  )@luck=1
+
+/ iron, gold, diamond, emerald, lapis with fireworks
+group(ID=iron_ingot,amount=#rand(8,16);ID=gold_ingot,amount=#rand(8,16);ID=diamond,amount=#rand(8,16);ID=emerald,amount=#rand(8,16);ID=dye,damage=4,amount=#rand(8,16);type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,tag=#randFireworksRocket)),amount=5,posOffset=#circleOffset(0,2))@luck=2
+
+/ nether stuff with fireworks
+group(ID=quartz,amount=#rand(8,16);ID=gold_ingot,amount=#rand(8,16);ID=glowstone_dust,amount=#rand(8,16);ID=blaze_powder,amount=#rand(8,16);ID=lootplusplus:fire.netherite_scrap,amount=#rand(4,8);type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,tag=#randFireworksRocket)),amount=5,posOffset=#circleOffset(0,2))@luck=2
+
+/ ores with fireworks
+group(ID=iron_ore,amount=#rand(8,16);ID=gold_ore,amount=#rand(8,16);ID=diamond_ore,amount=#rand(8,16);ID=emerald_ore,amount=#rand(8,16);ID=lapis_ore,amount=#rand(8,16);type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,tag=#randFireworksRocket)),amount=5,posOffset=#circleOffset(0,2))@luck=2
+
+/ nether ores with fireworks
+group(ID=quartz_ore,amount=#rand(8,16);ID=nether_gold_ore,amount=#rand(8,16);ID=ancient_debris,amount=#rand(4,9);ID=gilded_blackstone,amount=#rand(8,16);ID=glowstone,amount=#rand(8,16);type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,tag=#randFireworksRocket)),amount=5,posOffset=#circleOffset(0,2))@luck=2
+
+/ quartz blockit
+group(ID=quartz_slab,amount=#rand(4,8);ID=quartz_ore,amount=#rand(16,32);ID=quartz_block,amount=#rand(4,8);ID=quartz_block,damage=1,amount=#rand(4,8);ID=quartz_block,damage=2,amount=#rand(4,8);ID=quartz_stairs,amount=#rand(4,8);ID=quartz,amount=#rand(24,32);type=particle,ID=2002,damage=14)@luck=1
+
+/ nether brick blockit
+group(ID=nether_brick_slab,amount=#rand(4,8);ID=netherrack,amount=#rand(16,32);ID=nether_brick,amount=#rand(4,8);ID=chiseled_nether_bricks,amount=#rand,amount=#rand(4,8);ID=cracked_nether_bricks,amount=#rand,amount=#rand(4,8);ID=nether_brick_stairs,amount=#rand(4,8);ID=netherbrick,amount=#rand(24,32);type=particle,ID=2002,damage=14)@luck=1
+
+/ red nether brick blockit
+group(ID=red_nether_brick_slab,amount=#rand(4,8);ID=red_nether_bricks,amount=#rand(4,8);ID=red_nether_brick_stairs,amount=#rand(4,8);ID=nether_brick,amount=#rand(24,32);type=particle,ID=2002,damage=14)@luck=1
+
+/ blackstone blockit
+group(ID=blackstone_slab,amount=#rand(4,8);ID=blackstone,amount=#rand(16,32);ID=gilded_blackstone,amount=#rand(4,8);ID=blackstone_stairs,amount=#rand(4,8);type=particle,ID=splashpotion,potion="invisibility")@luck=0
+group(ID=polished_blackstone_slab,amount=#rand(4,8);ID=blackstone,amount=#rand(16,32);ID=polished_blackstone,amount=#rand(16,32);ID=gilded_blackstone,amount=#rand(4,8);ID=polished_blackstone_stairs,amount=#rand(4,8);ID=polished_blackstone_bricks,amount=#rand(4,8);ID=cracked_polished_blackstone_bricks,amount=#rand(4,8);ID=chiseled_polished_blackstone_bricks,amount=#rand(4,8);type=particle,ID=splashpotion,potion="invisibility")@luck=1
+
+/ vines
+group(type=message,ID="$2VINES OP";ID=vine,amount=#rand(16,32);ID=twisting_vines,amount=#rand(8,16);ID=weeping_vines,amount=#rand(8,16);ID=twisting_vines_plant,amount=#rand(2,8) ;ID=weeping_vines_plant,amount=#rand(2,8)  )@luck=1
+
+/ nether things
+group(ID=netherrack,amount=#rand(32,64);ID=glowstone,amount=#rand(5,10);ID=soul_sand,amount=#rand(15,30);ID=nether_brick,amount=#rand(16,32);ID=nether_brick_fence,amount=#rand(5,10);ID=nether_brick_slab,amount=#rand(5,10);ID=glowstone_dust,amount=#rand(10,20);ID=netherbrick,amount=#rand(32,64);type=particle,ID=2002,damage=9)@luck=1
+
+/ crimson warped wooden planks and logs
+group(ID=crimson_planks,amount=#rand(32,64); ID=warped_planks,amount=#rand(32,64); ID=crimson_stem,amount=#rand(5,10);ID=warped_stem,amount=#rand(5,10);ID=crimson_slab,amount=#rand(5,10);ID=warped_slab,amount=#rand(5,10);ID=crimson_stairs,amount=#rand(3,6);ID=warped_fence,amount=#rand(6,12);ID=crimson_fence,amount=#rand(6,12);ID=lootplusplus:fire.warpedstairs,amount=#rand(3,6))@luck=0
+
+/ crimson warped foliage
+group(ID=crimson_roots,amount=#rand(8,16);ID=warped_roots,amount=#rand(8,16);ID=crimson_fungus,amount=#rand(4,8);ID=warped_fungus,amount=#rand(4,8))@luck=0
+
+/ spreads
+group(ID=crimson_nylium;ID=warped_nylium)@luck=0
+
+/ golden clock
+group(ID=golden_nugget,amount=#rand(6,66);ID=clock,NBTTag=(display=(Name=#jsonStr(text="$6Time is Money"))))@luck=0
+
+/ message with fungi
+group(type=command,ID="/tell #pName Listen to me, #pName. You are in grave danger. You need to run. Now. Take this fungi, it is your only hope.",commandSender="PlayerInDistress";ID=crimson_fungus,NBTTag=(display=(Name=#jsonStr(text="$cOnly Hope")))@luck=-1
+
+/ fungis
+group(ID=#randList(brown_mushroom,red_mushroom,crimson_fungus,warped_fungus),amount=64)@luck=0
+
+/ enchantment books
+ID=enchanted_book,NBTTag=(StoredEnchantments=#randEnchantment),amount=#rand(7,10)@luck=1
+
+/ golden stuff
+group:#rand(3,6):(ID=bell;ID=gold_block;ID=raw_gold_block;ID=clock;ID=enchanted_golden_apple;ID=gilded_blackstone;ID=glistering_melon_slice;ID=gold_ingot;ID=gold_ore;ID=golden_apple;ID=golden_axe;ID=golden_boots;ID=golden_carrot;ID=golden_chestplate;ID=golden_helmet;ID=golden_hoe;ID=golden_horse_armor;ID=golden_leggings;ID=golden_pickaxe;ID=golden_shovel;ID=golden_sword;ID=light_weighted_pressure_plate;ID=nether_gold_ore;ID=deepslate_gold_ore;ID=raw_gold)@luck=1@chance=0.99
+group:#rand(6,9):(ID=bell;ID=gold_block;ID=raw_gold_block;ID=clock;ID=enchanted_golden_apple;ID=gilded_blackstone;ID=glistering_melon_slice;ID=gold_ingot;ID=gold_ore;ID=golden_apple;ID=golden_axe;ID=golden_boots;ID=golden_carrot;ID=golden_chestplate;ID=golden_helmet;ID=golden_hoe;ID=golden_horse_armor;ID=golden_leggings;ID=golden_pickaxe;ID=golden_shovel;ID=golden_sword;ID=light_weighted_pressure_plate;ID=nether_gold_ore;ID=deepslate_gold_ore;ID=raw_gold)@luck=1@chance=0.36
+
+
+/ ========== ENTITIES ==========
+
+/ unlucky mobs
+group:1:(type=entity,ID=strider,NBTTag=(CustomName=#jsonStr(text="$e$lUnlucky Strider"),CustomNameVisible=true);type=entity,ID=hoglin,NBTTag=(CustomName=#jsonStr(text="$e$lUnlucky Poglin"),CustomNameVisible=true);type=entity,ID=blaze,NBTTag=(CustomName=#jsonStr(text="$e$lUnlucky Blaze"),CustomNameVisible=true);type=entity,ID=lavaslime,NBTTag=(CustomName=#jsonStr(text="$e$lUnlucky Cube"),CustomNameVisible=true);type=entity,ID=zombified_piglin,NBTTag=(CustomName=#jsonStr(text="$e$lUnlucky Pigman"),CustomNameVisible=true);type=entity,ID=ghast,NBTTag=(CustomName=#jsonStr(text="$e$lUnlucky Ghast"),CustomNameVisible=true);type=entity,ID=wither_skeleton,NBTTag=(SkeletonType=1,CustomName=#jsonStr(text="$e$lUnlucky Skeleton"),CustomNameVisible=true))@luck=-1
+
+/ colored sheep
+type=entity,ID=sheep,NBTTag=(CustomName=#jsonStr(text="$6$lFire Sheep"),CustomNameVisible=true,Color=#randList(0,1,4,14,7,8,15)),posOffset=#circleOffset(4),amount=16@luck=1
+
+/ thrown exp bottles
+type=entity,ID=experience_bottle,NBTTag=(Motion=#randLaunchMotion),amount=#rand(16,32)@luck=2
+
+/ launched tnt
+type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion=#randLaunchMotion),amount=15@luck=-2
+
+/ launched blazes
+type=entity,ID=blaze,NBTTag=(Fuse=50b,Motion=#randLaunchMotion),amount=15@luck=-2
+
+/ launched wither skull
+type=entity,ID=wither_skull,NBTTag=(Fuse=50b,Motion=#randLaunchMotion),amount=10@luck=-2
+
+/ launched ghast
+type=entity,ID=ghast,NBTTag=(Fuse=50b,Motion=#randLaunchMotion),amount=5@luck=-2
+
+/ lightning creeper
+group(type=difficulty,ID=hard;type=entity,ID=creeper;type=entity,ID=lightning_bolt)@luck=-2
+
+/ suprise lightning pigman
+group(type=difficulty,ID=hard;type=entity,ID=pig,amount=#rand(5,20);type=entity,ID=lightning_bolt)@luck=-2
+
+/ giant
+group(type=difficulty,ID=hard;type=entity,ID=majruszsdifficulty:giant)@luck=-2
+
+/ wither
+group(type=difficulty,ID=hard;type=entity,ID=wither)@chance=0.15@luck=-2
+
+/ ghast
+group(type=difficulty,ID=hard;type=entity,ID=ghast)@chance=0.5@luck=-2
+
+/ bob zombie
+group(type=difficulty,ID=hard;type=entity,ID=zombie,NBTTag=(HandItems=[(id=diamond_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],ArmorItems=[(id=diamond_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=diamond_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],CustomName=#jsonStr(text="Bob",color=blue,bold=true),CustomNameVisible=true))@luck=-2
+
+/ bob wither skeleton
+group(type=difficulty,ID=hard;type=entity,ID=wither_skeleton,NBTTag=(HandItems=[(id=netherite_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],ArmorItems=[(id=netherite_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=netherite_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=netherite_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=netherite_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],CustomName=#jsonStr(text="Peter",color=gray,bold=true),CustomNameVisible=true))@luck=-2
+
+/ bob piglin
+group(type=difficulty,ID=hard;type=entity,ID=piglin,NBTTag=(HandItems=[(id=golden_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],ArmorItems=[(id=golden_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=golden_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=golden_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=golden_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],CustomName=#jsonStr(text="Boblin",color=yellow,bold=true),CustomNameVisible=true))@luck=-2
+
+/ zombified bob piglin
+group(type=difficulty,ID=hard;type=entity,ID=zombified_piglin,NBTTag=(HandItems=[(id=golden_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],ArmorItems=[(id=golden_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=golden_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=golden_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=golden_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],CustomName=#jsonStr(text="Zombified Boblin",color=yellow,bold=true),CustomNameVisible=true))@luck=-2
+
+/ ghastly horseman skeleton
+group(type=difficulty,ID=hard;type=entity,ID=bat,amount=#rand(2,4),posY=#bPosY+#rand(10,30),NBTTag=(Silent=true,ActiveEffects=[(Id=14,Duration=100000,Amplifier=1,ShowParticles=false)],Passengers=[(id=skeleton_horse,Tame=true,Type=4,Passengers=[(id=ghast,HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckyBowEnchantments))],ArmorItems=[(id=chainmail_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=chainmail_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=chainmail_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=chainmail_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],CustomName=#jsonStr(text="Ghastly Horseman",color=gray,bold=true),CustomNameVisible=true)])]))@luck=-2
+
+/ flying dizzy blazes
+group(type=difficulty,ID=hard;type=entity,ID=bat,amount=#rand(2,5),NBTTag=(Silent=true,ActiveEffects=[(Id=14,Duration=100000,Amplifier=1,ShowParticles=false)],Passengers=[(id=blaze,Tame=true,Type=4,Passengers=[(id=blaze,HandItems=[(id=air,Count=1,tag=(Enchantments=#luckyBowEnchantments))],ArmorItems=[(id=air,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=air,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=air,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=air,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],CustomName=#jsonStr(text="Dizzy Blaze",color=yellow,bold=true),CustomNameVisible=true)])]))@luck=-2
+
+/ stacked piglin and pigs
+type=entity,ID=piglin,NBTTag=(Riding=(id=pig,Riding=(id=pig,Riding=(id=pig,Riding=(id=pig,Riding=(id=pig,Riding=(id=pig,Riding=(id=pig))))))))@luck=0
+
+/ horses
+type=entity,ID=#randList(skeleton_horse,zombie_horse,hoglin),amount=12,posOffset=#circleOffset(4),NBTTag=(Tame=true)@luck=1
+
+/ nether mobs
+type=entity,ID=piglin,amount=12,posOffset=#circleOffset(6)@luck=0
+type=entity,ID=blaze,amount=12,posOffset=#circleOffset(6)@luck=-1
+type=entity,ID=hoglin,amount=6,posOffset=#circleOffset(6)@luck=-1
+type=entity,ID=zombified_piglin,amount=12,posOffset=#circleOffset(4)@luck=-1
+type=entity,ID=enderman,amount=12,posOffset=#circleOffset(8)@luck=-1
+type=entity,ID=magma_cube,amount=12,posOffset=#circleOffset(12)@luck=-1
+type=entity,ID=ghast,amount=5,posOffset=#circleOffset(16)@luck=-2
+type=entity,ID=wither_skeleton,amount=10,posOffset=#circleOffset(8)@luck=-1
+
+/ wither skeleton and roses
+group(type=command,ID="/gamerule commandBlockOutput false";type=command,ID="/setblock ~ ~ ~ wither_rose keep",posOffset=#circleOffset(0,5),amount=20,reinitialize=true;type=entity,ID=wither_skeleton,amount=10,posOffset=#circleOffset(8))@luck=-2@chance=0.95
+
+/ all at once
+group(type=entity,ID=blaze,amount=6,posOffset=#circleOffset(6);type=entity,ID=piglin,amount=6,posOffset=#circleOffset(4);type=entity,ID=zombified_piglin,amount=6,posOffset=#circleOffset(4);type=entity,ID=enderman,amount=6,posOffset=#circleOffset(8);type=entity,ID=magma_cube,amount=6,posOffset=#circleOffset(12);type=entity,ID=ghast,amount=2,posOffset=#circleOffset(16);type=entity,ID=wither_skeleton,amount=5,posOffset=#circleOffset(8))@luck=-2@chance=0.35
+group:#rand(2,3):(type=entity,ID=blaze,amount=6,posOffset=#circleOffset(6);type=entity,ID=piglin,amount=6,posOffset=#circleOffset(4);type=entity,ID=zombified_piglin,amount=6,posOffset=#circleOffset(4);type=entity,ID=enderman,amount=6,posOffset=#circleOffset(8);type=entity,ID=magma_cube,amount=6,posOffset=#circleOffset(12);type=entity,ID=ghast,amount=2,posOffset=#circleOffset(16);type=entity,ID=wither_skeleton,amount=5,posOffset=#circleOffset(8))@luck=-2@chance=0.7
+
+/ huge magma cube
+type=entity,ID=magma_cube,NBTTag=(Size=8)luck=-2
+
+/ pet wolves
+group(type=entity,ID=wolf,amount=#rand(5,10),posOffset=#circleOffset(3),NBTTag=(CollarColor=#rand(0,14),OwnerUUID=#pUUID,Sitting=1);type=particle,ID="heart",size=(2,0,2),particleAmount=20)@luck=1
+
+/ pet cats
+group(type=entity,ID=ocelot,amount=#rand(5,10),posOffset=#circleOffset(3),NBTTag=(CatType=#rand(0,3),OwnerUUID=#pUUID,Sitting=1);type=particle,ID="heart",size=(2,0,2),particleAmount=20)@luck=1
+
+/ pet rabbits
+group(type=entity,ID=rabbit,amount=#rand(5,10),posOffset=#circleOffset(3),NBTTag=(RabbitType=#rand(0,5),OwnerUUID=#pUUID,Sitting=1);type=particle,ID="heart",size=(2,0,2),particleAmount=20)@luck=1
+
+/ piglin trading kit
+group(ID=piglin,amount=3;ID=gold_ingot,amount=#rand(3,6);ID=gold_nugget,amount=#rand(6,30))@luck=1
+
+/ falling blocks (iron, gold, diamond, emerald, netherite, respawn anchor, lodestone)
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=iron_block));type=particle,ID=large_smoke,size=(1,2,1),particleAmount=500;type=sound,ID=block.fire.extinguish)@luck=0
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=gold_block));type=particle,ID=flame,size=(1,2,1),particleAmount=500;type=sound,ID=entity.ghast.shoot)@luck=0
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=diamond_block));type=entity,ID=lightning_bolt)@luck=1
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=emerald_block));type=particle,ID=happy_villager,size=(1,2,1),particleAmount=500;type=sound,ID=block.grass.break)@luck=0
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=netherite_block));type=particle,ID=lava,size=(1,2,1),particleAmount=1000;type=sound,ID=liquid.lavapop)@luck=2@chance=0.1
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=respawn_anchor));type=particle,ID=portal,size=(1,2,1),particleAmount=500;type=sound,ID=note.bell)@luck=1
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=lodestone));type=particle,ID=portal,size=(1,2,1),particleAmount=500;type=sound,ID=note.bell)@luck=2
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=bell));type=particle,ID=portal,size=(1,2,1),particleAmount=500;type=sound,ID=note.bell)@luck=0
+
+/ fire colorful pole
+group(type=fill,ID=air,size=(1,51,1);group(NBTTag=(BlockState=(Name=red_concrete_powder)),posY=#bPosY+5;NBTTag=(BlockState=(Name=orange_concrete_powder)),posY=#bPosY+10;NBTTag=(BlockState=(Name=yellow_concrete_powder)),posY=#bPosY+15;NBTTag=(BlockState=(Name=orange_concrete_powder)),posY=#bPosY+20;NBTTag=(BlockState=(Name=red_concrete_powder)),posY=#bPosY+25;NBTTag=(BlockState=(Name=orange_concrete_powder)),posY=#bPosY+30;NBTTag=(BlockState=(Name=yellow_concrete_powder)),posY=#bPosY+35;NBTTag=(BlockState=(Name=orange_concrete_powder)),posY=#bPosY+40;NBTTag=(BlockState=(Name=red_concrete_powder)),posY=#bPosY+45),type=entity,ID=falling_block;type=entity,ID=falling_block,NBTTag=(BlockState=(Name=ancient_debris)),posY=#bPosY+50;type=entity,ID=lightning_bolt,posY=#bPosY+10,delay=2.5)@luck=0
+group(type=fill,ID=air,size=(1,51,1);group(NBTTag=(BlockState=(Name=red_terracotta)),posY=#bPosY+5;NBTTag=(BlockState=(Name=orange_terracotta)),posY=#bPosY+10;NBTTag=(BlockState=(Name=yellow_terracotta)),posY=#bPosY+15;NBTTag=(BlockState=(Name=orange_terracotta)),posY=#bPosY+20;NBTTag=(BlockState=(Name=red_terracotta)),posY=#bPosY+25;NBTTag=(BlockState=(Name=orange_terracotta)),posY=#bPosY+30;NBTTag=(BlockState=(Name=yellow_terracotta)),posY=#bPosY+35;NBTTag=(BlockState=(Name=orange_terracotta)),posY=#bPosY+40;NBTTag=(BlockState=(Name=red_terracotta)),posY=#bPosY+45),type=entity,ID=falling_block;type=entity,ID=falling_block,NBTTag=(BlockState=(Name=gold_block)),posY=#bPosY+50;type=entity,ID=lightning_bolt,posY=#bPosY+10,delay=2.5)@luck=1
+group(type=fill,ID=air,size=(1,51,1);group(NBTTag=(BlockState=(Name=red_glazed_terracotta)),posY=#bPosY+5;NBTTag=(BlockState=(Name=orange_glazed_terracotta)),posY=#bPosY+10;NBTTag=(BlockState=(Name=yellow_glazed_terracotta)),posY=#bPosY+15;NBTTag=(BlockState=(Name=orange_glazed_terracotta)),posY=#bPosY+20;NBTTag=(BlockState=(Name=red_glazed_terracotta)),posY=#bPosY+25;NBTTag=(BlockState=(Name=orange_glazed_terracotta)),posY=#bPosY+30;NBTTag=(BlockState=(Name=yellow_glazed_terracotta)),posY=#bPosY+35;NBTTag=(BlockState=(Name=orange_glazed_terracotta)),posY=#bPosY+40;NBTTag=(BlockState=(Name=red_glazed_terracotta)),posY=#bPosY+45),type=entity,ID=falling_block;type=entity,ID=falling_block,NBTTag=(BlockState=(Name=netherite_block)),posY=#bPosY+50;type=entity,ID=lightning_bolt,posY=#bPosY+10,delay=2.5)@luck=2@chance=0.75
+
+/ tnt pole
+group(type=fill,ID=air,size=(1,51,1);type=entity,ID=falling_block,NBTTag=(BlockState=(Name=redstone_block)),posY=#bPosY+5;group(posY=#bPosY+10;posY=#bPosY+15;posY=#bPosY+20;posY=#bPosY+25;posY=#bPosY+30;posY=#bPosY+35;posY=#bPosY+40;posY=#bPosY+45;posY=#bPosY+50),type=entity,ID=falling_block,NBTTag=(BlockState=(Name=tnt)))@luck=2
+
+/ basalt pillar
+group(group(posY=#bPosY+3;posY=#bPosY+6;posY=#bPosY+9;posY=#bPosY+12;posY=#bPosY+15;posY=#bPosY+18;posY=#bPosY+21;posY=#bPosY+24;posY=#bPosY+27;posY=#bPosY+30;posY=#bPosY+33;posY=#bPosY+36;posY=#bPosY+39;posY=#bPosY+42;posY=#bPosY+45;posY=#bPosY+48;posY=#bPosY+51;posY=#bPosY+54;posY=#bPosY+57;posY=#bPosY+60;posY=#bPosY+63;posY=#bPosY+66;posY=#bPosY+69;posY=#bPosY+72;posY=#bPosY+75;posY=#bPosY+78;posY=#bPosY+81;posY=#bPosY+84;posY=#bPosY+87;posY=#bPosY+90;posY=#bPosY+93;posY=#bPosY+96;posY=#bPosY+99;posY=#bPosY+102;posY=#bPosY+105;posY=#bPosY+108;posY=#bPosY+111;posY=#bPosY+114;posY=#bPosY+117;posY=#bPosY+120;posY=#bPosY+123;posY=#bPosY+126;posY=#bPosY+129;posY=#bPosY+132;posY=#bPosY+135;posY=#bPosY+138;posY=#bPosY+141;posY=#bPosY+144;posY=#bPosY+147;posY=#bPosY+150;posY=#bPosY+153;posY=#bPosY+156;posY=#bPosY+159;posY=#bPosY+162;posY=#bPosY+165;posY=#bPosY+168;posY=#bPosY+171;posY=#bPosY+174;posY=#bPosY+177;posY=#bPosY+180;posY=#bPosY+183;posY=#bPosY+186;posY=#bPosY+189;posY=#bPosY+192;posY=#bPosY+195;posY=#bPosY+198;posY=#bPosY+201;posY=#bPosY+2044;posY=#bPosY+207;posY=#bPosY+210;posY=#bPosY+213;posY=#bPosY+216;posY=#bPosY+219;posY=#bPosY+222;posY=#bPosY+225;posY=#bPosY+228;posY=#bPosY+231;posY=#bPosY+234;posY=#bPosY+237;posY=#bPosY+240),type=entity,ID=falling_block,NBTTag=(BlockState=(Name=basalt)))@luck=-1
+
+/ ==== Nether Monster Apocalyple ====
+
+/ sword, difficulty, time, potion effects
+group(ID=golden_sword;type=difficulty,ID=hard;type=effect,ID=slowness,duration=20,amplifier=4;type=effect,ID=blindness,duration=10; \
+
+/ nether mobs
+group:1:(type=entity,ID=piglin,amount=#rand(20,50);type=entity,ID=blaze,amount=#rand(10,30);group(type=entity,ID=magma_cube,amount=#rand(15,45);type=entity,ID=wither_skeleton,amount=#rand(5,10));group(type=entity,ID=zombified_piglin,amount=#rand(15,45);type=entity,ID=piglin,amount=#rand(5,10));type=entity,ID=hoglin,amount=#rand(2,10); \
+
+/ all
+group(type=entity,ID=piglin,amount=#rand(20,50);type=entity,ID=blaze,amount=#rand(10,30);group(type=entity,ID=magma_cube,amount=#rand(15,45);type=entity,ID=wither_skeleton,amount=#rand(5,10);type=entity,ID=zombified_piglin,amount=#rand(15,45);type=entity,ID=piglin,amount=#rand(5,10);type=entity,ID=hoglin,amount=#rand(2,10)))),posOffset=#circleOffset(8,10))@luck=-2
+
+/ just the effects
+group(ID=golden_sword;type=difficulty,ID=hard;type=effect,ID=slowness,duration=20,amplifier=4;type=effect,ID=blindness,duration=10)@luck=-1
+
+/ ========== STRUCTURES ==========
+
+/ traps
+type=structure,ID=lava_trap,pos=#pPos,rotation=#pDirect@luck=-2
+group(type=structure,ID=firelbv2_lookup,pos=#pPos,rotation=#pDirect;type=command,ID="/setblock ~ ~3 ~ lava",pos=#pPos)@luck=-2
+group(type=structure,ID=firelbv2_lookup,pos=#pPos,rotation=#pDirect;type=command,ID="/setblock ~ ~30 ~ anvil",pos=#pPos;type=command,ID="/execute #pName ~ ~ ~ setblock ~ ~31 ~ anvil",pos=#pPos;type=command,ID="/setblock ~ ~32 ~ anvil",pos=#pPos)@luck=-2
+group(
+    type=fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=cobweb,size=(3,1,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
+)@luck=-2
+group(type=structure,ID=firelbv2_lavasoup,rotation=#pDirect;type=command,ID="/fill ~5 ~5 ~5 ~-5 ~-3 ~-5 air replace slime_block")@luck=-2
+
+/ obsidian trap varints
+group(type=structure,ID=firelbv2_obsidiantrap,pos=#pPos;type=command,ID="/tp @e[r=5] ~ ~ ~";type=command,ID="/setblock ~ ~2 ~ lava",pos=#pPos;type=command,ID="/setblock ~1 ~2 ~ lava",pos=#pPos;type=command,ID="/setblock ~ ~2 ~1 lava",pos=#pPos;type=command,ID="/setblock ~-1 ~2 ~ lava",pos=#pPos;type=command,ID="/setblock ~ ~2 ~-1 lava",pos=#pPos)@luck=-2
+group(type=structure,ID=firelbv2_obsidiantrap,pos=#pPos;type=command,ID="/tp @e[r=5] ~ ~ ~";type=entity,ID=blaze,amount=5,pos=#pPos)@luck=-2
+group(type=structure,ID=firelbv2_obsidiantrap,pos=#pPos;type=command,ID="/tp @e[r=5] ~ ~ ~";type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion=#randLaunchMotion),amount=10,pos=#pPos)@luck=-2
+
+/ nether fortress sections
+type=structure,ID=firelbv2_netherblaze,rotation=#pDirect
+type=structure,ID=firelbv2_netherlava,rotation=#pDirect
+type=structure,ID=firelbv2_nethertower,rotation=#pDirect
+type=structure,ID=firelbv2_netherwart,rotation=#pDirect@luck=1
+
+/ other structures
+type=structure,ID=firelbv2_ruinedportal@luck=1
+type=structure,ID=firelbv2_bastiongold,rotation=#pDirect@luck=2@chance=0.5
+type=structure,ID=firelbv2_netherores@luck=2
+type=structure,ID=firelbv2_netherreactor@luck=0
+
+/ nether fossil
+group(type=command,ID="/place template minecraft:nether_fossils/fossil_#rand(1,16)")@luck=0
+
+/ fire lucky temple
+type=structure,ID=firelbv2_luckytemple,pos=#pPos@luck=2
+
+/ bedrock problem
+type=structure,ID=bedrock_problem,rotation=#pDirect@luck=-1
+
+/ explosion
+group(type=difficulty,ID=hard;type=explosion,radius=6)@luck=-2
+
+/ fire wishing wells
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Your fire spread wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=falling_block,NBTTag=(Motion='#'randLaunchMotion,BlockState=(Name="fire")),posY='#'bPosY+9,amount=30)"]))@luck=-2
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Your fire spread wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=falling_block,NBTTag=(Motion='#'randLaunchMotion,BlockState=(Name="fire")),posY='#'bPosY+9,amount=60)"]))@luck=-2
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0  ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Your nether army wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=#randList(blaze,piglin,ghast,magma_cube,enderman),posY='#'bPosY+7,amount=30)"]))@luck=-2
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0  ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Your lava swimming wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=command,ID="/fill ~3 ~1 ~3 ~-3 ~-3 ~-3 lava" )"]))@luck=-2@chance=0.9
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Your fire death wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=explosion,radius=7,fire=true,delay=2.5;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=20)"]))@luck=-2
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0  ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$5Get trolled!\";type=block,ID=air,posY='#'bPosY+3;type=command,ID="/fill ~1 ~7 ~1 ~-1 ~-9 ~-1 air destroy" )"]))@luck=-1
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0  ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Your lava hole wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=fill,ID=air,size=(3,20,3),pos=(#bPosX-1,#bPosY-18,#bPosZ-1);type=fill,ID=lava,size=(3,1,3),pos=(#bPosX-1,#bPosY-18,#bPosZ-1);type=fill,ID=cobweb,size=(3,1,3),pos=(#bPosX-1,#bPosY-17,#bPosZ-1))"]))@luck=-2
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$6Your nether wish came true! (If you like blocks)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=soul_sand,amount=128,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=netherrack,amount=64,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=soul_soil,amount=32,posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=0
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$6Your nether wish came true! (If you like ores)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=gold_nugget,amount=128,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=quartz,amount=64,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=glowstone_dust,amount=32,posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=1
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$6Your nether wish came true! (If you like ores)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,tag='#'randFireworksRocket)),amount=5,posY='#'bPosY+3,posOffset='#'circleOffset(2);ID=gold_nugget,amount=#rand(20,60),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=glowstone_dust,amount=#rand(9,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=quartz,amount=#rand(9,20),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=netherite_scrap,amount=#rand(2,8),posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=2
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$6Your fire burning wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=fire_charge,amount=32,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=fire,amount=10,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=flint_and_steel,amount=2,posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=1
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$6Your lava burning wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=bucket,amount=32,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=lava_bucket,amount=10,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=lucky:fire_lucky_potion,amount=5,posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=1
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$2Your nether drops with came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,tag='#'randFireworksRocket)),amount=5,posY='#'bPosY+3,posOffset='#'circleOffset(2);ID=rotten_flesh,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=blaze_powder,amount=#rand(4,14),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=magma_cream,amount=#rand(2,8),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=wither_skull,amount=#randList(0,0,0,0,0,0,0,0,1),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=ghast_tear,amount=#rand(1,4),posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=0
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$5Your potions wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=lingering_potion,NBTTag=(Potion="minecraft:swiftness"),amount=4,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=lingering_potion,NBTTag=(Potion="minecraft:fire_resistance"),amount=2,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=lingering_potion,NBTTag=(Potion="minecraft:regeneration"),amount=1,posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=2
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$7Your ingots wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=gold_ingot,amount=32,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=iron_ingot,amount=20,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=netherite_ingot,amount=#rand(1,3),posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=2
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$cYour mushrooms wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,tag='#'randFireworksRocket)),amount=5,posY='#'bPosY+3,posOffset='#'circleOffset(2);ID=brown_mushroom,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=red_mushroom,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=crimson_fungus,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=warped_fungus,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=0
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour stews wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,tag='#'randFireworksRocket)),amount=5,posY='#'bPosY+3,posOffset='#'circleOffset(2);ID=mushroom_stew,amount=#rand(10,20),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=rabbit_stew,amount=#rand(4,8),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=suspicious_stew,amount=#rand(2,5),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=bowl,amount=#rand(20,50),posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=1
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$dYour pigman army wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=zombified_piglin,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=20)"]))@luck=0
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came true! $6(If you like gold)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=gold_nugget,amount=128,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=gold_ingot,amount=24,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=gold_block,amount=2,posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=2
+group(type=structure,ID=firelbv2_well;type=message,ID="A fire wishing well? Maybe you should throw in...";type=command,ID="/give #pName gold_nugget 1 0 ";type=block,ID=lucky:fire_lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Your death wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=20)"]))@luck=-2
+
+/ launching blocks
+type=entity,ID=falling_block,NBTTag=(Motion=#randLaunchMotion,BlockState=(Name="fire")),posY=#bPosY+9,amount=30@luck=-1
+type=entity,ID=falling_block,NBTTag=(Motion=#randLaunchMotion,BlockState=(Name="fire")),posY=#bPosY+9,amount=60@luck=-2
+type=entity,ID=falling_block,NBTTag=(Motion=#randLaunchMotion,BlockState=(Name="lava")),posY=#bPosY+9,amount=30@luck=-2
+type=entity,ID=falling_block,NBTTag=(Motion=#randLaunchMotion,BlockState=(Name="soul_fire")),posY=#bPosY+9,amount=20@luck=-1@chance=0.8
+type=entity,ID=falling_block,NBTTag=(Motion=#randLaunchMotion,BlockState=(Name="soul_fire")),posY=#bPosY+9,amount=20@luck=-2@chance=0.8
+
+/ magna bounce castle
+type=structure,ID=firelbv2_magmabounce@luck=-1
+
+/ fire invasion
+type=command,ID="/fill ~3 ~3 ~3 ~-3 ~-3 ~-3 fire replace air"@luck=-1@chance=0.95
+type=command,ID="/fill ~5 ~5 ~5 ~-5 ~-5 ~-5 fire replace air"@luck=-2@chance=0.9
+type=command,ID="/fill ~3 ~3 ~3 ~-3 ~-3 ~-3 lava replace air"@luck=-2@chance=0.8
+
+/ doubly tnt pole
+group(type=fill,ID=air,size=(1,51,1);
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=redstone_block)),posY=#bPosY+5;
+    group(posY=#bPosY+10;posY=#bPosY+15;posY=#bPosY+20;posY=#bPosY+25;posY=#bPosY+30;posY=#bPosY+35;posY=#bPosY+40;posY=#bPosY+45;posY=#bPosY+50;posY=#bPosY+55;posY=#bPosY+60;posY=#bPosY+65;posY=#bPosY+70;posY=#bPosY+75;posY=#bPosY+80;posY=#bPosY+85;posY=#bPosY+90;posY=#bPosY+95;posY=#bPosY+100),type=entity,ID=falling_block,NBTTag=(BlockState=(Name=tnt))
+)@luck=-2
+
+/ wild fire
+group(type=message,ID="$4$lWildfire incoming!!";type=command,ID="/gamerule commandBlockOutput false";type=command,ID="/setblock ~ ~ ~ fire keep",posOffset=#circleOffset(0,66),amount=#rand(96,666),delay=#rand(0,3),reinitialize=true)@chance=0.1666@luck=-2
+
+
+/ ========== ENCHANTED + LUCKY ITEMS ==========
+
+/ hero sword
+ID=netherite_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="$e$lNetherite Lucky Sword"))@luck=2
+
+/ hero potion
+ID=potion,NBTTag=(Potion="minecraft:water",custom_potion_effects=#luckyPotionEffects,display=(Name=#jsonStr(text="$e$lLucky Potion")))@luck=2
+
+/ unlucky potion
+ID=splash_potion,NBTTag=(Potion="minecraft:water",custom_potion_effects=#unluckyPotionEffects,display=(Name=#jsonStr(text="$4$lUnlucky Potion")))@luck=2
+
+/ blaze propller potion
+ID=lingering_potion,NBTTag=(Potion="slow_falling",display=(Name=#jsonStr(text="$6Blaze's Propeller Potion")),amount=#rand(1,3))@luck=2@chance=0.9
+
+/ lucky steel
+ID=flint_and_steel,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="$e$lLucky Steel"))@luck=1
+
+/ hero bows
+ID=flint_and_steel,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="$e$lLucky Steel"))@luck=1
+ID=bow,NBTTag=(Enchantments=#luckyBowEnchantments,display=(Name=#jsonStr(text="$e$lLucky Bow"))@luck=2
+ID=crossbow,NBTTag=(Enchantments=#luckyBowEnchantments,display=(Name=#jsonStr(text="$e$lLucky Crossbow"))@luck=2@chance=0.75
+group(ID=arrow,amount=#rand(8,24);type=item,ID=bow)@luck=1
+group(ID=arrow,amount=#rand(8,24);type=item,ID=crossbow)@luck=2
+group(ID=arrow,amount=#rand(8,24);type=item,ID=lucky:fire_lucky_sword;type=item,ID=lucky:fire_lucky_bow;type=item,ID=lucky:fire_lucky_potion,amount=#rand(3,9);type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,tag=#randFireworksRocket)),amount=5,posOffset=#circleOffset(0,2))@luck=2@chance=0.66
+
+/ piglin sword
+ID=golden_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Piglin's Sword",color=yellow,bold=true)))@luck=2
+
+/ piglin bow
+ID=crossbow,NBTTag=(Enchantments=#luckyBowEnchantments,display=(Name=#jsonStr(text="Piglin's CrossBow",color=yellow,bold=true)))@luck=2
+
+/ piglin tools
+group:#rand(1,2):(ID=golden_shovel,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Piglin's Shovel",color=yellow,bold=true)));ID=golden_pickaxe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Piglin's Pickaxe",color=yellow,bold=true)));ID=golden_axe,NBTTag=(Enchantments=#luckyAxeEnchantments,display=(Name=#jsonStr(text="Piglin's Axe",color=yellow,bold=true)));ID=golden_hoe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Piglin's Hoe",color=yellow,bold=true))))@luck=2
+
+/ piglin armor
+group:#rand(1,2):(ID=piglin_head,NBTTag=(Enchantments=#luckyHelmetEnchantments,display=(Name=#jsonStr(text="Piglin's Head",color=yellow,bold=true)));ID=golden_chestplate,NBTTag=(Enchantments=#luckyChestplateEnchantments,display=(Name=#jsonStr(text="Piglin's Chestplate",color=yellow,bold=true)));ID=golden_leggings,NBTTag=(Enchantments=#luckyLeggingsEnchantments,display=(Name=#jsonStr(text="Piglin's Leggings",color=yellow,bold=true)));ID=golden_boots,NBTTag=(Enchantments=#luckyBootsEnchantments,display=(Name=#jsonStr(text="Piglin's Boots",color=yellow,bold=true))))@luck=2
+
+/ netherite sword
+ID=netherite_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Netherite Lucky Sword",color=yellow,bold=true)))@luck=2@chance=0.75
+
+/ fire lucky sword
+ID=lucky:fire_lucky_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Fire Lucky Sword",color=red,bold=true)))@luck=2@chance=0.75
+
+/ fire lucky bow
+group(ID=arrow,amount=#rand(8,24);ID=lucky:fire_lucky_bow,NBTTag=(Enchantments=#luckyBowEnchantments,display=(Name=#jsonStr(text="Fire Lucky Bow",color=red,bold=true))))@luck=2@chance=0.75
+
+/ netherite tools
+group:#rand(1,2):(ID=netherite_shovel,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Netherite Lucky Shovel",color=yellow,bold=true)));ID=netherite_pickaxe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Netherite Lucky Pickaxe",color=yellow,bold=true)));ID=netherite_axe,NBTTag=(Enchantments=#luckyAxeEnchantments,display=(Name=#jsonStr(text="Netherite Lucky Axe",color=yellow,bold=true)));ID=netherite_hoe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Netherite Lucky Hoe",color=yellow,bold=true))))@luck=2@chance=0.75
+
+/ netherite armor
+group:#rand(1,2):(ID=netherite_helmet,NBTTag=(Enchantments=#luckyHelmetEnchantments,display=(Name=#jsonStr(text="Netherite Lucky Helmet",color=yellow,bold=true)));ID=netherite_chestplate,NBTTag=(Enchantments=#luckyChestplateEnchantments,display=(Name=#jsonStr(text="Netherite Lucky Chestplate",color=yellow,bold=true)));ID=netherite_leggings,NBTTag=(Enchantments=#luckyLeggingsEnchantments,display=(Name=#jsonStr(text="Netherite Lucky Leggings",color=yellow,bold=true)));ID=netherite_boots,NBTTag=(Enchantments=#luckyBootsEnchantments,display=(Name=#jsonStr(text="Netherite Lucky Boots",color=yellow,bold=true))))@luck=2@chance=0.75
+
+/ blazing rod
+ID=blaze_rod,NBTTag=(display=(Name=#jsonStr(text="$6Blazing Rod")),Enchantments=[(id=fire_aspect,lvl=3)])@luck=2@chance=0.9
+
+/ soul speed iron boots
+ID=iron_boots,NBTTag=(display=(Name=#jsonStr(text="$bSoul Speed Iron Boots")),Enchantments=[(id=soul_speed,lvl=3)])@luck=1
+
+/ blaze's propeller potion
+ID=potion,NBTTag=(Potion="slow_falling",display=(Name=#jsonStr(text="$6Blaze's Propeller Potion")),amount=#rand(1,3))@luck=2@chance=0.9
+
+/ fire skin potion
+ID=potion,NBTTag=(Potion="long_fire_resistance",display=(Name=#jsonStr(text="$6Fire Skin Protection")),amount=#rand(1,2))@luck=2
+
+/ fireproof armor
+group(ID=leather_helmet,NBTTag=(display=(color=13710131,Name=#jsonStr(text="$4Fireproof Cap")),Enchantments=[(id=fire_protection,lvl=6)]);ID=leather_chestplate,NBTTag=(display=(color=13710131,Name=#jsonStr(text="$4Fireproof Jacket")),Enchantments=[(id=fire_protection,lvl=6)]);ID=leather_leggings,NBTTag=(display=(color=13710131,Name=#jsonStr(text="$4Fireproof Pants")),Enchantments=[(id=fire_protection,lvl=6)]);ID=leather_boots,NBTTag=(display=(color=13710131,Name=#jsonStr(text="$4Fireproof Shoes")),Enchantments=[(id=fire_protection,lvl=6)]))@luck=1
+

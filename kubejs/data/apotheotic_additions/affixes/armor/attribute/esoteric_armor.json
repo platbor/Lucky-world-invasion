@@ -1,0 +1,16 @@
+{
+	"type": "apotheosis:attribute",
+	"attribute": "minecraft:generic.armor",
+	"operation": "ADDITION",
+	"values": {
+		"apotheotic_additions:esoteric": {
+			"min": 10,
+			"steps": 20,
+			"step": 1
+		}
+	},
+	"types": [
+		"helmet", "chestplate", "leggings", "boots",
+		"shield"
+	]
+}

@@ -1,0 +1,32 @@
+{
+	id: "42C65902B221750E"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{
+			command: "/improvedmobs difficulty player @p set 250"
+			icon: { Count: 250, id: "kubejs:bad_apple" }
+			title: "难度拉满"
+			type: "command"
+		}
+		{
+			command: "/time add 100d"
+			icon: { Count: 100, id: "minecraft:clock" }
+			title: "增加100天"
+			type: "command"
+		}
+		{
+			command: "/improvedmobs difficulty player @p set 1000"
+			icon: { Count: 1000, id: "kubejs:bad_apple" }
+			title: "我要1000难度"
+			type: "command"
+		}
+		{
+			command: "/improvedmobs difficulty player @p set 9999"
+			icon: { Count: 9999, id: "kubejs:bad_apple" }
+			title: "9999难度？"
+			type: "command"
+		}
+	]
+	title: "{ftbquests.loot_table_4811631120005297422.title}"
+}

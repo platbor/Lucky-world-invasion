@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "F": {
+      "item": "minecraft:fire_charge"
+    },
+    "L": {
+      "item": "lucky:lucky_block"
+    }
+  },
+  "pattern": ["FFF", "FLF", "FFF"],
+  "result": {
+    "item": "lucky:elefire_lucky_block"
+  }
+}
