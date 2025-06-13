@@ -1,0 +1,17 @@
+{
+	id: "a6076ebd-01f6-37e1-9fcb-addb3457b286"
+	type: "player"
+	player_name: "ItzAmriiAMD"
+	ranks: {
+		a6076ebd-01f6-37e1-9fcb-addb3457b286: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "ItzAmriiAMD"
+		"ftbteams:description": ""
+		"ftbteams:color": "#FDFF59"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+	}
+	message_history: [ ]
+	extra: { }
+}

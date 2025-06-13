@@ -1,0 +1,7 @@
+{
+	warps: {
+		spawn: { dim: "minecraft:overworld", x: -319, y: 810, z: 209, time: 1749774789613L, xRot: 90.0f, yRot: -0.7505188f }
+	}
+	mute_timeouts: { }
+	kits: { }
+}
