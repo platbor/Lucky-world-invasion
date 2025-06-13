@@ -1,0 +1,17 @@
+{
+	id: "c8d0a09f-cb12-3d63-a61e-ad0f4449412b"
+	type: "player"
+	player_name: "mrapn"
+	ranks: {
+		c8d0a09f-cb12-3d63-a61e-ad0f4449412b: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "mrapn"
+		"ftbteams:description": ""
+		"ftbteams:color": "#FFBE59"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+	}
+	message_history: [ ]
+	extra: { }
+}

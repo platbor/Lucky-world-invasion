@@ -1,0 +1,17 @@
+{
+	id: "b4e1c1f9-ca85-35af-bf62-ca49af622512"
+	type: "player"
+	player_name: "Tahuuuuuuu"
+	ranks: {
+		b4e1c1f9-ca85-35af-bf62-ca49af622512: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "Tahuuuuuuu"
+		"ftbteams:description": ""
+		"ftbteams:color": "#F5FF59"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+	}
+	message_history: [ ]
+	extra: { }
+}
